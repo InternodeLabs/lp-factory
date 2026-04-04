@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# lp-factory
 
-## Getting Started
+Landing page factory for ad campaign testing. Define campaigns in config, ship static Next.js routes under `/lp/[slug]`, and measure performance with PostHog.
 
-First, run the development server:
+## Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js 14** (App Router) + TypeScript + Tailwind CSS v4  
+- **pnpm** for installs  
+- **Vercel** for hosting (see `vercel.json`)  
+- **PostHog** for product analytics  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the repo** and open the project root (`lp-factory`).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Install dependencies**
 
-## Learn More
+   ```bash
+   pnpm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. **Environment variables**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   cp .env.example .env.local
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   Edit `.env.local` and set:
 
-## Deploy on Vercel
+   - `NEXT_PUBLIC_POSTHOG_KEY` — project API key from PostHog  
+   - `NEXT_PUBLIC_POSTHOG_HOST` — usually `https://us.i.posthog.com` (or your self-hosted URL)  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   Do **not** commit `.env.local` (it is gitignored).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. **Run locally**
+
+   ```bash
+   pnpm dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) to see the campaign index with links to all LPs.
+
+## Creating a new landing page
+
+1. Open `src/config/types.ts` if you need new section shapes or fields.  
+2. Add a **`CampaignConfig`** entry in `src/config/campaigns.ts` (use `campaigns.set("your-slug", { ... })` or extend the `Map` initializer).  
+3. Include a unique **`slug`** (URL path: `/lp/your-slug`), **`meta`**, **`theme`**, **`sections`**, **`cta`**, and **`tracking`**.  
+4. Commit and **push to GitHub**.  
+   - **Preview**: push to any branch other than `main` — GitHub Actions runs lint + build; Vercel creates a preview deployment if the project is connected.  
+   - **Production**: merge to **`main`** — CI runs again; Vercel promotes production via the GitHub integration.  
+
+Static params are generated from the campaign map, so new slugs are picked up on the next build.
+
+## Deploying
+
+| Goal | What to do |
+|------|------------|
+| **Preview URL** | Push a branch (not `main`). CI validates the build; Vercel comments/links the preview when the Git integration is enabled. |
+| **Production** | Merge to `main`. CI must pass; Vercel deploys production automatically. |
+
+Project defaults in `vercel.json`:
+
+- **Region**: `sfo1`  
+- **LP headers** (paths matching `/lp/*`): `X-Robots-Tag: noindex` so paid LPs do not compete with your main site in organic search, plus short cache headers. Remove or adjust `noindex` in `vercel.json` for any LP you want indexed.  
+
+Set `NEXT_PUBLIC_POSTHOG_*` in the Vercel project **Environment Variables** for Preview and Production.
+
+## Analytics (PostHog)
+
+- **Dashboard**: [PostHog](https://app.posthog.com) (US cloud) — use your team/project URL after login.  
+- **Useful events to monitor**  
+  - **`$pageview`** — traffic and UTM-attributed landings (SPA route changes included).  
+  - **`lp_click`** — CTA and tracked clicks (`element`, `section`, `cta_text`, `campaign_slug`, etc.).  
+  - **`section_viewed`** — first time a section enters the viewport.  
+  - **`section_time`** — cumulative visible time per section.  
+  - **`scroll_depth`** — milestones (25 / 50 / 75 / 90 / 100%).  
+  - **Conversion-related properties** on clicks — e.g. `conversion_event` (from campaign config) and `campaign_id` in event properties.  
+
+Filter by `campaign_slug` or `campaign_id` to compare campaigns.
+
+## CI
+
+- **`.github/workflows/preview.yml`** — on push to any branch **except** `main`: `pnpm install`, `pnpm lint`, `pnpm build`.  
+- **`.github/workflows/production.yml`** — on push to **`main`**: same steps.  
+
+Deploys are still performed by Vercel; these workflows catch broken builds before or alongside preview/production deploys.
+
+## Scripts
+
+| Command | Description |
+|---------|-------------|
+| `pnpm dev` | Development server |
+| `pnpm build` | Production build |
+| `pnpm start` | Start production server locally |
+| `pnpm lint` | ESLint (Next.js config) |
