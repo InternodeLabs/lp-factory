@@ -28,6 +28,8 @@ export type SectionConfig =
       type: "hero";
       headline: string;
       subheadline: string;
+      /** Italic emphasis line rendered below the subheadline */
+      subheadlineEmphasis?: string;
       ctaText: string;
       ctaSubtext?: string;
       backgroundImage?: string;

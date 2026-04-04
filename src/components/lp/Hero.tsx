@@ -4,6 +4,7 @@ import { TrackClick } from "@/components/tracking/TrackClick";
 import type { CampaignConfig, SectionConfig } from "@/config/types";
 
 import { ctaClassName } from "./lp-cta-classes";
+import { InternodeLogo } from "./InternodeLogo";
 import { cn } from "@/lib/utils";
 
 type HeroSection = Extract<SectionConfig, { type: "hero" }>;
@@ -49,26 +50,18 @@ export function Hero({
         </>
       ) : (
         <div
-          className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950"
+          className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-50/30 to-gray-100/50 dark:from-transparent dark:via-gray-900/20 dark:to-gray-950/40"
           aria-hidden
         />
       )}
 
-      <div
-        className="pointer-events-none absolute inset-0 opacity-[0.12] dark:opacity-[0.15]"
-        style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, var(--lp-primary) 1px, transparent 0)`,
-          backgroundSize: "28px 28px",
-        }}
-        aria-hidden
-      />
-
-      <div className="relative z-10 flex flex-1 flex-col py-16 px-4 md:py-24 md:px-8">
-        {/* Branding */}
+      <div className="relative z-10 flex flex-1 flex-col pt-[40px] pb-16 px-4 md:pb-24 md:px-8">
         <div className="mx-auto w-full max-w-5xl">
-          <p className="text-sm font-semibold tracking-wide text-[var(--lp-primary)]">
-            INTERNODE
-          </p>
+          <InternodeLogo
+            className="text-white"
+            color="#ffffff"
+            size="md"
+          />
         </div>
 
         <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col justify-center text-center">
@@ -87,6 +80,14 @@ export function Hero({
             )}
           >
             {section.subheadline}
+            {section.subheadlineEmphasis && (
+              <>
+                <br />
+                <em className="mt-3 block text-gray-500 dark:text-gray-400">
+                  {section.subheadlineEmphasis}
+                </em>
+              </>
+            )}
           </p>
           <div className="mt-10 md:mt-12">
             <TrackClick

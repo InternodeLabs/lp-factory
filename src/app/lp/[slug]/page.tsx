@@ -73,11 +73,9 @@ export default function CampaignPage({ params }: PageProps) {
   return (
     <div
       className={cn(
-        "min-h-full antialiased",
+        "relative min-h-full antialiased",
         theme.darkMode && "dark",
-        theme.darkMode
-          ? "bg-gray-950 text-gray-50"
-          : "bg-white text-gray-900",
+        theme.darkMode ? "text-gray-50" : "text-gray-900",
       )}
       style={
         {
