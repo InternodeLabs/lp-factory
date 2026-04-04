@@ -2,7 +2,8 @@ import type { PostHogConfig, PostHogInterface } from "posthog-js";
 
 export function getPostHogConfig(): Partial<PostHogConfig> {
   return {
-    api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST,
+    api_host: "/ingest",
+    ui_host: "https://us.posthog.com",
     autocapture: true,
     capture_pageview: false,
     capture_pageleave: true,
