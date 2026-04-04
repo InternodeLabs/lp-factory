@@ -19,6 +19,7 @@ export type TrackClickCaptureExtras = Record<
 
 export type TrackClickProps = Readonly<{
   campaign: string;
+  campaignId: string;
   section: string;
   ctaText: string;
   element: string;
@@ -29,6 +30,7 @@ export type TrackClickProps = Readonly<{
 
 export function TrackClick({
   campaign,
+  campaignId,
   section,
   ctaText,
   element,
@@ -42,7 +44,7 @@ export function TrackClick({
       if (!posthog) {
         return;
       }
-      const base = getTrackingBaseProperties(campaign);
+      const base = getTrackingBaseProperties(campaign, campaignId);
       const target = event.currentTarget;
       const interactiveTag =
         target instanceof Element ? target.tagName.toLowerCase() : undefined;
@@ -55,7 +57,7 @@ export function TrackClick({
         ...captureExtras,
       });
     },
-    [posthog, campaign, section, ctaText, element, captureExtras],
+    [posthog, campaign, campaignId, section, ctaText, element, captureExtras],
   );
 
   if (!isValidElement(children)) {

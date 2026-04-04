@@ -17,7 +17,6 @@ export function CTA({
 }>) {
   const { theme, cta, tracking } = config;
   const captureExtras = {
-    campaign_id: tracking.campaignId,
     traffic_source: tracking.source,
     conversion_event: tracking.conversionEvent,
     href: cta.href,
@@ -57,6 +56,7 @@ export function CTA({
             <div className="mt-10 md:mt-12">
               <TrackClick
                 campaign={campaign}
+                campaignId={tracking.campaignId}
                 section="final-cta"
                 ctaText={section.ctaText}
                 element="final_cta_primary"

@@ -80,6 +80,7 @@ export default function CampaignPage({ params }: PageProps) {
         <TrackSection
           key={`${section.type}-${index}`}
           campaign={params.slug}
+          campaignId={campaignConfig.tracking.campaignId}
           sectionName={section.type}
         >
           <LpSectionBody

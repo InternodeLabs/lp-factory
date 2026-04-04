@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import { PostHogProvider as PHProvider, usePostHog } from "posthog-js/react";
 
+import { getCampaign } from "@/config/campaigns";
 import { getPostHogConfig } from "@/lib/posthog";
 import {
   getCampaignSlugFromPathname,
@@ -23,7 +24,18 @@ function PostHogPageView(): null {
     }
 
     const campaignSlug = getCampaignSlugFromPathname(pathname);
-    const base = getTrackingBaseProperties(campaignSlug);
+    const campaignConfig = campaignSlug ? getCampaign(campaignSlug) : undefined;
+    const campaignId = campaignConfig?.tracking.campaignId ?? "";
+
+    if (campaignConfig) {
+      posthog.group("campaign", campaignSlug, {
+        campaign_id: campaignId,
+        name: campaignConfig.meta.title,
+        traffic_source: campaignConfig.tracking.source,
+      });
+    }
+
+    const base = getTrackingBaseProperties(campaignSlug, campaignId);
     const params = new URLSearchParams(searchParamsString);
     const utm = getUtmParamsFromSearchParams(params);
 

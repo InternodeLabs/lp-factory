@@ -25,6 +25,8 @@ export function getUtmParamsFromSearchParams(
 
 export type TrackingBaseProperties = {
   campaign_slug: string;
+  campaign_id: string;
+  page_type: "landing_page" | "other";
   page_url: string;
   referrer: string;
   timestamp: string;
@@ -37,11 +39,15 @@ export function getCampaignSlugFromPathname(pathname: string): string {
 
 export function getTrackingBaseProperties(
   campaignSlug: string,
+  campaignId = "",
 ): TrackingBaseProperties {
   const timestamp = new Date().toISOString();
+  const page_type = campaignSlug ? "landing_page" : "other";
   if (typeof window === "undefined") {
     return {
       campaign_slug: campaignSlug,
+      campaign_id: campaignId,
+      page_type,
       page_url: "",
       referrer: "",
       timestamp,
@@ -49,6 +55,8 @@ export function getTrackingBaseProperties(
   }
   return {
     campaign_slug: campaignSlug,
+    campaign_id: campaignId,
+    page_type,
     page_url: window.location.href,
     referrer: document.referrer ?? "",
     timestamp,

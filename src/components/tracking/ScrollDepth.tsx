@@ -9,6 +9,7 @@ const THRESHOLDS = [25, 50, 75, 90, 100] as const;
 
 export type ScrollDepthProps = Readonly<{
   campaign: string;
+  campaignId: string;
 }>;
 
 function getScrollDepthPercent(): number {
@@ -21,7 +22,7 @@ function getScrollDepthPercent(): number {
   return Math.min(100, Math.max(0, Math.round(raw * 10) / 10));
 }
 
-export function ScrollDepth({ campaign }: ScrollDepthProps) {
+export function ScrollDepth({ campaign, campaignId }: ScrollDepthProps) {
   const posthog = usePostHog();
   const maxDepthRef = useRef(0);
   const firedRef = useRef<Set<number>>(new Set());
@@ -36,7 +37,7 @@ export function ScrollDepth({ campaign }: ScrollDepthProps) {
       if (depth > maxDepthRef.current) {
         maxDepthRef.current = depth;
       }
-      const base = getTrackingBaseProperties(campaign);
+      const base = getTrackingBaseProperties(campaign, campaignId);
       for (const threshold of THRESHOLDS) {
         if (maxDepthRef.current >= threshold && !firedRef.current.has(threshold)) {
           firedRef.current.add(threshold);
@@ -61,7 +62,7 @@ export function ScrollDepth({ campaign }: ScrollDepthProps) {
       window.removeEventListener("scroll", onScrollThrottled);
       window.removeEventListener("resize", onScrollThrottled);
     };
-  }, [posthog, campaign]);
+  }, [posthog, campaign, campaignId]);
 
   return null;
 }

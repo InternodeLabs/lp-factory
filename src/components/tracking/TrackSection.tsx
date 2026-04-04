@@ -7,12 +7,14 @@ import { getTrackingBaseProperties } from "@/lib/tracking";
 
 export type TrackSectionProps = Readonly<{
   campaign: string;
+  campaignId: string;
   sectionName: string;
   children: ReactNode;
 }>;
 
 export function TrackSection({
   campaign,
+  campaignId,
   sectionName,
   children,
 }: TrackSectionProps) {
@@ -30,8 +32,8 @@ export function TrackSection({
   const hasViewedRef = useRef(false);
   const hasSentTimeRef = useRef(false);
 
-  const metaRef = useRef({ campaign, sectionName, posthog });
-  metaRef.current = { campaign, sectionName, posthog };
+  const metaRef = useRef({ campaign, campaignId, sectionName, posthog });
+  metaRef.current = { campaign, campaignId, sectionName, posthog };
 
   const stopSegment = () => {
     if (segmentStartRef.current != null) {
@@ -42,7 +44,12 @@ export function TrackSection({
 
   const sendSectionTimeRef = useRef(() => {});
   sendSectionTimeRef.current = () => {
-    const { posthog: ph, campaign: slug, sectionName: name } = metaRef.current;
+    const {
+      posthog: ph,
+      campaign: slug,
+      campaignId: cId,
+      sectionName: name,
+    } = metaRef.current;
     if (hasSentTimeRef.current || !ph) {
       return;
     }
@@ -52,7 +59,7 @@ export function TrackSection({
       return;
     }
     hasSentTimeRef.current = true;
-    const base = getTrackingBaseProperties(slug);
+    const base = getTrackingBaseProperties(slug, cId);
     ph.capture("section_time", {
       section_name: name,
       visible_ms: visibleMs,
@@ -86,11 +93,15 @@ export function TrackSection({
           entry.isIntersecting && entry.intersectionRatio > 0;
         inViewRef.current = isIntersecting;
 
-        const { posthog: ph, campaign: slug, sectionName: name } =
-          metaRef.current;
+        const {
+          posthog: ph,
+          campaign: slug,
+          campaignId: cId,
+          sectionName: name,
+        } = metaRef.current;
         if (isIntersecting && ph && !hasViewedRef.current) {
           hasViewedRef.current = true;
-          const base = getTrackingBaseProperties(slug);
+          const base = getTrackingBaseProperties(slug, cId);
           ph.capture("section_viewed", {
             section_name: name,
             ...base,
@@ -104,7 +115,7 @@ export function TrackSection({
 
     observer.observe(root);
     return () => observer.disconnect();
-  }, [sectionName, campaign, posthog]);
+  }, [sectionName, campaign, campaignId, posthog]);
 
   useEffect(() => {
     const onVisibility = () => {

@@ -19,7 +19,6 @@ export function Hero({
 }>) {
   const { theme, cta, tracking } = config;
   const captureExtras = {
-    campaign_id: tracking.campaignId,
     traffic_source: tracking.source,
     conversion_event: tracking.conversionEvent,
     href: cta.href,
@@ -85,6 +84,7 @@ export function Hero({
           <div className="mt-10 md:mt-12">
             <TrackClick
               campaign={campaign}
+              campaignId={tracking.campaignId}
               section="hero"
               ctaText={section.ctaText}
               element="hero_primary_cta"
