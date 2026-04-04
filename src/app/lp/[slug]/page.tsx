@@ -52,6 +52,15 @@ export function generateMetadata({ params }: PageProps): Metadata {
   };
 }
 
+function buildSectionNames(sections: { type: string }[]): string[] {
+  const counts = new Map<string, number>();
+  return sections.map((s) => {
+    const n = (counts.get(s.type) ?? 0) + 1;
+    counts.set(s.type, n);
+    return n > 1 ? `${s.type}-${n}` : s.type;
+  });
+}
+
 export default function CampaignPage({ params }: PageProps) {
   const campaignConfig = getCampaign(params.slug);
   if (!campaignConfig) {
@@ -59,6 +68,7 @@ export default function CampaignPage({ params }: PageProps) {
   }
 
   const { theme } = campaignConfig;
+  const sectionNames = buildSectionNames(campaignConfig.sections);
 
   return (
     <div
@@ -81,7 +91,7 @@ export default function CampaignPage({ params }: PageProps) {
           key={`${section.type}-${index}`}
           campaign={params.slug}
           campaignId={campaignConfig.tracking.campaignId}
-          sectionName={section.type}
+          sectionName={sectionNames[index]}
         >
           <LpSectionBody
             section={section}

@@ -116,7 +116,7 @@ export function Hero({
               <div className="relative overflow-hidden rounded-xl border border-gray-200/20 shadow-2xl shadow-[var(--lp-primary)]/10 ring-1 ring-white/10 md:rounded-2xl">
                 <Image
                   src={section.heroImage}
-                  alt="Internode product — decisions captured from meetings and linked to your projects"
+                  alt="Internode product: decisions captured from meetings and linked to your projects"
                   width={2048}
                   height={1456}
                   priority

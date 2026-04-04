@@ -164,10 +164,10 @@ export const campaigns = new Map<string, CampaignConfig>([
           headline:
             "That Decision Was Made Three Weeks Ago. Nobody Wrote It Down.",
           subheadline:
-            "Internode isn\u2019t a meeting bot. It extracts the decisions\u2014who made them, why, and what they affect\u2014and links them to your projects. So the next time someone asks \u2018didn\u2019t we already decide this?\u2019 the answer is one search away.",
+            "Internode isn't a meeting bot. It is a memory engine that remembers decisions, reasoning, and impact: who made them, why, and what they affect; and connects them across time and people. So the next time someone asks 'didn't we already decide this?' the answer is right there when it's needed.",
           ctaText: "Try It Free",
           ctaSubtext:
-            "Sign up and we\u2019ll send 3 months of Pro to your inbox. No credit card.",
+            "Sign up and we'll send 3 months of Pro to your inbox. No credit card.",
           heroImage: "/images/reddit-facepalm/hero-product.png",
         },
         {
@@ -178,13 +178,13 @@ export const campaigns = new Map<string, CampaignConfig>([
               icon: "\uD83E\uDD26",
               title: "The d\u00e9j\u00e0 vu standup",
               description:
-                "Three people, three different memories of what was decided. A fourth wasn\u2019t in the meeting. A fifth was, but was multitasking.",
+                "Three people, three different memories of what was decided. A fourth wasn't in the meeting. A fifth was, but was multitasking.",
             },
             {
               icon: "\uD83D\uDD0D",
               title: "The Slack archaeology expedition",
               description:
-                "Everyone agrees you decided this. Nobody can find where. 40 minutes later, you just\u2026 decide again.",
+                "Everyone agrees you decided this. Nobody can find where. 40 minutes later, you just decide again.",
             },
             {
               icon: "\uD83C\uDFAC",
@@ -195,29 +195,28 @@ export const campaigns = new Map<string, CampaignConfig>([
           ],
         },
         {
-          type: "how-it-works",
-          title: "How it works",
-          steps: [
+          type: "faq",
+          title: "Yeah but...",
+          items: [
             {
-              step: 1,
-              title: "Connect your tools",
-              description:
-                "Plug in your meetings, Slack, and PM tool. Takes about 5 minutes. Your team doesn\u2019t need to install anything.",
-              image: "/images/reddit-facepalm/step-conversations.png",
+              question: "Is this just another meeting bot?",
+              answer:
+                "Meeting bots give you a transcript. Congratulations, you now have 47 minutes of audio to re-listen to. Internode pulls out the decisions: the 2 minutes that actually mattered, and links them to your projects, tasks, and team.",
             },
             {
-              step: 2,
-              title: "Decisions get captured",
-              description:
-                "Internode listens in and extracts the decisions that matter\u2014who made them, the rationale, what they affect.",
-              image: "/images/reddit-facepalm/step-knowledge.png",
+              question: "We already use Notion/Confluence for this",
+              answer:
+                "Great, so you have a wiki page where someone was supposed to document the decision but didn't. Internode captures decisions automatically from where they happen: meetings, Slack, wherever, so they exist even when humans forget.",
             },
             {
-              step: 3,
-              title: "Your team builds a memory",
-              description:
-                "Every decision is linked, searchable, and attributed. New hires read the decision trail instead of asking Dave.",
-              image: "/images/reddit-facepalm/step-decisions.png",
+              question: "What's the catch with '3 months free'?",
+              answer:
+                "No catch. Sign up, and we email you a code for 3 months of Pro. No credit card required. No 'surprise, you're on annual billing now.' We're betting that once your team has a shared memory, you won't go back.",
+            },
+            {
+              question: "My team hates adopting new tools",
+              answer:
+                "Good news: there's nothing to adopt. Internode plugs into your meetings, your Slack, your existing PM tool. Your team doesn't adopt Internode: Internode adopts your team.",
             },
           ],
         },
@@ -225,33 +224,34 @@ export const campaigns = new Map<string, CampaignConfig>([
           type: "final-cta",
           headline: "Break the loop",
           subheadline:
-            "Stop re-litigating the same decisions. Sign up and we\u2019ll send 3 months of Pro to your inbox.",
+            "Stop re-litigating the same decisions. Sign up and we'll send 3 months of Pro to your inbox.",
           ctaText: "Try It Free",
           ctaSubtext: "No credit card required.",
         },
         {
-          type: "faq",
-          title: "Yeah but\u2026",
-          items: [
+          type: "how-it-works",
+          title: "How it works",
+          steps: [
             {
-              question: "Is this just another meeting bot?",
-              answer:
-                "Meeting bots give you a transcript. Congratulations, you now have 47 minutes of audio to re-listen to. Internode pulls out the decisions\u2014the 2 minutes that actually mattered\u2014and links them to your projects, tasks, and team.",
+              step: 1,
+              title: "Connect your tools",
+              description:
+                "Plug in your meetings, Slack, and PM tool. Takes about 5 minutes. Your team doesn't need to install anything.",
+              image: "/images/reddit-facepalm/step-conversations.png",
             },
             {
-              question: "We already use Notion/Confluence for this",
-              answer:
-                "Great, so you have a wiki page where someone was supposed to document the decision but didn\u2019t. Internode captures decisions automatically from where they happen\u2014meetings, Slack, wherever\u2014so they exist even when humans forget.",
+              step: 2,
+              title: "Decisions get captured",
+              description:
+                "Internode starts where your note takers stop: connect transcripts, notes, emails, chats and Internode takes care of the rest.",
+              image: "/images/reddit-facepalm/step-knowledge.png",
             },
             {
-              question: "What\u2019s the catch with \u20183 months free\u2019?",
-              answer:
-                "No catch. Sign up, and we email you a code for 3 months of Pro. No credit card required. No \u2018surprise, you\u2019re on annual billing now.\u2019 We\u2019re betting that once your team has a shared decision memory, you won\u2019t go back.",
-            },
-            {
-              question: "My team hates adopting new tools",
-              answer:
-                "Good news: there\u2019s nothing to adopt. Internode plugs into your meetings, your Slack, your existing PM tool. Your team doesn\u2019t adopt Internode\u2014Internode adopts your team.",
+              step: 3,
+              title: "Your team builds a memory",
+              description:
+                "Every decision, every idea, every problem is linked, surfaced right when they're needed. New hires read the decision trail instead of asking Dave about that db migration.",
+              image: "/images/reddit-facepalm/step-decisions.png",
             },
           ],
         },
@@ -262,7 +262,7 @@ export const campaigns = new Map<string, CampaignConfig>([
             "3 months free. No credit card. No commitments. Just a team that finally remembers what it decided.",
           ctaText: "Get Started",
           ctaSubtext:
-            "We\u2019ll email your 3-month Pro code after sign-up.",
+            "We'll email your 3-month Pro code after sign-up.",
         },
       ],
       cta: {

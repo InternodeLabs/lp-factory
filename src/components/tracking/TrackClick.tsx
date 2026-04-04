@@ -28,6 +28,16 @@ export type TrackClickProps = Readonly<{
   children: ReactNode;
 }>;
 
+const NAVIGATION_DELAY_MS = 300;
+
+function isExternalOrSameOriginNav(el: Element): string | null {
+  const anchor = el.closest("a");
+  if (!anchor) return null;
+  const href = anchor.getAttribute("href");
+  if (!href || href.startsWith("#")) return null;
+  return href;
+}
+
 export function TrackClick({
   campaign,
   campaignId,
@@ -44,10 +54,15 @@ export function TrackClick({
       if (!posthog) {
         return;
       }
+
       const base = getTrackingBaseProperties(campaign, campaignId);
       const target = event.currentTarget;
       const interactiveTag =
         target instanceof Element ? target.tagName.toLowerCase() : undefined;
+
+      const href =
+        target instanceof Element ? isExternalOrSameOriginNav(target) : null;
+
       posthog.capture("lp_click", {
         element,
         section,
@@ -56,6 +71,20 @@ export function TrackClick({
         ...base,
         ...captureExtras,
       });
+
+      if (
+        href &&
+        !event.defaultPrevented &&
+        !event.metaKey &&
+        !event.ctrlKey &&
+        !event.shiftKey &&
+        event.button === 0
+      ) {
+        event.preventDefault();
+        setTimeout(() => {
+          window.location.href = href;
+        }, NAVIGATION_DELAY_MS);
+      }
     },
     [posthog, campaign, campaignId, section, ctaText, element, captureExtras],
   );
