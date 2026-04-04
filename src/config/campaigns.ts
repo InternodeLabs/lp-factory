@@ -164,9 +164,9 @@ export const campaigns = new Map<string, CampaignConfig>([
           headline:
             "That Decision Was Made Three Weeks Ago. Nobody Wrote It Down.",
           subheadline:
-            "Internode isn't a meeting bot. It is a memory engine that remembers decisions, reasoning, and impact: who made them, why, and what they affect.",
+            "Internode is a memory engine that remembers decisions, reasoning, and impact: who made them, why, and what they affect.",
           subheadlineEmphasis:
-            "So the next time someone asks 'didn't we already decide this?', the answer is right there when it's needed.",
+            "So the next time you ask 'didn't we already decide this?', the answer is right there when it's needed.",
           ctaText: "Try It Free",
           ctaSubtext:
             "Sign up and we'll send 3 months of Pro to your inbox. No credit card required.",
