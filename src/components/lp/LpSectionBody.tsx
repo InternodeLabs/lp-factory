@@ -4,6 +4,7 @@ import { CTA } from "./CTA";
 import { FAQ } from "./FAQ";
 import { Features } from "./Features";
 import { Hero } from "./Hero";
+import { HowItWorks } from "./HowItWorks";
 import { PainPoints } from "./PainPoints";
 import { SocialProof } from "./SocialProof";
 
@@ -25,6 +26,8 @@ export function LpSectionBody({
       return <PainPoints section={section} darkMode={darkMode} />;
     case "features":
       return <Features section={section} darkMode={darkMode} />;
+    case "how-it-works":
+      return <HowItWorks section={section} darkMode={darkMode} />;
     case "social-proof":
       return <SocialProof section={section} darkMode={darkMode} />;
     case "faq":

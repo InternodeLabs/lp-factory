@@ -27,7 +27,7 @@ export function Hero({
   return (
     <section
       className={cn(
-        "relative flex min-h-screen flex-col justify-center overflow-hidden",
+        "relative flex min-h-screen flex-col overflow-hidden",
         theme.darkMode && "dark",
       )}
     >
@@ -63,11 +63,18 @@ export function Hero({
         aria-hidden
       />
 
-      <div className="relative z-10 flex flex-1 flex-col justify-center py-16 px-4 md:py-24 md:px-8">
-        <div className="mx-auto w-full max-w-5xl text-center">
+      <div className="relative z-10 flex flex-1 flex-col py-16 px-4 md:py-24 md:px-8">
+        {/* Branding */}
+        <div className="mx-auto w-full max-w-5xl">
+          <p className="text-sm font-semibold tracking-wide text-[var(--lp-primary)]">
+            INTERNODE
+          </p>
+        </div>
+
+        <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col justify-center text-center">
           <h1
             className={cn(
-              "text-balance bg-gradient-to-br from-[var(--lp-primary)] via-[var(--lp-primary)] to-[var(--lp-accent)] bg-clip-text text-4xl font-bold tracking-tight text-transparent md:text-5xl lg:text-6xl",
+              "text-balance bg-gradient-to-br from-[var(--lp-primary)] via-[var(--lp-primary)] to-[var(--lp-accent)] bg-clip-text py-[30px] text-4xl font-bold tracking-tight text-transparent md:text-5xl lg:text-6xl",
               section.backgroundImage && "drop-shadow-sm",
             )}
           >
@@ -97,7 +104,28 @@ export function Hero({
                 {section.ctaText}
               </a>
             </TrackClick>
+            {section.ctaSubtext && (
+              <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">
+                {section.ctaSubtext}
+              </p>
+            )}
           </div>
+
+          {section.heroImage && (
+            <div className="mx-auto mt-12 w-full max-w-4xl md:mt-16">
+              <div className="relative overflow-hidden rounded-xl border border-gray-200/20 shadow-2xl shadow-[var(--lp-primary)]/10 ring-1 ring-white/10 md:rounded-2xl">
+                <Image
+                  src={section.heroImage}
+                  alt="Internode product — decisions captured from meetings and linked to your projects"
+                  width={2048}
+                  height={1456}
+                  priority
+                  className="w-full"
+                  unoptimized
+                />
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </section>

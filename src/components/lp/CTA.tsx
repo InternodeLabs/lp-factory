@@ -69,6 +69,11 @@ export function CTA({
                   {section.ctaText}
                 </a>
               </TrackClick>
+              {section.ctaSubtext && (
+                <p className="mt-3 text-sm text-white/70">
+                  {section.ctaSubtext}
+                </p>
+              )}
             </div>
           </div>
         </div>

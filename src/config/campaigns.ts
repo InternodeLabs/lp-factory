@@ -8,7 +8,7 @@ export const campaigns = new Map<string, CampaignConfig>([
       meta: {
         title: "Stop losing decisions in Slack",
         description:
-          "Capture decisions automatically, see your decision graph, and keep teams aligned—without another tool to babysit.",
+          "Capture decisions automatically, see your decision graph, and keep teams aligned, without another tool to babysit.",
       },
       theme: {
         primaryColor: "#6366f1",
@@ -31,7 +31,7 @@ export const campaigns = new Map<string, CampaignConfig>([
               icon: "🧩",
               title: "Scattered across tools",
               description:
-                "Decisions live in Slack threads, Notion pages, and meeting notes—nobody can find the source of truth.",
+                "Decisions live in Slack threads, Notion pages, and meeting notes, yet nobody can find the source of truth.",
             },
             {
               icon: "🚪",
@@ -61,7 +61,7 @@ export const campaigns = new Map<string, CampaignConfig>([
               icon: "🕸️",
               title: "Decision graph",
               description:
-                "See how choices connect across projects, teams, and time—not just a flat doc archive.",
+                "See how choices connect across projects, teams, and time, not just a flat doc archive.",
             },
             {
               icon: "📈",
@@ -110,7 +110,7 @@ export const campaigns = new Map<string, CampaignConfig>([
             {
               question: "Will this replace our wiki or project tool?",
               answer:
-                "No—think of it as a decision layer on top. Wikis store pages; Internode answers “what did we decide, when, and why?”",
+                "No. Think of it as a decision layer on top. Wikis store pages; Internode answers “what did we decide, when, and why?”",
             },
             {
               question: "Is my data secure?",
@@ -120,7 +120,7 @@ export const campaigns = new Map<string, CampaignConfig>([
             {
               question: "How long does setup take?",
               answer:
-                "Most teams connect core sources in under an hour. Deeper workflows roll out as you’re ready—no big-bang migration.",
+                "Most teams connect core sources in under an hour. Deeper workflows roll out as you’re ready, with no big-bang migration.",
             },
           ],
         },
@@ -151,7 +151,7 @@ export const campaigns = new Map<string, CampaignConfig>([
       meta: {
         title: "That Decision Was Made 3 Weeks Ago | Internode",
         description:
-          "You watched two engineers argue about a decision that was already made. Internode makes sure that never happens again. 6 months free, no credit card.",
+          "You watched two engineers argue about a decision that was already made. Internode makes sure that never happens again. 3 months free, no credit card.",
       },
       theme: {
         primaryColor: "#F97316",
@@ -164,83 +164,70 @@ export const campaigns = new Map<string, CampaignConfig>([
           headline:
             "That Decision Was Made Three Weeks Ago. Nobody Wrote It Down.",
           subheadline:
-            "You clicked because you\u2019ve been there \u2014 watching the same debate unfold for the third time, facepalming so hard you leave a mark. What if your team actually remembered what it decided?",
-          ctaText: "Try 6 Months Free \u2014 No Credit Card",
+            "Internode isn\u2019t a meeting bot. It extracts the decisions\u2014who made them, why, and what they affect\u2014and links them to your projects. So the next time someone asks \u2018didn\u2019t we already decide this?\u2019 the answer is one search away.",
+          ctaText: "Try It Free",
+          ctaSubtext:
+            "Sign up and we\u2019ll send 3 months of Pro to your inbox. No credit card.",
+          heroImage: "/images/reddit-facepalm/hero-product.png",
         },
         {
           type: "pain-points",
-          title: "You\u2019ve seen all of these. Probably this week.",
+          title: "Sound familiar?",
           points: [
             {
               icon: "\uD83E\uDD26",
               title: "The d\u00e9j\u00e0 vu standup",
               description:
-                "Someone brings up \u2018the thing we discussed\u2019 and three people have three different memories of what was decided. A fourth wasn\u2019t in that meeting. A fifth was, but was multitasking.",
+                "Three people, three different memories of what was decided. A fourth wasn\u2019t in the meeting. A fifth was, but was multitasking.",
             },
             {
               icon: "\uD83D\uDD0D",
               title: "The Slack archaeology expedition",
               description:
-                "\u2018Didn\u2019t we already decide this?\u2019 Everyone agrees you did. Nobody can find where. 40 minutes of thread-scrolling later, you just\u2026 decide again.",
+                "Everyone agrees you decided this. Nobody can find where. 40 minutes later, you just\u2026 decide again.",
             },
             {
               icon: "\uD83C\uDFAC",
               title: "The Groundhog Day meeting",
               description:
-                "Same topic. Same arguments. Same people. Different Tuesday. You sit there with the quiet resignation of someone who knows exactly how this movie ends.",
+                "Same topic. Same arguments. Same people. Different Tuesday.",
             },
           ],
         },
         {
-          type: "features",
-          title: "This is how you break the loop",
-          features: [
+          type: "how-it-works",
+          title: "How it works",
+          steps: [
             {
-              icon: "\u26A1",
-              title: "Decisions get captured, not forgotten",
+              step: 1,
+              title: "Connect your tools",
               description:
-                "Internode joins your meetings and reads your threads. It extracts the actual decisions \u2014 who made them, why, and what they affect \u2014 without anyone needing to take notes.",
+                "Plug in your meetings, Slack, and PM tool. Takes about 5 minutes. Your team doesn\u2019t need to install anything.",
+              image: "/images/reddit-facepalm/step-conversations.png",
             },
             {
-              icon: "\uD83E\uDDE0",
-              title: "Your team gets a shared memory",
+              step: 2,
+              title: "Decisions get captured",
               description:
-                "Every decision is linked, searchable, and attributed. When someone asks \u2018why did we choose X?\u2019 the answer exists \u2014 even if the person who made the call left six months ago.",
+                "Internode listens in and extracts the decisions that matter\u2014who made them, the rationale, what they affect.",
+              image: "/images/reddit-facepalm/step-knowledge.png",
             },
             {
-              icon: "\uD83C\uDFAF",
-              title: "Tasks know why they exist",
+              step: 3,
+              title: "Your team builds a memory",
               description:
-                "When you pick up a task, the full reasoning is right there: the decision behind it, the constraints, the context. No more \u2018wait, why are we doing this again?\u2019",
+                "Every decision is linked, searchable, and attributed. New hires read the decision trail instead of asking Dave.",
+              image: "/images/reddit-facepalm/step-decisions.png",
             },
           ],
         },
         {
-          type: "social-proof",
-          title: "From fellow facepalm survivors",
-          testimonials: [
-            {
-              quote:
-                "We had what we called \u2018The Postgres Debate.\u2019 It resurfaced every quarter for two years. After Internode, it came up zero times. Zero.",
-              name: "Sarah Chen",
-              role: "Engineering Lead",
-              company: "Stackframe",
-            },
-            {
-              quote:
-                "I spent half my week making sure people remembered what we decided last week. Now I actually do product work.",
-              name: "Mike Okafor",
-              role: "Product Manager",
-              company: "Clearpath",
-            },
-            {
-              quote:
-                "Onboarding used to be \u2018go ask Dave, he was in that meeting.\u2019 Now new hires read the decision trail. Dave is much happier.",
-              name: "Rachel Torres",
-              role: "VP Engineering",
-              company: "Gridline",
-            },
-          ],
+          type: "final-cta",
+          headline: "Break the loop",
+          subheadline:
+            "Stop re-litigating the same decisions. Sign up and we\u2019ll send 3 months of Pro to your inbox.",
+          ctaText: "Try It Free",
+          ctaSubtext: "No credit card required.",
         },
         {
           type: "faq",
@@ -249,22 +236,22 @@ export const campaigns = new Map<string, CampaignConfig>([
             {
               question: "Is this just another meeting bot?",
               answer:
-                "Meeting bots give you a transcript. Congratulations, you now have 47 minutes of audio to re-listen to. Internode pulls out the decisions \u2014 the 2 minutes that actually mattered \u2014 and links them to your projects, tasks, and team.",
+                "Meeting bots give you a transcript. Congratulations, you now have 47 minutes of audio to re-listen to. Internode pulls out the decisions\u2014the 2 minutes that actually mattered\u2014and links them to your projects, tasks, and team.",
             },
             {
               question: "We already use Notion/Confluence for this",
               answer:
-                "Great, so you have a wiki page where someone was supposed to document the decision but didn\u2019t. Internode captures decisions automatically from where they happen \u2014 meetings, Slack, wherever \u2014 so they exist even when humans forget.",
+                "Great, so you have a wiki page where someone was supposed to document the decision but didn\u2019t. Internode captures decisions automatically from where they happen\u2014meetings, Slack, wherever\u2014so they exist even when humans forget.",
             },
             {
-              question: "What\u2019s the catch with \u20186 months free\u2019?",
+              question: "What\u2019s the catch with \u20183 months free\u2019?",
               answer:
-                "No catch. No credit card required. No \u2018surprise, you\u2019re on annual billing now.\u2019 We\u2019re betting that once your team has a shared decision memory, you won\u2019t go back. That\u2019s the whole play.",
+                "No catch. Sign up, and we email you a code for 3 months of Pro. No credit card required. No \u2018surprise, you\u2019re on annual billing now.\u2019 We\u2019re betting that once your team has a shared decision memory, you won\u2019t go back.",
             },
             {
               question: "My team hates adopting new tools",
               answer:
-                "Good news: there\u2019s nothing to adopt. Internode plugs into your meetings, your Slack, your existing PM tool. Your team doesn\u2019t adopt Internode \u2014 Internode adopts your team.",
+                "Good news: there\u2019s nothing to adopt. Internode plugs into your meetings, your Slack, your existing PM tool. Your team doesn\u2019t adopt Internode\u2014Internode adopts your team.",
             },
           ],
         },
@@ -272,12 +259,14 @@ export const campaigns = new Map<string, CampaignConfig>([
           type: "final-cta",
           headline: "Stop facepalming. Start shipping.",
           subheadline:
-            "6 months free. No credit card. No commitments. Just a team that finally remembers what it decided.",
-          ctaText: "Get 6 Months Free",
+            "3 months free. No credit card. No commitments. Just a team that finally remembers what it decided.",
+          ctaText: "Get Started",
+          ctaSubtext:
+            "We\u2019ll email your 3-month Pro code after sign-up.",
         },
       ],
       cta: {
-        text: "Get 6 Months Free",
+        text: "Try It Free",
         href: "https://app.internode.ai",
         style: "primary",
       },

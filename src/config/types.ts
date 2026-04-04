@@ -29,7 +29,10 @@ export type SectionConfig =
       headline: string;
       subheadline: string;
       ctaText: string;
+      ctaSubtext?: string;
       backgroundImage?: string;
+      /** Product screenshot displayed below the CTA */
+      heroImage?: string;
     }
   | {
       type: "pain-points";
@@ -40,6 +43,16 @@ export type SectionConfig =
       type: "features";
       title: string;
       features: { title: string; description: string; icon: string }[];
+    }
+  | {
+      type: "how-it-works";
+      title: string;
+      steps: {
+        step: number;
+        title: string;
+        description: string;
+        image?: string;
+      }[];
     }
   | {
       type: "social-proof";
@@ -63,4 +76,5 @@ export type SectionConfig =
       headline: string;
       subheadline: string;
       ctaText: string;
+      ctaSubtext?: string;
     };
