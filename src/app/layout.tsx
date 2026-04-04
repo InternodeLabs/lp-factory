@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
+import { Analytics } from "@vercel/analytics/next";
 
 import { PostHogProvider } from "@/components/tracking/PostHogProvider";
 
@@ -21,6 +22,7 @@ export default function RootLayout({
         <Suspense fallback={null}>
           <PostHogProvider>{children}</PostHogProvider>
         </Suspense>
+        <Analytics />
       </body>
     </html>
   );
