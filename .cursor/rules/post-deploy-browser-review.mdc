@@ -1,0 +1,38 @@
+---
+description: After every commit to main, review all live landing pages in the browser at www.internode-ai.com
+alwaysApply: true
+---
+
+# Post-Deploy Browser Review
+
+After every commit pushed to `main`, use the browser tool to review the live site at **https://www.internode-ai.com**.
+
+## Required checks
+
+For each active campaign slug in `src/config/campaigns.ts`, visit `https://www.internode-ai.com/lp/<slug>` and verify:
+
+1. **Page loads** — no blank screen, no error overlay, HTTP 200
+2. **Hero section** — headline, subheadline, and CTA button are visible and styled correctly
+3. **All sections render** — scroll through pain-points, features, social-proof, FAQ, final-CTA, and footer
+4. **CTA button** — present and links to the correct `cta.href` from the campaign config
+5. **Dark/light mode** — background and text colours match `theme.darkMode` from the campaign config
+6. **No console errors** — check browser console for JS exceptions or failed network requests
+7. **PostHog proxy** — at least one request to `/ingest/...` appears in the Network tab (not blocked)
+
+## How to run the review
+
+```
+1. Wait ~60 s after push for Vercel to finish deploying (or confirm via Vercel dashboard)
+2. Open https://www.internode-ai.com — should show the campaign index page
+3. Click each campaign link and run the checklist above
+4. Report any visual regressions, broken sections, or console errors found
+```
+
+## What to report
+
+If any check fails, surface it immediately with:
+- The affected URL
+- A screenshot or description of the issue
+- The likely cause (recent config change, CSS regression, etc.)
+
+Do **not** mark a deployment complete until the browser review passes.
