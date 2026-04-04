@@ -3,6 +3,20 @@
   "buildCommand": "pnpm build",
   "installCommand": "pnpm install",
   "regions": ["sfo1"],
+  "rewrites": [
+    {
+      "source": "/ingest/static/:match(.*)",
+      "destination": "https://us-assets.i.posthog.com/static/:match"
+    },
+    {
+      "source": "/ingest/decide",
+      "destination": "https://us.i.posthog.com/decide"
+    },
+    {
+      "source": "/ingest/:match(.*)",
+      "destination": "https://us.i.posthog.com/:match"
+    }
+  ],
   "headers": [
     {
       "source": "/lp/(.*)",
