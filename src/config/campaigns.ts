@@ -6,7 +6,7 @@ export const campaigns = new Map<string, CampaignConfig>([
     {
       slug: "founders-decision-memory",
       meta: {
-        title: "Stop losing decisions in Slack | Internode",
+        title: "Stop losing decisions in Slack",
         description:
           "Capture decisions automatically, see your decision graph, and keep teams aligned—without another tool to babysit.",
       },
