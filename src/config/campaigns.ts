@@ -2,13 +2,13 @@ import type { CampaignConfig } from "./types";
 
 export const campaigns = new Map<string, CampaignConfig>([
   [
-    "founders-decision-memory",
+    "try-internode",
     {
-      slug: "founders-decision-memory",
+      slug: "try-internode",
       meta: {
-        title: "Stop losing decisions in Slack",
+        title: "Try Internode — Interactive Product Demo | Internode",
         description:
-          "Capture decisions automatically, see your decision graph, and keep teams aligned, without another tool to babysit.",
+          "See Internode in action. Click through an interactive prototype and explore how decisions are captured, linked, and surfaced.",
       },
       theme: {
         primaryColor: "#6366f1",
@@ -18,131 +18,36 @@ export const campaigns = new Map<string, CampaignConfig>([
       sections: [
         {
           type: "hero",
-          headline: "Stop Losing Decisions in Slack Threads and Meeting Notes",
+          headline: "See It in Action. Right Here.",
           subheadline:
-            "Internode captures decisions where they happen and keeps a living record your whole team can trust.",
-          ctaText: "Start Capturing Decisions",
+            "Click through an interactive prototype of Internode. Explore how decisions are captured, linked, and surfaced — no signup needed.",
+          ctaText: "Sign Up for Free",
         },
         {
-          type: "pain-points",
-          title: "Why decisions slip through the cracks",
-          points: [
-            {
-              icon: "🧩",
-              title: "Scattered across tools",
-              description:
-                "Decisions live in Slack threads, Notion pages, and meeting notes, yet nobody can find the source of truth.",
-            },
-            {
-              icon: "🚪",
-              title: "Context walks out the door",
-              description:
-                "When someone leaves or switches teams, the rationale behind past calls disappears with them.",
-            },
-            {
-              icon: "🔁",
-              title: "The same debate, twice",
-              description:
-                "Without a shared decision log, teams rehash old conversations instead of shipping the next thing.",
-            },
-          ],
-        },
-        {
-          type: "features",
-          title: "Built for how you already work",
-          features: [
-            {
-              icon: "⚡",
-              title: "Automatic decision capture",
-              description:
-                "Surface and record decisions from conversations so nothing important is left implicit.",
-            },
-            {
-              icon: "🕸️",
-              title: "Decision graph",
-              description:
-                "See how choices connect across projects, teams, and time, not just a flat doc archive.",
-            },
-            {
-              icon: "📈",
-              title: "Team alignment tracking",
-              description:
-                "Know who’s on the same page and where follow-ups still matter before they become blockers.",
-            },
-          ],
-        },
-        {
-          type: "social-proof",
-          title: "Teams shipping with clarity",
-          testimonials: [
-            {
-              quote:
-                "We finally stopped re-litigating the same roadmap calls. The decision trail is worth it alone.",
-              name: "Alex Rivera",
-              role: "VP Engineering",
-              company: "Northline Systems",
-            },
-            {
-              quote:
-                "Onboarding used to mean weeks of Slack archaeology. Now new leads read decisions, not threads.",
-              name: "Jordan Kim",
-              role: "Head of Product",
-              company: "Relayboard",
-            },
-            {
-              quote:
-                "It’s the first tool our exec team actually checks before strategy offsites.",
-              name: "Sam Okonkwo",
-              role: "COO",
-              company: "Brightforge",
-            },
-          ],
-        },
-        {
-          type: "faq",
-          title: "Common questions",
-          items: [
-            {
-              question: "How does Internode capture decisions?",
-              answer:
-                "Internode connects to the places your team already works and helps extract, link, and summarize decisions so they’re searchable and attributable.",
-            },
-            {
-              question: "Will this replace our wiki or project tool?",
-              answer:
-                "No. Think of it as a decision layer on top. Wikis store pages; Internode answers “what did we decide, when, and why?”",
-            },
-            {
-              question: "Is my data secure?",
-              answer:
-                "We follow industry-standard encryption in transit and at rest, with role-based access so only the right people see sensitive calls.",
-            },
-            {
-              question: "How long does setup take?",
-              answer:
-                "Most teams connect core sources in under an hour. Deeper workflows roll out as you’re ready, with no big-bang migration.",
-            },
-          ],
+          type: "live-demo",
+          title: "Explore the product",
+          subtitle:
+            "Click around the interactive prototype below — this is what your team's decision memory looks like.",
+          demoUrl: "https://embed.figma.com/proto/UloTqTUaC5udIgutafB2xn/Product-Interface--Live-?node-id=6625-15867&scaling=fit-width&content-scaling=fixed&starting-point-node-id=6625%3A15537&page-id=5745%3A7207&embed-host=share&hide-ui=1&footer=false",
         },
         {
           type: "final-cta",
-          headline: "Ready to keep every decision in one place?",
-          subheadline:
-            "Join teams who’ve stopped losing context in endless threads.",
-          ctaText: "Start Capturing Decisions",
+          headline: "Ready to build your team's decision memory?",
+          subheadline: "You've seen the product. Now make it yours.",
+          ctaText: "Get Started Free",
         },
       ],
       cta: {
-        text: "Start Capturing Decisions",
+        text: "Sign Up for Free",
         href: "https://app.internode.ai",
         style: "primary",
       },
       tracking: {
-        campaignId: "founders-q2-2026",
-        source: "linkedin",
+        campaignId: "try-internode-q2-2026",
+        source: "direct",
         conversionEvent: "signup_click",
       },
-    },
+    } satisfies CampaignConfig,
   ],
   [
     "reddit-facepalm",

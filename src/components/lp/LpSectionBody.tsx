@@ -5,6 +5,7 @@ import { FAQ } from "./FAQ";
 import { Features } from "./Features";
 import { Hero } from "./Hero";
 import { HowItWorks } from "./HowItWorks";
+import { LiveDemo } from "./LiveDemo";
 import { PainPoints } from "./PainPoints";
 import { SocialProof } from "./SocialProof";
 
@@ -28,6 +29,8 @@ export function LpSectionBody({
       return <Features section={section} darkMode={darkMode} />;
     case "how-it-works":
       return <HowItWorks section={section} darkMode={darkMode} />;
+    case "live-demo":
+      return <LiveDemo section={section} config={config} campaign={campaign} />;
     case "social-proof":
       return <SocialProof section={section} darkMode={darkMode} />;
     case "faq":

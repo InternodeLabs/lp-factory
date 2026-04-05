@@ -74,6 +74,18 @@ export type SectionConfig =
       items: { question: string; answer: string }[];
     }
   | {
+      type: "live-demo";
+      /** Optional heading above the embed */
+      title?: string;
+      subtitle?: string;
+      /** URL loaded inside the inline iframe */
+      demoUrl: string;
+      /** Static image shown before the visitor activates the embed */
+      posterImage?: string;
+      /** Label on the activation overlay (default "Try it live") */
+      ctaText?: string;
+    }
+  | {
       type: "final-cta";
       headline: string;
       subheadline: string;
