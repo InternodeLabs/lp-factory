@@ -3,6 +3,7 @@ import Image from "next/image";
 import { TrackClick } from "@/components/tracking/TrackClick";
 import type { CampaignConfig, SectionConfig } from "@/config/types";
 
+import { ClickToPlayVideo } from "./ClickToPlayVideo";
 import { ctaClassName } from "./lp-cta-classes";
 import { InternodeLogo } from "./InternodeLogo";
 import { cn } from "@/lib/utils";
@@ -115,15 +116,23 @@ export function Hero({
           {section.heroImage && (
             <div className="mx-auto mt-12 w-full max-w-4xl md:mt-16">
               <div className="relative overflow-hidden rounded-xl border border-gray-200/20 shadow-2xl shadow-[var(--lp-primary)]/10 ring-1 ring-white/10 md:rounded-2xl">
-                <Image
-                  src={section.heroImage}
-                  alt="Internode product: decisions captured from meetings and linked to your projects"
-                  width={2048}
-                  height={1456}
-                  priority
-                  className="w-full"
-                  unoptimized
-                />
+                {section.heroVideo ? (
+                  <ClickToPlayVideo
+                    posterSrc={section.heroImage}
+                    videoId={section.heroVideo}
+                    alt="Internode product: decisions captured from meetings and linked to your projects"
+                  />
+                ) : (
+                  <Image
+                    src={section.heroImage}
+                    alt="Internode product: decisions captured from meetings and linked to your projects"
+                    width={2048}
+                    height={1456}
+                    priority
+                    className="w-full"
+                    unoptimized
+                  />
+                )}
               </div>
             </div>
           )}

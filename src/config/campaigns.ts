@@ -76,6 +76,7 @@ export const campaigns = new Map<string, CampaignConfig>([
           ctaSubtext:
             "Sign up and we'll send 3 months of Pro to your inbox. No credit card required.",
           heroImage: "/images/reddit-facepalm/hero-product.png",
+          heroVideo: "JE5BR-Av0zg",
         },
         {
           type: "pain-points",

@@ -35,6 +35,8 @@ export type SectionConfig =
       backgroundImage?: string;
       /** Product screenshot displayed below the CTA */
       heroImage?: string;
+      /** YouTube video ID — when set, heroImage becomes a click-to-play poster */
+      heroVideo?: string;
     }
   | {
       type: "pain-points";
