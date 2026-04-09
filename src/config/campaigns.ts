@@ -50,9 +50,9 @@ export const campaigns = new Map<string, CampaignConfig>([
     } satisfies CampaignConfig,
   ],
   [
-    "reddit-facepalm",
+    "decision-facepalm",
     {
-      slug: "reddit-facepalm",
+      slug: "decision-facepalm",
       meta: {
         title: "That Decision Was Made 3 Weeks Ago | Internode",
         description:
@@ -72,10 +72,9 @@ export const campaigns = new Map<string, CampaignConfig>([
             "Internode is a memory engine that remembers decisions, reasoning, and impact: who made them, why, and what they affect.",
           subheadlineEmphasis:
             "So the next time you ask 'didn't we already decide this?', the answer is right there when it's needed.",
-          ctaText: "Try It Free",
-          ctaSubtext:
-            "Sign up and we'll send 3 months of Pro to your inbox. No credit card required.",
-          heroImage: "/images/reddit-facepalm/hero-product.png",
+          ctaText: "Give Your Team a Memory",
+          ctaSubtext: "3 months free. No credit card.",
+          heroImage: "/images/decision-facepalm/hero-product.png",
           heroVideo: "JE5BR-Av0zg",
         },
         {
@@ -99,6 +98,33 @@ export const campaigns = new Map<string, CampaignConfig>([
               title: "The Groundhog Day meeting",
               description:
                 "Same topic. Same arguments. Same people. Different Tuesday.",
+            },
+          ],
+        },
+        {
+          type: "how-it-works",
+          title: "How it works",
+          steps: [
+            {
+              step: 1,
+              title: "Connect your tools",
+              description:
+                "Plug in your meetings, Slack, and PM tool. Takes about 5 minutes. Your team doesn't need to install anything.",
+              image: "/images/decision-facepalm/step-conversations.png",
+            },
+            {
+              step: 2,
+              title: "Decisions get captured",
+              description:
+                "Internode starts where your note takers stop: connect transcripts, notes, emails, chats and Internode takes care of the rest.",
+              image: "/images/decision-facepalm/step-knowledge.png",
+            },
+            {
+              step: 3,
+              title: "Your team builds a memory",
+              description:
+                "Every decision, every idea, every problem is linked, surfaced right when they're needed. New hires read the decision trail instead of asking Dave about that db migration.",
+              image: "/images/decision-facepalm/step-decisions.png",
             },
           ],
         },
@@ -130,56 +156,21 @@ export const campaigns = new Map<string, CampaignConfig>([
         },
         {
           type: "final-cta",
-          headline: "Break the loop",
-          subheadline:
-            "Stop re-litigating the same decisions. Sign up and we'll send 3 months of Pro to your inbox.",
-          ctaText: "Try It Free",
-          ctaSubtext: "No credit card required.",
-        },
-        {
-          type: "how-it-works",
-          title: "How it works",
-          steps: [
-            {
-              step: 1,
-              title: "Connect your tools",
-              description:
-                "Plug in your meetings, Slack, and PM tool. Takes about 5 minutes. Your team doesn't need to install anything.",
-              image: "/images/reddit-facepalm/step-conversations.png",
-            },
-            {
-              step: 2,
-              title: "Decisions get captured",
-              description:
-                "Internode starts where your note takers stop: connect transcripts, notes, emails, chats and Internode takes care of the rest.",
-              image: "/images/reddit-facepalm/step-knowledge.png",
-            },
-            {
-              step: 3,
-              title: "Your team builds a memory",
-              description:
-                "Every decision, every idea, every problem is linked, surfaced right when they're needed. New hires read the decision trail instead of asking Dave about that db migration.",
-              image: "/images/reddit-facepalm/step-decisions.png",
-            },
-          ],
-        },
-        {
-          type: "final-cta",
           headline: "Stop facepalming. Start shipping.",
           subheadline:
             "3 months free. No credit card. No commitments. Just a team that finally remembers what it decided.",
-          ctaText: "Get Started",
+          ctaText: "Give Your Team a Memory",
           ctaSubtext:
             "We'll email your 3-month Pro code after sign-up.",
         },
       ],
       cta: {
-        text: "Try It Free",
+        text: "Give Your Team a Memory",
         href: "https://app.internode.ai",
         style: "primary",
       },
       tracking: {
-        campaignId: "reddit-facepalm-q2-2026",
+        campaignId: "decision-facepalm-q2-2026",
         source: "reddit",
         conversionEvent: "signup_click",
       },

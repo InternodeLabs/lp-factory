@@ -56,7 +56,13 @@ Open `src/config/campaigns.ts` and add a new entry to the `campaigns` Map:
 ],
 ```
 
-### 3. Build the sections array
+### 3. Images
+
+Campaign-specific images go in `public/images/<slug>/` (e.g. `public/images/decision-facepalm/hero-product.png`).
+
+Images shared across all landing pages go in `public/images/shared/` (e.g. `public/images/shared/logo-dark.svg`). Reference them in config as `/images/shared/<filename>`.
+
+### 4. Build the sections array
 
 Include sections in this recommended order. All are optional except `hero`.
 
@@ -71,7 +77,7 @@ Include sections in this recommended order. All are optional except `hero`.
 
 **Icons** — Use emoji (e.g. `"⚡"`) or a Lucide icon name in PascalCase or kebab-case (e.g. `"Zap"` or `"zap"`). Unknown names render as text fallback.
 
-### 4. Tracking setup
+### 5. Tracking setup
 
 - `tracking.campaignId` — unique per campaign; used as PostHog group key.
 - `tracking.source` — matches the ad platform (`linkedin`, `google`, `twitter`, etc.).
@@ -85,7 +91,7 @@ Events fired automatically per LP:
 - `scroll_depth` at 25/50/75/90/100%
 - `lp_click` on CTA clicks
 
-### 5. Validate
+### 6. Validate
 
 ```bash
 pnpm build
@@ -93,7 +99,7 @@ pnpm build
 
 Build fails if the config doesn't satisfy `CampaignConfig`. `dynamicParams = false` means only slugs in the Map are valid routes.
 
-### 6. Verify locally in browser
+### 7. Verify locally in browser
 
 Run `pnpm dev`, visit `/lp/<slug>` and confirm:
 - All sections render in order
@@ -102,7 +108,7 @@ Run `pnpm dev`, visit `/lp/<slug>` and confirm:
 - No console errors
 - PostHog events appear (network tab → `/ingest/`)
 
-### 7. Deploy
+### 8. Deploy
 
 Commit and push to `main`. Vercel deploys automatically on push.
 
