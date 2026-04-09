@@ -156,7 +156,7 @@ export const campaigns = new Map<string, CampaignConfig>([
         },
         {
           type: "final-cta",
-          headline: "Stop facepalming. Start shipping.",
+          headline: "Stop facepalming. Start executing.",
           subheadline:
             "3 months free. No credit card. No commitments. Just a team that finally remembers what it decided.",
           ctaText: "Give Your Team a Memory",
@@ -172,6 +172,134 @@ export const campaigns = new Map<string, CampaignConfig>([
       tracking: {
         campaignId: "decision-facepalm-q2-2026",
         source: "reddit",
+        conversionEvent: "signup_click",
+      },
+    } satisfies CampaignConfig,
+  ],
+  [
+    "agent-amnesia",
+    {
+      slug: "agent-amnesia",
+      meta: {
+        title:
+          "Other AI Tools Start From Scratch. Ours Remembers. | Internode",
+        description:
+          "AI agents without memory re-read your entire history every single time. Internode is built on persistent organizational memory. 3 months free, no credit card.",
+      },
+      theme: {
+        primaryColor: "#10B981",
+        accentColor: "#6366f1",
+        darkMode: true,
+      },
+      sections: [
+        {
+          type: "hero",
+          headline:
+            "Other AI Tools Start From Scratch Every Time. Ours Remembers.",
+          subheadline:
+            "Most AI agents have no memory. Ask them something today and they dig through raw transcripts and Slack threads to figure it out. Ask them tomorrow and they do the exact same work all over again. Internode is different. Our agents are built on persistent organizational memory. Decisions, reasoning, and context your team has already reached. Ready the moment it's needed.",
+          subheadlineEmphasis:
+            "Encoded context is the new software. LLMs are just the chips.",
+          ctaText: "Try Internode Free",
+          ctaSubtext: "3 months free. No credit card.",
+          heroImage: "/images/decision-facepalm/hero-product.png",
+          heroVideo: "JE5BR-Av0zg",
+        },
+        {
+          type: "pain-points",
+          title: "This is how every other AI tool works",
+          points: [
+            {
+              icon: "\uD83D\uDD25",
+              title: "The re-read tax",
+              description:
+                "Other tools feed your LLM 40 hours of raw Zoom transcripts every time you ask a question. Tomorrow they feed it the same 40 hours. That is not intelligence. That is a meter running.",
+            },
+            {
+              icon: "\uD83E\uDDD0",
+              title: "The context-free guess",
+              description:
+                "Without a decision history, AI tools guess. They cannot tell you why you chose Vendor A over Vendor B. Just that both were mentioned in a meeting somewhere.",
+            },
+            {
+              icon: "\uD83D\uDCB8",
+              title: "The amnesia tax",
+              description:
+                "Every employee, every question, every day. The same work re-derived from scratch. Token costs scale linearly with amnesia. Marc Andreessen says daily costs are heading to thousands per employee. This is why.",
+            },
+          ],
+        },
+        {
+          type: "how-it-works",
+          title: "What makes Internode different",
+          steps: [
+            {
+              step: 1,
+              title: "Connect your conversations",
+              description:
+                "Plug in your meetings, Slack, and PM tools. Internode ingests the raw material once. Takes about 5 minutes. Your team does not need to install anything.",
+              image: "/images/decision-facepalm/step-conversations.png",
+            },
+            {
+              step: 2,
+              title: "We build the memory layer",
+              description:
+                "Internode extracts decisions, reasoning, and relationships. Then it encodes them as persistent, structured knowledge. Not a transcript dump. A decision trail your agents can actually use.",
+              image: "/images/decision-facepalm/step-knowledge.png",
+            },
+            {
+              step: 3,
+              title: "Our agents use it, instantly",
+              description:
+                "When you ask Internode a question, the answer draws on the full decision history. No re-reading. No re-deriving. The context is already there.",
+              image: "/images/decision-facepalm/step-decisions.png",
+            },
+          ],
+        },
+        {
+          type: "faq",
+          title: "Yeah but...",
+          items: [
+            {
+              question: "Isn't this just RAG?",
+              answer:
+                "RAG retrieves text chunks that look similar to your query. Internode encodes decisions. Who made them, why, what they affect, and how they connect to everything else. That is a fundamentally different foundation.",
+            },
+            {
+              question:
+                "How is this different from ChatGPT / Copilot / other AI tools?",
+              answer:
+                "Those tools are stateless. They read your files on demand and forget everything between sessions. Internode's agents are built on persistent organizational memory that grows over time. They do not just process. They know.",
+            },
+            {
+              question: "What's the catch with '3 months free'?",
+              answer:
+                "No catch. No credit card. We are confident that once your team has agents with real memory, going back to stateless tools will feel like a downgrade you cannot unsee.",
+            },
+            {
+              question: "Do I need to change how my team works?",
+              answer:
+                "No. Internode plugs into your existing meetings, Slack, and PM tools. Your team keeps working the way they already do. Internode builds the memory in the background.",
+            },
+          ],
+        },
+        {
+          type: "final-cta",
+          headline: "Stop paying for organizational amnesia.",
+          subheadline:
+            "Every other AI tool re-reads your entire history every time. Internode remembers it. 3 months free, no credit card.",
+          ctaText: "Try Internode Free",
+          ctaSubtext: "We'll email your 3-month Pro code after sign-up.",
+        },
+      ],
+      cta: {
+        text: "Try Internode Free",
+        href: "https://app.internode.ai",
+        style: "primary",
+      },
+      tracking: {
+        campaignId: "agent-amnesia-q2-2026",
+        source: "linkedin",
         conversionEvent: "signup_click",
       },
     } satisfies CampaignConfig,
