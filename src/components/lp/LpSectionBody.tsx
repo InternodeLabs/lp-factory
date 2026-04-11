@@ -8,6 +8,7 @@ import { HowItWorks } from "./HowItWorks";
 import { LiveDemo } from "./LiveDemo";
 import { PainPoints } from "./PainPoints";
 import { SocialProof } from "./SocialProof";
+import { TabShowcase } from "./TabShowcase";
 
 export function LpSectionBody({
   section,
@@ -31,6 +32,15 @@ export function LpSectionBody({
       return <HowItWorks section={section} darkMode={darkMode} />;
     case "live-demo":
       return <LiveDemo section={section} config={config} campaign={campaign} />;
+    case "tab-showcase":
+      return (
+        <TabShowcase
+          section={section}
+          darkMode={darkMode}
+          campaign={campaign}
+          campaignId={config.tracking.campaignId}
+        />
+      );
     case "social-proof":
       return <SocialProof section={section} darkMode={darkMode} />;
     case "faq":

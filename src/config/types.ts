@@ -88,6 +88,19 @@ export type SectionConfig =
       ctaText?: string;
     }
   | {
+      type: "tab-showcase";
+      title?: string;
+      subtitle?: string;
+      tabs: {
+        icon: string;
+        label: string;
+        /** Path to the showcase image (SVG, PNG, etc.) */
+        image: string;
+        /** Alt text for the image */
+        alt?: string;
+      }[];
+    }
+  | {
       type: "final-cta";
       headline: string;
       subheadline: string;

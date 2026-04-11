@@ -24,6 +24,38 @@ export const campaigns = new Map<string, CampaignConfig>([
           ctaText: "Sign Up for Free",
         },
         {
+          type: "tab-showcase",
+          title: "Everything your team needs",
+          subtitle:
+            "From AI agents to meeting intelligence — explore what Internode can do for your organisation.",
+          tabs: [
+            {
+              icon: "🔔",
+              label: "Agents",
+              image: "/images/try-internode/1111.png",
+              alt: "AI agents that answer questions from your team's decision history",
+            },
+            {
+              icon: "🔍",
+              label: "Enterprise Search",
+              image: "/images/try-internode/111.png",
+              alt: "Search across all your tools — Slack, meetings, Jira, Notion, email",
+            },
+            {
+              icon: "🎙️",
+              label: "AI Meeting Notes",
+              image: "/images/try-internode/11.png",
+              alt: "Automatic meeting summaries with decisions and action items extracted",
+            },
+            {
+              icon: "⚙️",
+              label: "Admin Controls",
+              image: "/images/try-internode/1.png",
+              alt: "Organisation dashboard with team management and integrations",
+            },
+          ],
+        },
+        {
           type: "live-demo",
           title: "Explore the product",
           subtitle:
