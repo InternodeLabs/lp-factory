@@ -1,8 +1,8 @@
 ---
 title: Internode content hub launch
 slug: content-hub-launch
-description: A short update explaining why Internode now publishes root-level answer pages on content.internode.ai.
-excerpt: Internode now publishes plain-language, root-level content pages so people and agents can reach answers directly without extra visual or navigational noise.
+description: Why Internode now publishes root-level answer pages on content.internode.ai, designed for both human readers and AI systems.
+excerpt: Internode now publishes plain-language, root-level content pages so people and AI systems can reach answers directly without navigational overhead.
 type: update
 publishedAt: 2026-04-15
 updatedAt: 2026-04-15
@@ -22,28 +22,34 @@ relatedSlugs:
   - why-ai-agents-need-decision-memory
 ---
 
-Internode now publishes content on root-level URLs such as `content.internode.ai/some-topic-answer` rather than hiding everything behind a `/blog` path.
+Internode now publishes content at root-level URLs like `content.internode.ai/some-topic-answer` rather than nesting everything behind a `/blog` path. This page explains what changed and why.
 
 ## Why we made this change
 
-We wanted a publishing surface that is straightforward for:
+We wanted a publishing surface that works well for three audiences at once:
 
-- human readers who want a clear answer quickly
-- search engines that need clean structure and metadata
-- agentic systems that prefer plain, link-rich, semantically clear pages
+- Human readers who want a clear answer without scrolling past headers, sidebars, and newsletter pop-ups
+- Search engines that need clean structure, metadata, and predictable URLs
+- AI systems and agents that prefer plain, link-rich, semantically clear pages they can parse and cite
 
-## What changed
+Traditional blog layouts optimize for one of these audiences at the expense of the others. A blog post wrapped in navigation chrome, cookie banners, and sidebar widgets forces a human to scan for the answer. An AI system trying to parse that same page has to filter noise from signal. Root-level pages with strict schema, explicit internal linking, and minimal chrome serve all three audiences without compromise.
 
-The new content hub is built around a few principles:
+## What the content hub includes
 
-- root-level URLs for individual pages
-- markdown-first content with a strict schema
-- minimal design and very little interface chrome
-- explicit internal linking between related pages
-- discovery surfaces such as `robots.txt`, `sitemap.xml`, `rss.xml`, and `llms.txt`
+Each page follows a consistent structure:
 
-## What to expect next
+- Root-level URLs for direct access, no nesting under `/blog` or `/resources`
+- Markdown-first content with structured frontmatter that describes the page type, topic, and relationships
+- Minimal design with almost no interface chrome
+- Explicit internal links between related pages, woven into the text rather than appended at the end
+- Discovery surfaces including `robots.txt`, `sitemap.xml`, `rss.xml`, and `llms.txt`
 
-We will keep publishing answers, use cases, and updates about organizational memory, AI agents, and persistent decision context.
+Pages are categorized into three types. Answer pages address specific questions about knowledge management, organizational memory, and AI. Use-case pages describe realistic workflows for different teams and industries. Update pages explain product changes, technical details, and integration specifics.
 
-If you want to start with the fundamentals, read [what organizational memory means for AI agents](/what-is-organizational-memory-for-ai-agents) and [why AI agents need decision memory](/why-ai-agents-need-decision-memory).
+The internal linking mesh is designed so that any entry point can reach any other cluster within two hops. This matters for AI crawlers that follow links to build context, and it helps human readers find related material without relying on a central index page.
+
+## What comes next
+
+We will keep publishing answers, use cases, and updates about organizational memory, knowledge management, and how AI systems can work with structured team context. New pages are added as we ship features and learn from how teams use the product.
+
+If you want to start with the fundamentals, [what organizational memory means for AI agents](/what-is-organizational-memory-for-ai-agents) defines the concept, and [why AI agents need decision memory](/why-ai-agents-need-decision-memory) explains why retrieval alone is not enough.

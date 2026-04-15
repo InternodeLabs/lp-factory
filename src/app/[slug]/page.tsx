@@ -73,50 +73,69 @@ export default function ContentPage({ params }: PageProps) {
   const articleType =
     document.type === "update" ? "Article" : "TechArticle";
 
+  const graphEntries: Record<string, unknown>[] = [
+    {
+      "@type": articleType,
+      "@id": absoluteUrl(`${document.url}#article`),
+      headline: document.title,
+      description: document.description,
+      datePublished: document.publishedDate.toISOString(),
+      dateModified: document.updatedDate.toISOString(),
+      articleSection: getContentTypeLabel(document.type),
+      keywords: document.tags,
+      wordCount: document.wordCount,
+      mainEntityOfPage: absoluteUrl(document.url),
+      author: {
+        "@type": "Person",
+        name: document.author.name,
+        url: document.author.url,
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Internode",
+        url: MAIN_SITE_URL,
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": absoluteUrl(`${document.url}#breadcrumb`),
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: absoluteUrl("/"),
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: document.title,
+          item: absoluteUrl(document.url),
+        },
+      ],
+    },
+  ];
+
+  if (document.question) {
+    graphEntries.push({
+      "@type": "FAQPage",
+      "@id": absoluteUrl(`${document.url}#faq`),
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: document.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: document.excerpt,
+          },
+        },
+      ],
+    });
+  }
+
   const structuredData = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": articleType,
-        "@id": absoluteUrl(`${document.url}#article`),
-        headline: document.title,
-        description: document.description,
-        datePublished: document.publishedDate.toISOString(),
-        dateModified: document.updatedDate.toISOString(),
-        articleSection: getContentTypeLabel(document.type),
-        keywords: document.tags,
-        wordCount: document.wordCount,
-        mainEntityOfPage: absoluteUrl(document.url),
-        author: {
-          "@type": "Person",
-          name: document.author.name,
-          url: document.author.url,
-        },
-        publisher: {
-          "@type": "Organization",
-          name: "Internode",
-          url: MAIN_SITE_URL,
-        },
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": absoluteUrl(`${document.url}#breadcrumb`),
-        itemListElement: [
-          {
-            "@type": "ListItem",
-            position: 1,
-            name: "Home",
-            item: absoluteUrl("/"),
-          },
-          {
-            "@type": "ListItem",
-            position: 2,
-            name: document.title,
-            item: absoluteUrl(document.url),
-          },
-        ],
-      },
-    ],
+    "@graph": graphEntries,
   };
 
   return (
