@@ -2,7 +2,7 @@
 title: How to connect meeting decisions to project tasks
 slug: how-to-connect-meeting-decisions-to-project-tasks
 description: How to close the gap between what your team agrees to in meetings and what actually shows up in Linear or Jira, with traceable links between decisions and work.
-excerpt: You connect meeting decisions to project tasks by extracting structured decisions from transcripts and linking them to issues in your tracker. The result is bidirectional traceability: from any ticket you can reach the decision, and from any decision you can see the work it spawned.
+excerpt: "You connect meeting decisions to project tasks by extracting structured decisions from transcripts and linking them to issues in your tracker. The result is bidirectional traceability: from any ticket you can reach the decision, and from any decision you can see the work it spawned."
 type: answer
 publishedAt: 2026-04-15
 updatedAt: 2026-04-15
