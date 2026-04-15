@@ -4,33 +4,91 @@ import { useState } from "react";
 
 import { cn } from "@/lib/utils";
 
+const ANSWER_FORMAT =
+  "+Then+answer+in+four+parts:" +
+  "+(1)+Why+this+happens,+in+2-3+sentences." +
+  "+(2)+What+to+do+about+it,+as+a+short+list." +
+  "+(3)+How+Internode+specifically+solves+this,+based+on+what+the+pages+describe." +
+  "+(4)+One+concrete+thing+I+can+try+this+week." +
+  "+Keep+it+under+400+words.+No+filler,+no+emojis.";
+
 const PROMPTS = [
   {
-    label: "We keep having the same meeting",
+    label:
+      "I spend more time updating tasks than doing them. How can I automate it?",
     query:
-      "My+team+keeps+having+the+same+discussions+because+nobody+remembers+what+we+already+decided.+Read+content.internode.ai+and+tell+me+what+I+can+do+about+this",
+      "I+spend+half+my+day+copying+stuff+between+tools,+updating+task+descriptions,+and+fixing+things+that+got+out+of+sync." +
+      "+Read+these+pages+for+context:" +
+      "+content.internode.ai/how-to-capture-decisions-from-meetings-without-writing-everything-down" +
+      "+content.internode.ai/how-to-connect-meeting-decisions-to-project-tasks" +
+      "+content.internode.ai/the-knowledge-system-that-builds-itself" +
+      ANSWER_FORMAT,
   },
   {
-    label: "I forget why half my tasks exist",
+    label:
+      "I hold my boss\u2019s entire world together in my head. Is there a better way?",
     query:
-      "I+look+at+my+task+list+and+half+the+items+lost+their+context+because+nobody+wrote+down+why+they+were+created.+Read+content.internode.ai+and+tell+me+how+to+keep+decisions+and+context+together",
+      "I+am+an+executive+assistant+and+I+track+every+follow-up,+birthday,+preference,+and+promise+my+boss+made+across+dozens+of+meetings+a+week.+If+I+miss+one+thing+it+reflects+badly+on+both+of+us." +
+      "+Read+these+pages+for+context:" +
+      "+content.internode.ai/how-executive-assistants-stop-being-the-only-person-who-remembers" +
+      "+content.internode.ai/how-to-build-a-briefing-system-that-does-not-depend-on-memory" +
+      "+content.internode.ai/use-case-executive-assistant-tracking-decisions-across-meetings" +
+      ANSWER_FORMAT,
   },
   {
-    label: "My second brain became a second job",
+    label:
+      "We keep having the same meeting. Why does this happen?",
     query:
-      "I+have+tried+Notion+and+Obsidian+but+I+spend+more+time+organizing+my+notes+than+using+them.+Read+content.internode.ai+and+tell+me+if+there+is+something+that+works+without+all+the+upkeep",
+      "My+team+keeps+having+the+same+discussions+because+nobody+remembers+what+we+already+decided." +
+      "+Read+these+pages+for+context:" +
+      "+content.internode.ai/why-your-team-keeps-rediscussing-the-same-decisions" +
+      "+content.internode.ai/what-changes-when-your-team-actually-remembers-what-was-decided" +
+      "+content.internode.ai/how-to-capture-decisions-from-meetings-without-writing-everything-down" +
+      ANSWER_FORMAT,
   },
   {
-    label: "Nobody wrote down what was said on the call",
+    label: "I forget why half my tasks exist. How do I fix that?",
     query:
-      "Someone+on+my+team+took+a+call+and+nobody+wrote+down+what+was+agreed.+Now+we+have+to+call+back+and+ask+again.+Read+content.internode.ai+and+tell+me+how+to+stop+losing+details+from+conversations",
+      "I+look+at+my+task+list+and+half+the+items+lost+their+context+because+nobody+wrote+down+why+they+were+created." +
+      "+Read+these+pages+for+context:" +
+      "+content.internode.ai/how-to-capture-decisions-from-meetings-without-writing-everything-down" +
+      "+content.internode.ai/the-hidden-cost-of-scattered-knowledge-at-work" +
+      "+content.internode.ai/how-to-connect-meeting-decisions-to-project-tasks" +
+      ANSWER_FORMAT,
   },
   {
-    label: "If I\u2019m out sick, nobody knows anything",
+    label: "My second brain became a second job. What actually works?",
     query:
-      "If+I+take+a+sick+day+everything+falls+apart+because+all+the+important+details+live+in+my+head+and+nowhere+else.+Read+content.internode.ai+and+tell+me+how+to+fix+this",
+      "I+have+tried+Notion+and+Obsidian+but+I+spend+more+time+organizing+my+notes+than+using+them." +
+      "+Read+these+pages+for+context:" +
+      "+content.internode.ai/why-your-second-brain-keeps-failing" +
+      "+content.internode.ai/ai-first-vs-ai-added-why-bolting-ai-onto-notion-is-not-enough" +
+      "+content.internode.ai/knowledge-management-for-people-who-gave-up-on-knowledge-management" +
+      ANSWER_FORMAT,
   },
-] as const;
+  {
+    label:
+      "Nobody wrote down what was said on the call. How do we stop this?",
+    query:
+      "Someone+on+my+team+took+a+call+and+nobody+wrote+down+what+was+agreed.+Now+we+have+to+call+back+and+ask+again." +
+      "+Read+these+pages+for+context:" +
+      "+content.internode.ai/how-to-turn-phone-calls-into-searchable-business-knowledge" +
+      "+content.internode.ai/how-small-businesses-stop-losing-information-from-phone-calls" +
+      "+content.internode.ai/use-case-small-business-capturing-phone-call-decisions" +
+      ANSWER_FORMAT,
+  },
+  {
+    label:
+      "If I\u2019m out sick, nobody knows anything. Can I fix that?",
+    query:
+      "If+I+take+a+sick+day+everything+falls+apart+because+all+the+important+details+live+in+my+head+and+nowhere+else." +
+      "+Read+these+pages+for+context:" +
+      "+content.internode.ai/what-is-institutional-knowledge-and-why-teams-lose-it" +
+      "+content.internode.ai/the-hidden-cost-of-scattered-knowledge-at-work" +
+      "+content.internode.ai/what-changes-when-your-team-actually-remembers-what-was-decided" +
+      ANSWER_FORMAT,
+  },
+];
 
 function FaviconImg({ domain, alt }: { domain: string; alt: string }) {
   return (
@@ -47,7 +105,7 @@ function FaviconImg({ domain, alt }: { domain: string; alt: string }) {
 }
 
 const AI_ASSISTANTS = [
-  { name: "ChatGPT", domain: "chatgpt.com", urlTemplate: "https://chatgpt.com/?prompt=" },
+  { name: "ChatGPT", domain: "chatgpt.com", urlTemplate: "https://chatgpt.com/?hints=search&prompt=" },
   { name: "Claude", domain: "claude.ai", urlTemplate: "https://claude.ai/new?q=" },
   { name: "Perplexity", domain: "perplexity.ai", urlTemplate: "https://www.perplexity.ai/search?q=" },
   { name: "Grok", domain: "grok.com", urlTemplate: "https://grok.com/?q=" },
