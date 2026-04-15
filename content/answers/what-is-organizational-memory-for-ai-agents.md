@@ -83,4 +83,5 @@ If you want a deeper explanation of the "why now" behind this, continue with [wh
 
 Internode is built around persistent team memory. It captures decisions, rationale, and context from the systems where work already happens, then turns that information into something agents and humans can use later.
 
+
 If you want to see how that works on a real workflow, read the [product and engineering alignment use case](/internode-use-case-product-and-engineering-alignment) or visit [internode.ai](https://internode.ai).
