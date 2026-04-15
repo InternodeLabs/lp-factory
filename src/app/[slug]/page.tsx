@@ -236,6 +236,14 @@ export default function ContentPage({ params }: PageProps) {
           </section>
         </article>
       </main>
+
+      <div hidden>
+        <article>
+          <h1>{document.title}</h1>
+          <p>{document.description}</p>
+          <div dangerouslySetInnerHTML={{ __html: document.html }} />
+        </article>
+      </div>
     </ContentShell>
   );
 }
