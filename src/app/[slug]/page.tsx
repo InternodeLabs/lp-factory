@@ -44,6 +44,9 @@ export function generateMetadata({ params }: PageProps): Metadata {
     keywords: document.tags,
     alternates: {
       canonical: canonicalUrl,
+      types: {
+        "text/plain": "/llms-full.txt",
+      },
     },
     openGraph: {
       type: "article",
@@ -79,6 +82,7 @@ export default function ContentPage({ params }: PageProps) {
       "@id": absoluteUrl(`${document.url}#article`),
       headline: document.title,
       description: document.description,
+      articleBody: document.markdown,
       datePublished: document.publishedDate.toISOString(),
       dateModified: document.updatedDate.toISOString(),
       articleSection: getContentTypeLabel(document.type),

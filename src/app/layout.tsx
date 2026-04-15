@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   applicationName: SITE_TITLE,
   alternates: {
     canonical: "/",
+    types: {
+      "text/plain": "/llms-full.txt",
+    },
   },
   openGraph: {
     type: "website",
