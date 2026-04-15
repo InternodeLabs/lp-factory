@@ -1,8 +1,9 @@
 "use client";
 
-import { Suspense, useEffect } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
-import { PostHogProvider as PHProvider, usePostHog } from "posthog-js/react";
+import posthog from "posthog-js";
+import { useEffect } from "react";
+import { usePathname } from "next/navigation";
+import { PostHogProvider as PHProvider } from "posthog-js/react";
 
 import { getCampaign } from "@/config/campaigns";
 import { getPostHogConfig } from "@/lib/posthog";
@@ -15,14 +16,11 @@ import {
 
 function PostHogPageView(): null {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
-  const posthog = usePostHog();
-  const searchParamsString = searchParams.toString();
 
   useEffect(() => {
-    if (!posthog || !pathname) {
-      return;
-    }
+    if (!pathname) return;
+
+    const searchParams = new URLSearchParams(window.location.search);
 
     const campaignSlug = getCampaignSlugFromPathname(pathname);
     const contentSlug = getContentSlugFromPathname(pathname);
@@ -43,8 +41,7 @@ function PostHogPageView(): null {
       campaignId,
       contentSlug,
     });
-    const params = new URLSearchParams(searchParamsString);
-    const utm = getUtmParamsFromSearchParams(params);
+    const utm = getUtmParamsFromSearchParams(searchParams);
 
     if (Object.keys(utm).length > 0) {
       posthog.people.set(utm);
@@ -54,28 +51,33 @@ function PostHogPageView(): null {
       ...base,
       ...utm,
     });
-  }, [pathname, posthog, searchParamsString]);
+  }, [pathname]);
 
   return null;
 }
 
-export function PostHogProvider({
+/**
+ * Standalone PostHog initializer — renders nothing, does not wrap children.
+ * Place as a sibling in the root layout so page content stays server-rendered.
+ */
+export function PostHogInit() {
+  useEffect(() => {
+    const apiKey = process.env.NEXT_PUBLIC_POSTHOG_KEY;
+    if (!apiKey || posthog.__loaded) return;
+    posthog.init(apiKey, getPostHogConfig());
+  }, []);
+
+  return <PostHogPageView />;
+}
+
+/**
+ * React context wrapper for pages that need the usePostHog() hook
+ * (landing pages with TrackSection, ScrollDepth, etc.).
+ */
+export function PostHogContextProvider({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const apiKey = process.env.NEXT_PUBLIC_POSTHOG_KEY;
-
-  if (!apiKey) {
-    return <>{children}</>;
-  }
-
-  return (
-    <PHProvider apiKey={apiKey} options={getPostHogConfig()}>
-      <Suspense fallback={null}>
-        <PostHogPageView />
-      </Suspense>
-      {children}
-    </PHProvider>
-  );
+  return <PHProvider client={posthog}>{children}</PHProvider>;
 }

@@ -1,13 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import posthog from "posthog-js";
 import { usePathname } from "next/navigation";
 import {
   type MouseEvent,
   type PropsWithChildren,
   useCallback,
 } from "react";
-import { usePostHog } from "posthog-js/react";
 
 import { cn } from "@/lib/utils";
 import {
@@ -46,13 +46,12 @@ export function TrackedContentLink({
   children,
 }: TrackedContentLinkProps) {
   const pathname = usePathname();
-  const posthog = usePostHog();
   const externalHref = isExternalHref(href);
   const hashHref = isHashHref(href);
 
   const handleClick = useCallback(
     (event: MouseEvent<HTMLAnchorElement>) => {
-      if (!posthog || !pathname) {
+      if (!pathname) {
         return;
       }
 
@@ -87,7 +86,7 @@ export function TrackedContentLink({
         }, NAVIGATION_DELAY_MS);
       }
     },
-    [externalHref, posthog, pathname, href, trackingLabel, trackingLocation, trackingType],
+    [externalHref, pathname, href, trackingLabel, trackingLocation, trackingType],
   );
 
   const classes = cn("underline decoration-current underline-offset-4", className);
