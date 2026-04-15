@@ -231,6 +231,31 @@ Internal reference for all content on content.internode.ai. Not published on the
 **Example opening (bad):**
 "In the era of information overload, professionals need AI-powered second brain solutions to achieve knowledge synthesis and drive client engagement across their consulting practice."
 
+### ICP 8: Executive Assistant
+
+**Tone:** Peer-to-peer and practical. The reader is someone who holds an organization together through personal effort, judgment, and an astonishing memory. The tone should say "we understand the invisible complexity of what you do." Respect the strategic nature of the role without inflating it. EAs detect condescension instantly. They also detect when someone does not understand what they actually do (hint: it is not scheduling meetings).
+
+**Do:**
+- Reference their actual workflow: meeting prep, briefing docs, action item tracking, follow-up emails, calendar management across multiple executives, travel logistics, stakeholder communications
+- Name tools they use: Outlook, Google Calendar, OneNote, their personal "EA Bible" or desk reference document
+- Use scenarios they recognize: the exec who forgets a decision, the 30-minute meeting prep scramble, the follow-up that fell through the cracks, the onboarding with no predecessor documentation
+- Acknowledge the "bus factor" directly: what happens when they take PTO or leave the role
+- Describe the EA Bible and its limitations naturally (it is powerful but unsearchable by meaning and non-transferable)
+
+**Do not:**
+- Use developer or startup jargon (sprint, backlog, standup, knowledge graph, vector search)
+- Use PKM jargon (second brain, vault, PARA, Zettelkasten, daily notes)
+- Call them "admin" or "secretary" (the role has evolved far beyond that)
+- Assume they are just scheduling meetings (they manage the entire decision and relationship context for their executives)
+- Use the word "platform" (say "tool" or describe what it does)
+- Suggest they need to learn a complex system (they have been burned by ClickUp, Asana, and similar tools that became more work than they saved)
+
+**Example opening (good):**
+"Your exec walks into a meeting with a board member they last spoke to three months ago. You spent 25 minutes this morning pulling together the context: what was discussed last time, what was promised, what has changed since. That context lives in an email thread, a calendar note, and a paragraph buried on page 47 of your EA Bible. Tomorrow you will do the same thing for a different stakeholder. This is the part of your job that nobody sees and nothing automates."
+
+**Example opening (bad):**
+"Executive assistants are increasingly leveraging AI-powered organizational intelligence platforms to streamline meeting workflows and drive operational efficiency across their enterprise support functions."
+
 ---
 
 ## Formatting Rules

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import { AskYourAI } from "@/components/content/AskYourAI";
 import { ContentShell } from "@/components/content/ContentShell";
 import { StructuredData } from "@/components/content/StructuredData";
 import { TrackedContentLink } from "@/components/content/TrackedContentLink";
@@ -123,6 +124,8 @@ export default function Home() {
             Topics covered: {tags.join(", ")}.
           </p>
         </section>
+
+        <AskYourAI />
 
         {featuredContent.length > 0 && (
           <section className="mt-14 border-t border-zinc-200 pt-10">

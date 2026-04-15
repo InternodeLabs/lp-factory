@@ -1,6 +1,6 @@
 # Content Map
 
-Internal reference for all 20 planned content pages. Not published on the site.
+Internal reference for all planned content pages. Not published on the site.
 
 ---
 
@@ -16,6 +16,7 @@ Internal reference for all 20 planned content pages. Not published on the site.
 | Updates | #19, #20 | All |
 | Internal champion | #21, #22, #23, #24, #25, #26, #27 | ICP 4, ICP 5 |
 | Second brain / PKM | #28, #29, #30, #31, #32, #33, #34 | ICP 6, ICP 7 |
+| Executive assistant | #35, #36, #37, #38, #39, #40 | ICP 8 |
 
 ---
 
@@ -37,6 +38,7 @@ Each page must link to at least 2 others via `relatedSlugs` and in-body links. T
 - Tech: #11 <-> #12 <-> #13; each links back to #1 (decisions from meetings)
 - Internal champion: #21 <-> #22 <-> #23 <-> #24 <-> #25 <-> #26 <-> #27; #21 and #23 link back to #1 (decisions from meetings); #24 and #25 link to #12 (what to look for)
 - Second brain / PKM: #28 <-> #29 <-> #30 <-> #31 <-> #32 <-> #33 <-> #34; #28 and #29 link to #11 (AI notes vs org memory); #30 and #32 link to #1 (decisions from meetings)
+- Executive assistant: #35 <-> #36 <-> #37 <-> #38; #39 links to #35 and #36; #40 links to #37; #35 links back to #1 (decisions from meetings); #37 links back to #2 (institutional knowledge)
 
 ### Cross-cluster bridges
 
@@ -50,6 +52,10 @@ Each page must link to at least 2 others via `relatedSlugs` and in-body links. T
 - #29 (AI-first vs AI-added) links to #12 (what to look for)
 - #30 (system builds itself) links to #1 (decisions from meetings), #3 (phone calls)
 - #34 (conversations not documents) links to #3 (phone calls), #18 (calls to knowledge)
+- #35 (EA stops being the only one who remembers) links to #1 (decisions from meetings), #21 (re-discussing decisions)
+- #37 (what happens when EA leaves) links to #2 (institutional knowledge), #22 (hidden cost)
+- #38 (briefing system) links to #12 (what to look for in AI KM tool), #19 (how Internode works)
+- #36 (meeting prep) links to #18 (calls and meetings to knowledge)
 
 ---
 
@@ -540,3 +546,93 @@ ICP 6 enters at #28 (validation of PKM failure) or #33 (re-entry for people who 
 | relatedSlugs | from-conversations-to-knowledge-what-professionals-actually-need, how-to-turn-phone-calls-into-searchable-business-knowledge, use-case-turning-calls-and-meetings-into-structured-knowledge |
 | In-body links to | #32, #3, #18, #30 |
 | CTA | Turn your conversations into searchable knowledge with Internode |
+
+---
+
+## Executive Assistant Cluster (ICP 8)
+
+### Exploration path
+
+ICP 8 enters at #35 (validation of the "I am the only one who remembers" pain) or #36 (meeting prep time sink). The path leads through the bus factor (#37), into the solution (#38), and toward trying Internode. Use-case pages #39 and #40 provide concrete workflow scenarios: high-volume meeting tracking across multiple executives, and onboarding as a new EA with no predecessor documentation.
+
+### #35: How executive assistants stop being the only person who remembers what was decided
+
+| Field | Value |
+|---|---|
+| Slug | `how-executive-assistants-stop-being-the-only-person-who-remembers` |
+| Type | answer |
+| Question | How do executive assistants stop being the only person who tracks decisions and follow-ups? |
+| Primary ICP | ICP 8 |
+| Tags | executive assistant, decisions, follow-ups, action items, meetings |
+| Featured | false |
+| relatedSlugs | why-meeting-prep-takes-hours-and-how-to-cut-it, what-happens-when-the-executive-assistant-leaves, how-to-capture-decisions-from-meetings-without-writing-everything-down |
+| In-body links to | #36, #37, #1, #21 |
+| CTA | See how Internode captures decisions automatically |
+
+### #36: Why your meeting prep takes hours and how to cut it in half
+
+| Field | Value |
+|---|---|
+| Slug | `why-meeting-prep-takes-hours-and-how-to-cut-it` |
+| Type | answer |
+| Question | Why does meeting prep take so long for executive assistants, and how can it be faster? |
+| Primary ICP | ICP 8 |
+| Tags | executive assistant, meeting prep, briefing, calendar, time management |
+| Featured | false |
+| relatedSlugs | how-executive-assistants-stop-being-the-only-person-who-remembers, how-to-build-a-briefing-system-that-does-not-depend-on-memory, use-case-turning-calls-and-meetings-into-structured-knowledge |
+| In-body links to | #35, #38, #18, #1 |
+| CTA | Try Internode to build meeting briefs in seconds |
+
+### #37: What happens to your office when the EA leaves
+
+| Field | Value |
+|---|---|
+| Slug | `what-happens-when-the-executive-assistant-leaves` |
+| Type | answer |
+| Question | What happens to an organization when the executive assistant leaves without a knowledge handover? |
+| Primary ICP | ICP 8 |
+| Tags | executive assistant, turnover, handover, institutional knowledge, transition |
+| Featured | false |
+| relatedSlugs | how-executive-assistants-stop-being-the-only-person-who-remembers, what-is-institutional-knowledge-and-why-teams-lose-it, use-case-new-ea-onboarding-without-predecessor-documentation |
+| In-body links to | #35, #2, #40, #22 |
+| CTA | See how Internode preserves organizational knowledge |
+
+### #38: How to build a briefing system that does not depend on your memory
+
+| Field | Value |
+|---|---|
+| Slug | `how-to-build-a-briefing-system-that-does-not-depend-on-memory` |
+| Type | answer |
+| Question | How do executive assistants build a briefing system that works without relying on memory or manual notes? |
+| Primary ICP | ICP 8 |
+| Tags | executive assistant, briefing, meeting prep, knowledge system, automation |
+| Featured | false |
+| relatedSlugs | why-meeting-prep-takes-hours-and-how-to-cut-it, what-to-look-for-in-an-ai-knowledge-management-tool, how-internode-works-with-phone-transcripts-and-meeting-recordings |
+| In-body links to | #36, #12, #19, #35 |
+| CTA | Try Internode free as your briefing system |
+
+### #39: Executive assistant tracking decisions and follow-ups across 50 meetings a week
+
+| Field | Value |
+|---|---|
+| Slug | `use-case-executive-assistant-tracking-decisions-across-meetings` |
+| Type | use-case |
+| Primary ICP | ICP 8 |
+| Tags | use case, executive assistant, decisions, follow-ups, multiple executives |
+| Featured | false |
+| relatedSlugs | how-executive-assistants-stop-being-the-only-person-who-remembers, why-meeting-prep-takes-hours-and-how-to-cut-it, how-to-capture-decisions-from-meetings-without-writing-everything-down |
+| In-body links to | #35, #36, #1 |
+| CTA | Try Internode with your meeting transcripts |
+
+### #40: New executive assistant onboarding without predecessor documentation
+
+| Field | Value |
+|---|---|
+| Slug | `use-case-new-ea-onboarding-without-predecessor-documentation` |
+| Type | use-case |
+| Primary ICP | ICP 8 |
+| Tags | use case, executive assistant, onboarding, handover, knowledge transfer |
+| Featured | false |
+| relatedSlugs | what-happens-when-the-executive-assistant-leaves, what-is-institutional-knowledge-and-why-teams-lose-it, the-hidden-cost-of-scattered-knowledge-at-work |
+| In-body links to | #37, #2, #22 |
+| CTA | See how Internode preserves knowledge across EA transitions |

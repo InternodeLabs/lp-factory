@@ -614,3 +614,107 @@ ICP 6 comes from the personal knowledge management world. ICP 7 comes from the p
 - **ICP 5:** Strategic and empowering. The tone says "here is exactly how to do this." Structured, actionable, and concrete. Includes frameworks, templates, and talking points they can copy. Career incentive language is present but not pushy.
 - **ICP 6:** Knowing and slightly irreverent. The tone says "we have been through the same thing." References specific tools and methodologies (PARA, Zettelkasten, Obsidian plugins) to build credibility. Validates the frustration without insulting the tools themselves.
 - **ICP 7:** Competent and professional. The tone says "this is how serious professionals handle this." No PKM jargon. References client work, synthesis, and cross-engagement patterns. Assumes intelligence and demands substance.
+- **ICP 8:** Peer-to-peer and practical. The tone says "we understand the invisible complexity of what you do." References specific EA workflows (briefing docs, action item tracking, calendar management, travel logistics) to build credibility. Validates the burden of being the organizational memory without being patronizing.
+
+---
+
+## ICP 8: The Executive Assistant
+
+### Who they are
+
+Executive assistants, senior EAs, and chiefs of staff supporting one to three executives at organizations with 50 to 5,000 employees. Industry does not matter. What defines them is their function: they are the operational memory and relationship layer for their executives. They manage calendars, meeting prep, follow-ups, travel, stakeholder communications, and the thousand small decisions that keep an executive's world running. They are not administrators filing paperwork. They are strategic partners who hold more organizational context than almost anyone else in the building.
+
+### Demographics and context
+
+- Age range: 28 to 55
+- Education: Varied. Associate degree to MBA. Many have business or communications backgrounds, but education does not predict capability. Experience and judgment define this role.
+- Decision authority: Near zero for tool purchases. They cannot buy software or mandate adoption. However, they have enormous influence over what their executive uses, because they are the ones who set up systems, manage workflows, and train the exec on new tools. If the EA adopts something, the exec often follows.
+- Tech comfort: Moderate to high. They live in Outlook or Gmail, calendar tools, and video conferencing daily. They can learn new software quickly but have no patience for tools that add complexity without immediate payoff. They have been burned by ClickUp, Asana, and other platforms that promised organization but became maintenance burdens.
+- Team dynamics: They often work alone or with one to two other EAs. There is no "EA team" in most organizations. Their peers are other EAs at the same company (if they exist) or the online EA community (r/ExecutiveAssistants, ASAP, EA-focused LinkedIn groups). They are structurally isolated: they know more about what is happening across the organization than most managers, but they have no direct reports and limited formal authority.
+
+### Core frustrations (in their words)
+
+- "I am the only person who remembers what was decided in that meeting. My exec has already moved on to the next thing. If I do not track the follow-ups, nobody will."
+- "My exec forgets decisions they made. I showed them the email trail and they still insisted it never happened." (Source: Ask a Manager, "Our CEO forgets she approved things and then freaks out on us about it." The EA writes: "We've tried showing her written proof, signed paperwork, email trails, but she will insist it never happened, despite having the proof right in front of her.")
+- "I spend 10 to 12 hours a week on meeting prep and follow-ups. Gathering context from old emails, calendar notes, and my own docs before every meeting. It is the biggest time sink in my role." (Source: Workmate case study, workflow audit of a senior EA)
+- "I tried ClickUp. It is kind of overwhelming tbh. Feels like there is a million features I am not using." (Source: Reddit EA discussions aggregated by Fhynix)
+- "I always end up putting more time than I want into managing the task management structure itself rather than the task." (Source: same Reddit aggregation)
+- "When I went on maternity leave, my exec came back to 700+ unread emails, unanswered messages, and a pile of admin work. Tasks that used to just happen suddenly landed on his plate." (Source: LinkedIn, Micah Foster, "Two Months Without My EA")
+- "I was hired as an experienced professional but the company has very specific processes and workflows, none of which I was onboarded to. My colleague believes it is because I did not get properly onboarded. Even so, the client only sees an incompetent member of staff." (Source: Fairygodboss forum, anonymous EA, "Zero onboarding set me up to fail")
+- "I have a Bible from my role at Teleperformance UK which is over 100 pages long. My Bible contains the logistics and preferences for every trip and every site he visited. I never repeated my trip research twice." (Source: Executive Support Magazine, Maria Fuller, "The Executive Assistant Bible." She describes a Word document, pinned to the taskbar, that functions as the EA's entire knowledge system. The limitation: it is unsearchable by meaning, personal, non-transferable, and dies with the EA's tenure.)
+
+### Internal monologue during search
+
+"Everything about how this office runs is in my head or in a Word doc only I understand. My exec's preferences, the stakeholder relationships, what was promised to whom, the follow-ups from last week's board meeting. If I got hit by a bus tomorrow, nobody could reconstruct this. I need a system that captures what I know without me having to spend hours documenting it manually. I have tried project management tools and they all become another thing I have to maintain. There has to be something that just captures what happens in meetings and makes it findable later."
+
+### Search queries they actually type
+
+- "how to keep track of action items from meetings for my boss"
+- "executive assistant meeting prep tool"
+- "how to organize follow-ups across multiple executives"
+- "AI meeting notes for executive assistants"
+- "how to create an EA bible or desk reference"
+- "executive assistant handover documentation template"
+- "tool to track what was decided in meetings"
+- "executive assistant overwhelmed too many meetings"
+- "how to brief your executive before meetings faster"
+- "what happens when the EA leaves no documentation"
+- "simple system for tracking commitments and promises from calls"
+- "executive assistant knowledge management"
+
+### What convinces them
+
+1. Seeing their exact workflow described accurately: the meeting prep burden, the follow-up tracking across a packed calendar, the exec who forgets decisions, the 100-page Word doc that is their only system
+2. Learning that the tool captures decisions, action items, and context from meetings automatically, without requiring them to type notes "like a maniac" and then organize them afterward
+3. The briefing unlock: realizing they can pull up everything discussed with a stakeholder across all past meetings in seconds, instead of spending 30 minutes digging through emails and calendar notes before each meeting
+4. Zero-maintenance promise: the system builds itself from meeting transcripts and conversations, not from the EA manually entering information into another database
+5. The "what if I am out" scenario: knowing that if they take PTO, the knowledge does not vanish because it lives in a system, not in their head or their personal Word doc
+6. Low commitment to try: free tier, minimal setup, works with the meetings and tools they already use
+
+### Objections
+
+- "My company is locked into Microsoft 365. Anything outside that ecosystem is blocked."
+- "I do not have budget authority. My exec would have to approve this."
+- "I have tried task management tools before. They all become more work, not less."
+- "My exec's meetings contain sensitive information. Where does the data go?"
+- "This sounds like another tool I have to learn and maintain. How is it different?"
+- "Will my exec actually use this, or will it be another thing only I touch?"
+
+### Vocabulary (use these words, avoid their opposites)
+
+**Use:** calendar, meeting prep, briefing, brief, action items, follow-up, stakeholders, travel, logistics, my exec, my principal, schedule, commitments, promises, handover, transition, onboarding, desk reference, EA Bible, master doc, binder, context, background, preferences, confidential, sensitive, board meeting, leadership team, direct reports, code-switch, competing priorities, PTO, coverage
+
+**Avoid:** sprint, backlog, standup, retro, knowledge graph, vector search, embeddings, second brain, vault, PARA, Zettelkasten, daily notes, pipeline, deployment, API, digital transformation, organizational intelligence (too abstract), platform (say "tool")
+
+### Tools they actually use
+
+- Email (Outlook or Gmail, often managing multiple inboxes)
+- Calendar (Outlook Calendar or Google Calendar, often managing multiple calendars)
+- Microsoft 365 or Google Workspace (often locked to one ecosystem)
+- Video conferencing (Zoom, Google Meet, or Microsoft Teams)
+- The "EA Bible" (a personal Word or OneNote document with preferences, logistics, contacts, and procedures)
+- Paper notebooks and sticky notes (still common for quick capture during meetings)
+- Maybe OneNote or Google Keep (for personal reference)
+- Maybe a transcription tool (Granola, Otter, Fireflies, or phone built-in transcription)
+- Maybe a CRM or stakeholder tool if the organization provides one
+
+### What they do NOT use
+
+- Slack (unless the organization uses it, and even then not as a knowledge tool)
+- Linear, Jira, or developer-oriented project management tools
+- Notion, Obsidian, or PKM tools (too maintenance-heavy for their workflow)
+- Personal knowledge management systems (they are not part of the "second brain" community)
+
+### The EA Bible limitation (key Internode positioning opportunity)
+
+The "EA Bible," described by Maria Fuller in Executive Support Magazine, is the closest thing most EAs have to a knowledge management system. It is a personal Word document containing everything the EA needs: travel preferences, stakeholder contacts, procedures, meeting logistics, dietary requirements, even passport details. Top EAs build Bibles that reach 100+ pages over a multi-year tenure. The Bible is powerful for the EA who built it, but it has three structural weaknesses that Internode solves:
+
+1. It is unsearchable by meaning. You can Ctrl+F for "Boston" but you cannot ask "what did the CEO decide about the Boston expansion in last month's board meeting?"
+2. It is non-transferable. When the EA leaves, the Bible either goes with them (it is personal) or gets handed over as a static document that the new EA cannot navigate.
+3. It captures what the EA manually inputs. It does not capture decisions, commitments, and context from meetings automatically. If the EA does not write it down, it does not exist.
+
+### Two subtypes
+
+**The Strategic Partner EA:** Senior EA or chief of staff supporting a C-suite executive. They think of themselves as an extension of the executive, not as support staff. They care about making their exec more effective, not just more organized. Content for this subtype should emphasize the strategic value of persistent decision memory: the exec walks into every meeting with full context, never forgets a commitment, and appears prepared because the EA has a system that makes preparation effortless.
+
+**The Overwhelmed Multi-Principal EA:** EA supporting two to three executives simultaneously. They are drowning in context switching, competing calendars, and the sheer volume of follow-ups. Content for this subtype should emphasize the relief of having a system that tracks everything across all principals automatically, so they stop carrying three executives' worlds in their head.
