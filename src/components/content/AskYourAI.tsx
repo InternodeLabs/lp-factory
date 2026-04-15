@@ -118,11 +118,10 @@ export function AskYourAI() {
   return (
     <section className="mt-14 rounded-lg border border-zinc-200 bg-zinc-50 px-5 py-6 sm:px-6">
       <h2 className="text-lg font-semibold text-zinc-950">
-        Ask your AI assistant
+        Learn directly from your own AI assistant
       </h2>
       <p className="mt-1 text-sm text-zinc-600">
-        Pick a question that sounds like yours, then open it in the AI you
-        prefer.
+        If you don't like reading long articles, simply select a problem and have your AI assistant explain what matters to you.
       </p>
 
       <div className="mt-4 grid gap-2">
@@ -144,6 +143,7 @@ export function AskYourAI() {
       </div>
 
       <div className="mt-6 flex flex-wrap items-center gap-3">
+        Select your preferred AI:
         {AI_ASSISTANTS.map((ai) => (
           <a
             key={ai.name}

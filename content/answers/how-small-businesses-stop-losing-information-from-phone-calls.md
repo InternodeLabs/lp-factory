@@ -45,9 +45,9 @@ Customers notice when you forget what they asked for. Suppliers notice when you 
 
 ## A simple fix that starts with your phone
 
-Start with what you already carry. Record the call where it is legal and everyone on the line knows you are recording. Then get a transcript of the audio. Your phone can do this with a voice memo app on speakerphone, or a recording app that turns speech to text while you talk.
+Start with what you already carry. Record the call with your phone, since it can do this already without any extra apps. This will create the transcript of the call and store it on your phone. Once you have the transcript, you can turn on the magic that will organize your business. 
 
-Paste or upload that transcript into a tool that pulls out the important parts: customer names, dates, requests, prices, delivery details, and follow-ups. You are not building a giant project. You are giving every important call a paper trail your whole team can read.
+Upload that transcript into a tool like Internode that pulls out the important parts: customer names, dates, requests, prices, delivery details, and follow-ups. You are not building a giant project. You are giving every important call a paper trail your whole team can use to stay current on what is happening without asking you constantly.
 
 From there, anyone can search plain language like "what did customer X say about the delivery?" instead of opening five apps and hoping for luck. For a step-by-step on the capture side, read [how to turn phone calls into searchable business knowledge](/how-to-turn-phone-calls-into-searchable-business-knowledge). If the real pain is agreements that vanish after the conversation, read [why small businesses forget what was decided and how to fix it](/why-small-businesses-forget-what-was-decided-and-how-to-fix-it).
 
@@ -61,6 +61,6 @@ That is how you close the loop without extra meetings. For more on tracking prom
 
 ## What you can do today
 
-Open your phone's voice recorder before your next important call. Hit record. After you hang up, spend two minutes getting the text and dropping it into a shared folder. Do that for a week and notice how many times somebody on your team finds an answer in the transcript instead of calling you.
+Open your phone's voice recorder before your next important call. Hit record. After you hang up, spend two minutes getting the text and dropping it into Internode. Do that for a week and notice how many times somebody on your team finds an answer in the application instead of calling you.
 
 That is the smallest version of the habit. The question is whether you are comfortable losing another month of customer orders, supplier agreements, pricing changes, and delivery schedules to memory before you start.

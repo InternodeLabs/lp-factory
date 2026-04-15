@@ -105,9 +105,15 @@ export default function Home() {
             and AI agents.
           </h1>
           <p className="text-lg leading-8 text-zinc-700">
-            This site publishes plain-language pages on root-level URLs so people,
-            search engines, and AI systems can reach the content directly.
+            This site publishes plain-language content so people, search engines,
+            and AI systems can reach the content efficiently to understand how
+            to build organizational memory with Internode.
           </p>
+        </section>
+
+        <AskYourAI />
+
+        <section className="mt-10 max-w-3xl space-y-5">
           <p className="leading-8 text-zinc-700">
             Start with the fundamentals, move into the workflow examples, or visit{" "}
             <TrackedContentLink
@@ -118,14 +124,15 @@ export default function Home() {
             >
               internode.ai
             </TrackedContentLink>{" "}
-            for the main product site.
+            for the main product site and try it out for free.
           </p>
-          <p className="text-sm text-zinc-600">
-            Topics covered: {tags.join(", ")}.
-          </p>
+          <details className="text-sm text-zinc-500">
+            <summary className="cursor-pointer select-none hover:text-zinc-700">
+              Topics covered
+            </summary>
+            <p className="mt-1">{tags.join(", ")}.</p>
+          </details>
         </section>
-
-        <AskYourAI />
 
         {featuredContent.length > 0 && (
           <section className="mt-14 border-t border-zinc-200 pt-10">
