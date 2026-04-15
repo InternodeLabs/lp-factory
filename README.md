@@ -1,6 +1,6 @@
 # lp-factory
 
-Landing page factory for ad campaign testing. Define campaigns in config, ship static Next.js routes under `/lp/[slug]`, and measure performance with PostHog.
+Internode content hub and landing page factory. The root of the site serves static, markdown-first answer pages on `content.internode.ai`, while campaign landing pages continue to live under `/lp/[slug]`.
 
 ## Stack
 
@@ -38,7 +38,43 @@ Landing page factory for ad campaign testing. Define campaigns in config, ship s
    pnpm dev
    ```
 
-   Open [http://localhost:3000](http://localhost:3000) to see the campaign index with links to all LPs.
+Open [http://localhost:3000](http://localhost:3000) to see the content hub homepage and the root-level content routes.
+
+## Content hub
+
+The public content surface is intentionally minimal:
+
+- root homepage: `/`
+- root-level content pages: `/<slug>`
+- LLM/search discovery files: `/robots.txt`, `/sitemap.xml`, `/rss.xml`, `/llms.txt`, `/llms-full.txt`
+
+### Content authoring
+
+- Store published pages in `content/answers/*.md`
+- Use the starter templates in `content/templates/`
+- Keep slugs root-safe; avoid reserved paths such as `lp`, `robots.txt`, `sitemap.xml`, `rss.xml`, `llms.txt`, and `llms-full.txt`
+
+Each page is validated against a strict frontmatter schema in `src/lib/content.ts`.
+
+Supported content types:
+
+- `answer`
+- `use-case`
+- `update`
+
+Required frontmatter fields include:
+
+- `title`
+- `slug`
+- `description`
+- `excerpt`
+- `type`
+- `publishedAt`
+- `updatedAt`
+- `author`
+- `tags`
+- `ctaHref`
+- `ctaLabel`
 
 ## Creating a new landing page
 
@@ -61,7 +97,7 @@ Static params are generated from the campaign map, so new slugs are picked up on
 Project defaults in `vercel.json`:
 
 - **Region**: `sfo1`  
-- **LP headers** (paths matching `/lp/*`): `X-Robots-Tag: noindex` so paid LPs do not compete with your main site in organic search, plus short cache headers. Remove or adjust `noindex` in `vercel.json` for any LP you want indexed.  
+- **LP headers** (paths matching `/lp/*`): `X-Robots-Tag: noindex` so paid LPs do not compete with the content surface in organic search, plus short cache headers. Remove or adjust `noindex` in `vercel.json` for any LP you want indexed.  
 
 Set `NEXT_PUBLIC_POSTHOG_*` in the Vercel project **Environment Variables** for Preview and Production.
 
@@ -76,7 +112,7 @@ Set `NEXT_PUBLIC_POSTHOG_*` in the Vercel project **Environment Variables** for 
   - **`scroll_depth`** — milestones (25 / 50 / 75 / 90 / 100%).  
   - **Conversion-related properties** on clicks — e.g. `conversion_event` (from campaign config) and `campaign_id` in event properties.  
 
-Filter by `campaign_slug` or `campaign_id` to compare campaigns.
+Filter by `campaign_slug`, `campaign_id`, `content_slug`, or `page_type` to compare landing pages against the root content surface.
 
 ## CI
 

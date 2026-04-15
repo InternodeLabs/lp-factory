@@ -8,6 +8,7 @@ import { getCampaign } from "@/config/campaigns";
 import { getPostHogConfig } from "@/lib/posthog";
 import {
   getCampaignSlugFromPathname,
+  getContentSlugFromPathname,
   getTrackingBaseProperties,
   getUtmParamsFromSearchParams,
 } from "@/lib/tracking";
@@ -24,6 +25,7 @@ function PostHogPageView(): null {
     }
 
     const campaignSlug = getCampaignSlugFromPathname(pathname);
+    const contentSlug = getContentSlugFromPathname(pathname);
     const campaignConfig = campaignSlug ? getCampaign(campaignSlug) : undefined;
     const campaignId = campaignConfig?.tracking.campaignId ?? "";
 
@@ -35,7 +37,12 @@ function PostHogPageView(): null {
       });
     }
 
-    const base = getTrackingBaseProperties(campaignSlug, campaignId);
+    const base = getTrackingBaseProperties({
+      pathname,
+      campaignSlug,
+      campaignId,
+      contentSlug,
+    });
     const params = new URLSearchParams(searchParamsString);
     const utm = getUtmParamsFromSearchParams(params);
 

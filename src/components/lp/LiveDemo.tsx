@@ -37,7 +37,10 @@ export function LiveDemo({
     setActive(true);
     openedAtRef.current = Date.now();
     posthog?.capture("live_demo_opened", {
-      ...getTrackingBaseProperties(campaign, config.tracking.campaignId),
+      ...getTrackingBaseProperties({
+        campaignSlug: campaign,
+        campaignId: config.tracking.campaignId,
+      }),
       demo_url: section.demoUrl,
     });
   }, [posthog, campaign, config.tracking.campaignId, section.demoUrl]);
@@ -47,7 +50,10 @@ export function LiveDemo({
     const trackTime = () => {
       if (posthog && openedAtRef.current) {
         posthog.capture("live_demo_time", {
-          ...getTrackingBaseProperties(campaign, config.tracking.campaignId),
+          ...getTrackingBaseProperties({
+            campaignSlug: campaign,
+            campaignId: config.tracking.campaignId,
+          }),
           visible_ms: Date.now() - openedAtRef.current,
         });
       }

@@ -55,7 +55,10 @@ export function TrackClick({
         return;
       }
 
-      const base = getTrackingBaseProperties(campaign, campaignId);
+      const base = getTrackingBaseProperties({
+        campaignSlug: campaign,
+        campaignId,
+      });
       const target = event.currentTarget;
       const interactiveTag =
         target instanceof Element ? target.tagName.toLowerCase() : undefined;

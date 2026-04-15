@@ -37,7 +37,10 @@ export function ScrollDepth({ campaign, campaignId }: ScrollDepthProps) {
       if (depth > maxDepthRef.current) {
         maxDepthRef.current = depth;
       }
-      const base = getTrackingBaseProperties(campaign, campaignId);
+      const base = getTrackingBaseProperties({
+        campaignSlug: campaign,
+        campaignId,
+      });
       for (const threshold of THRESHOLDS) {
         if (maxDepthRef.current >= threshold && !firedRef.current.has(threshold)) {
           firedRef.current.add(threshold);

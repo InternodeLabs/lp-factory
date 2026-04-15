@@ -59,7 +59,10 @@ export function TrackSection({
       return;
     }
     hasSentTimeRef.current = true;
-    const base = getTrackingBaseProperties(slug, cId);
+    const base = getTrackingBaseProperties({
+      campaignSlug: slug,
+      campaignId: cId,
+    });
     ph.capture("section_time", {
       section_name: name,
       visible_ms: visibleMs,
@@ -101,7 +104,10 @@ export function TrackSection({
         } = metaRef.current;
         if (isIntersecting && ph && !hasViewedRef.current) {
           hasViewedRef.current = true;
-          const base = getTrackingBaseProperties(slug, cId);
+          const base = getTrackingBaseProperties({
+            campaignSlug: slug,
+            campaignId: cId,
+          });
           ph.capture("section_viewed", {
             section_name: name,
             ...base,
