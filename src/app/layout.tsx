@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 
-import { PostHogInit } from "@/components/tracking/PostHogProvider";
 import {
   CONTENT_SITE_URL,
   SITE_DESCRIPTION,
@@ -47,7 +46,6 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-white text-zinc-950 antialiased">
         {children}
-        <PostHogInit />
         <Analytics />
       </body>
     </html>

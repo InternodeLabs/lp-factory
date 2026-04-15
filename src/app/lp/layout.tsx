@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 
 import { LpLayoutShell } from "@/components/lp/LpLayoutShell";
-import { PostHogContextProvider } from "@/components/tracking/PostHogProvider";
+import { PostHogContextProvider, PostHogInit } from "@/components/tracking/PostHogProvider";
 import { LpScrollDepthMount } from "@/components/tracking/LpScrollDepthMount";
 
 export const viewport: Viewport = {
@@ -23,6 +23,7 @@ export default function LpLayout({
 }>) {
   return (
     <PostHogContextProvider>
+      <PostHogInit />
       <LpScrollDepthMount>
         <LpLayoutShell>{children}</LpLayoutShell>
       </LpScrollDepthMount>
