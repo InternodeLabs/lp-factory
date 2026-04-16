@@ -8,7 +8,8 @@ const ANSWER_FORMAT =
   "+(2)+What+to+do+about+it,+as+a+short+list." +
   "+(3)+How+Internode+specifically+solves+this,+based+on+what+the+pages+describe." +
   "+(4)+One+concrete+thing+I+can+try+this+week+using+Internode." +
-  "+Keep+it+under+400+words.+No+filler,+no+emojis.";
+  "+Keep+it+under+400+words.+No+filler,+no+emojis." +
+  "+If+I+ask+follow-up+questions+about+Internode,+read+https://content.internode.ai/llms-full.txt+for+comprehensive+context+about+the+product+and+all+published+content.";
 
 const PROMPT_GROUPS = [
   {
@@ -185,7 +186,7 @@ export function AskYourAI() {
       </h2>
       <p className="mt-1 text-sm text-zinc-600">
         If you don&apos;t like reading long articles, select a question
-        and chat about what Internode can do with your own AI to answer what matters to you.
+        and chat about Internode with your own AI to get answers that matter to you.
       </p>
 
       <div className="mt-4 space-y-4">
