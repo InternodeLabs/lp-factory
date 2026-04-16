@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#ecfdf5"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fafafa"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#bg)"/>
+
+  <!-- Sidebar -->
+  <rect x="40" y="30" width="180" height="440" rx="16" fill="#1e293b"/>
+  <text x="72" y="66" font-size="14" font-weight="700" fill="white" font-family="system-ui">™  Admin Panel</text>
+
+  <rect x="52" y="86" width="156" height="32" rx="8" fill="#6366f1"/>
+  <text x="72" y="106" font-size="11" fill="white" font-family="system-ui" font-weight="500">=Ê  Dashboard</text>
+
+  <text x="72" y="140" font-size="11" fill="#94a3b8" font-family="system-ui">=e  Team Members</text>
+  <text x="72" y="168" font-size="11" fill="#94a3b8" font-family="system-ui">=  Integrations</text>
+  <text x="72" y="196" font-size="11" fill="#94a3b8" font-family="system-ui">=  Permissions</text>
+  <text x="72" y="224" font-size="11" fill="#94a3b8" font-family="system-ui">=Á  Data Sources</text>
+  <text x="72" y="252" font-size="11" fill="#94a3b8" font-family="system-ui">=È  Analytics</text>
+  <text x="72" y="280" font-size="11" fill="#94a3b8" font-family="system-ui">=  Notifications</text>
+  <text x="72" y="308" font-size="11" fill="#94a3b8" font-family="system-ui">=³  Billing</text>
+
+  <!-- Main content area -->
+  <rect x="240" y="30" width="520" height="440" rx="16" fill="url(#card)" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Header -->
+  <text x="270" y="64" font-size="16" font-weight="700" fill="#1e293b" font-family="system-ui">Organization Dashboard</text>
+  <text x="270" y="82" font-size="11" fill="#64748b" font-family="system-ui">Acme Corp · Pro Plan · 24 team members</text>
+
+  <!-- Stats cards row -->
+  <rect x="270" y="100" width="116" height="68" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="286" y="122" font-size="10" fill="#64748b" font-family="system-ui">Decisions / week</text>
+  <text x="286" y="148" font-size="22" font-weight="700" fill="#6366f1" font-family="system-ui">127</text>
+  <text x="340" y="148" font-size="10" fill="#22c55e" font-family="system-ui">‘ 18%</text>
+
+  <rect x="396" y="100" width="116" height="68" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="412" y="122" font-size="10" fill="#64748b" font-family="system-ui">Active users</text>
+  <text x="412" y="148" font-size="22" font-weight="700" fill="#6366f1" font-family="system-ui">22/24</text>
+  <text x="472" y="148" font-size="10" fill="#22c55e" font-family="system-ui">92%</text>
+
+  <rect x="522" y="100" width="116" height="68" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="538" y="122" font-size="10" fill="#64748b" font-family="system-ui">Hours saved</text>
+  <text x="538" y="148" font-size="22" font-weight="700" fill="#6366f1" font-family="system-ui">184</text>
+  <text x="584" y="148" font-size="10" fill="#22c55e" font-family="system-ui">this month</text>
+
+  <rect x="648" y="100" width="92" height="68" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="662" y="122" font-size="10" fill="#64748b" font-family="system-ui">Coverage</text>
+  <text x="662" y="148" font-size="22" font-weight="700" fill="#22c55e" font-family="system-ui">96%</text>
+
+  <!-- Team members table -->
+  <text x="270" y="198" font-size="13" font-weight="700" fill="#1e293b" font-family="system-ui">Team Members</text>
+
+  <!-- Table header -->
+  <rect x="270" y="208" width="470" height="28" rx="6" fill="#f8fafc"/>
+  <text x="286" y="226" font-size="10" fill="#64748b" font-family="system-ui" font-weight="600">NAME</text>
+  <text x="420" y="226" font-size="10" fill="#64748b" font-family="system-ui" font-weight="600">ROLE</text>
+  <text x="530" y="226" font-size="10" fill="#64748b" font-family="system-ui" font-weight="600">DECISIONS</text>
+  <text x="630" y="226" font-size="10" fill="#64748b" font-family="system-ui" font-weight="600">STATUS</text>
+
+  <!-- Row 1 -->
+  <rect x="270" y="240" width="470" height="32" rx="0" fill="white"/>
+  <circle cx="298" cy="256" r="12" fill="#6366f1"/>
+  <text x="298" y="260" text-anchor="middle" font-size="9" fill="white" font-family="system-ui">SC</text>
+  <text x="318" y="260" font-size="11" fill="#1e293b" font-family="system-ui">Sarah Chen</text>
+  <text x="420" y="260" font-size="11" fill="#64748b" font-family="system-ui">Admin</text>
+  <text x="530" y="260" font-size="11" fill="#1e293b" font-family="system-ui" font-weight="600">43</text>
+  <rect x="630" y="248" width="52" height="18" rx="9" fill="#dcfce7"/>
+  <text x="656" y="261" text-anchor="middle" font-size="9" fill="#16a34a" font-family="system-ui" font-weight="600">Active</text>
+
+  <!-- Row 2 -->
+  <rect x="270" y="274" width="470" height="32" rx="0" fill="#fafafa"/>
+  <circle cx="298" cy="290" r="12" fill="#ec4899"/>
+  <text x="298" y="294" text-anchor="middle" font-size="9" fill="white" font-family="system-ui">MR</text>
+  <text x="318" y="294" font-size="11" fill="#1e293b" font-family="system-ui">Mike Ross</text>
+  <text x="420" y="294" font-size="11" fill="#64748b" font-family="system-ui">Editor</text>
+  <text x="530" y="294" font-size="11" fill="#1e293b" font-family="system-ui" font-weight="600">31</text>
+  <rect x="630" y="282" width="52" height="18" rx="9" fill="#dcfce7"/>
+  <text x="656" y="295" text-anchor="middle" font-size="9" fill="#16a34a" font-family="system-ui" font-weight="600">Active</text>
+
+  <!-- Row 3 -->
+  <rect x="270" y="308" width="470" height="32" rx="0" fill="white"/>
+  <circle cx="298" cy="324" r="12" fill="#f59e0b"/>
+  <text x="298" y="328" text-anchor="middle" font-size="9" fill="white" font-family="system-ui">JW</text>
+  <text x="318" y="328" font-size="11" fill="#1e293b" font-family="system-ui">Julia Wang</text>
+  <text x="420" y="328" font-size="11" fill="#64748b" font-family="system-ui">Editor</text>
+  <text x="530" y="328" font-size="11" fill="#1e293b" font-family="system-ui" font-weight="600">28</text>
+  <rect x="630" y="316" width="52" height="18" rx="9" fill="#dcfce7"/>
+  <text x="656" y="329" text-anchor="middle" font-size="9" fill="#16a34a" font-family="system-ui" font-weight="600">Active</text>
+
+  <!-- Row 4 -->
+  <rect x="270" y="342" width="470" height="32" rx="0" fill="#fafafa"/>
+  <circle cx="298" cy="358" r="12" fill="#10b981"/>
+  <text x="298" y="362" text-anchor="middle" font-size="9" fill="white" font-family="system-ui">DK</text>
+  <text x="318" y="362" font-size="11" fill="#1e293b" font-family="system-ui">Dave Kim</text>
+  <text x="420" y="362" font-size="11" fill="#64748b" font-family="system-ui">Viewer</text>
+  <text x="530" y="362" font-size="11" fill="#1e293b" font-family="system-ui" font-weight="600">12</text>
+  <rect x="630" y="350" width="52" height="18" rx="9" fill="#fef3c7"/>
+  <text x="656" y="363" text-anchor="middle" font-size="9" fill="#d97706" font-family="system-ui" font-weight="600">Away</text>
+
+  <!-- Integrations section -->
+  <text x="270" y="402" font-size="13" font-weight="700" fill="#1e293b" font-family="system-ui">Connected Integrations</text>
+
+  <rect x="270" y="414" width="90" height="44" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="315" y="434" text-anchor="middle" font-size="11" fill="#1e293b" font-family="system-ui">=Å Zoom</text>
+  <circle cx="348" cy="422" r="4" fill="#22c55e"/>
+
+  <rect x="370" y="414" width="90" height="44" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="415" y="434" text-anchor="middle" font-size="11" fill="#1e293b" font-family="system-ui">=¬ Slack</text>
+  <circle cx="448" cy="422" r="4" fill="#22c55e"/>
+
+  <rect x="470" y="414" width="90" height="44" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="515" y="434" text-anchor="middle" font-size="11" fill="#1e293b" font-family="system-ui">=Ë Jira</text>
+  <circle cx="548" cy="422" r="4" fill="#22c55e"/>
+
+  <rect x="570" y="414" width="90" height="44" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="615" y="434" text-anchor="middle" font-size="11" fill="#1e293b" font-family="system-ui">=Ý Notion</text>
+  <circle cx="648" cy="422" r="4" fill="#22c55e"/>
+
+  <rect x="670" y="414" width="68" height="44" rx="8" fill="white" stroke="#c7d2fe" stroke-width="1" stroke-dasharray="4 2"/>
+  <text x="704" y="440" text-anchor="middle" font-size="18" fill="#6366f1" font-family="system-ui">+</text>
+</svg>

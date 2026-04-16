@@ -1,0 +1,137 @@
+---
+import LpLayout from "@/layouts/LpLayout.astro";
+import Hero from "@/components/lp/Hero.astro";
+import PainPoints from "@/components/lp/PainPoints.astro";
+import HowItWorks from "@/components/lp/HowItWorks.astro";
+import FAQ from "@/components/lp/FAQ.astro";
+import CTA from "@/components/lp/CTA.astro";
+import { Features } from "@/components/lp/Features";
+import { SocialProof } from "@/components/lp/SocialProof";
+import { LiveDemo } from "@/components/lp/LiveDemo";
+import { TabShowcase } from "@/components/lp/TabShowcase";
+import { TrackSection } from "@/components/tracking/TrackSection";
+import { ScrollDepth } from "@/components/tracking/ScrollDepth";
+import { getAllCampaignSlugs, getCampaign } from "@/config/campaigns";
+import { absoluteUrl } from "@/lib/site";
+import {
+  buildFaqSchema,
+  buildHowToSchema,
+  buildVideoSchema,
+  buildOrganizationSchema,
+  buildWebPageSchema,
+  wrapGraph,
+} from "@/lib/seo";
+import type { SectionConfig } from "@/config/types";
+
+export function getStaticPaths() {
+  return getAllCampaignSlugs().map((slug) => ({
+    params: { slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const campaignConfig = getCampaign(slug!);
+if (!campaignConfig) {
+  return Astro.redirect("/404");
+}
+
+const { theme, meta, sections, tracking } = campaignConfig;
+const pageUrl = absoluteUrl(`/lp/${slug}`);
+
+function buildSectionNames(secs: { type: string }[]): string[] {
+  const counts = new Map<string, number>();
+  return secs.map((s) => {
+    const n = (counts.get(s.type) ?? 0) + 1;
+    counts.set(s.type, n);
+    return n > 1 ? `${s.type}-${n}` : s.type;
+  });
+}
+
+const sectionNames = buildSectionNames(sections);
+
+// Build JSON-LD from campaign sections
+const graphItems: Record<string, unknown>[] = [
+  buildOrganizationSchema(),
+  buildWebPageSchema({ url: pageUrl, name: meta.title, description: meta.description }),
+];
+
+for (const section of sections) {
+  if (section.type === "faq") {
+    graphItems.push(buildFaqSchema(section.items));
+  }
+  if (section.type === "how-it-works") {
+    graphItems.push(
+      buildHowToSchema({
+        name: section.title,
+        steps: section.steps.map((s) => ({
+          name: s.title,
+          text: s.description,
+          image: s.image ? absoluteUrl(s.image) : undefined,
+        })),
+      }),
+    );
+  }
+  if (section.type === "hero" && section.heroVideo && section.heroImage) {
+    graphItems.push(
+      buildVideoSchema({
+        name: meta.title,
+        description: meta.description,
+        thumbnailUrl: absoluteUrl(section.heroImage),
+        videoId: section.heroVideo,
+      }),
+    );
+  }
+}
+
+const jsonLd = wrapGraph(...graphItems);
+---
+
+<LpLayout
+  title={meta.title}
+  description={meta.description}
+  canonical={pageUrl}
+  ogImage={meta.ogImage}
+  jsonLd={jsonLd}
+  primaryColor={theme.primaryColor}
+  accentColor={theme.accentColor}
+  darkMode={theme.darkMode}
+>
+  <ScrollDepth client:load campaign={slug!} campaignId={tracking.campaignId} />
+
+  {sections.map((section: SectionConfig, index: number) => (
+    <TrackSection
+      client:visible
+      campaign={slug!}
+      campaignId={tracking.campaignId}
+      sectionName={sectionNames[index]}
+    >
+      {section.type === "hero" && (
+        <Hero section={section} config={campaignConfig} campaign={slug!} />
+      )}
+      {section.type === "pain-points" && (
+        <PainPoints section={section} darkMode={theme.darkMode} />
+      )}
+      {section.type === "how-it-works" && (
+        <HowItWorks section={section} darkMode={theme.darkMode} />
+      )}
+      {section.type === "features" && (
+        <Features client:load section={section} darkMode={theme.darkMode} />
+      )}
+      {section.type === "social-proof" && (
+        <SocialProof client:load section={section} darkMode={theme.darkMode} />
+      )}
+      {section.type === "live-demo" && (
+        <LiveDemo client:visible section={section} config={campaignConfig} campaign={slug!} />
+      )}
+      {section.type === "tab-showcase" && (
+        <TabShowcase client:visible section={section} darkMode={theme.darkMode} campaign={slug!} campaignId={tracking.campaignId} />
+      )}
+      {section.type === "faq" && (
+        <FAQ section={section} darkMode={theme.darkMode} />
+      )}
+      {section.type === "final-cta" && (
+        <CTA section={section} config={campaignConfig} campaign={slug!} />
+      )}
+    </TrackSection>
+  ))}
+</LpLayout>

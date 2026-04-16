@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+>
+  <channel>
+    <title>Internode Content</title>
+    <link>https://content.internode.ai</link>
+    <description>Root-level answers, use cases, and updates from Internode.</description>
+    <language>en</language>
+    <lastBuildDate>Thu, 16 Apr 2026 00:49:29 GMT</lastBuildDate>
+    <atom:link href="https://content.internode.ai/rss.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>AI meeting notes versus organizational memory</title>
+    <link>https://content.internode.ai/ai-meeting-notes-vs-organizational-memory</link>
+    <guid>https://content.internode.ai/ai-meeting-notes-vs-organizational-memory</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>A clear comparison of AI meeting note tools and organizational memory systems, explaining what each does well and where the gap lies for engineering and product teams.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>meeting notes</category>
+    <category>organizational memory</category>
+    <category>comparison</category>
+    <category>ai</category>
+  </item>
+  <item>
+    <title>AI tools for knowledge management in government and public organizations</title>
+    <link>https://content.internode.ai/ai-tools-for-government-and-public-organizations</link>
+    <guid>https://content.internode.ai/ai-tools-for-government-and-public-organizations</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>A guide to AI tools that help government agencies, schools, healthcare organizations, and nonprofits manage institutional knowledge and track outcomes.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>government</category>
+    <category>public sector</category>
+    <category>ai tools</category>
+    <category>healthcare</category>
+  </item>
+  <item>
+    <title>AI-first vs AI-added: why bolting AI onto Notion is not enough</title>
+    <link>https://content.internode.ai/ai-first-vs-ai-added-why-bolting-ai-onto-notion-is-not-enough</link>
+    <guid>https://content.internode.ai/ai-first-vs-ai-added-why-bolting-ai-onto-notion-is-not-enough</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>AI-added tools bolt intelligence onto manual workflows. AI-first tools eliminate the manual layer entirely. The difference determines whether your knowledge system survives or decays.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>AI-first</category>
+    <category>AI-added</category>
+    <category>Notion AI</category>
+    <category>Obsidian</category>
+    <category>comparison</category>
+  </item>
+  <item>
+    <title>Building a business case for organizational intelligence</title>
+    <link>https://content.internode.ai/building-a-business-case-for-organizational-intelligence</link>
+    <guid>https://content.internode.ai/building-a-business-case-for-organizational-intelligence</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>A framework for building a business case for knowledge management tools, with ROI calculations, audience-specific framing, and answers to common objections.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>business case</category>
+    <category>ROI</category>
+    <category>knowledge management</category>
+    <category>organizational intelligence</category>
+  </item>
+  <item>
+    <title>From conversations to knowledge: what professionals actually need</title>
+    <link>https://content.internode.ai/from-conversations-to-knowledge-what-professionals-actually-need</link>
+    <guid>https://content.internode.ai/from-conversations-to-knowledge-what-professionals-actually-need</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>Professionals who work across meetings, client calls, and research need a system that turns conversational knowledge into searchable, connected intelligence without manual organization.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>conversations</category>
+    <category>meetings</category>
+    <category>professional knowledge</category>
+    <category>synthesis</category>
+  </item>
+  <item>
+    <title>How executive assistants stop being the only person who remembers what was decided</title>
+    <link>https://content.internode.ai/how-executive-assistants-stop-being-the-only-person-who-remembers</link>
+    <guid>https://content.internode.ai/how-executive-assistants-stop-being-the-only-person-who-remembers</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>Executive assistants carry the organizational memory for their executives. Here is how to move that knowledge out of your head and into a system that survives your next vacation.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>executive assistant</category>
+    <category>decisions</category>
+    <category>follow-ups</category>
+    <category>action items</category>
+  </item>
+  <item>
+    <title>How healthcare teams keep care coordination decisions organized</title>
+    <link>https://content.internode.ai/how-healthcare-teams-keep-coordination-decisions-organized</link>
+    <guid>https://content.internode.ai/how-healthcare-teams-keep-coordination-decisions-organized</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>How healthcare organizations track care coordination decisions across shifts, staff changes, and department meetings to maintain continuity and reduce repeated work.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>healthcare</category>
+    <category>care coordination</category>
+    <category>decisions</category>
+    <category>shift handoff</category>
+  </item>
+  <item>
+    <title>How schools preserve institutional knowledge when staff leave</title>
+    <link>https://content.internode.ai/how-schools-preserve-institutional-knowledge-when-staff-leave</link>
+    <guid>https://content.internode.ai/how-schools-preserve-institutional-knowledge-when-staff-leave</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>Practical strategies for schools and districts to preserve institutional knowledge when experienced staff transfer or retire.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>schools</category>
+    <category>institutional knowledge</category>
+    <category>staff turnover</category>
+    <category>education</category>
+  </item>
+  <item>
+    <title>How small businesses stop losing information from phone calls</title>
+    <link>https://content.internode.ai/how-small-businesses-stop-losing-information-from-phone-calls</link>
+    <guid>https://content.internode.ai/how-small-businesses-stop-losing-information-from-phone-calls</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>Practical steps for small businesses to stop losing customer details, pricing agreements, and commitments from phone conversations.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>small business</category>
+    <category>phone calls</category>
+    <category>customer information</category>
+    <category>knowledge loss</category>
+  </item>
+  <item>
+    <title>How solving your team&apos;s knowledge problem advances your career</title>
+    <link>https://content.internode.ai/how-solving-your-teams-knowledge-problem-advances-your-career</link>
+    <guid>https://content.internode.ai/how-solving-your-teams-knowledge-problem-advances-your-career</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>Being the person who identifies and fixes a systemic knowledge problem at work is a career-defining contribution. Here is why it matters and how to make it visible.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>career advancement</category>
+    <category>internal champion</category>
+    <category>recognition</category>
+    <category>leadership</category>
+  </item>
+  <item>
+    <title>How to build a briefing system that does not depend on your memory</title>
+    <link>https://content.internode.ai/how-to-build-a-briefing-system-that-does-not-depend-on-memory</link>
+    <guid>https://content.internode.ai/how-to-build-a-briefing-system-that-does-not-depend-on-memory</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>Most EA briefing systems rely on personal memory and manual research. Here is how to build one that generates context automatically from past meetings and conversations.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>executive assistant</category>
+    <category>briefing</category>
+    <category>meeting prep</category>
+    <category>knowledge system</category>
+  </item>
+  <item>
+    <title>How to capture decisions from meetings without writing everything down</title>
+    <link>https://content.internode.ai/how-to-capture-decisions-from-meetings-without-writing-everything-down</link>
+    <guid>https://content.internode.ai/how-to-capture-decisions-from-meetings-without-writing-everything-down</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>A practical guide to capturing what was decided, assigned, and discussed in meetings using transcription instead of manual note-taking.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>decision capture</category>
+    <category>meetings</category>
+    <category>ai</category>
+    <category>transcription</category>
+  </item>
+  <item>
+    <title>How to connect meeting decisions to project tasks</title>
+    <link>https://content.internode.ai/how-to-connect-meeting-decisions-to-project-tasks</link>
+    <guid>https://content.internode.ai/how-to-connect-meeting-decisions-to-project-tasks</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>How to close the gap between what your team agrees to in meetings and what actually shows up in Linear or Jira, with traceable links between decisions and work.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>decisions</category>
+    <category>tasks</category>
+    <category>Linear</category>
+    <category>Jira</category>
+    <category>project management</category>
+  </item>
+  <item>
+    <title>How to organize customer and supplier commitments without a CRM</title>
+    <link>https://content.internode.ai/how-to-organize-customer-and-supplier-commitments-without-a-crm</link>
+    <guid>https://content.internode.ai/how-to-organize-customer-and-supplier-commitments-without-a-crm</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>How small businesses can track customer orders, supplier agreements, and verbal commitments without buying or learning a CRM.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>customer management</category>
+    <category>supplier</category>
+    <category>commitments</category>
+    <category>small business</category>
+  </item>
+  <item>
+    <title>How to propose a knowledge tool when you have no budget authority</title>
+    <link>https://content.internode.ai/how-to-propose-a-knowledge-tool-when-you-have-no-budget-authority</link>
+    <guid>https://content.internode.ai/how-to-propose-a-knowledge-tool-when-you-have-no-budget-authority</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>A step-by-step guide for employees who want to propose a knowledge management tool to their manager when they do not control the budget.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>proposal</category>
+    <category>manager</category>
+    <category>budget</category>
+    <category>software adoption</category>
+    <category>internal champion</category>
+  </item>
+  <item>
+    <title>How to tell if your team has a knowledge management problem</title>
+    <link>https://content.internode.ai/how-to-tell-if-your-team-has-a-knowledge-management-problem</link>
+    <guid>https://content.internode.ai/how-to-tell-if-your-team-has-a-knowledge-management-problem</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>Seven warning signs that your team is losing knowledge from meetings, conversations, and staff transitions, and what to do when you spot the pattern.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>knowledge management</category>
+    <category>diagnosis</category>
+    <category>team problems</category>
+    <category>information loss</category>
+  </item>
+  <item>
+    <title>How to track decisions from board meetings and committee sessions</title>
+    <link>https://content.internode.ai/how-to-track-decisions-from-board-meetings-and-committee-sessions</link>
+    <guid>https://content.internode.ai/how-to-track-decisions-from-board-meetings-and-committee-sessions</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>A practical approach to tracking decisions from board meetings and committee sessions so they stay findable and usable long after the meeting ends.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>board meetings</category>
+    <category>committee</category>
+    <category>decision tracking</category>
+    <category>governance</category>
+  </item>
+  <item>
+    <title>How to turn phone calls into searchable business knowledge</title>
+    <link>https://content.internode.ai/how-to-turn-phone-calls-into-searchable-business-knowledge</link>
+    <guid>https://content.internode.ai/how-to-turn-phone-calls-into-searchable-business-knowledge</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>A practical guide to transcribing business phone calls and turning them into organized, searchable records your whole team can access.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>phone calls</category>
+    <category>transcription</category>
+    <category>small business</category>
+    <category>knowledge management</category>
+  </item>
+  <item>
+    <title>Knowledge management for people who gave up on knowledge management</title>
+    <link>https://content.internode.ai/knowledge-management-for-people-who-gave-up-on-knowledge-management</link>
+    <guid>https://content.internode.ai/knowledge-management-for-people-who-gave-up-on-knowledge-management</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>If you have tried and abandoned Notion, Obsidian, Roam, or any other knowledge system, the problem was not you. Here is what a zero-maintenance alternative looks like.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>knowledge management</category>
+    <category>maintenance</category>
+    <category>burnout</category>
+    <category>fresh start</category>
+  </item>
+  <item>
+    <title>The hidden cost of scattered knowledge at work</title>
+    <link>https://content.internode.ai/the-hidden-cost-of-scattered-knowledge-at-work</link>
+    <guid>https://content.internode.ai/the-hidden-cost-of-scattered-knowledge-at-work</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>Scattered knowledge costs teams thousands of hours per year in repeated work, slow onboarding, and forgotten follow-ups. Here is how to quantify the problem.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>knowledge loss</category>
+    <category>productivity</category>
+    <category>cost</category>
+    <category>organizational memory</category>
+  </item>
+  <item>
+    <title>The knowledge system that builds itself</title>
+    <link>https://content.internode.ai/the-knowledge-system-that-builds-itself</link>
+    <guid>https://content.internode.ai/the-knowledge-system-that-builds-itself</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>A knowledge system that organizes itself from your conversations, meetings, and documents. No filing, no tagging, no maintenance.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>auto-organizing</category>
+    <category>AI knowledge management</category>
+    <category>zero maintenance</category>
+    <category>connected knowledge</category>
+  </item>
+  <item>
+    <title>What changes when your team actually remembers what was decided</title>
+    <link>https://content.internode.ai/what-changes-when-your-team-actually-remembers-what-was-decided</link>
+    <guid>https://content.internode.ai/what-changes-when-your-team-actually-remembers-what-was-decided</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>When what your team discussed and agreed on is preserved and searchable, meetings get shorter, onboarding gets faster, and follow-through improves. Here is what the shift looks like.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>decision memory</category>
+    <category>team productivity</category>
+    <category>organizational change</category>
+  </item>
+  <item>
+    <title>What happens to your office when the EA leaves</title>
+    <link>https://content.internode.ai/what-happens-when-the-executive-assistant-leaves</link>
+    <guid>https://content.internode.ai/what-happens-when-the-executive-assistant-leaves</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>When an executive assistant leaves, the organizational knowledge they carry disappears with them. Here is what that costs and how to prevent it.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>executive assistant</category>
+    <category>turnover</category>
+    <category>institutional knowledge</category>
+    <category>handover</category>
+  </item>
+  <item>
+    <title>What is institutional knowledge and why teams lose it</title>
+    <link>https://content.internode.ai/what-is-institutional-knowledge-and-why-teams-lose-it</link>
+    <guid>https://content.internode.ai/what-is-institutional-knowledge-and-why-teams-lose-it</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>A clear definition of institutional knowledge, why organizations lose it when staff leave, and what to do about it.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>institutional knowledge</category>
+    <category>staff turnover</category>
+    <category>organizational memory</category>
+  </item>
+  <item>
+    <title>What is organizational memory for AI agents?</title>
+    <link>https://content.internode.ai/what-is-organizational-memory-for-ai-agents</link>
+    <guid>https://content.internode.ai/what-is-organizational-memory-for-ai-agents</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>A practical definition of organizational memory for AI agents, explaining what it contains, how it differs from raw search, and why it changes retrieval quality.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>organizational memory</category>
+    <category>ai agents</category>
+    <category>decision history</category>
+  </item>
+  <item>
+    <title>What to look for in an AI knowledge management tool</title>
+    <link>https://content.internode.ai/what-to-look-for-in-an-ai-knowledge-management-tool</link>
+    <guid>https://content.internode.ai/what-to-look-for-in-an-ai-knowledge-management-tool</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>A practical checklist for evaluating AI knowledge management tools, written for engineering leads and PMs who need to separate real capabilities from demo-ware.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>evaluation</category>
+    <category>knowledge management</category>
+    <category>buying guide</category>
+    <category>ai tools</category>
+  </item>
+  <item>
+    <title>Why AI agents need decision memory</title>
+    <link>https://content.internode.ai/why-ai-agents-need-decision-memory</link>
+    <guid>https://content.internode.ai/why-ai-agents-need-decision-memory</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>Why retrieval alone is not enough for AI agents and how decision memory improves answer quality, speed, and trust.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>ai agents</category>
+    <category>decision memory</category>
+    <category>retrieval</category>
+  </item>
+  <item>
+    <title>Why note-taking apps fail knowledge workers</title>
+    <link>https://content.internode.ai/why-note-taking-apps-fail-knowledge-workers</link>
+    <guid>https://content.internode.ai/why-note-taking-apps-fail-knowledge-workers</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>Note-taking apps assume your knowledge comes from reading and typing. For professionals whose knowledge comes from conversations, meetings, and synthesis across sources, the model is wrong.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>note-taking</category>
+    <category>knowledge workers</category>
+    <category>professional</category>
+    <category>information management</category>
+  </item>
+  <item>
+    <title>Why small businesses forget what was decided and how to fix it</title>
+    <link>https://content.internode.ai/why-small-businesses-forget-what-was-decided-and-how-to-fix-it</link>
+    <guid>https://content.internode.ai/why-small-businesses-forget-what-was-decided-and-how-to-fix-it</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>Why small businesses lose track of their own agreements and practical steps to fix the problem without adding complexity.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>small business</category>
+    <category>decisions</category>
+    <category>verbal agreements</category>
+    <category>knowledge loss</category>
+  </item>
+  <item>
+    <title>Why your best work knowledge comes from conversations, not documents</title>
+    <link>https://content.internode.ai/why-your-best-work-knowledge-comes-from-conversations-not-documents</link>
+    <guid>https://content.internode.ai/why-your-best-work-knowledge-comes-from-conversations-not-documents</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>The most valuable professional knowledge originates in conversations, not documents. Documents capture conclusions. Conversations capture the reasoning, context, and relationships that matter when you face a similar situation later.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>conversations</category>
+    <category>documents</category>
+    <category>knowledge</category>
+    <category>meetings</category>
+    <category>transcription</category>
+  </item>
+  <item>
+    <title>Why your meeting prep takes hours and how to cut it in half</title>
+    <link>https://content.internode.ai/why-meeting-prep-takes-hours-and-how-to-cut-it</link>
+    <guid>https://content.internode.ai/why-meeting-prep-takes-hours-and-how-to-cut-it</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>Executive assistants spend 10 to 12 hours a week on meeting prep and follow-ups. Here is why it takes so long and how to reduce it dramatically.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>executive assistant</category>
+    <category>meeting prep</category>
+    <category>briefing</category>
+    <category>calendar</category>
+  </item>
+  <item>
+    <title>Why your second brain keeps failing</title>
+    <link>https://content.internode.ai/why-your-second-brain-keeps-failing</link>
+    <guid>https://content.internode.ai/why-your-second-brain-keeps-failing</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>Second brain systems fail because they turn you into a librarian of your own knowledge. The problem is the paradigm, not the tool.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>second brain</category>
+    <category>PKM</category>
+    <category>Notion</category>
+    <category>Obsidian</category>
+    <category>knowledge management</category>
+  </item>
+  <item>
+    <title>Why your team keeps re-discussing the same decisions</title>
+    <link>https://content.internode.ai/why-your-team-keeps-rediscussing-the-same-decisions</link>
+    <guid>https://content.internode.ai/why-your-team-keeps-rediscussing-the-same-decisions</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>Teams re-discuss the same decisions because what was agreed, and why, is not recorded anywhere findable. Here is why it happens and what to do about it.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>meetings</category>
+    <category>decisions</category>
+    <category>repeated discussions</category>
+    <category>team productivity</category>
+  </item>
+  <item>
+    <title>Executive assistant tracking decisions and follow-ups across 50 meetings a week</title>
+    <link>https://content.internode.ai/use-case-executive-assistant-tracking-decisions-across-meetings</link>
+    <guid>https://content.internode.ai/use-case-executive-assistant-tracking-decisions-across-meetings</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>How an EA supporting three executives uses a persistent memory layer to track decisions, commitments, and follow-ups across 50+ meetings per week.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>use case</category>
+    <category>executive assistant</category>
+    <category>decisions</category>
+    <category>follow-ups</category>
+    <category>multiple executives</category>
+  </item>
+  <item>
+    <title>Healthcare team tracking decisions across shifts and staff changes</title>
+    <link>https://content.internode.ai/use-case-healthcare-team-tracking-decisions-across-shifts</link>
+    <guid>https://content.internode.ai/use-case-healthcare-team-tracking-decisions-across-shifts</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>How a healthcare organization tracks care coordination decisions across shifts, department meetings, and staff transitions.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>use case</category>
+    <category>healthcare</category>
+    <category>shift handoff</category>
+    <category>care coordination</category>
+  </item>
+  <item>
+    <title>New executive assistant onboarding without predecessor documentation</title>
+    <link>https://content.internode.ai/use-case-new-ea-onboarding-without-predecessor-documentation</link>
+    <guid>https://content.internode.ai/use-case-new-ea-onboarding-without-predecessor-documentation</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>How a new EA uses a persistent knowledge base to onboard in weeks instead of months when no predecessor documentation exists.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>use case</category>
+    <category>executive assistant</category>
+    <category>onboarding</category>
+    <category>handover</category>
+    <category>knowledge transfer</category>
+  </item>
+  <item>
+    <title>School district preserving knowledge across staff transitions</title>
+    <link>https://content.internode.ai/use-case-school-district-preserving-knowledge-across-staff-transitions</link>
+    <guid>https://content.internode.ai/use-case-school-district-preserving-knowledge-across-staff-transitions</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>How a school district preserves institutional knowledge when principals transfer, teachers retire, and coordinators change roles.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>use case</category>
+    <category>education</category>
+    <category>staff turnover</category>
+    <category>institutional memory</category>
+  </item>
+  <item>
+    <title>Small business capturing decisions from phone calls automatically</title>
+    <link>https://content.internode.ai/use-case-small-business-capturing-phone-call-decisions</link>
+    <guid>https://content.internode.ai/use-case-small-business-capturing-phone-call-decisions</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>How a small reselling business captures customer and supplier details from phone calls using transcription and AI, without manual data entry.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>use case</category>
+    <category>small business</category>
+    <category>phone calls</category>
+    <category>decisions</category>
+  </item>
+  <item>
+    <title>Turning calls and meetings into structured knowledge for any team</title>
+    <link>https://content.internode.ai/use-case-turning-calls-and-meetings-into-structured-knowledge</link>
+    <guid>https://content.internode.ai/use-case-turning-calls-and-meetings-into-structured-knowledge</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>How teams of any size turn phone calls, Zoom meetings, and Slack conversations into structured, searchable knowledge they can reuse.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>use case</category>
+    <category>transcripts</category>
+    <category>phone calls</category>
+    <category>meetings</category>
+    <category>knowledge</category>
+  </item>
+  <item>
+    <title>Use case: product and engineering alignment</title>
+    <link>https://content.internode.ai/internode-use-case-product-and-engineering-alignment</link>
+    <guid>https://content.internode.ai/internode-use-case-product-and-engineering-alignment</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>How persistent knowledge tracking keeps product and engineering teams aligned without repeating debates about scope, priorities, and tradeoffs.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>use case</category>
+    <category>product</category>
+    <category>engineering</category>
+    <category>alignment</category>
+  </item>
+  <item>
+    <title>How Internode works with phone transcripts, meeting recordings, and notes</title>
+    <link>https://content.internode.ai/how-internode-works-with-phone-transcripts-and-meeting-recordings</link>
+    <guid>https://content.internode.ai/how-internode-works-with-phone-transcripts-and-meeting-recordings</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>A transparent explanation of how Internode processes phone transcripts, meeting recordings from Zoom and Google Meet, Slack conversations, and typed notes into structured knowledge.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>transcripts</category>
+    <category>phone calls</category>
+    <category>pipeline</category>
+    <category>integrations</category>
+    <category>transparency</category>
+  </item>
+  <item>
+    <title>Internode content hub launch</title>
+    <link>https://content.internode.ai/content-hub-launch</link>
+    <guid>https://content.internode.ai/content-hub-launch</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>Why Internode now publishes root-level answer pages on content.internode.ai, designed for both human readers and AI systems.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>updates</category>
+    <category>content hub</category>
+    <category>seo</category>
+  </item>
+  <item>
+    <title>Internode integrations with Zoom, Google Meet, Slack, and email</title>
+    <link>https://content.internode.ai/internode-integrations-zoom-google-meet-slack-email</link>
+    <guid>https://content.internode.ai/internode-integrations-zoom-google-meet-slack-email</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>How Internode connects to Zoom, Google Meet, Slack, email, phone transcripts, and task trackers like Linear and Jira.</description>
+    <dc:creator>Internode Team</dc:creator>
+    <category>integrations</category>
+    <category>Zoom</category>
+    <category>Google Meet</category>
+    <category>Slack</category>
+    <category>email</category>
+  </item>
+  </channel>
+</rss>

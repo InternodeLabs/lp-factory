@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Quote } from "lucide-react";
 
 import type { SectionConfig } from "@/config/types";
@@ -19,13 +18,13 @@ function TestimonialLogo({
   if (logoUrl) {
     return (
       <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-lg border border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800">
-        <Image
+        <img
           src={logoUrl}
           alt={`${company} logo`}
           width={40}
           height={40}
           className="object-contain p-1"
-          unoptimized
+          loading="lazy"
         />
       </div>
     );
@@ -78,7 +77,7 @@ export function SocialProof({
                 aria-hidden
               />
               <blockquote className="relative flex-1 text-lg italic leading-relaxed text-gray-700 dark:text-gray-200 md:text-xl">
-                “{t.quote}”
+                &ldquo;{t.quote}&rdquo;
               </blockquote>
               <footer className="mt-8 flex items-center gap-3 border-t border-gray-200 pt-6 dark:border-gray-800">
                 <TestimonialLogo
@@ -91,7 +90,7 @@ export function SocialProof({
                     {t.name}
                   </p>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
-                    {t.role} · {t.company}
+                    {t.role} &middot; {t.company}
                   </p>
                 </div>
               </footer>

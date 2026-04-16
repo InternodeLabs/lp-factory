@@ -1,0 +1,21 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { CONTENT_SITE_URL } from "@/lib/site";
+---
+
+<BaseLayout
+  title="Page not found | Internode"
+  description="The page you are looking for does not exist."
+  canonical={`${CONTENT_SITE_URL}/404`}
+  noindex={true}
+>
+  <main id="main-content" class="flex min-h-dvh flex-col items-center justify-center px-4 py-16 text-center">
+    <h1 class="text-6xl font-bold text-zinc-300">404</h1>
+    <p class="mt-4 text-lg text-zinc-700">This page does not exist.</p>
+    <nav class="mt-8 flex flex-wrap justify-center gap-4 text-sm" aria-label="Recovery navigation">
+      <a href="/" class="rounded-lg border border-zinc-300 px-4 py-2 text-zinc-700 hover:border-zinc-400 hover:text-zinc-950">Go to home</a>
+      <a href="/#answers" class="rounded-lg border border-zinc-300 px-4 py-2 text-zinc-700 hover:border-zinc-400 hover:text-zinc-950">Browse answers</a>
+      <a href="/llms.txt" class="rounded-lg border border-zinc-300 px-4 py-2 text-zinc-700 hover:border-zinc-400 hover:text-zinc-950">LLM index</a>
+    </nav>
+  </main>
+</BaseLayout>

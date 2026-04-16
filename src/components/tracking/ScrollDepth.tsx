@@ -1,7 +1,5 @@
-"use client";
-
 import { useEffect, useRef } from "react";
-import { usePostHog } from "posthog-js/react";
+import posthog from "posthog-js";
 
 import { getTrackingBaseProperties } from "@/lib/tracking";
 
@@ -15,28 +13,21 @@ export type ScrollDepthProps = Readonly<{
 function getScrollDepthPercent(): number {
   const scrollHeight = document.documentElement.scrollHeight;
   const viewport = window.innerHeight;
-  if (scrollHeight <= viewport) {
-    return 100;
-  }
+  if (scrollHeight <= viewport) return 100;
   const raw = ((window.scrollY + viewport) / scrollHeight) * 100;
   return Math.min(100, Math.max(0, Math.round(raw * 10) / 10));
 }
 
 export function ScrollDepth({ campaign, campaignId }: ScrollDepthProps) {
-  const posthog = usePostHog();
   const maxDepthRef = useRef(0);
   const firedRef = useRef<Set<number>>(new Set());
 
   useEffect(() => {
-    if (!posthog) {
-      return;
-    }
+    if (!posthog.__loaded) return;
 
     const onScroll = () => {
       const depth = getScrollDepthPercent();
-      if (depth > maxDepthRef.current) {
-        maxDepthRef.current = depth;
-      }
+      if (depth > maxDepthRef.current) maxDepthRef.current = depth;
       const base = getTrackingBaseProperties({
         campaignSlug: campaign,
         campaignId,
@@ -53,19 +44,15 @@ export function ScrollDepth({ campaign, campaignId }: ScrollDepthProps) {
       }
     };
 
-    const onScrollThrottled = () => {
-      window.requestAnimationFrame(onScroll);
-    };
-
+    const onScrollThrottled = () => window.requestAnimationFrame(onScroll);
     onScroll();
     window.addEventListener("scroll", onScrollThrottled, { passive: true });
     window.addEventListener("resize", onScrollThrottled, { passive: true });
-
     return () => {
       window.removeEventListener("scroll", onScrollThrottled);
       window.removeEventListener("resize", onScrollThrottled);
     };
-  }, [posthog, campaign, campaignId]);
+  }, [campaign, campaignId]);
 
   return null;
 }

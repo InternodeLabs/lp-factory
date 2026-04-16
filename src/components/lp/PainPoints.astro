@@ -1,0 +1,43 @@
+---
+import { cn } from "@/lib/utils";
+import LpIcon from "./LpIcon.astro";
+import type { SectionConfig } from "@/config/types";
+
+type PainSection = Extract<SectionConfig, { type: "pain-points" }>;
+
+interface Props {
+  section: PainSection;
+  darkMode: boolean;
+}
+
+const { section, darkMode } = Astro.props;
+---
+
+<section class={cn("py-16 px-4 md:py-24 md:px-8", darkMode && "dark")}>
+  <div class="mx-auto max-w-5xl">
+    <h2 class="text-center text-4xl font-bold tracking-tight text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+      {section.title}
+    </h2>
+    <ul class="mt-12 grid gap-6 md:mt-16 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+      {section.points.map((point) => (
+        <li
+          class={cn(
+            "group rounded-2xl border p-6 transition duration-300 md:p-8",
+            "border-gray-200 bg-white/80 shadow-sm backdrop-blur-sm",
+            "hover:-translate-y-1 hover:shadow-xl dark:border-gray-800 dark:bg-gray-900/40 dark:hover:shadow-[var(--lp-primary)]/10",
+          )}
+        >
+          <div class="flex h-14 w-14 items-center justify-center rounded-xl bg-[var(--lp-primary)]/10 transition group-hover:bg-[var(--lp-primary)]/20">
+            <LpIcon name={point.icon} />
+          </div>
+          <h3 class="mt-5 text-xl font-semibold text-gray-900 dark:text-white md:text-2xl">
+            {point.title}
+          </h3>
+          <p class="mt-3 text-lg text-gray-600 dark:text-gray-300 md:text-xl">
+            {point.description}
+          </p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

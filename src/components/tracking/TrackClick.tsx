@@ -1,5 +1,3 @@
-"use client";
-
 import {
   cloneElement,
   isValidElement,
@@ -8,7 +6,7 @@ import {
   type ReactElement,
   type ReactNode,
 } from "react";
-import { usePostHog } from "posthog-js/react";
+import posthog from "posthog-js";
 
 import { getTrackingBaseProperties } from "@/lib/tracking";
 
@@ -23,7 +21,6 @@ export type TrackClickProps = Readonly<{
   section: string;
   ctaText: string;
   element: string;
-  /** Additional properties merged into the `lp_click` payload */
   captureExtras?: TrackClickCaptureExtras;
   children: ReactNode;
 }>;
@@ -47,13 +44,9 @@ export function TrackClick({
   captureExtras,
   children,
 }: TrackClickProps) {
-  const posthog = usePostHog();
-
   const handleClick = useCallback(
     (event: MouseEvent) => {
-      if (!posthog) {
-        return;
-      }
+      if (!posthog.__loaded) return;
 
       const base = getTrackingBaseProperties({
         campaignSlug: campaign,
@@ -62,7 +55,6 @@ export function TrackClick({
       const target = event.currentTarget;
       const interactiveTag =
         target instanceof Element ? target.tagName.toLowerCase() : undefined;
-
       const href =
         target instanceof Element ? isExternalOrSameOriginNav(target) : null;
 
@@ -89,12 +81,11 @@ export function TrackClick({
         }, NAVIGATION_DELAY_MS);
       }
     },
-    [posthog, campaign, campaignId, section, ctaText, element, captureExtras],
+    [campaign, campaignId, section, ctaText, element, captureExtras],
   );
 
   if (!isValidElement(children)) {
-    if (process.env.NODE_ENV === "development") {
-      // eslint-disable-next-line no-console -- developer feedback for misuse
+    if (import.meta.env.DEV) {
       console.warn(
         "TrackClick expects a single React element child so click events can be composed.",
       );

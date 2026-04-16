@@ -1,0 +1,112 @@
+{
+  "$ref": "#/definitions/answers",
+  "definitions": {
+    "answers": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "excerpt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "answer",
+            "use-case",
+            "update"
+          ]
+        },
+        "publishedAt": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "updatedAt": {
+          "$ref": "#/definitions/answers/properties/publishedAt"
+        },
+        "author": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "role": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "required": [
+            "name"
+          ],
+          "additionalProperties": false
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "featured": {
+          "type": "boolean",
+          "default": false
+        },
+        "question": {
+          "type": "string"
+        },
+        "canonicalUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "ctaHref": {
+          "type": "string",
+          "format": "uri"
+        },
+        "ctaLabel": {
+          "type": "string",
+          "minLength": 1
+        },
+        "relatedSlugs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "excerpt",
+        "type",
+        "publishedAt",
+        "updatedAt",
+        "author",
+        "tags",
+        "ctaHref",
+        "ctaLabel"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

@@ -1,7 +1,4 @@
-"use client";
-
 import { useState } from "react";
-import Image from "next/image";
 
 export function ClickToPlayVideo({
   posterSrc,
@@ -35,14 +32,12 @@ export function ClickToPlayVideo({
       className="group relative block w-full cursor-pointer"
       aria-label="Play video"
     >
-      <Image
+      <img
         src={posterSrc}
         alt={alt}
         width={2048}
         height={1456}
-        priority
         className="w-full"
-        unoptimized
       />
       <div className="absolute inset-0 flex items-center justify-center bg-black/20 transition-colors group-hover:bg-black/30">
         <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white/90 shadow-lg transition-transform group-hover:scale-110 md:h-20 md:w-20">

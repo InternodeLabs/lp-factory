@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#eef2ff"/>
+      <stop offset="100%" stop-color="#e0e7ff"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="accentSoft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c7d2fe"/>
+      <stop offset="100%" stop-color="#e0e7ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#bg)"/>
+
+  <!-- Agent card left -->
+  <rect x="40" y="40" width="340" height="420" rx="16" fill="url(#card)" stroke="#e2e8f0" stroke-width="1"/>
+  <!-- Agent avatar circle -->
+  <circle cx="90" cy="90" r="28" fill="url(#accent)"/>
+  <text x="90" y="96" text-anchor="middle" font-size="22" fill="white" font-family="system-ui">></text>
+  <text x="130" y="86" font-size="16" font-weight="700" fill="#1e293b" font-family="system-ui">Decision Agent</text>
+  <text x="130" y="104" font-size="12" fill="#64748b" font-family="system-ui">Active · 3 tasks running</text>
+
+  <!-- Agent activity lines -->
+  <rect x="60" y="140" width="300" height="36" rx="8" fill="#f1f5f9"/>
+  <circle cx="78" cy="158" r="8" fill="#22c55e"/>
+  <text x="94" y="163" font-size="12" fill="#334155" font-family="system-ui">Summarised Q2 roadmap decisions</text>
+
+  <rect x="60" y="186" width="300" height="36" rx="8" fill="#f1f5f9"/>
+  <circle cx="78" cy="204" r="8" fill="#22c55e"/>
+  <text x="94" y="209" font-size="12" fill="#334155" font-family="system-ui">Linked 12 meeting outcomes to OKRs</text>
+
+  <rect x="60" y="232" width="300" height="36" rx="8" fill="#f1f5f9"/>
+  <circle cx="78" cy="250" r="8" fill="#6366f1"/>
+  <text x="94" y="255" font-size="12" fill="#334155" font-family="system-ui">Answering: "Why did we pick Vendor B?"</text>
+
+  <rect x="60" y="278" width="300" height="36" rx="8" fill="#f1f5f9"/>
+  <circle cx="78" cy="296" r="8" fill="#f59e0b"/>
+  <text x="94" y="301" font-size="12" fill="#334155" font-family="system-ui">Drafting weekly decision digest...</text>
+
+  <!-- Memory usage bar -->
+  <text x="60" y="344" font-size="11" fill="#64748b" font-family="system-ui" font-weight="600">ORGANIZATIONAL MEMORY</text>
+  <rect x="60" y="354" width="300" height="8" rx="4" fill="#e2e8f0"/>
+  <rect x="60" y="354" width="228" height="8" rx="4" fill="url(#accent)"/>
+  <text x="60" y="380" font-size="11" fill="#64748b" font-family="system-ui">1,247 decisions indexed · 76% coverage</text>
+
+  <!-- Stats row -->
+  <rect x="60" y="400" width="90" height="44" rx="8" fill="url(#accentSoft)"/>
+  <text x="105" y="420" text-anchor="middle" font-size="16" font-weight="700" fill="#4338ca" font-family="system-ui">847</text>
+  <text x="105" y="436" text-anchor="middle" font-size="9" fill="#6366f1" font-family="system-ui">Queries answered</text>
+
+  <rect x="160" y="400" width="90" height="44" rx="8" fill="url(#accentSoft)"/>
+  <text x="205" y="420" text-anchor="middle" font-size="16" font-weight="700" fill="#4338ca" font-family="system-ui">23h</text>
+  <text x="205" y="436" text-anchor="middle" font-size="9" fill="#6366f1" font-family="system-ui">Time saved/wk</text>
+
+  <rect x="260" y="400" width="90" height="44" rx="8" fill="url(#accentSoft)"/>
+  <text x="305" y="420" text-anchor="middle" font-size="16" font-weight="700" fill="#4338ca" font-family="system-ui">99%</text>
+  <text x="305" y="436" text-anchor="middle" font-size="9" fill="#6366f1" font-family="system-ui">Accuracy</text>
+
+  <!-- Right side: chat interface -->
+  <rect x="420" y="40" width="340" height="420" rx="16" fill="url(#card)" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="420" y="40" width="340" height="48" rx="16" fill="#6366f1"/>
+  <rect x="420" y="72" width="340" height="16" fill="#6366f1"/>
+  <text x="590" y="70" text-anchor="middle" font-size="14" font-weight="600" fill="white" font-family="system-ui">=¬  Ask the Decision Agent</text>
+
+  <!-- Chat messages -->
+  <!-- User message -->
+  <rect x="500" y="110" width="240" height="40" rx="12" fill="#6366f1"/>
+  <text x="520" y="134" font-size="11" fill="white" font-family="system-ui">Why did we choose PostgreSQL over</text>
+  <text x="520" y="146" font-size="11" fill="white" font-family="system-ui">MongoDB for the user service?</text>
+
+  <!-- Agent response -->
+  <rect x="440" y="164" width="280" height="120" rx="12" fill="#f1f5f9"/>
+  <text x="458" y="184" font-size="11" fill="#1e293b" font-family="system-ui" font-weight="600">Based on 3 linked decisions:</text>
+  <text x="458" y="202" font-size="11" fill="#475569" font-family="system-ui">" Eng standup (Mar 12)  ACID compliance</text>
+  <text x="458" y="218" font-size="11" fill="#475569" font-family="system-ui">" Architecture review (Mar 15)  join perf</text>
+  <text x="458" y="234" font-size="11" fill="#475569" font-family="system-ui">" CTO sign-off (Mar 18)  team familiarity</text>
+  <text x="458" y="256" font-size="11" fill="#6366f1" font-family="system-ui">=Î View full decision trail ’</text>
+
+  <!-- User follow-up -->
+  <rect x="540" y="296" width="200" height="32" rx="12" fill="#6366f1"/>
+  <text x="558" y="316" font-size="11" fill="white" font-family="system-ui">Who approved the final call?</text>
+
+  <!-- Agent response 2 -->
+  <rect x="440" y="340" width="260" height="60" rx="12" fill="#f1f5f9"/>
+  <text x="458" y="360" font-size="11" fill="#1e293b" font-family="system-ui" font-weight="600">Sarah Chen (CTO) on Mar 18:</text>
+  <text x="458" y="378" font-size="11" fill="#475569" font-family="system-ui">"Go with Postgres. Revisit in 6 months</text>
+  <text x="458" y="392" font-size="11" fill="#475569" font-family="system-ui">if we hit scaling issues."</text>
+
+  <!-- Input bar -->
+  <rect x="440" y="416" width="300" height="32" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="458" y="436" font-size="11" fill="#94a3b8" font-family="system-ui">Ask about any decision...</text>
+  <circle cx="722" cy="432" r="12" fill="url(#accent)"/>
+  <text x="722" y="436" text-anchor="middle" font-size="12" fill="white" font-family="system-ui">’</text>
+</svg>

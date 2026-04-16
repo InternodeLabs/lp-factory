@@ -1,0 +1,115 @@
+---
+import "@/styles/globals.css";
+import { CONTENT_SITE_URL, SITE_TITLE } from "@/lib/site";
+
+interface Props {
+  title: string;
+  description: string;
+  canonical: string;
+  ogType?: "website" | "article";
+  ogImage?: string;
+  publishedTime?: string;
+  modifiedTime?: string;
+  author?: string;
+  tags?: string[];
+  noindex?: boolean;
+  jsonLd?: string;
+}
+
+const {
+  title,
+  description,
+  canonical,
+  ogType = "website",
+  ogImage,
+  publishedTime,
+  modifiedTime,
+  author,
+  tags,
+  noindex = false,
+  jsonLd,
+} = Astro.props;
+
+const robotsContent = noindex
+  ? "noindex, nofollow"
+  : "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content={robotsContent} />
+    <link rel="canonical" href={canonical} />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content={SITE_TITLE} />
+    <meta property="og:locale" content="en_US" />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    {ogImage && <meta property="og:image:alt" content={title} />}
+    {publishedTime && <meta property="article:published_time" content={publishedTime} />}
+    {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
+    {author && <meta property="article:author" content={author} />}
+    {tags?.map((tag) => <meta property="article:tag" content={tag} />)}
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content={ogImage ? "summary_large_image" : "summary"} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {ogImage && <meta name="twitter:image" content={ogImage} />}
+
+    <!-- Feed autodiscovery -->
+    <link rel="alternate" type="application/rss+xml" title="Internode Content RSS" href="/rss.xml" />
+    <link rel="alternate" type="text/plain" title="LLM context" href="/llms-full.txt" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://us.i.posthog.com" />
+    <link rel="dns-prefetch" href="https://us.i.posthog.com" />
+
+    <!-- AI content signals -->
+    <meta name="ai-content-declaration" content="human-created" />
+
+    <!-- Structured data -->
+    {jsonLd && <script type="application/ld+json" set:html={jsonLd} />}
+
+    <slot name="head" />
+  </head>
+  <body class="bg-white text-zinc-950 antialiased">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-zinc-900 focus:px-4 focus:py-2 focus:text-white">
+      Skip to content
+    </a>
+    <slot />
+
+    <script>
+      import posthog from "posthog-js";
+
+      const key = import.meta.env.PUBLIC_POSTHOG_KEY;
+      if (key && !posthog.__loaded) {
+        posthog.init(key, {
+          api_host: "/ingest",
+          ui_host: "https://us.posthog.com",
+          autocapture: true,
+          capture_pageview: true,
+          capture_pageleave: true,
+          enable_heatmaps: true,
+          enable_recording_console_log: false,
+          session_recording: {
+            maskAllInputs: false,
+            maskInputOptions: { password: true },
+          },
+        });
+      }
+    </script>
+  </body>
+</html>

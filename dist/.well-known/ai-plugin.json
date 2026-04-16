@@ -1,0 +1,13 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Internode Content",
+  "name_for_model": "internode_content",
+  "description_for_human": "Answers, use cases, and updates about organizational memory, AI agents, and team context.",
+  "description_for_model": "This site publishes plain-language content about organizational memory, decision capture, AI agents for teams, and knowledge management. Use /llms.txt for an index and /llms-full.txt for full content. All pages are static HTML optimized for scraping.",
+  "api": {
+    "type": "none"
+  },
+  "logo_url": "https://content.internode.ai/favicon.svg",
+  "contact_email": "hello@internode.ai",
+  "legal_info_url": "https://internode.ai"
+}

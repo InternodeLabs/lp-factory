@@ -1,5 +1,3 @@
-"use client";
-
 import {
   useState,
   useCallback,
@@ -7,8 +5,7 @@ import {
   useEffect,
   type ReactNode,
 } from "react";
-import Image from "next/image";
-import { usePostHog } from "posthog-js/react";
+import posthog from "posthog-js";
 
 import type { CampaignConfig, SectionConfig } from "@/config/types";
 import { getTrackingBaseProperties } from "@/lib/tracking";
@@ -27,7 +24,6 @@ export function LiveDemo({
 }>) {
   const [active, setActive] = useState(!section.posterImage);
   const [iframeLoaded, setIframeLoaded] = useState(false);
-  const posthog = usePostHog();
   const openedAtRef = useRef<number | null>(
     section.posterImage ? null : Date.now(),
   );
@@ -36,19 +32,21 @@ export function LiveDemo({
   const handleActivate = useCallback(() => {
     setActive(true);
     openedAtRef.current = Date.now();
-    posthog?.capture("live_demo_opened", {
-      ...getTrackingBaseProperties({
-        campaignSlug: campaign,
-        campaignId: config.tracking.campaignId,
-      }),
-      demo_url: section.demoUrl,
-    });
-  }, [posthog, campaign, config.tracking.campaignId, section.demoUrl]);
+    if (posthog.__loaded) {
+      posthog.capture("live_demo_opened", {
+        ...getTrackingBaseProperties({
+          campaignSlug: campaign,
+          campaignId: config.tracking.campaignId,
+        }),
+        demo_url: section.demoUrl,
+      });
+    }
+  }, [campaign, config.tracking.campaignId, section.demoUrl]);
 
   useEffect(() => {
     if (!active) return;
     const trackTime = () => {
-      if (posthog && openedAtRef.current) {
+      if (posthog.__loaded && openedAtRef.current) {
         posthog.capture("live_demo_time", {
           ...getTrackingBaseProperties({
             campaignSlug: campaign,
@@ -60,7 +58,7 @@ export function LiveDemo({
     };
     window.addEventListener("beforeunload", trackTime);
     return () => window.removeEventListener("beforeunload", trackTime);
-  }, [active, posthog, campaign, config.tracking.campaignId]);
+  }, [active, campaign, config.tracking.campaignId]);
 
   return (
     <section className={cn("px-4 py-16 md:px-8 md:py-24", darkMode && "dark")}>
@@ -82,7 +80,6 @@ export function LiveDemo({
             "border-gray-200/20 ring-1 ring-white/10",
           )}
         >
-          {/* Poster image — shown until the visitor clicks */}
           {!active && section.posterImage && (
             <button
               type="button"
@@ -90,14 +87,11 @@ export function LiveDemo({
               className="group relative block w-full cursor-pointer"
               style={{ aspectRatio: "16 / 9" }}
             >
-              <Image
+              <img
                 src={section.posterImage}
                 alt="Click to launch live demo"
-                fill
-                className="object-cover object-top"
-                sizes="(max-width: 1280px) 100vw, 1152px"
-                priority
-                unoptimized
+                className="absolute inset-0 h-full w-full object-cover object-top"
+                loading="eager"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/30 transition-colors duration-200 group-hover:bg-black/40">
                 <PlayIcon />
@@ -108,7 +102,6 @@ export function LiveDemo({
             </button>
           )}
 
-          {/* Iframe — with fit-width, Figma fills the width and determines its own height */}
           {active && (
             <iframe
               src={section.demoUrl}
@@ -127,9 +120,7 @@ export function LiveDemo({
             <div className="absolute inset-0 flex items-center justify-center bg-gray-950">
               <div className="flex flex-col items-center gap-3">
                 <div className="h-8 w-8 animate-spin rounded-full border-2 border-gray-600 border-t-[var(--lp-primary)]" />
-                <span className="text-sm text-gray-400">
-                  Loading prototype…
-                </span>
+                <span className="text-sm text-gray-400">Loading prototype…</span>
               </div>
             </div>
           )}

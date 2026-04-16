@@ -1,6 +1,5 @@
 import type { SectionConfig } from "@/config/types";
 
-import { LpIcon } from "./LpIcon";
 import { cn } from "@/lib/utils";
 
 type FeaturesSection = Extract<SectionConfig, { type: "features" }>;
@@ -39,7 +38,7 @@ export function Features({
                     "bg-gradient-to-br from-[var(--lp-primary)]/20 to-[var(--lp-accent)]/15 ring-1 ring-[var(--lp-primary)]/20",
                   )}
                 >
-                  <LpIcon name={feature.icon} size={48} />
+                  <span className="inline-flex text-4xl" aria-hidden="true" role="img">{feature.icon}</span>
                 </div>
               </div>
               <div className="flex-1 text-center lg:text-left">

@@ -1,0 +1,175 @@
+---
+import { getCollection, render } from "astro:content";
+import ContentLayout from "@/layouts/ContentLayout.astro";
+import {
+  getRelatedContent,
+  getContentTypeLabel,
+  countWords,
+  readingTimeMinutes,
+  contentUrl,
+  entrySlug,
+} from "@/lib/content";
+import {
+  MAIN_SITE_URL,
+  absoluteUrl,
+  formatDisplayDate,
+} from "@/lib/site";
+import {
+  buildArticleSchema,
+  buildBreadcrumbSchema,
+  buildFaqSchema,
+  buildOrganizationSchema,
+  buildWebPageSchema,
+  buildWebSiteSchema,
+  wrapGraph,
+} from "@/lib/seo";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("answers");
+  return entries.map((entry) => ({
+    params: { slug: entrySlug(entry) },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content, headings } = await render(entry);
+const doc = entry.data;
+
+const relatedEntries = await getRelatedContent(entry);
+const wordCount = countWords(entry.body ?? "");
+const readTime = readingTimeMinutes(wordCount);
+const slug = entrySlug(entry);
+const pageUrl = absoluteUrl(contentUrl(slug));
+const canonicalUrl = doc.canonicalUrl ?? pageUrl;
+const articleType = doc.type === "update" ? "Article" : "TechArticle";
+
+const graphItems: Record<string, unknown>[] = [
+  buildWebSiteSchema(),
+  buildOrganizationSchema(),
+  buildWebPageSchema({
+    url: pageUrl,
+    name: doc.title,
+    description: doc.description,
+  }),
+  buildArticleSchema({
+    url: pageUrl,
+    headline: doc.title,
+    description: doc.description,
+    body: entry.body ?? "",
+    published: doc.publishedAt,
+    modified: doc.updatedAt,
+    section: getContentTypeLabel(doc.type),
+    tags: doc.tags,
+    wordCount,
+    authorName: doc.author.name,
+    authorUrl: doc.author.url,
+    type: articleType as "Article" | "TechArticle",
+  }),
+  buildBreadcrumbSchema([
+    { name: "Home", url: absoluteUrl("/") },
+    { name: doc.title, url: pageUrl },
+  ]),
+];
+
+if (doc.question) {
+  graphItems.push(
+    buildFaqSchema([{ question: doc.question, answer: doc.excerpt }]),
+  );
+}
+
+const jsonLd = wrapGraph(...graphItems);
+
+const tocHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
+---
+
+<ContentLayout
+  title={`${doc.title} | Internode`}
+  description={doc.description}
+  canonical={canonicalUrl}
+  ogType="article"
+  publishedTime={new Date(`${doc.publishedAt}T00:00:00Z`).toISOString()}
+  modifiedTime={new Date(`${doc.updatedAt}T00:00:00Z`).toISOString()}
+  author={doc.author.name}
+  tags={doc.tags}
+  jsonLd={jsonLd}
+>
+  <main id="main-content" class="mx-auto max-w-4xl px-4 py-12 md:py-16">
+    <nav aria-label="Breadcrumb" class="mb-6 text-sm text-zinc-500">
+      <a href="/" class="hover:text-zinc-700">Home</a>
+      <span class="mx-1">/</span>
+      <span aria-current="page">{doc.title}</span>
+    </nav>
+
+    <article class="max-w-3xl">
+      <header class="space-y-4 border-b border-zinc-200 pb-8">
+        <p class="text-sm text-zinc-600">
+          {getContentTypeLabel(doc.type)} &middot;
+          <time datetime={doc.publishedAt}>{formatDisplayDate(doc.publishedAt)}</time> &middot;
+          {readTime} min read
+        </p>
+        <h1 class="text-3xl font-semibold tracking-tight text-zinc-950 md:text-4xl">
+          {doc.title}
+        </h1>
+        <p class="text-lg leading-8 text-zinc-700">{doc.excerpt}</p>
+        <div class="text-sm leading-7 text-zinc-600">
+          <address class="not-italic">Author: {doc.author.name}</address>
+          <p>Updated: <time datetime={doc.updatedAt}>{formatDisplayDate(doc.updatedAt)}</time></p>
+          <p>Tags: {doc.tags.join(", ")}</p>
+        </div>
+      </header>
+
+      {tocHeadings.length > 1 && (
+        <nav
+          aria-label="On this page"
+          class="mt-8 border-b border-zinc-200 pb-8 text-sm text-zinc-700"
+        >
+          <p class="font-medium text-zinc-950">On this page</p>
+          <ul class="mt-3 space-y-2">
+            {tocHeadings.map((heading) => (
+              <li class={heading.depth === 3 ? "pl-4" : undefined}>
+                <a href={`#${heading.slug}`} class="hover:text-zinc-950 hover:underline">{heading.text}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
+
+      <div class="content-rich mt-8">
+        <Content />
+      </div>
+
+      {relatedEntries.length > 0 && (
+        <section class="mt-12 border-t border-zinc-200 pt-8">
+          <h2 class="text-xl font-semibold text-zinc-950">Related pages</h2>
+          <ul class="mt-4 space-y-3">
+            {relatedEntries.map((related) => (
+              <li>
+                <a href={contentUrl(entrySlug(related))} class="font-medium text-zinc-950 hover:underline">{related.data.title}</a>
+                <p class="mt-1 text-sm text-zinc-600">{related.data.excerpt}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <section class="mt-12 border-t border-zinc-200 pt-8">
+        <h2 class="text-xl font-semibold text-zinc-950">Next step</h2>
+        <p class="mt-4 leading-8 text-zinc-700">
+          If this topic is relevant to your team, continue on the main site or
+          explore the product directly.
+        </p>
+        <p class="mt-4">
+          <a
+            href={doc.ctaHref}
+            class="font-semibold text-zinc-950 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {doc.ctaLabel}
+          </a>
+        </p>
+      </section>
+    </article>
+  </main>
+</ContentLayout>

@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 
 import { cn } from "@/lib/utils";
@@ -157,7 +155,6 @@ const PROMPT_GROUPS = [
 
 function FaviconImg({ domain, alt }: { domain: string; alt: string }) {
   return (
-    // eslint-disable-next-line @next/next/no-img-element
     <img
       src={`https://www.google.com/s2/favicons?domain=${domain}&sz=64`}
       alt={alt}

@@ -1,0 +1,51 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import { InteractiveBackground } from "@/components/lp/InteractiveBackground";
+import LpFooter from "@/components/lp/Footer.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  canonical: string;
+  ogImage?: string;
+  jsonLd?: string;
+  primaryColor: string;
+  accentColor: string;
+  darkMode: boolean;
+}
+
+const {
+  title,
+  description,
+  canonical,
+  ogImage,
+  jsonLd,
+  primaryColor,
+  accentColor,
+  darkMode,
+} = Astro.props;
+
+const style = `--lp-primary: ${primaryColor}; --lp-accent: ${accentColor};`;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical={canonical}
+  ogImage={ogImage}
+  noindex={true}
+  jsonLd={jsonLd}
+>
+  <div class:list={["flex min-h-dvh flex-col", darkMode && "dark"]} style={style}>
+    <InteractiveBackground
+      client:visible
+      primaryColor={primaryColor}
+      accentColor={accentColor}
+      darkMode={darkMode}
+    />
+    <main id="main-content" class="relative z-[1] flex-1">
+      <slot />
+    </main>
+    <LpFooter darkMode={darkMode} />
+  </div>
+</BaseLayout>

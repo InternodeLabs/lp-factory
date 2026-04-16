@@ -1,10 +1,7 @@
-"use client";
-
 import { useState, useCallback } from "react";
-import { usePostHog } from "posthog-js/react";
+import posthog from "posthog-js";
 
 import type { SectionConfig } from "@/config/types";
-import { LpIcon } from "./LpIcon";
 import { cn } from "@/lib/utils";
 
 type TabShowcaseSection = Extract<SectionConfig, { type: "tab-showcase" }>;
@@ -21,13 +18,12 @@ export function TabShowcase({
   campaignId: string;
 }>) {
   const [activeIndex, setActiveIndex] = useState(0);
-  const posthog = usePostHog();
 
   const handleTabClick = useCallback(
     (index: number) => {
       setActiveIndex(index);
       const tab = section.tabs[index];
-      if (posthog && tab) {
+      if (posthog.__loaded && tab) {
         posthog.capture("tab_showcase_click", {
           campaign_slug: campaign,
           campaign_id: campaignId,
@@ -37,7 +33,7 @@ export function TabShowcase({
         });
       }
     },
-    [posthog, campaign, campaignId, section.tabs],
+    [campaign, campaignId, section.tabs],
   );
 
   const activeTab = section.tabs[activeIndex];
@@ -59,9 +55,7 @@ export function TabShowcase({
         )}
 
         <div
-          className={cn(
-            "mt-10 flex flex-wrap justify-center gap-3 md:mt-14 md:gap-4",
-          )}
+          className="mt-10 flex flex-wrap justify-center gap-3 md:mt-14 md:gap-4"
           role="tablist"
           aria-label={section.title ?? "Feature tabs"}
         >
@@ -84,8 +78,10 @@ export function TabShowcase({
                   "text-2xl transition-transform duration-200",
                   i === activeIndex && "scale-110",
                 )}
+                aria-hidden="true"
+                role="img"
               >
-                <LpIcon name={tab.icon} size={28} />
+                {tab.icon}
               </span>
               <span>{tab.label}</span>
             </button>
@@ -107,12 +103,12 @@ export function TabShowcase({
           >
             {activeTab && (
               <div className="w-full p-4 md:p-8">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   key={activeTab.image}
                   src={activeTab.image}
                   alt={activeTab.alt ?? activeTab.label}
                   className="mx-auto h-auto max-h-[320px] w-auto max-w-full"
+                  loading="lazy"
                 />
               </div>
             )}

@@ -1,0 +1,27 @@
+---
+interface Props {
+  name: string;
+}
+
+const { name } = Astro.props;
+const trimmed = name.trim();
+
+function looksLikeEmoji(raw: string): boolean {
+  if (raw.length === 0 || raw.length > 8) return false;
+  if (/^[a-zA-Z][\w-]*$/.test(raw)) return false;
+  if (/^[A-Z][a-zA-Z0-9]*$/.test(raw)) return false;
+  return true;
+}
+
+const isEmoji = looksLikeEmoji(trimmed);
+---
+
+{isEmoji ? (
+  <span class="inline-flex select-none text-3xl leading-none" aria-hidden="true" role="img">
+    {trimmed}
+  </span>
+) : (
+  <span class="inline-flex text-2xl leading-none" aria-hidden="true" role="img">
+    {trimmed}
+  </span>
+)}
