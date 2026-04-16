@@ -181,11 +181,11 @@ export function AskYourAI() {
   return (
     <section className="mt-14 rounded-lg border border-zinc-200 bg-zinc-50 px-5 py-6 sm:px-6">
       <h2 className="text-lg font-semibold text-zinc-950">
-        Learn directly from your own AI assistant
+        Learn about Internode from your favorite AI
       </h2>
       <p className="mt-1 text-sm text-zinc-600">
-        If you don&apos;t like reading long articles, simply select a problem
-        and have your AI assistant explain what matters to you.
+        If you don&apos;t like reading long articles, select a question
+        and chat about what Internode can do with your own AI to answer what matters to you.
       </p>
 
       <div className="mt-4 space-y-4">
