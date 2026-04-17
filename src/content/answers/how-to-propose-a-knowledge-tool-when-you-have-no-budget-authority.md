@@ -7,9 +7,10 @@ type: answer
 publishedAt: "2026-04-15"
 updatedAt: "2026-04-15"
 author:
-  name: "Internode Team"
-  role: "Organizational Intelligence"
-  url: "https://www.internode.ai"
+  name: "Sean Shadmand"
+  role: "Co-founder and President"
+  url: "https://internode.ai"
+  linkedin: "https://www.linkedin.com/in/seanshadmand/"
 tags:
   - proposal
   - manager

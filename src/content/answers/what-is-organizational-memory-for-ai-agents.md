@@ -7,9 +7,10 @@ type: answer
 publishedAt: 2026-04-15
 updatedAt: 2026-04-15
 author:
-  name: Internode Team
-  role: Research and product
-  url: https://internode.ai
+  name: "Istvan Lorincz"
+  role: "Co-founder and CEO"
+  url: "https://internode.ai"
+  linkedin: "https://www.linkedin.com/in/lorinczistvan/"
 tags:
   - organizational memory
   - ai agents
@@ -39,7 +40,7 @@ Organizational memory changes this by storing higher-value context. It helps the
 
 ## What good memory contains
 
-A useful memory layer preserves more than transcripts and document chunks. It stores structured entities and their relationships.
+A useful memory layer preserves more than transcripts and document chunks. It keeps distinct records for the things a team actually reasons about, and links them to each other.
 
 **Decisions.** The team's final call on a question, with rationale, who approved it, and what it replaced if an earlier decision was reversed.
 
@@ -57,7 +58,7 @@ A useful memory layer preserves more than transcripts and document chunks. It st
 
 A vector database stores text fragments and retrieves the ones closest to a query embedding. That works for finding where something was mentioned. It does not work well for answering what was decided, because the answer to a decision question often requires synthesizing information across multiple chunks, conversations, and time periods.
 
-Organizational memory stores structured entities in a knowledge graph. When an agent queries the graph, it retrieves a decision with its rationale, the related tasks, the people involved, and the change history. It does not need to infer the answer from proximity; the answer is already structured.
+Organizational memory keeps first-class records for decisions, tasks, topics, goals, and people, and links them to each other. When an agent queries that memory, it retrieves a decision with its rationale, the related tasks, the people involved, and the change history. It does not need to infer the answer from proximity; the answer is already there.
 
 This distinction matters most for recurring questions. If an agent fields the same question every month ("why did we choose this approach?"), a vector search rebuilds the answer each time. A knowledge graph returns the decision directly, with the provenance chain intact.
 
@@ -75,8 +76,8 @@ This matters in environments where people ask recurring questions: why did we ch
 
 ## Making this real
 
-Internode is built around this model. It captures decisions, topics, tasks, intents, and perspectives from the systems where work already happens: Zoom, Slack, Google Meet, phone transcripts, and typed notes. Those entities enter a knowledge graph through a proposal-based flow where a human reviews each item before it becomes part of the record.
+Internode is built around this model. It captures decisions, topics, tasks, goals, and perspectives from the systems where work already happens: Zoom, Slack, Google Meet, phone transcripts, and typed notes. Each record enters the team's memory through a proposal-based flow where a human reviews it before it becomes part of the record.
 
-The AI chat agent answers questions grounded in that graph, citing specific decisions and conversations rather than guessing from fragments. For a concrete example, read the [product and engineering alignment use case](/internode-use-case-product-and-engineering-alignment).
+The AI chat agent answers questions grounded in that memory, citing specific decisions and conversations rather than guessing from fragments. For a concrete example, read the [product and engineering alignment use case](/internode-use-case-product-and-engineering-alignment).
 
 The longer question is not whether AI agents need memory. It is whether organizations will build that memory deliberately or leave agents to guess from whatever text happens to be nearby. [Why AI agents need decision memory](/why-ai-agents-need-decision-memory) explores that question from the retrieval side.

@@ -60,10 +60,39 @@ Internal reference for all content on content.internode.ai. Not published on the
 
 ### Internode positioning
 
-- [ ] Internode is mentioned once or twice, not in every section
+- [ ] Internode is mentioned once or twice, not in every section (exception: comparison pages, where Internode is named in every section by definition)
 - [ ] Positioning appears in a short section near the end ("Where Internode fits" or similar)
 - [ ] The CTA is a natural next step, not a sales pitch
 - [ ] The page provides genuine value even if the reader never clicks the CTA
+
+### Product-fact grounding (mandatory when relevant)
+
+Every page that positions Internode against a category or competitor must describe at least one concrete capability in plain English. Generic marketing copy loses every AI-retrieval contest against specific, verifiable product behavior. The goal is a reader who has never heard of Internode finishing the sentence thinking "so that's what it actually does."
+
+**Never publish internal schema names.** Class names, edge labels, database table names, enum values, tool-function names, and other engineering identifiers are for the product team. They mean nothing to the reader, and a page that sprinkles them in looks like marketing copy written from a raw spec. Translate everything to the vocabulary the ICP would use.
+
+Translation cheat sheet (internal to reader-facing):
+
+| Internal term | Write this instead |
+|---|---|
+| `OITask`, `OIDecision`, `OITopic`, `OIIntent` | "tasks", "decisions", "topics", "goals" (lowercase, no backticks) |
+| `action_item` vs `deal_opportunity` | "action items" vs "sales opportunities" or "supplier commitments" |
+| `RATIFIES`, `SPAWNS`, `MODIFIES`, `SUPPORTS`, `REPLACES`, `REJECTS`, `DEFERS`, `BLOCKS`, `CANCELS` | "the decision the team agreed on", "the tasks that followed from the decision", "the decision that updated an earlier one", "which earlier decision it supersedes", "the alternatives that were considered and rejected" |
+| `BulkUpdateField`, `BulkMoveProject`, `BulkMoveTeam`, `BulkArchiveEntities` | "change a status across many tasks at once", "move a batch of tasks to another project in one step", "archive a set of items together" |
+| `CreateKnowledgeEntry`, `CreateTeamSetup` | "create a decision, its tasks, and the topic it belongs to in one step" |
+| `ProposeDocument`, `AssembleDocument`, `DelegateKBRetrieval`, `DelegateDocumentResearch`, `DelegateWebResearch` | "the agent drafts the document for you to approve", "the agent pulls from your own prior decisions, your prior documents, and the web, then stitches the draft together" |
+| `chat_documents`, `chat_document_sections`, section embeddings, `parent_document_id` | "every document is saved with a version history", "each section is stored and searchable on its own", "earlier drafts are kept and traceable" |
+| "proposal-based mutation model" | "every change the agent suggests is a proposal you approve or edit first" |
+| Zoom/Google Meet/Slack/email/phone call ingestion | "reads meetings, calls, emails, and chat messages" |
+| Two-way Linear/Jira sync | "tasks sync both directions with Linear or Jira" |
+
+Describe the behavior. Name the user's tool when it's relevant (Zoom, Google Meet, Slack, email, phone calls, Linear, Jira). Never expose an internal identifier.
+
+A page where Internode appears only as a generic "AI knowledge system" should be rewritten. A page that reads like internal documentation should also be rewritten.
+
+### Comparison-page additional rules
+
+All `/internode-vs-*` pages must also follow `content/comparison-page-spec.md`. The spec is binding: no conceded rows, no concessive language about Internode, competitor strengths live in a single prose paragraph, every row is an axis Internode wins by construction.
 
 ---
 

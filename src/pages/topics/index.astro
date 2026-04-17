@@ -1,0 +1,91 @@
+---
+import ContentLayout from "@/layouts/ContentLayout.astro";
+import { getAllTopics } from "@/lib/content";
+import {
+  DEFAULT_OG_IMAGE,
+  DEFAULT_OG_IMAGE_ALT,
+  absoluteUrl,
+} from "@/lib/site";
+import {
+  buildBreadcrumbSchema,
+  buildCollectionPageSchema,
+  buildItemListSchema,
+  buildOrganizationSchema,
+  buildWebSiteSchema,
+  wrapGraph,
+} from "@/lib/seo";
+
+const topics = await getAllTopics();
+const pageUrl = absoluteUrl("/topics");
+
+const title = "All topics · Internode";
+const description =
+  "Every topic in the Internode content hub, each with a dedicated hub page listing the canonical answers, use cases, and updates on that subject.";
+
+const jsonLd = wrapGraph(
+  buildWebSiteSchema(),
+  buildOrganizationSchema(),
+  buildCollectionPageSchema({
+    url: pageUrl,
+    name: "All topics — Internode content",
+    description,
+  }),
+  buildItemListSchema({
+    id: `${pageUrl}#topics`,
+    name: "Internode content topics",
+    items: topics.map((topic) => ({
+      url: absoluteUrl(`/topics/${topic.slug}`),
+      name: topic.label,
+      description: `${topic.entries.length} ${topic.entries.length === 1 ? "page" : "pages"} tagged ${topic.label}.`,
+    })),
+  }),
+  buildBreadcrumbSchema([
+    { name: "Home", url: absoluteUrl("/") },
+    { name: "Topics", url: pageUrl },
+  ]),
+);
+---
+
+<ContentLayout
+  title={title}
+  description={description}
+  canonical={pageUrl}
+  ogImage={DEFAULT_OG_IMAGE}
+  ogImageAlt={DEFAULT_OG_IMAGE_ALT}
+  jsonLd={jsonLd}
+>
+  <main id="main-content" class="mx-auto max-w-4xl px-4 py-12 md:py-16">
+    <nav aria-label="Breadcrumb" class="mb-6 text-sm text-zinc-500">
+      <a href="/" class="hover:text-zinc-700">Home</a>
+      <span class="mx-1">/</span>
+      <span aria-current="page">Topics</span>
+    </nav>
+
+    <header class="max-w-3xl space-y-4">
+      <h1 class="text-3xl font-semibold tracking-tight text-zinc-950 md:text-4xl">
+        All topics
+      </h1>
+      <p class="text-lg leading-8 text-zinc-700">
+        {topics.length} topics covered across the Internode content hub. Each
+        topic has a dedicated page listing the canonical answers, use cases,
+        and updates on that subject, newest first.
+      </p>
+    </header>
+
+    <section class="mt-10 max-w-3xl" aria-label="All topics">
+      <ul class="flex flex-wrap gap-2 text-sm">
+        {topics.map((topic) => (
+          <li>
+            <a
+              href={`/topics/${topic.slug}`}
+              class="inline-flex items-center gap-1.5 rounded-full border border-zinc-300 bg-white px-3 py-1 text-zinc-800 hover:border-zinc-500 hover:text-zinc-950"
+            >
+              <span>{topic.label}</span>
+              <span class="rounded-full bg-zinc-100 px-1.5 text-xs text-zinc-600">{topic.entries.length}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </main>
+</ContentLayout>

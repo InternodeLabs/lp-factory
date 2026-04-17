@@ -1,1 +1,0 @@
-import{s as e}from"./module.ClOipmjB.js";const s="phc_xS6oJ4D9vwfcM8evD2PRtC2T2oQhpTgtei7w4iXs7J92";e.__loaded||e.init(s,{api_host:"/ingest",ui_host:"https://us.posthog.com",autocapture:!0,capture_pageview:!0,capture_pageleave:!0,enable_heatmaps:!0,enable_recording_console_log:!1,session_recording:{maskAllInputs:!1,maskInputOptions:{password:!0}}});

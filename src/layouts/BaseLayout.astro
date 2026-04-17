@@ -1,13 +1,20 @@
 ---
 import "@/styles/globals.css";
-import { CONTENT_SITE_URL, SITE_TITLE } from "@/lib/site";
+import {
+  CONTENT_SITE_URL,
+  DEFAULT_OG_IMAGE,
+  DEFAULT_OG_IMAGE_ALT,
+  SITE_BRAND,
+  absoluteUrl,
+} from "@/lib/site";
 
 interface Props {
   title: string;
   description: string;
-  canonical: string;
+  canonical?: string;
   ogType?: "website" | "article";
   ogImage?: string;
+  ogImageAlt?: string;
   publishedTime?: string;
   modifiedTime?: string;
   author?: string;
@@ -22,6 +29,7 @@ const {
   canonical,
   ogType = "website",
   ogImage,
+  ogImageAlt,
   publishedTime,
   modifiedTime,
   author,
@@ -33,6 +41,9 @@ const {
 const robotsContent = noindex
   ? "noindex, nofollow"
   : "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1";
+
+const resolvedOg = ogImage ? absoluteUrl(ogImage) : absoluteUrl(DEFAULT_OG_IMAGE);
+const resolvedOgAlt = ogImageAlt ?? DEFAULT_OG_IMAGE_ALT;
 ---
 
 <html lang="en">
@@ -43,31 +54,36 @@ const robotsContent = noindex
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="robots" content={robotsContent} />
-    <link rel="canonical" href={canonical} />
+    {canonical && <link rel="canonical" href={canonical} />}
 
     <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:url" content={canonical} />
+    {canonical && <meta property="og:url" content={canonical} />}
     <meta property="og:type" content={ogType} />
-    <meta property="og:site_name" content={SITE_TITLE} />
+    <meta property="og:site_name" content={SITE_BRAND} />
     <meta property="og:locale" content="en_US" />
-    {ogImage && <meta property="og:image" content={ogImage} />}
-    {ogImage && <meta property="og:image:alt" content={title} />}
+    <meta property="og:image" content={resolvedOg} />
+    <meta property="og:image:alt" content={resolvedOgAlt} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     {publishedTime && <meta property="article:published_time" content={publishedTime} />}
     {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
     {author && <meta property="article:author" content={author} />}
     {tags?.map((tag) => <meta property="article:tag" content={tag} />)}
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content={ogImage ? "summary_large_image" : "summary"} />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    {ogImage && <meta name="twitter:image" content={ogImage} />}
+    <meta name="twitter:image" content={resolvedOg} />
+    <meta name="twitter:image:alt" content={resolvedOgAlt} />
 
-    <!-- Feed autodiscovery -->
+    <!-- Feed autodiscovery + LLM context discovery -->
     <link rel="alternate" type="application/rss+xml" title="Internode Content RSS" href="/rss.xml" />
-    <link rel="alternate" type="text/plain" title="LLM context" href="/llms-full.txt" />
+    <link rel="alternate" type="application/atom+xml" title="Internode Content Atom" href="/atom.xml" />
+    <link rel="alternate" type="text/plain" title="LLM context (summary)" href="/llms.txt" />
+    <link rel="alternate" type="text/plain" title="LLM context (full)" href="/llms-full.txt" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -76,9 +92,6 @@ const robotsContent = noindex
     <!-- Preconnect -->
     <link rel="preconnect" href="https://us.i.posthog.com" />
     <link rel="dns-prefetch" href="https://us.i.posthog.com" />
-
-    <!-- AI content signals -->
-    <meta name="ai-content-declaration" content="human-created" />
 
     <!-- Structured data -->
     {jsonLd && <script type="application/ld+json" set:html={jsonLd} />}
@@ -109,6 +122,17 @@ const robotsContent = noindex
             maskInputOptions: { password: true },
           },
         });
+
+        const ua = navigator.userAgent;
+        const match = ua.match(
+          /(OAI-SearchBot|ChatGPT-User|PerplexityBot|Perplexity-User|Claude-SearchBot|Claude-User|Applebot(?:-Extended)?|Google-Extended|Googlebot|Bingbot|DuckDuckBot|YandexBot|Baiduspider|GPTBot|ClaudeBot|Amazonbot|Bytespider|Meta-ExternalAgent|FacebookBot|CCBot|Diffbot|YouBot|MistralAI-User|DuckAssistBot|LinkedInBot|Twitterbot|Discordbot|Slackbot|TelegramBot)/i,
+        );
+        if (match) {
+          posthog.capture("bot_visit", {
+            bot_family: match[1],
+            path: window.location.pathname,
+          });
+        }
       }
     </script>
   </body>

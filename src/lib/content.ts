@@ -110,3 +110,52 @@ export function entrySlug(entry: ContentEntry): string {
 export function contentUrl(slug: string): string {
   return `/${slug}`;
 }
+
+export function topicSlug(tag: string): string {
+  return tag
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+export function topicUrl(tag: string): string {
+  return `/topics/${topicSlug(tag)}`;
+}
+
+export interface TopicInfo {
+  slug: string;
+  label: string;
+  entries: ContentEntry[];
+}
+
+export async function getAllTopics(): Promise<TopicInfo[]> {
+  const all = await getAllContentEntries();
+  const bySlug = new Map<string, { label: string; entries: ContentEntry[] }>();
+
+  for (const entry of all) {
+    for (const tag of entry.data.tags) {
+      const slug = topicSlug(tag);
+      if (!slug) continue;
+      const existing = bySlug.get(slug);
+      if (existing) {
+        existing.entries.push(entry);
+      } else {
+        bySlug.set(slug, { label: tag, entries: [entry] });
+      }
+    }
+  }
+
+  return Array.from(bySlug.entries())
+    .map(([slug, value]) => ({
+      slug,
+      label: value.label,
+      entries: sortEntries(value.entries),
+    }))
+    .sort((a, b) => b.entries.length - a.entries.length || a.label.localeCompare(b.label));
+}
+
+export async function getTopicBySlug(slug: string): Promise<TopicInfo | null> {
+  const topics = await getAllTopics();
+  return topics.find((topic) => topic.slug === slug) ?? null;
+}

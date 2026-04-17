@@ -7,9 +7,10 @@ type: answer
 publishedAt: 2026-04-15
 updatedAt: 2026-04-15
 author:
-  name: Internode Team
-  role: Product
-  url: https://internode.ai
+  name: "Istvan Lorincz"
+  role: "Co-founder and CEO"
+  url: "https://internode.ai"
+  linkedin: "https://www.linkedin.com/in/lorinczistvan/"
 tags:
   - board meetings
   - committee

@@ -35,6 +35,9 @@
         "updatedAt": {
           "$ref": "#/definitions/answers/properties/publishedAt"
         },
+        "lastReviewedAt": {
+          "$ref": "#/definitions/answers/properties/publishedAt"
+        },
         "author": {
           "type": "object",
           "properties": {
@@ -48,6 +51,13 @@
             "url": {
               "type": "string",
               "format": "uri"
+            },
+            "linkedin": {
+              "type": "string",
+              "format": "uri"
+            },
+            "bio": {
+              "type": "string"
             }
           },
           "required": [
@@ -73,6 +83,12 @@
         "canonicalUrl": {
           "type": "string",
           "format": "uri"
+        },
+        "ogImage": {
+          "type": "string"
+        },
+        "ogImageAlt": {
+          "type": "string"
         },
         "ctaHref": {
           "type": "string",

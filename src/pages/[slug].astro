@@ -8,9 +8,11 @@ import {
   readingTimeMinutes,
   contentUrl,
   entrySlug,
+  topicUrl,
 } from "@/lib/content";
 import {
-  MAIN_SITE_URL,
+  DEFAULT_OG_IMAGE,
+  DEFAULT_OG_IMAGE_ALT,
   absoluteUrl,
   formatDisplayDate,
 } from "@/lib/site";
@@ -23,6 +25,7 @@ import {
   buildWebSiteSchema,
   wrapGraph,
 } from "@/lib/seo";
+import { getAuthorByName } from "@/lib/authors";
 
 export async function getStaticPaths() {
   const entries = await getCollection("answers");
@@ -44,6 +47,53 @@ const pageUrl = absoluteUrl(contentUrl(slug));
 const canonicalUrl = doc.canonicalUrl ?? pageUrl;
 const articleType = doc.type === "update" ? "Article" : "TechArticle";
 
+const ogImagePath = doc.ogImage ? `/marketing/${doc.ogImage}` : DEFAULT_OG_IMAGE;
+const ogImageAlt = doc.ogImageAlt ?? DEFAULT_OG_IMAGE_ALT;
+const heroImageUrl = absoluteUrl(ogImagePath);
+const hasCustomHero = Boolean(doc.ogImage);
+
+const registered = getAuthorByName(doc.author.name);
+const authorProfile = registered ?? {
+  id: "editorial",
+  name: doc.author.name,
+  role: doc.author.role ?? "Editorial",
+  url: doc.author.url ?? "https://internode.ai",
+  linkedin: doc.author.linkedin ?? "https://www.linkedin.com/company/internode-ai",
+  bio: doc.author.bio ?? "",
+};
+
+const typeLabel = getContentTypeLabel(doc.type);
+
+const sectionHub =
+  doc.type === "use-case"
+    ? { label: "Use cases", href: "/#use-cases" }
+    : doc.type === "update"
+      ? { label: "Updates", href: "/#updates" }
+      : { label: "Answers", href: "/#answers" };
+
+const faqPairs: { question: string; answer: string }[] = [];
+if (doc.question) {
+  faqPairs.push({ question: doc.question, answer: doc.excerpt });
+}
+const body = entry.body ?? "";
+const questionHeadingRegex = /^##+\s+(.+)$/gm;
+const looksLikeQuestion = (heading: string) =>
+  /\?\s*$/.test(heading) ||
+  /^(How|What|Why|Who|Where|When|Does|Can|Should|Is|Are|Will)\b/i.test(heading);
+
+const sections = body.split(/\n(?=##\s)/);
+for (const section of sections) {
+  const headingMatch = section.match(/^##\s+(.+)$/m);
+  if (!headingMatch) continue;
+  const heading = headingMatch[1].trim();
+  if (!looksLikeQuestion(heading)) continue;
+  const afterHeading = section.slice(headingMatch[0].length).trim();
+  const firstPara = afterHeading.split(/\n\s*\n/)[0]?.replace(/\s+/g, " ").trim();
+  if (!firstPara || firstPara.length < 40) continue;
+  if (firstPara.length > 1200) continue;
+  faqPairs.push({ question: heading, answer: firstPara });
+}
+
 const graphItems: Record<string, unknown>[] = [
   buildWebSiteSchema(),
   buildOrganizationSchema(),
@@ -51,31 +101,33 @@ const graphItems: Record<string, unknown>[] = [
     url: pageUrl,
     name: doc.title,
     description: doc.description,
+    dateModified: doc.updatedAt,
+    image: heroImageUrl,
   }),
   buildArticleSchema({
     url: pageUrl,
     headline: doc.title,
     description: doc.description,
-    body: entry.body ?? "",
+    body,
     published: doc.publishedAt,
     modified: doc.updatedAt,
-    section: getContentTypeLabel(doc.type),
+    section: typeLabel,
     tags: doc.tags,
     wordCount,
-    authorName: doc.author.name,
-    authorUrl: doc.author.url,
+    author: authorProfile,
+    image: heroImageUrl,
+    imageAlt: ogImageAlt,
     type: articleType as "Article" | "TechArticle",
   }),
   buildBreadcrumbSchema([
     { name: "Home", url: absoluteUrl("/") },
+    { name: typeLabel + "s", url: absoluteUrl(sectionHub.href) },
     { name: doc.title, url: pageUrl },
   ]),
 ];
 
-if (doc.question) {
-  graphItems.push(
-    buildFaqSchema([{ question: doc.question, answer: doc.excerpt }]),
-  );
+if (faqPairs.length > 0) {
+  graphItems.push(buildFaqSchema(faqPairs));
 }
 
 const jsonLd = wrapGraph(...graphItems);
@@ -84,10 +136,12 @@ const tocHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
 ---
 
 <ContentLayout
-  title={`${doc.title} | Internode`}
+  title={`${doc.title} · Internode`}
   description={doc.description}
   canonical={canonicalUrl}
   ogType="article"
+  ogImage={ogImagePath}
+  ogImageAlt={ogImageAlt}
   publishedTime={new Date(`${doc.publishedAt}T00:00:00Z`).toISOString()}
   modifiedTime={new Date(`${doc.updatedAt}T00:00:00Z`).toISOString()}
   author={doc.author.name}
@@ -98,13 +152,15 @@ const tocHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
     <nav aria-label="Breadcrumb" class="mb-6 text-sm text-zinc-500">
       <a href="/" class="hover:text-zinc-700">Home</a>
       <span class="mx-1">/</span>
+      <a href={sectionHub.href} class="hover:text-zinc-700">{typeLabel}s</a>
+      <span class="mx-1">/</span>
       <span aria-current="page">{doc.title}</span>
     </nav>
 
     <article class="max-w-3xl">
       <header class="space-y-4 border-b border-zinc-200 pb-8">
         <p class="text-sm text-zinc-600">
-          {getContentTypeLabel(doc.type)} &middot;
+          {typeLabel} &middot;
           <time datetime={doc.publishedAt}>{formatDisplayDate(doc.publishedAt)}</time> &middot;
           {readTime} min read
         </p>
@@ -113,11 +169,58 @@ const tocHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
         </h1>
         <p class="text-lg leading-8 text-zinc-700">{doc.excerpt}</p>
         <div class="text-sm leading-7 text-zinc-600">
-          <address class="not-italic">Author: {doc.author.name}</address>
-          <p>Updated: <time datetime={doc.updatedAt}>{formatDisplayDate(doc.updatedAt)}</time></p>
-          <p>Tags: {doc.tags.join(", ")}</p>
+          <address class="not-italic">
+            By{" "}
+            {authorProfile.linkedin ? (
+              <a
+                href={authorProfile.linkedin}
+                rel="author noopener noreferrer"
+                target="_blank"
+                class="font-medium text-zinc-950 hover:underline"
+              >
+                {authorProfile.name}
+              </a>
+            ) : (
+              <span class="font-medium text-zinc-950">{authorProfile.name}</span>
+            )}
+            {authorProfile.role && <span>, {authorProfile.role}</span>}
+          </address>
+          <p>Updated: <time datetime={doc.updatedAt}>{formatDisplayDate(doc.updatedAt)}</time>
+            {doc.lastReviewedAt && doc.lastReviewedAt !== doc.updatedAt && (
+              <span> &middot; Reviewed: <time datetime={doc.lastReviewedAt}>{formatDisplayDate(doc.lastReviewedAt)}</time></span>
+            )}
+          </p>
+          <p class="mt-1 flex flex-wrap gap-1.5">
+            {doc.tags.map((tag) => (
+              <a
+                href={topicUrl(tag)}
+                class="rounded-full border border-zinc-200 px-2 py-0.5 text-xs text-zinc-700 hover:border-zinc-400 hover:text-zinc-950"
+              >
+                {tag}
+              </a>
+            ))}
+          </p>
         </div>
       </header>
+
+      {hasCustomHero && (
+        <figure class="mt-8">
+          <picture>
+            <source srcset={`/marketing/${doc.ogImage!.replace(/\.(png|webp|avif)$/, "")}.avif`} type="image/avif" />
+            <source srcset={`/marketing/${doc.ogImage!.replace(/\.(png|webp|avif)$/, "")}.webp`} type="image/webp" />
+            <img
+              src={`/marketing/${doc.ogImage}`}
+              alt={ogImageAlt}
+              width="1728"
+              height="2160"
+              loading="eager"
+              fetchpriority="high"
+              class="w-full rounded-lg border border-zinc-200 bg-zinc-50"
+            />
+          </picture>
+          <figcaption class="mt-2 text-xs text-zinc-500">{ogImageAlt}</figcaption>
+        </figure>
+      )}
 
       {tocHeadings.length > 1 && (
         <nav

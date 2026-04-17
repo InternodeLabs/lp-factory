@@ -5,51 +5,95 @@ import {
   getAllContentEntries,
   getContentByType,
   getFeaturedContent,
-  getAllContentTags,
   getContentTypeLabel,
+  getAllTopics,
   contentUrl,
   entrySlug,
+  topicSlug,
 } from "@/lib/content";
 import {
   CONTENT_SITE_URL,
+  DEFAULT_OG_IMAGE,
+  DEFAULT_OG_IMAGE_ALT,
   MAIN_SITE_URL,
   SITE_DESCRIPTION,
+  SITE_HEADLINE,
   SITE_TITLE,
   absoluteUrl,
   formatDisplayDate,
 } from "@/lib/site";
 import {
-  buildWebSiteSchema,
+  buildFaqSchema,
+  buildItemListSchema,
   buildOrganizationSchema,
+  buildSoftwareApplicationSchema,
   buildWebPageSchema,
+  buildWebSiteSchema,
   wrapGraph,
 } from "@/lib/seo";
+import { FAQ_GROUPS, ALL_FAQ_ENTRIES } from "@/lib/faq";
 
 const allContent = await getAllContentEntries();
 const featuredContent = await getFeaturedContent(3);
 const answers = await getContentByType("answer");
 const useCases = await getContentByType("use-case");
 const updates = await getContentByType("update");
-const tags = await getAllContentTags();
+
+const latestUpdated = allContent.reduce<string | null>((acc, entry) => {
+  const date = entry.data.updatedAt;
+  if (!acc || date > acc) return date;
+  return acc;
+}, null);
+const homeDateModified = latestUpdated ?? new Date().toISOString().slice(0, 10);
+
+const CURATED_CATEGORIES: { tag: string; label: string }[] = [
+  { tag: "decision memory", label: "Decision memory" },
+  { tag: "organizational memory", label: "Organizational memory" },
+  { tag: "memory-aware drafting", label: "Memory-aware drafting" },
+  { tag: "meetings", label: "Meetings" },
+  { tag: "phone calls", label: "Phone calls" },
+  { tag: "tasks", label: "Tasks" },
+  { tag: "executive assistant", label: "Executive assistants" },
+  { tag: "small business", label: "Small business" },
+  { tag: "healthcare", label: "Healthcare" },
+  { tag: "public sector", label: "Public sector" },
+  { tag: "ai agents", label: "AI agents" },
+  { tag: "integrations", label: "Integrations" },
+  { tag: "updates", label: "Updates" },
+];
+
+const allTopics = await getAllTopics();
+const topicSlugsWithContent = new Set(allTopics.map((t) => t.slug));
+const CATEGORIES = CURATED_CATEGORIES
+  .map((c) => ({ slug: topicSlug(c.tag), label: c.label }))
+  .filter((c) => topicSlugsWithContent.has(c.slug));
 
 const jsonLd = wrapGraph(
   buildWebSiteSchema(),
   buildOrganizationSchema(),
+  buildSoftwareApplicationSchema(),
   buildWebPageSchema({
     url: CONTENT_SITE_URL,
     name: SITE_TITLE,
     description: SITE_DESCRIPTION,
+    dateModified: homeDateModified,
+    image: absoluteUrl(DEFAULT_OG_IMAGE),
   }),
-  {
-    "@type": "ItemList",
-    "@id": absoluteUrl("/#content-index"),
-    itemListElement: allContent.map((entry, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
+  buildItemListSchema({
+    id: absoluteUrl("/#content-index"),
+    name: "Internode content index",
+    items: allContent.map((entry) => ({
       url: absoluteUrl(contentUrl(entrySlug(entry))),
       name: entry.data.title,
+      description: entry.data.excerpt,
     })),
-  },
+  }),
+  buildFaqSchema(
+    ALL_FAQ_ENTRIES.map((e) => ({
+      question: e.question,
+      answer: e.answer,
+    })),
+  ),
 );
 ---
 
@@ -57,6 +101,9 @@ const jsonLd = wrapGraph(
   title={SITE_TITLE}
   description={SITE_DESCRIPTION}
   canonical={CONTENT_SITE_URL}
+  ogImage={DEFAULT_OG_IMAGE}
+  ogImageAlt={DEFAULT_OG_IMAGE_ALT}
+  modifiedTime={new Date(`${homeDateModified}T00:00:00Z`).toISOString()}
   jsonLd={jsonLd}
 >
   <main id="main-content" class="mx-auto max-w-4xl px-4 py-12 md:py-16">
@@ -66,30 +113,77 @@ const jsonLd = wrapGraph(
 
     <section class="max-w-3xl space-y-5">
       <h1 class="text-3xl font-semibold tracking-tight text-zinc-950 md:text-4xl">
-        Answers, use cases, and updates about organizational memory for teams
-        and AI agents.
+        {SITE_HEADLINE}
       </h1>
       <p class="text-lg leading-8 text-zinc-700">
-        This site publishes plain-language content so people, search engines,
-        and AI systems can reach the content efficiently to understand how
-        to build organizational memory with Internode.
+        Organizational memory is the searchable record of what your team has
+        decided, agreed, and committed to across meetings, emails, and phone
+        calls. Decision memory is the sharpest subset of that record: the
+        set of decisions that drive every downstream task, document, and
+        conversation. This content hub explains both concepts in plain
+        language for operators, and in structured form for AI agents and
+        search engines that want to retrieve, cite, and reason over the
+        material.
       </p>
     </section>
+
+    <section class="mt-8 max-w-3xl">
+      <h2 class="text-sm font-semibold uppercase tracking-wide text-zinc-500">
+        Browse by category
+      </h2>
+      <ul class="mt-3 flex flex-wrap gap-2 text-sm">
+        {CATEGORIES.map((category) => (
+          <li>
+            <a
+              href={`/topics/${category.slug}`}
+              class="rounded-full border border-zinc-300 bg-white px-3 py-1 text-zinc-700 hover:border-zinc-500 hover:text-zinc-950"
+            >
+              {category.label}
+            </a>
+          </li>
+        ))}
+        <li>
+          <a
+            href="/topics"
+            class="rounded-full border border-zinc-400 bg-zinc-50 px-3 py-1 font-medium text-zinc-950 hover:border-zinc-600"
+          >
+            All topics →
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <form
+      action="#answers"
+      method="get"
+      role="search"
+      aria-label="Search content"
+      class="mt-8 flex max-w-xl items-center gap-2"
+    >
+      <label for="q" class="sr-only">Search the content hub</label>
+      <input
+        type="search"
+        id="q"
+        name="q"
+        placeholder="Search answers, use cases, and updates…"
+        class="flex-1 rounded-lg border border-zinc-300 bg-white px-4 py-2 text-sm text-zinc-900 focus:border-zinc-500 focus:outline-none"
+      />
+      <button
+        type="submit"
+        class="rounded-lg bg-zinc-900 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-800"
+      >
+        Search
+      </button>
+    </form>
 
     <AskYourAI client:visible />
 
     <section class="mt-10 max-w-3xl space-y-5">
       <p class="leading-8 text-zinc-700">
-        Start with the fundamentals, move into the workflow examples, or visit
+        Start with the fundamentals below, open a category above, or visit
         <a href={MAIN_SITE_URL} target="_blank" rel="noopener noreferrer" class="font-semibold text-zinc-950 hover:underline">internode.ai</a>
         for the main product site and try it out for free.
       </p>
-      <details class="text-sm text-zinc-500">
-        <summary class="cursor-pointer select-none hover:text-zinc-700">
-          Topics covered
-        </summary>
-        <p class="mt-1">{tags.join(", ")}.</p>
-      </details>
     </section>
 
     {featuredContent.length > 0 && (
@@ -109,11 +203,36 @@ const jsonLd = wrapGraph(
       </section>
     )}
 
-    <section class="mt-14 border-t border-zinc-200 pt-10" id="answers">
+    <section class="mt-14 border-t border-zinc-200 pt-10" id="faq">
+      <h2 class="text-xl font-semibold text-zinc-950">Common questions</h2>
+      <p class="mt-2 text-sm text-zinc-600">
+        Short answers pulled from the canonical pages — follow the link in
+        each answer for the full write-up. See the <a href="/faq" class="hover:underline">full FAQ</a> for more.
+      </p>
+      <div class="mt-6 space-y-8">
+        {FAQ_GROUPS.map((group) => (
+          <div>
+            <h3 class="text-sm font-semibold uppercase tracking-wide text-zinc-500">{group.heading}</h3>
+            <dl class="mt-3 space-y-5">
+              {group.entries.map((entry) => (
+                <div>
+                  <dt class="font-medium text-zinc-950">{entry.question}</dt>
+                  <dd class="mt-1 text-zinc-700">
+                    {entry.answer} <a href={`/${entry.canonicalSlug}`} class="font-medium text-zinc-950 hover:underline">Read the full page →</a>
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="mt-14 border-t border-zinc-200 pt-10" id="answers" data-content-list>
       <h2 class="text-xl font-semibold text-zinc-950">Answers</h2>
-      <ul class="mt-6 space-y-6">
+      <ul class="mt-6 space-y-6" data-content-section="answer">
         {answers.map((entry) => (
-          <li class="space-y-1">
+          <li class="space-y-1" data-searchable={`${entry.data.title} ${entry.data.excerpt} ${entry.data.tags.join(" ")}`}>
             <a href={contentUrl(entrySlug(entry))} class="font-semibold text-zinc-950 hover:underline">{entry.data.title}</a>
               <p class="text-sm text-zinc-600">
                 {getContentTypeLabel(entry.data.type)} &middot; <time datetime={entry.data.publishedAt}>{formatDisplayDate(entry.data.publishedAt)}</time>
@@ -124,11 +243,11 @@ const jsonLd = wrapGraph(
       </ul>
     </section>
 
-    <section class="mt-14 border-t border-zinc-200 pt-10" id="use-cases">
+    <section class="mt-14 border-t border-zinc-200 pt-10" id="use-cases" data-content-list>
       <h2 class="text-xl font-semibold text-zinc-950">Use cases</h2>
-      <ul class="mt-6 space-y-6">
+      <ul class="mt-6 space-y-6" data-content-section="use-case">
         {useCases.map((entry) => (
-          <li class="space-y-1">
+          <li class="space-y-1" data-searchable={`${entry.data.title} ${entry.data.excerpt} ${entry.data.tags.join(" ")}`}>
             <a href={contentUrl(entrySlug(entry))} class="font-semibold text-zinc-950 hover:underline">{entry.data.title}</a>
             <p class="text-sm text-zinc-600">
               {getContentTypeLabel(entry.data.type)} &middot; <time datetime={entry.data.publishedAt}>{formatDisplayDate(entry.data.publishedAt)}</time>
@@ -139,11 +258,11 @@ const jsonLd = wrapGraph(
       </ul>
     </section>
 
-    <section class="mt-14 border-t border-zinc-200 pt-10" id="updates">
+    <section class="mt-14 border-t border-zinc-200 pt-10" id="updates" data-content-list>
       <h2 class="text-xl font-semibold text-zinc-950">Updates</h2>
-      <ul class="mt-6 space-y-6">
+      <ul class="mt-6 space-y-6" data-content-section="update">
         {updates.map((entry) => (
-          <li class="space-y-1">
+          <li class="space-y-1" data-searchable={`${entry.data.title} ${entry.data.excerpt} ${entry.data.tags.join(" ")}`}>
             <a href={contentUrl(entrySlug(entry))} class="font-semibold text-zinc-950 hover:underline">{entry.data.title}</a>
             <p class="text-sm text-zinc-600">
               {getContentTypeLabel(entry.data.type)} &middot; <time datetime={entry.data.publishedAt}>{formatDisplayDate(entry.data.publishedAt)}</time>
@@ -154,4 +273,35 @@ const jsonLd = wrapGraph(
       </ul>
     </section>
   </main>
+
+  <script>
+    // Minimal client-side ?q= filter to honor the WebSite.SearchAction contract.
+    (() => {
+      const params = new URLSearchParams(window.location.search);
+      const raw = params.get("q");
+      const input = document.getElementById("q") as HTMLInputElement | null;
+      if (input && raw) input.value = raw;
+      if (!raw) return;
+      const query = raw.trim().toLowerCase();
+      if (!query) return;
+
+      const lists = document.querySelectorAll<HTMLUListElement>("[data-content-section]");
+      lists.forEach((list) => {
+        let visibleCount = 0;
+        list.querySelectorAll<HTMLLIElement>("li[data-searchable]").forEach((li) => {
+          const hay = (li.getAttribute("data-searchable") ?? "").toLowerCase();
+          const show = hay.includes(query);
+          li.hidden = !show;
+          if (show) visibleCount += 1;
+        });
+        const section = list.closest("section");
+        if (section && visibleCount === 0) {
+          const empty = document.createElement("p");
+          empty.className = "mt-4 text-sm text-zinc-500";
+          empty.textContent = `No matches for "${raw}" in this section.`;
+          list.after(empty);
+        }
+      });
+    })();
+  </script>
 </ContentLayout>

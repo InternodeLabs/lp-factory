@@ -1,0 +1,146 @@
+---
+import ContentLayout from "@/layouts/ContentLayout.astro";
+import {
+  getAllTopics,
+  getContentTypeLabel,
+  contentUrl,
+  entrySlug,
+  topicUrl,
+} from "@/lib/content";
+import {
+  CONTENT_SITE_URL,
+  DEFAULT_OG_IMAGE,
+  DEFAULT_OG_IMAGE_ALT,
+  absoluteUrl,
+  formatDisplayDate,
+} from "@/lib/site";
+import {
+  buildBreadcrumbSchema,
+  buildCollectionPageSchema,
+  buildItemListSchema,
+  buildOrganizationSchema,
+  buildWebSiteSchema,
+  wrapGraph,
+} from "@/lib/seo";
+
+export async function getStaticPaths() {
+  const topics = await getAllTopics();
+  return topics.map((topic) => ({
+    params: { topic: topic.slug },
+    props: { topic },
+  }));
+}
+
+const { topic } = Astro.props;
+const pageUrl = absoluteUrl(`/topics/${topic.slug}`);
+
+const latestUpdated = topic.entries.reduce<string | null>((acc, entry) => {
+  const date = entry.data.updatedAt;
+  if (!acc || date > acc) return date;
+  return acc;
+}, null);
+
+const title = `${topic.label} · Topic · Internode`;
+const description = `Every answer, use case, and update in the Internode content hub tagged ${topic.label}. ${topic.entries.length} ${topic.entries.length === 1 ? "page" : "pages"}, newest first.`;
+
+const jsonLd = wrapGraph(
+  buildWebSiteSchema(),
+  buildOrganizationSchema(),
+  buildCollectionPageSchema({
+    url: pageUrl,
+    name: `${topic.label} — Internode content`,
+    description,
+    dateModified: latestUpdated ?? undefined,
+  }),
+  buildItemListSchema({
+    id: `${pageUrl}#items`,
+    name: `Pages tagged ${topic.label}`,
+    items: topic.entries.map((entry) => ({
+      url: absoluteUrl(contentUrl(entrySlug(entry))),
+      name: entry.data.title,
+      description: entry.data.excerpt,
+    })),
+  }),
+  buildBreadcrumbSchema([
+    { name: "Home", url: absoluteUrl("/") },
+    { name: "Topics", url: absoluteUrl("/topics") },
+    { name: topic.label, url: pageUrl },
+  ]),
+);
+---
+
+<ContentLayout
+  title={title}
+  description={description}
+  canonical={pageUrl}
+  ogImage={DEFAULT_OG_IMAGE}
+  ogImageAlt={DEFAULT_OG_IMAGE_ALT}
+  modifiedTime={latestUpdated ? new Date(`${latestUpdated}T00:00:00Z`).toISOString() : undefined}
+  jsonLd={jsonLd}
+>
+  <main id="main-content" class="mx-auto max-w-4xl px-4 py-12 md:py-16">
+    <nav aria-label="Breadcrumb" class="mb-6 text-sm text-zinc-500">
+      <a href="/" class="hover:text-zinc-700">Home</a>
+      <span class="mx-1">/</span>
+      <a href="/topics" class="hover:text-zinc-700">Topics</a>
+      <span class="mx-1">/</span>
+      <span aria-current="page">{topic.label}</span>
+    </nav>
+
+    <header class="max-w-3xl space-y-4">
+      <p class="text-sm font-semibold uppercase tracking-wide text-zinc-500">Topic</p>
+      <h1 class="text-3xl font-semibold tracking-tight text-zinc-950 md:text-4xl">
+        {topic.label}
+      </h1>
+      <p class="text-lg leading-8 text-zinc-700">
+        {topic.entries.length} {topic.entries.length === 1 ? "page" : "pages"} in the Internode
+        content hub tagged <span class="font-medium text-zinc-950">{topic.label}</span>, newest first.
+        Each page is a canonical, citable write-up on the subject, maintained for teams,
+        search engines, and AI agents.
+      </p>
+    </header>
+
+    <section class="mt-10 max-w-3xl" aria-label={`Pages tagged ${topic.label}`}>
+      <ul class="space-y-6">
+        {topic.entries.map((entry) => (
+          <li class="space-y-1">
+            <a href={contentUrl(entrySlug(entry))} class="font-semibold text-zinc-950 hover:underline">
+              {entry.data.title}
+            </a>
+            <p class="text-sm text-zinc-600">
+              {getContentTypeLabel(entry.data.type)} &middot;
+              <time datetime={entry.data.publishedAt}>{formatDisplayDate(entry.data.publishedAt)}</time>
+              {entry.data.updatedAt !== entry.data.publishedAt && (
+                <>
+                  {" "}&middot; Updated <time datetime={entry.data.updatedAt}>{formatDisplayDate(entry.data.updatedAt)}</time>
+                </>
+              )}
+            </p>
+            <p class="text-zinc-800">{entry.data.excerpt}</p>
+            {entry.data.tags.length > 1 && (
+              <p class="mt-1 flex flex-wrap gap-1.5">
+                {entry.data.tags
+                  .filter((t) => t !== topic.label)
+                  .map((t) => (
+                    <a
+                      href={topicUrl(t)}
+                      class="rounded-full border border-zinc-200 px-2 py-0.5 text-xs text-zinc-700 hover:border-zinc-400 hover:text-zinc-950"
+                    >
+                      {t}
+                    </a>
+                  ))}
+              </p>
+            )}
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="mt-14 max-w-3xl border-t border-zinc-200 pt-8 text-sm text-zinc-600">
+      <p>
+        Looking for a different topic? Browse the <a href="/topics" class="font-medium text-zinc-950 hover:underline">full topic index</a>
+        or the <a href="/" class="font-medium text-zinc-950 hover:underline">home page</a>.
+      </p>
+    </section>
+  </main>
+</ContentLayout>

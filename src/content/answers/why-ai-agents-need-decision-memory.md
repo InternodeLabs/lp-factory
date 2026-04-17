@@ -7,9 +7,10 @@ type: answer
 publishedAt: 2026-04-15
 updatedAt: 2026-04-15
 author:
-  name: Internode Team
-  role: Research and product
-  url: https://internode.ai
+  name: "Balazs Ketyi"
+  role: "Co-founder and CPO"
+  url: "https://internode.ai"
+  linkedin: "https://www.linkedin.com/in/balazsketyi/"
 tags:
   - ai agents
   - decision memory

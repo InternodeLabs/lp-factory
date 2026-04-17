@@ -5,13 +5,15 @@ import { APP_SITE_URL, MAIN_SITE_URL } from "@/lib/site";
 interface Props {
   title: string;
   description: string;
-  canonical: string;
+  canonical?: string;
   ogType?: "website" | "article";
   ogImage?: string;
+  ogImageAlt?: string;
   publishedTime?: string;
   modifiedTime?: string;
   author?: string;
   tags?: string[];
+  noindex?: boolean;
   jsonLd?: string;
 }
 
@@ -25,6 +27,8 @@ const year = new Date().getFullYear();
       <div class="mx-auto flex max-w-4xl flex-col gap-3 px-4 py-6 text-sm sm:flex-row sm:items-center sm:justify-between">
         <a href="/" class="text-zinc-950 hover:underline">content.internode.ai</a>
         <nav aria-label="Main navigation" class="flex flex-wrap gap-x-4 gap-y-2 text-zinc-700">
+          <a href="/faq" class="hover:text-zinc-950">FAQ</a>
+          <a href="/about" class="hover:text-zinc-950">About</a>
           <a href={MAIN_SITE_URL} target="_blank" rel="noopener noreferrer" class="hover:text-zinc-950">main site</a>
           <a href={APP_SITE_URL} target="_blank" rel="noopener noreferrer" class="hover:text-zinc-950">product app</a>
           <a href="/rss.xml" class="hover:text-zinc-950">rss</a>
