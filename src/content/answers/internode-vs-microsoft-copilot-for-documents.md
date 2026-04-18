@@ -28,8 +28,6 @@ relatedSlugs:
   - internode-vs-gemini-for-documents
 ---
 
-# Internode vs Microsoft Copilot for documents: which AI drafts from your team's actual decisions?
-
 Microsoft Copilot is the best in-surface drafting assistant for teams that already live in Word and Outlook. Internode is the memory-aware drafting system for teams whose real decisions live in meetings, phone calls, email, and chat, and who want every section of a draft traceable to a specific source. Pick Copilot for inline rewriting inside Microsoft 365. Use Internode when the draft has to answer "where does this claim come from?"
 
 ## Side-by-side on the axes that matter

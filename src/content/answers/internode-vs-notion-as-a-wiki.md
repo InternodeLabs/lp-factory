@@ -29,8 +29,6 @@ relatedSlugs:
   - internode-vs-confluence-ai
 ---
 
-# Internode vs Notion as a wiki: which AI knowledge base should you use?
-
 Notion is the most flexible workspace-as-database on the market for teams that want to hand-build their own schema, pages, and relationships. Internode is the AI knowledge base for teams whose real knowledge lives in meetings, phone calls, email, and chat, and who want the base to build itself. Pick Notion when you want to structure things yourself. Add Internode for the knowledge your team never finds time to type into a page.
 
 ## Side-by-side on the axes that matter

@@ -29,8 +29,6 @@ relatedSlugs:
   - internode-vs-tldv-for-meeting-prep-drafts
 ---
 
-# Internode vs Otter: which AI drafts a meeting brief from your team's knowledge?
-
 Otter is the best transcript recall tool when you need to verify a direct quote from an earlier Otter meeting. Internode is the drafter that composes the pre-meeting brief from your team's decision history across weeks of calls, email, and chat. Use Otter when you want to search a quote. Use Internode when the brief has to ground in everything your team has already decided.
 
 Looking for the general capture-side comparison? See [/internode-vs-otter](/internode-vs-otter).

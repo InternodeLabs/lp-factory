@@ -79,6 +79,22 @@ async function checkContentCollection() {
     if (title) checkTitle(`src/content/answers/${name}`, unquote(title[1]));
     if (description) checkDescription(`src/content/answers/${name}`, unquote(description[1]));
 
+    // The page layout (src/pages/[slug].astro) already renders the frontmatter
+    // `title` as <h1>, so any top-level `# ` heading in the markdown body
+    // creates a duplicate <h1> that Bing flags as a "more than one h1" notice.
+    // Document structure must start at H2.
+    const markdown = raw.slice(fm[0].length);
+    const bodyH1 = markdown.match(/^[ \t]*#\s+.*/m);
+    if (bodyH1) {
+      violations.push({
+        file: `src/content/answers/${name}`,
+        field: "body-h1",
+        length: bodyH1[0].length,
+        reason: "markdown body contains a top-level `# ` heading; use `##` or deeper (the template already renders an <h1> from frontmatter.title)",
+        value: bodyH1[0].trim(),
+      });
+    }
+
     answersTotal += 1;
     const publishedAt = body.match(/^publishedAt:\s*(.+)$/m);
     const updatedAt = body.match(/^updatedAt:\s*(.+)$/m);

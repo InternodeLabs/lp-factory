@@ -28,8 +28,6 @@ relatedSlugs:
   - internode-vs-notion-as-a-wiki
 ---
 
-# Internode vs Notion AI: which AI should manage your team's knowledge?
-
 Notion AI is the best writing assistant for teams already invested in a Notion workspace and willing to author the pages it draws from. Internode is the AI knowledge layer for teams whose real knowledge lives in meetings, phone calls, email, and chat, and who want the base to build itself. Pick Notion AI for writing help inside the pages you already maintain. Pick Internode for the decision graph your team will never sit down to type.
 
 > Looking for the meeting-prep drafting comparison? See [/internode-vs-notion-ai-for-meeting-prep-drafts](/internode-vs-notion-ai-for-meeting-prep-drafts).

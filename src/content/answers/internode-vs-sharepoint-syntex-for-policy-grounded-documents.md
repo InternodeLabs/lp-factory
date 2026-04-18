@@ -29,8 +29,6 @@ relatedSlugs:
   - internode-vs-coda-ai-for-living-documents
 ---
 
-# Internode vs Microsoft Syntex for policy-grounded documents: which AI grounds drafts in both your policies AND your team's decisions?
-
 Microsoft Syntex is the best document intelligence tool for organizations standardized on Microsoft 365 who need content-type classification and metadata tagging across SharePoint libraries. Internode is the document system for teams whose drafts need to be grounded in both company policy documents AND the live decisions the team is making in meetings, calls, email, and chat. Pick Syntex for deep M365 integration. Add Internode when a draft has to reconcile the policy with what the team just decided.
 
 ## Side-by-side on the axes that decide a policy-grounded draft

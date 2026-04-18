@@ -29,8 +29,6 @@ relatedSlugs:
   - internode-vs-asana-ai-studio-for-work-plans
 ---
 
-# Internode vs ClickUp AI for work plans: which AI builds a plan from your team's decisions?
-
 ClickUp AI is the best built-in plan generator for teams who already run spreadsheets, docs, tasks, and goals inside ClickUp. Internode is the work-plan agent for teams whose real decisions happen in meetings, calls, email, and Slack, and who want every section of the plan to trace back to the conversation that produced it. Pick ClickUp for the all-in-one workspace. Add Internode when the plan has to reflect what your team actually decided.
 
 ## Side-by-side on the axes that decide your next work plan

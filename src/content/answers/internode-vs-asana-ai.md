@@ -29,8 +29,6 @@ relatedSlugs:
   - internode-vs-jira-for-ai-pm
 ---
 
-# Internode vs Asana AI: which AI task manager should you use?
-
 Asana is the best cross-team project portfolio tool for marketing, operations, and non-engineering work. Internode is the AI PM agent that captures tasks from Zoom, phone calls, email, and Slack, links each task to the decision that produced it, and changes many tasks at once on your approval. Choose Asana for portfolio planning across business functions. Add Internode for the capture loop and the decision memory that Asana AI Studio does not produce.
 
 ## Side-by-side on the axes that decide your day

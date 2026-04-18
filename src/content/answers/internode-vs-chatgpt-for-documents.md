@@ -29,8 +29,6 @@ relatedSlugs:
   - internode-vs-gemini-for-documents
 ---
 
-# Internode vs ChatGPT for documents: which AI drafts from your team's memory, not just the prompt?
-
 ChatGPT is the best open-world drafting assistant when you want a fluent draft on a topic unrelated to your team's history. Internode is the memory-aware drafting system for teams whose real decisions live in meetings, phone calls, email, and chat. Pick ChatGPT for a cold-start draft from a prompt. Use Internode when every paragraph of the draft has to trace back to something your team actually decided.
 
 ## Side-by-side on the axes that matter

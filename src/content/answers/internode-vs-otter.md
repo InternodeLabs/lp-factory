@@ -29,8 +29,6 @@ relatedSlugs:
   - internode-vs-read-ai
 ---
 
-# Internode vs Otter: which AI meeting intelligence tool should you use?
-
 Otter is the best per-meeting transcription product for one session at a time, with a fast search bar and speaker tagging inside the transcript. Internode is the AI meeting intelligence layer for teams whose work spans phone calls, email, chat, and weeks of cross-meeting context, with tasks and decisions that sync back to Linear or Jira. Pick Otter for the transcript you want to scrub. Pick Internode for the team record that outlives the meeting.
 
 > Looking for the meeting-prep drafting comparison? See [/internode-vs-otter-for-meeting-prep-drafts](/internode-vs-otter-for-meeting-prep-drafts).

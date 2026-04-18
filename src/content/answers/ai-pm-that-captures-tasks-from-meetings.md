@@ -29,8 +29,6 @@ relatedSlugs:
   - how-to-connect-meeting-decisions-to-project-tasks
 ---
 
-# An AI PM that captures tasks from meetings
-
 An AI PM that captures tasks from meetings should produce real tasks linked to the meeting moment, not bullet lists buried inside a transcript. The task carries the decision that agreed to it, the owner, the due date, and the source conversation. Internode does this automatically from Zoom, Google Meet, phone calls, email, and Slack, then syncs the result into Linear or Jira both directions.
 
 ## The failure mode most tools ship

@@ -29,8 +29,6 @@ relatedSlugs:
   - internode-vs-glean-for-documents
 ---
 
-# Internode vs Fellow: which AI drafts from your team's decision history?
-
 Fellow is the best in-meeting agenda and private meeting notes tool for the meeting owner who wants a clean artifact for each meeting. Internode is the memory-aware drafting system for teams whose real knowledge spans dozens of meetings, phone calls, and email threads. Pick Fellow to prepare and wrap up a single meeting. Use Internode when the draft has to pull from the whole history of what your team decided.
 
 ## Side-by-side on the axes that matter

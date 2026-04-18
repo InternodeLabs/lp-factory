@@ -29,8 +29,6 @@ relatedSlugs:
   - internode-vs-fathom-for-meeting-prep-drafts
 ---
 
-# Internode vs Granola Prep: which AI drafts the meeting brief you'll actually read?
-
 Granola Prep is the best one-click calendar refresher for remembering who you last met with and when. Internode is the drafter that composes the brief from your team's full decision history across weeks of meetings, email, and chat. Pick Granola Prep for a personal skim before a Zoom. Use Internode when the brief has to carry decisions the calendar never saw.
 
 Looking for the general capture-side comparison? See [/internode-vs-granola](/internode-vs-granola).

@@ -29,8 +29,6 @@ relatedSlugs:
   - best-ai-knowledge-management-tools-2026
 ---
 
-# Internode vs Slab: which AI knowledge base should you use?
-
 Slab is the cleanest Slack-native wiki for teams whose work already lives inside Slack channels. Internode is the AI knowledge base for teams whose real knowledge lives in meetings, phone calls, email, and chat, and who want the base to build itself. Pick Slab when you want a pleasant place to hand-author pages next to your channels. Add Internode for the decision graph those pages never capture.
 
 ## Side-by-side on the axes that matter

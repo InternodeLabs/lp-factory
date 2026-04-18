@@ -30,8 +30,9 @@ Internal reference for all content on content.internode.ai. Not published on the
 - [ ] `tags` include 2 to 4 relevant terms (use ICP vocabulary, not internal jargon)
 - [ ] `question` is set for answer pages (exact question the page answers)
 - [ ] `ctaHref` and `ctaLabel` are set
-- [ ] `relatedSlugs` includes 2 to 3 related page slugs
+- [ ] `relatedSlugs` includes 2 to 3 slugs that actually exist in `src/content/answers/` (the content map check fails the build on broken references)
 - [ ] `featured` is true only for the most important pages (max 3 to 5 featured at any time)
+- [ ] After adding or renaming a page, run `pnpm content:map` to regenerate `content/content-map.md`, commit the result, and fix any orphan pages or broken references the generator flags
 
 ### First paragraph (the snippet target)
 
@@ -41,6 +42,7 @@ Internal reference for all content on content.internode.ai. Not published on the
 
 ### Section structure
 
+- [ ] **Never put a `# ` (H1) heading in the markdown body.** The page layout already renders the frontmatter `title` as the page's single `<h1>`; a body-level `# ...` creates a duplicate that Bing flags as a "more than one h1" notice. `scripts/check-meta-lengths.mjs` fails the build if a body H1 is found. Start the document structure at H2.
 - [ ] Each H2 section is independently citable (makes sense without reading the rest of the page)
 - [ ] H2 headings use question format where natural ("Why does this happen?" not "Background")
 - [ ] H3 headings are used sparingly for supporting points within an H2 section

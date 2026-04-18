@@ -29,8 +29,6 @@ relatedSlugs:
   - internode-vs-chatgpt-for-documents
 ---
 
-# Internode vs Gemini for documents: which AI drafts grounded in your team's memory?
-
 Gemini is the best in-surface drafting assistant for teams that live in Google Docs and the wider Workspace. Internode is the memory-aware drafting system for teams whose real decisions live in meetings, phone calls, email, and chat, and who want every section of a draft traceable to a specific source. Pick Gemini for inline extending and rewriting inside Google Docs. Use Internode when the reader needs to know exactly which decision produced each paragraph.
 
 ## Side-by-side on the axes that matter

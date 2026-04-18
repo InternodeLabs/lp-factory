@@ -29,8 +29,6 @@ relatedSlugs:
   - internode-vs-sharepoint-syntex-for-policy-grounded-documents
 ---
 
-# Internode vs Coda AI for living documents: which AI updates the doc from the real world?
-
 Coda AI is the best living-document tool for teams who want programmable docs with formula-driven tables and buttons inside a single workspace. Internode is the living-document system for teams whose documents need to update from meetings, calls, email, and chat happening outside the doc. Pick Coda for programmable tables. Add Internode when the document has to stay current with what the team actually decided.
 
 ## Side-by-side on the axes that decide whether a doc stays current

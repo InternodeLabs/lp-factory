@@ -29,8 +29,6 @@ relatedSlugs:
   - when-rag-is-not-enough
 ---
 
-# Internode vs Letta: which memory layer should your AI agent use?
-
 Letta is the best stateful agent runtime for teams building a custom single-agent system from scratch with clean memory-management APIs and editable memory blocks. Internode is the team-scoped memory layer for agents that need structured records, a clear trail from every memory back to the conversation that produced it, and ingestion from real meetings, calls, email, and chat. Pick Letta for the agent runtime. Pick Internode when the agent needs to reason over what a team has decided together.
 
 ## Side-by-side on the axes that decide your agent's memory layer

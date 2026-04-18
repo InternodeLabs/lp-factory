@@ -29,8 +29,6 @@ relatedSlugs:
   - internode-vs-otter-for-meeting-prep-drafts
 ---
 
-# Internode vs tldv: which AI drafts the meeting brief your team will actually use?
-
 tldv is the best searchable video clip library when you want to rewatch moments from past recorded meetings. Internode is the drafter that composes the pre-meeting brief from the team's decision history across weeks of calls, email, and chat. Use tldv when you want to rewatch a clip. Use Internode when the brief has to ground in decisions and tasks the team already agreed on.
 
 Looking for the general capture-side comparison? See [/internode-vs-tldv](/internode-vs-tldv).

@@ -29,8 +29,6 @@ relatedSlugs:
   - how-to-connect-meeting-decisions-to-project-tasks
 ---
 
-# How to stop typing tasks from meetings
-
 You finish the meeting. The action items are clear. Then somebody, usually you, has to type them into Linear, Jira, or Asana so they actually exist in the team's plan. The meeting ends at 3:00 and the typing takes until 3:30. The next meeting starts at 3:30.
 
 This is a four-change problem. Each change closes one loop that currently requires a human typist. Fix all four and the retype habit goes away.
