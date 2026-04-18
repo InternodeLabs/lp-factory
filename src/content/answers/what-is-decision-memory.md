@@ -6,6 +6,7 @@ excerpt: "Decision memory is the sharpest subset of organizational memory: the s
 type: answer
 publishedAt: "2026-04-17"
 updatedAt: "2026-04-17"
+lastReviewedAt: "2026-04-17"
 author:
   name: "Istvan Lorincz"
   role: "Co-founder and CEO"

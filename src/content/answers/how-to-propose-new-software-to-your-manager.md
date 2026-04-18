@@ -6,6 +6,7 @@ excerpt: "Most software proposals die in the first 60 seconds because the employ
 type: answer
 publishedAt: "2026-04-17"
 updatedAt: "2026-04-17"
+lastReviewedAt: "2026-04-17"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"

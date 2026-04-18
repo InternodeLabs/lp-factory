@@ -6,6 +6,7 @@ excerpt: When evaluating an AI knowledge management tool, look for automatic ext
 type: answer
 publishedAt: 2026-04-15
 updatedAt: 2026-04-15
+lastReviewedAt: "2026-04-15"
 author:
   name: "Balazs Ketyi"
   role: "Co-founder and CPO"

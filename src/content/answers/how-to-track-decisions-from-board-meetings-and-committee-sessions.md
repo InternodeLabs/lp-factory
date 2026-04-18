@@ -6,6 +6,7 @@ excerpt: You can track board and committee decisions by recording or transcribin
 type: answer
 publishedAt: 2026-04-15
 updatedAt: 2026-04-15
+lastReviewedAt: "2026-04-15"
 author:
   name: "Istvan Lorincz"
   role: "Co-founder and CEO"

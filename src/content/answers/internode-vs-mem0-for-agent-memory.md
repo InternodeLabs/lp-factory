@@ -6,6 +6,7 @@ excerpt: "Mem0 is the best drop-in memory SDK for a single agent prototype that 
 type: answer
 publishedAt: "2026-04-17"
 updatedAt: "2026-04-17"
+lastReviewedAt: "2026-04-17"
 author:
   name: "Balazs Ketyi"
   role: "Co-founder and CPO"

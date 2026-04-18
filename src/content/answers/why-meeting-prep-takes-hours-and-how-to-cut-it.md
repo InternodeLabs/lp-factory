@@ -6,6 +6,7 @@ excerpt: "Meeting prep is the single biggest time sink for executive assistants.
 type: answer
 publishedAt: "2026-04-15"
 updatedAt: "2026-04-15"
+lastReviewedAt: "2026-04-15"
 author:
   name: "Balazs Ketyi"
   role: "Co-founder and CPO"

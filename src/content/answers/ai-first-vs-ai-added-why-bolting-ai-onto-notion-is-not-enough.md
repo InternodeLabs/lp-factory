@@ -6,6 +6,7 @@ excerpt: "Adding AI to Notion or Obsidian is like adding power steering to a hor
 type: answer
 publishedAt: "2026-04-15"
 updatedAt: "2026-04-15"
+lastReviewedAt: "2026-04-15"
 author:
   name: "Istvan Lorincz"
   role: "Co-founder and CEO"

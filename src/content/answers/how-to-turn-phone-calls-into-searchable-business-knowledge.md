@@ -6,6 +6,7 @@ excerpt: "Your phone (ex: iPhone or Samsung) can already transcribe calls. The h
 type: answer
 publishedAt: 2026-04-15
 updatedAt: 2026-04-15
+lastReviewedAt: "2026-04-15"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"

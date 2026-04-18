@@ -6,6 +6,7 @@ excerpt: "The AI knowledge management market in 2026 splits cleanly in two. One 
 type: answer
 publishedAt: "2026-04-17"
 updatedAt: "2026-04-17"
+lastReviewedAt: "2026-04-17"
 author:
   name: "Istvan Lorincz"
   role: "Co-founder and CEO"

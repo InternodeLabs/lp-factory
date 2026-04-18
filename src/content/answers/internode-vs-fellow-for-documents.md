@@ -6,6 +6,7 @@ excerpt: "Fellow is the best in-meeting agenda and private meeting notes tool fo
 type: answer
 publishedAt: "2026-04-17"
 updatedAt: "2026-04-17"
+lastReviewedAt: "2026-04-17"
 author:
   name: "Balazs Ketyi"
   role: "Co-founder and CPO"

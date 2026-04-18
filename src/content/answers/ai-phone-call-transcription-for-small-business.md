@@ -6,6 +6,7 @@ excerpt: "AI phone call transcription for small business turns every call with a
 type: answer
 publishedAt: "2026-04-17"
 updatedAt: "2026-04-17"
+lastReviewedAt: "2026-04-17"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"

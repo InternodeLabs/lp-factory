@@ -6,6 +6,7 @@ excerpt: "The most important things your organization knows were never written d
 type: answer
 publishedAt: "2026-04-15"
 updatedAt: "2026-04-15"
+lastReviewedAt: "2026-04-15"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"

@@ -6,6 +6,7 @@ excerpt: "Organizational memory is the layer of your team's knowledge that survi
 type: answer
 publishedAt: "2026-04-17"
 updatedAt: "2026-04-17"
+lastReviewedAt: "2026-04-17"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"

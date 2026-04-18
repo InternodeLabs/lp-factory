@@ -6,6 +6,7 @@ excerpt: Internode connects to the tools your team already uses. It pulls transc
 type: update
 publishedAt: 2026-04-15
 updatedAt: 2026-04-15
+lastReviewedAt: "2026-04-15"
 author:
   name: "Balazs Ketyi"
   role: "Co-founder and CPO"

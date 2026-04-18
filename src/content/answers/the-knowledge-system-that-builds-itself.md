@@ -6,6 +6,7 @@ excerpt: "The reason most knowledge systems fail is that they depend on you to d
 type: answer
 publishedAt: "2026-04-15"
 updatedAt: "2026-04-15"
+lastReviewedAt: "2026-04-15"
 author:
   name: "Istvan Lorincz"
   role: "Co-founder and CEO"

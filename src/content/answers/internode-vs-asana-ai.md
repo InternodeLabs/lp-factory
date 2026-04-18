@@ -6,6 +6,7 @@ excerpt: "Asana is the best cross-team project portfolio tool for non-engineerin
 type: answer
 publishedAt: "2026-04-17"
 updatedAt: "2026-04-17"
+lastReviewedAt: "2026-04-17"
 author:
   name: "Balazs Ketyi"
   role: "Co-founder and CPO"

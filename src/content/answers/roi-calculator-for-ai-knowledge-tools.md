@@ -6,6 +6,7 @@ excerpt: "Most ROI pitches for knowledge tools sound like vendor math. This one 
 type: answer
 publishedAt: "2026-04-17"
 updatedAt: "2026-04-17"
+lastReviewedAt: "2026-04-17"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"

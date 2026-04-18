@@ -6,6 +6,7 @@ excerpt: "AI meeting notes for schools turn board meetings, staff sessions, and 
 type: answer
 publishedAt: "2026-04-17"
 updatedAt: "2026-04-17"
+lastReviewedAt: "2026-04-17"
 author:
   name: "Istvan Lorincz"
   role: "Co-founder and CEO"

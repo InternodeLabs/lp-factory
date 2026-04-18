@@ -6,6 +6,7 @@ excerpt: "You support three executives. Each has 15 to 20 meetings a week. Every
 type: use-case
 publishedAt: "2026-04-15"
 updatedAt: "2026-04-15"
+lastReviewedAt: "2026-04-15"
 author:
   name: "Balazs Ketyi"
   role: "Co-founder and CPO"

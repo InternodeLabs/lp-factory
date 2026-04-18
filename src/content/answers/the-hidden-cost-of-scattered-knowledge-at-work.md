@@ -6,6 +6,7 @@ excerpt: "Knowledge workers spend roughly 20% of their work week searching for i
 type: answer
 publishedAt: "2026-04-15"
 updatedAt: "2026-04-15"
+lastReviewedAt: "2026-04-15"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"

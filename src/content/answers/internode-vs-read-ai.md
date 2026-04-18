@@ -6,6 +6,7 @@ excerpt: "Read AI is the best tool for speaker analytics and in-meeting engageme
 type: answer
 publishedAt: "2026-04-17"
 updatedAt: "2026-04-17"
+lastReviewedAt: "2026-04-17"
 author:
   name: "Balazs Ketyi"
   role: "Co-founder and CPO"

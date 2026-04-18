@@ -6,6 +6,7 @@ excerpt: You can organize customer and supplier commitments without a CRM by rec
 type: answer
 publishedAt: 2026-04-15
 updatedAt: 2026-04-15
+lastReviewedAt: "2026-04-15"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"

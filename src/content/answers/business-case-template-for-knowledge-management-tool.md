@@ -6,6 +6,7 @@ excerpt: "Most internal proposals get skimmed or ignored because they read like 
 type: answer
 publishedAt: "2026-04-17"
 updatedAt: "2026-04-17"
+lastReviewedAt: "2026-04-17"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"

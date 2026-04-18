@@ -23,7 +23,9 @@ Internal reference for all content on content.internode.ai. Not published on the
 - [ ] `description` is one sentence for search engines and link previews, **25 to 160 characters** (meta-only, not rendered on the page, so trim aggressively)
 - [ ] `excerpt` is one to two sentences summarizing the page in plain language (shown on the hub pages — no length cap)
 - [ ] `type` is one of: `answer`, `use-case`, `update`
-- [ ] `publishedAt` and `updatedAt` are set to the correct ISO date
+- [ ] `publishedAt` is set to the correct ISO date and **never changed after publication**
+- [ ] `updatedAt` is bumped to today's ISO date on every content edit, no matter how small (this feeds `<lastmod>` in the sitemap and `dateModified` in the article schema; stale values tell search engines the page is dead)
+- [ ] `lastReviewedAt` is bumped to today's ISO date whenever the page is reviewed and confirmed still accurate, even when no words changed (this is what signals freshness to Bing / Google without faking edits). Leave it equal to `publishedAt` until the first real review.
 - [ ] `author` has `name`, `role`, and `url`
 - [ ] `tags` include 2 to 4 relevant terms (use ICP vocabulary, not internal jargon)
 - [ ] `question` is set for answer pages (exact question the page answers)
@@ -313,6 +315,23 @@ All `/internode-vs-*` pages must also follow `content/comparison-page-spec.md`. 
 - Answer pages: 600 to 1,000 words
 - Use-case pages: 500 to 800 words
 - Update pages: 300 to 600 words
+
+---
+
+## Freshness Cadence
+
+Search engines (Bing in particular, and increasingly Google) weight content freshness as part of quality scoring. They look at three things and compare them:
+
+1. `publishedAt` — the day the page first went live. Set once, never changed.
+2. `updatedAt` — the last day the body text was materially changed. Feeds the `<lastmod>` date in the sitemap and `dateModified` in the article schema. Bump this on every real edit.
+3. `lastReviewedAt` — the last day someone read the page end-to-end and confirmed it is still accurate, even when nothing was changed. Bump this on review-only passes.
+
+Rules of thumb:
+
+- Do not fake `updatedAt` bumps. Crawlers notice pages whose `<lastmod>` keeps moving but whose content hash does not, and the signal flips negative.
+- Review every page at least once a quarter. Even a review that changes nothing should bump `lastReviewedAt`, because that is an honest freshness signal.
+- When the underlying product fact changes (a new integration, a renamed competitor, a changed pricing claim), bump `updatedAt` **and** `lastReviewedAt` in the same commit.
+- Aim for a rolling distribution of `updatedAt` / `lastReviewedAt` dates across the catalog rather than a single bulk-update day. Touch pages as they are genuinely reviewed, not in one scripted sweep. `scripts/check-meta-lengths.mjs` prints the current spread at lint time so regressions are visible.
 
 ---
 

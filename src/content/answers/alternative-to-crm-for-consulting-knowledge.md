@@ -6,6 +6,7 @@ excerpt: "CRMs were built to track contacts and deals. They do not track what pe
 type: answer
 publishedAt: "2026-04-17"
 updatedAt: "2026-04-17"
+lastReviewedAt: "2026-04-17"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"

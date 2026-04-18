@@ -6,6 +6,7 @@ excerpt: "You built the system. Twelve databases in Notion, or 2,000 notes in Ob
 type: answer
 publishedAt: "2026-04-15"
 updatedAt: "2026-04-15"
+lastReviewedAt: "2026-04-15"
 author:
   name: "Balazs Ketyi"
   role: "Co-founder and CPO"

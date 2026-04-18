@@ -6,6 +6,7 @@ excerpt: "Guru is the best card-based answer tool for reps who need a verified s
 type: answer
 publishedAt: "2026-04-17"
 updatedAt: "2026-04-17"
+lastReviewedAt: "2026-04-17"
 author:
   name: "Balazs Ketyi"
   role: "Co-founder and CPO"

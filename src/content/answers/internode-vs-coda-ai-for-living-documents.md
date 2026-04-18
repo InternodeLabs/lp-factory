@@ -6,6 +6,7 @@ excerpt: "Coda AI is the best living-document tool for teams who want programmab
 type: answer
 publishedAt: "2026-04-17"
 updatedAt: "2026-04-17"
+lastReviewedAt: "2026-04-17"
 author:
   name: "Balazs Ketyi"
   role: "Co-founder and CPO"

@@ -6,6 +6,7 @@ excerpt: "More than half of executive assistants say their onboarding was minima
 type: use-case
 publishedAt: "2026-04-15"
 updatedAt: "2026-04-15"
+lastReviewedAt: "2026-04-15"
 author:
   name: "Balazs Ketyi"
   role: "Co-founder and CPO"

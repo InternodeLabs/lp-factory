@@ -6,6 +6,7 @@ excerpt: Healthcare teams keep coordination decisions organized by capturing the
 type: answer
 publishedAt: 2026-04-15
 updatedAt: 2026-04-15
+lastReviewedAt: "2026-04-15"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"
