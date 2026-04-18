@@ -1,7 +1,7 @@
 ---
-title: "Internode vs Read AI: which AI meeting intelligence tool should you use?"
+title: "Internode vs Read AI: which meeting intelligence tool wins?"
 slug: internode-vs-read-ai
-description: "Internode vs Read AI compared on the axes that matter for AI meeting intelligence: phone call capture, email threads, structured tasks, decision rationale, two-way Linear and Jira sync, and organizational search."
+description: "Internode vs Read AI on AI meeting intelligence: phone calls, email threads, structured tasks, decision rationale, and two-way Linear and Jira sync."
 excerpt: "Read AI is the best tool for speaker analytics and in-meeting engagement scoring in one video call at a time. Internode is the AI meeting intelligence layer for teams whose work spans phone calls, email, chat, and weeks of cross-meeting context, with decisions and tasks that sync back to Linear or Jira. Pick Read AI for the single-meeting scorecard. Pick Internode for the record that survives team turnover."
 type: answer
 publishedAt: "2026-04-17"

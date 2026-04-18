@@ -1,7 +1,7 @@
 ---
 title: "AI-first vs AI-added: why bolting AI onto Notion is not enough"
 slug: ai-first-vs-ai-added-why-bolting-ai-onto-notion-is-not-enough
-description: "AI-added tools bolt intelligence onto manual workflows. AI-first tools eliminate the manual layer entirely. The difference determines whether your knowledge system survives or decays."
+description: "AI-added tools bolt intelligence onto manual workflows. AI-first tools remove the manual layer. That difference determines whether your system decays."
 excerpt: "Adding AI to Notion or Obsidian is like adding power steering to a horse-drawn carriage. It makes the existing experience slightly better, but it does not change the fundamental model. AI-first tools are built differently from the ground up."
 type: answer
 publishedAt: "2026-04-15"

@@ -1,7 +1,7 @@
 ---
 title: "How solving your team's knowledge problem advances your career"
 slug: how-solving-your-teams-knowledge-problem-advances-your-career
-description: "Being the person who identifies and fixes a systemic knowledge problem at work is a career-defining contribution. Here is why it matters and how to make it visible."
+description: "Being the person who fixes a systemic knowledge problem at work is a career-defining contribution. Here is why it matters and how to make it visible."
 excerpt: "The employee who spots a systemic problem, proposes a fix, and drives adoption is demonstrating exactly the kind of initiative that gets recognized in performance reviews and promotion conversations."
 type: answer
 publishedAt: "2026-04-15"

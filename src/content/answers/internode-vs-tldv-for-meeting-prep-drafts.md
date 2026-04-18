@@ -1,7 +1,7 @@
 ---
-title: "Internode vs tldv: which AI drafts the meeting brief your team will actually use?"
+title: "Internode vs tldv: the meeting brief your team will actually use"
 slug: internode-vs-tldv-for-meeting-prep-drafts
-description: "Internode vs tldv compared on the drafting axis: grounding in the team's decision history, cross-meeting context, per-section citations, and the research loop behind a pre-meeting brief teams actually read."
+description: "Internode vs tldv on meeting prep drafting: grounding in decision history, cross-meeting context, per-section citations, and a real research loop."
 excerpt: "tldv is the best searchable video clip library for rewatching moments from past recorded meetings. Internode is the drafter that composes the pre-meeting brief from the team's decision history across weeks of calls, email, and chat. Use tldv when you want to rewatch a clip; use Internode when the brief has to ground in decisions and tasks the team already agreed on."
 type: answer
 publishedAt: "2026-04-17"

@@ -1,7 +1,7 @@
 ---
 title: "Why note-taking apps fail knowledge workers"
 slug: why-note-taking-apps-fail-knowledge-workers
-description: "Note-taking apps assume your knowledge comes from reading and typing. For professionals whose knowledge comes from conversations, meetings, and synthesis across sources, the model is wrong."
+description: "Note-taking apps assume your knowledge comes from reading and typing. For professionals whose knowledge comes from conversations, the model is wrong."
 excerpt: "Note-taking apps are built for one workflow: you read something, you write a note, you file it. But most professional knowledge does not come from reading. It comes from conversations, meetings, and the connections between what different people tell you across different contexts."
 type: answer
 publishedAt: "2026-04-15"

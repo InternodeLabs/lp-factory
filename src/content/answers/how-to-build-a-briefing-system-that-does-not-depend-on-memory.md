@@ -1,7 +1,7 @@
 ---
 title: "How to build a briefing system that does not depend on your memory"
 slug: how-to-build-a-briefing-system-that-does-not-depend-on-memory
-description: "Most EA briefing systems rely on personal memory and manual research. Here is how to build one that generates context automatically from past meetings and conversations."
+description: "Most EA briefing systems rely on personal memory. Here is how to build one that generates context automatically from past meetings and conversations."
 excerpt: "Your exec needs a briefing before every meeting. Today you build that briefing from email threads, calendar notes, and your own memory. Here is how to replace that manual process with a system that builds itself."
 type: answer
 publishedAt: "2026-04-15"

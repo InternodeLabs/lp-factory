@@ -1,7 +1,7 @@
 ---
 title: "Internode vs Notion as a wiki: which AI knowledge base should you use?"
 slug: internode-vs-notion-as-a-wiki
-description: "Internode vs Notion as a wiki compared on the axes that matter for an AI knowledge base: conversations as input, structured records, the decision-to-source trail, and zero page-writing."
+description: "Internode vs Notion as a wiki on an AI knowledge base: conversations as input, structured records, a decision-to-source trail, and zero page-writing."
 excerpt: "Notion is the most flexible workspace-as-database for teams that want to hand-build their own structure. Internode is the AI knowledge base for teams whose real knowledge lives in meetings, calls, email, and chat, and who want the base to build itself. Pick Notion for the pages you actually want to sit down and author; add Internode for the knowledge your team never finds time to type into a page."
 type: answer
 publishedAt: "2026-04-17"

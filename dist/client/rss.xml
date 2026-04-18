@@ -8,26 +8,14 @@
     <link>https://content.internode.ai</link>
     <description>Root-level answers, use cases, and updates from Internode.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 17 Apr 2026 22:58:22 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2026 23:56:33 GMT</lastBuildDate>
     <atom:link href="https://content.internode.ai/rss.xml" rel="self" type="application/rss+xml" />
   <item>
-    <title>A business case template for a knowledge management tool (that your manager will actually read)</title>
-    <link>https://content.internode.ai/business-case-template-for-knowledge-management-tool</link>
-    <guid>https://content.internode.ai/business-case-template-for-knowledge-management-tool</guid>
-    <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>A copy-paste business case template for a knowledge management tool, structured the way managers actually read proposals: problem, cost of inaction, options, ROI, rollout plan, and success metrics.</description>
-    <dc:creator>Sean Shadmand</dc:creator>
-    <category>business case</category>
-    <category>knowledge management</category>
-    <category>template</category>
-    <category>champion</category>
-  </item>
-  <item>
-    <title>AI knowledge management for consultants: stop losing what you learn across client engagements</title>
+    <title>AI knowledge management for consultants: keep what you learn</title>
     <link>https://content.internode.ai/ai-knowledge-management-for-consultants</link>
     <guid>https://content.internode.ai/ai-knowledge-management-for-consultants</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>A practical look at AI knowledge management for consultants: how to capture, connect, and retrieve what you learn across many client engagements without building a database by hand.</description>
+    <description>A practical guide to AI knowledge management for consultants: how to capture and retrieve what you learn across client engagements without a database.</description>
     <dc:creator>Sean Shadmand</dc:creator>
     <category>consultants</category>
     <category>ai knowledge management</category>
@@ -35,11 +23,11 @@
     <category>cross-engagement</category>
   </item>
   <item>
-    <title>AI knowledge management for government: preserve institutional knowledge through elections, turnover, and FOIA</title>
+    <title>AI knowledge management for government: memory that survives turnover</title>
     <link>https://content.internode.ai/ai-knowledge-management-for-government</link>
     <guid>https://content.internode.ai/ai-knowledge-management-for-government</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>How public agencies use AI knowledge management to preserve institutional memory across elected official turnover, FOIA requests, and multi-year programs, with records retention handled honestly.</description>
+    <description>How public agencies use AI knowledge management to preserve institutional memory across elected turnover, FOIA requests, and multi-year programs.</description>
     <dc:creator>Istvan Lorincz</dc:creator>
     <category>government</category>
     <category>public sector</category>
@@ -47,11 +35,11 @@
     <category>institutional memory</category>
   </item>
   <item>
-    <title>AI meeting notes for schools: capture board decisions, staff meetings, and IEP conversations without anyone taking minutes</title>
+    <title>AI meeting notes for schools: board, staff, and IEP conversations</title>
     <link>https://content.internode.ai/ai-meeting-notes-for-schools</link>
     <guid>https://content.internode.ai/ai-meeting-notes-for-schools</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>How schools use AI meeting notes to capture decisions from board meetings, staff sessions, and IEP conversations into a searchable record, with FERPA and compliance handled honestly.</description>
+    <description>How schools use AI meeting notes to capture decisions from board meetings, staff sessions, and IEP conversations, with FERPA handled honestly.</description>
     <dc:creator>Istvan Lorincz</dc:creator>
     <category>schools</category>
     <category>ai meeting notes</category>
@@ -59,11 +47,11 @@
     <category>board meetings</category>
   </item>
   <item>
-    <title>AI meeting prep for executive assistants: draft the brief your executive will actually read</title>
+    <title>AI meeting prep for executive assistants: the brief they&apos;ll read</title>
     <link>https://content.internode.ai/ai-meeting-prep-for-executive-assistants</link>
     <guid>https://content.internode.ai/ai-meeting-prep-for-executive-assistants</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>How executive assistants use AI meeting prep to draft briefs their executives will actually read, grounded in every past conversation, email, and commitment with each stakeholder.</description>
+    <description>How executive assistants use AI meeting prep to draft briefs executives will actually read, grounded in past conversations and commitments.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>executive assistant</category>
     <category>meeting prep</category>
@@ -71,7 +59,7 @@
     <category>ai brief</category>
   </item>
   <item>
-    <title>AI phone call transcription for small business: turn every supplier, customer, and staff call into usable knowledge</title>
+    <title>AI phone call transcription for small business: calls to knowledge</title>
     <link>https://content.internode.ai/ai-phone-call-transcription-for-small-business</link>
     <guid>https://content.internode.ai/ai-phone-call-transcription-for-small-business</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
@@ -87,7 +75,7 @@
     <link>https://content.internode.ai/ai-pm-agent</link>
     <guid>https://content.internode.ai/ai-pm-agent</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>An AI PM agent captures, organizes, and changes project state from conversations and chat. Here is what separates a real one from a meeting-notes tool with a chat box.</description>
+    <description>An AI PM agent captures, organizes, and changes project state from conversations and chat. Here is what separates a real one from a chat box.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>ai pm agent</category>
     <category>ai project manager</category>
@@ -99,7 +87,7 @@
     <link>https://content.internode.ai/ai-pm-that-captures-tasks-from-meetings</link>
     <guid>https://content.internode.ai/ai-pm-that-captures-tasks-from-meetings</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>An AI PM that captures tasks from meetings should produce real tasks linked to the moment in the meeting they came from, not bullet lists inside a transcript. Here is what that looks like in practice.</description>
+    <description>An AI PM that captures tasks from meetings should produce real tasks linked to the moment they were decided, not bullet lists inside a transcript.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>ai pm agent</category>
     <category>meetings</category>
@@ -107,11 +95,23 @@
     <category>automation</category>
   </item>
   <item>
-    <title>How to calculate the ROI of an AI knowledge tool (for the manager you&apos;re trying to convince)</title>
+    <title>Business case template for a knowledge management tool</title>
+    <link>https://content.internode.ai/business-case-template-for-knowledge-management-tool</link>
+    <guid>https://content.internode.ai/business-case-template-for-knowledge-management-tool</guid>
+    <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
+    <description>A copy-paste business case template for a knowledge management tool: problem, cost of inaction, options, ROI, rollout plan, and success metrics.</description>
+    <dc:creator>Sean Shadmand</dc:creator>
+    <category>business case</category>
+    <category>knowledge management</category>
+    <category>template</category>
+    <category>champion</category>
+  </item>
+  <item>
+    <title>How to calculate the ROI of an AI knowledge tool</title>
     <link>https://content.internode.ai/roi-calculator-for-ai-knowledge-tools</link>
     <guid>https://content.internode.ai/roi-calculator-for-ai-knowledge-tools</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>A step-by-step ROI calculator for an AI knowledge tool, with worked examples for a 20-person team, so you can show your manager a real number instead of a vague productivity claim.</description>
+    <description>A step-by-step ROI calculator for an AI knowledge tool, with worked examples for a 20-person team, so you can show a manager a real number.</description>
     <dc:creator>Sean Shadmand</dc:creator>
     <category>roi</category>
     <category>ai knowledge tools</category>
@@ -119,11 +119,11 @@
     <category>business case</category>
   </item>
   <item>
-    <title>How to propose new software to your manager (without getting shut down)</title>
+    <title>How to propose new software to your manager</title>
     <link>https://content.internode.ai/how-to-propose-new-software-to-your-manager</link>
     <guid>https://content.internode.ai/how-to-propose-new-software-to-your-manager</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>A practical playbook for proposing new software internally: how to frame the problem, pre-empt procurement and security objections, use a pilot, quantify the pain, and name the tool at the right moment.</description>
+    <description>A playbook for proposing new software internally: framing the problem, pre-empting procurement objections, piloting, quantifying pain, and timing.</description>
     <dc:creator>Sean Shadmand</dc:creator>
     <category>proposing software</category>
     <category>champion</category>
@@ -135,7 +135,7 @@
     <link>https://content.internode.ai/how-to-stop-typing-tasks-from-meetings</link>
     <guid>https://content.internode.ai/how-to-stop-typing-tasks-from-meetings</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>A practical guide to ending the habit of retyping meeting action items into Linear, Jira, or Asana after every call. Four changes, one outcome: the plan stays current without a human scribe.</description>
+    <description>A practical guide to ending retyping meeting action items into Linear, Jira, or Asana: four changes that keep the plan current without a scribe.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>meetings</category>
     <category>tasks</category>
@@ -143,11 +143,11 @@
     <category>productivity</category>
   </item>
   <item>
-    <title>How to synthesize knowledge across client meetings (without relying on memory)</title>
+    <title>How to synthesize knowledge across client meetings</title>
     <link>https://content.internode.ai/how-to-synthesize-knowledge-across-client-meetings</link>
     <guid>https://content.internode.ai/how-to-synthesize-knowledge-across-client-meetings</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>A step-by-step guide to synthesizing knowledge across many client meetings using structured capture, records for decisions and tasks, and cross-meeting topic clustering instead of memory or manual notes.</description>
+    <description>A step-by-step guide to synthesizing knowledge across many client meetings using structured capture and cross-meeting topic clustering, not memory.</description>
     <dc:creator>Sean Shadmand</dc:creator>
     <category>synthesis</category>
     <category>client meetings</category>
@@ -155,11 +155,11 @@
     <category>consultants</category>
   </item>
   <item>
-    <title>Internode vs Asana AI Studio for work plans: which AI plan reflects what your team actually decided?</title>
+    <title>Internode vs Asana AI Studio: plans from what your team decided</title>
     <link>https://content.internode.ai/internode-vs-asana-ai-studio-for-work-plans</link>
     <guid>https://content.internode.ai/internode-vs-asana-ai-studio-for-work-plans</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Asana AI Studio compared on the axes that matter for AI work plans: building a plan from decisions made in meetings, cross-source grounding across meetings, email, and chat, and two-way sync with Linear or Jira.</description>
+    <description>Internode vs Asana AI Studio on AI work plans: plans built from meeting decisions, cross-source grounding, and two-way sync with Linear or Jira.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>asana ai studio</category>
     <category>work plans</category>
@@ -171,7 +171,7 @@
     <link>https://content.internode.ai/internode-vs-asana-ai</link>
     <guid>https://content.internode.ai/internode-vs-asana-ai</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Asana AI compared on the axes that matter for an AI PM agent: capture from conversations, decision-to-task provenance, bulk mutations, and cross-meeting deduplication.</description>
+    <description>Internode vs Asana AI on an AI PM agent: capture from conversations, decision-to-task provenance, bulk mutations, and cross-meeting deduplication.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>asana</category>
     <category>ai pm agent</category>
@@ -179,11 +179,11 @@
     <category>comparison</category>
   </item>
   <item>
-    <title>Internode vs ChatGPT for documents: which AI drafts from your team&apos;s memory, not just the prompt?</title>
+    <title>Internode vs ChatGPT for documents: drafts from your team&apos;s memory</title>
     <link>https://content.internode.ai/internode-vs-chatgpt-for-documents</link>
     <guid>https://content.internode.ai/internode-vs-chatgpt-for-documents</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs ChatGPT for documents compared on the axes that matter: drafting from the team&apos;s decision history, section-level citations, a research loop across your own memory, and auto-updating when decisions change.</description>
+    <description>Internode vs ChatGPT for documents: drafting from your team&apos;s decision history, section-level citations, and auto-updating when decisions change.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>chatgpt</category>
     <category>ai documents</category>
@@ -191,11 +191,11 @@
     <category>comparison</category>
   </item>
   <item>
-    <title>Internode vs ClickUp AI for work plans: which AI builds a plan from your team&apos;s decisions?</title>
+    <title>Internode vs ClickUp AI: plans built from your team&apos;s decisions</title>
     <link>https://content.internode.ai/internode-vs-clickup-ai-for-work-plans</link>
     <guid>https://content.internode.ai/internode-vs-clickup-ai-for-work-plans</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs ClickUp AI compared on the axes that matter for AI work plans: building a work plan from decisions made in meetings, tracing plan sections back to source conversations, and syncing the generated tasks two-way with Linear or Jira.</description>
+    <description>Internode vs ClickUp AI on AI work plans: building plans from meeting decisions, tracing sections to conversations, two-way sync with Linear or Jira.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>clickup ai</category>
     <category>work plans</category>
@@ -203,11 +203,11 @@
     <category>comparison</category>
   </item>
   <item>
-    <title>Internode vs Coda AI for living documents: which AI updates the doc from the real world?</title>
+    <title>Internode vs Coda AI: living documents updated from the real world</title>
     <link>https://content.internode.ai/internode-vs-coda-ai-for-living-documents</link>
     <guid>https://content.internode.ai/internode-vs-coda-ai-for-living-documents</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Coda AI compared on the axes that matter for living documents: auto-updating from meetings, email, and chat, tracing every update to a source event, and drafting through a proposal flow rather than silent edits.</description>
+    <description>Internode vs Coda AI on living documents: auto-updating from meetings, email, and chat, traceable updates, and a proposal flow instead of silent edits.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>coda ai</category>
     <category>living documents</category>
@@ -219,7 +219,7 @@
     <link>https://content.internode.ai/internode-vs-confluence-ai</link>
     <guid>https://content.internode.ai/internode-vs-confluence-ai</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Confluence AI compared on the axes that matter for an AI knowledge base: conversations as input, structured records, the decision-to-source trail, and memory-aware drafting.</description>
+    <description>Internode vs Confluence AI on an AI knowledge base: conversations as input, structured records, the decision-to-source trail, and memory-aware drafting.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>confluence</category>
     <category>ai knowledge base</category>
@@ -227,11 +227,11 @@
     <category>wiki</category>
   </item>
   <item>
-    <title>Internode vs Fathom: which AI drafts the meeting brief before you walk in?</title>
+    <title>Internode vs Fathom: the meeting brief before you walk in</title>
     <link>https://content.internode.ai/internode-vs-fathom-for-meeting-prep-drafts</link>
     <guid>https://content.internode.ai/internode-vs-fathom-for-meeting-prep-drafts</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Fathom compared on the drafting axis: grounding in the team&apos;s decision history, cross-meeting context, per-section citations, and the research loop that composes a pre-meeting brief.</description>
+    <description>Internode vs Fathom on meeting prep drafting: grounding in decision history, cross-meeting context, per-section citations, and a real research loop.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>fathom</category>
     <category>meeting prep</category>
@@ -239,11 +239,11 @@
     <category>ai brief</category>
   </item>
   <item>
-    <title>Internode vs Fellow: which AI drafts from your team&apos;s decision history?</title>
+    <title>Internode vs Fellow: drafts from your team&apos;s decision history</title>
     <link>https://content.internode.ai/internode-vs-fellow-for-documents</link>
     <guid>https://content.internode.ai/internode-vs-fellow-for-documents</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Fellow compared on the axes that matter for AI document drafting: team-wide decision history, section-level citations, and auto-updating when decisions change.</description>
+    <description>Internode vs Fellow on AI document drafting: team-wide decision history, section-level citations, and auto-updating when decisions change.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>fellow</category>
     <category>ai documents</category>
@@ -251,11 +251,11 @@
     <category>memory-aware drafting</category>
   </item>
   <item>
-    <title>Internode vs Fireflies AI: which AI drafts the meeting brief from your team&apos;s memory?</title>
+    <title>Internode vs Fireflies AI: meeting briefs from your team&apos;s memory</title>
     <link>https://content.internode.ai/internode-vs-fireflies-for-meeting-prep-drafts</link>
     <guid>https://content.internode.ai/internode-vs-fireflies-for-meeting-prep-drafts</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Fireflies AI compared on the drafting axis: grounding in the team&apos;s decision history, cross-meeting context, per-section citations, and the research loop behind a real pre-meeting brief.</description>
+    <description>Internode vs Fireflies AI on meeting prep drafting: decision history grounding, cross-meeting context, per-section citations, and a research loop.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>fireflies</category>
     <category>meeting prep</category>
@@ -263,11 +263,11 @@
     <category>ai brief</category>
   </item>
   <item>
-    <title>Internode vs Gemini for documents: which AI drafts grounded in your team&apos;s memory?</title>
+    <title>Internode vs Gemini for documents: grounded in your team&apos;s memory</title>
     <link>https://content.internode.ai/internode-vs-gemini-for-documents</link>
     <guid>https://content.internode.ai/internode-vs-gemini-for-documents</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Gemini for documents compared on the axes that matter: drafting from the team&apos;s decision history, section-level citations, and auto-updating when decisions change.</description>
+    <description>Internode vs Gemini for documents: drafting from the team&apos;s decision history, section-level citations, and auto-updating when decisions change.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>gemini</category>
     <category>google workspace</category>
@@ -275,11 +275,11 @@
     <category>memory-aware drafting</category>
   </item>
   <item>
-    <title>Internode vs Glean: which AI drafts from your organization&apos;s real decisions?</title>
+    <title>Internode vs Glean: drafts from your real decisions</title>
     <link>https://content.internode.ai/internode-vs-glean-for-documents</link>
     <guid>https://content.internode.ai/internode-vs-glean-for-documents</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Glean compared on the axes that matter for AI document drafting: the team&apos;s decision history, section-level citations, a research loop across your own memory, and auto-updating when decisions change.</description>
+    <description>Internode vs Glean on AI document drafting: the team&apos;s decision history, section-level citations, a research loop, and auto-updating drafts.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>glean</category>
     <category>enterprise search</category>
@@ -287,11 +287,11 @@
     <category>memory-aware drafting</category>
   </item>
   <item>
-    <title>Internode vs Granola Prep: which AI drafts the meeting brief you&apos;ll actually read?</title>
+    <title>Internode vs Granola Prep: the meeting brief you&apos;ll actually read</title>
     <link>https://content.internode.ai/internode-vs-granola-for-meeting-prep-drafts</link>
     <guid>https://content.internode.ai/internode-vs-granola-for-meeting-prep-drafts</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Granola Prep compared on the drafting axis: grounding in the team&apos;s decision history, cross-meeting context, per-section citations, and a research loop behind the pre-meeting brief.</description>
+    <description>Internode vs Granola Prep on meeting prep drafting: decision history grounding, cross-meeting context, per-section citations, and a research loop.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>granola prep</category>
     <category>meeting prep</category>
@@ -299,11 +299,11 @@
     <category>pre-meeting brief</category>
   </item>
   <item>
-    <title>Internode vs Granola: which AI meeting intelligence tool should you use?</title>
+    <title>Internode vs Granola: which meeting intelligence tool wins?</title>
     <link>https://content.internode.ai/internode-vs-granola</link>
     <guid>https://content.internode.ai/internode-vs-granola</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Granola compared on the axes that matter for AI meeting intelligence: phone call capture, email threads, decision rationale, bulk changes from chat, two-way Linear and Jira sync, and organizational search.</description>
+    <description>Internode vs Granola on AI meeting intelligence: phone calls, email threads, decision rationale, two-way Linear and Jira sync, and org-wide search.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>granola</category>
     <category>ai meeting notes</category>
@@ -315,7 +315,7 @@
     <link>https://content.internode.ai/internode-vs-guru</link>
     <guid>https://content.internode.ai/internode-vs-guru</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Guru compared on the axes that matter for an AI knowledge base: conversations as input, structured records, the decision-to-source trail, and organizational memory.</description>
+    <description>Internode vs Guru on an AI knowledge base: conversations as input, structured records, the decision-to-source trail, and organizational memory.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>guru</category>
     <category>ai knowledge base</category>
@@ -327,7 +327,7 @@
     <link>https://content.internode.ai/internode-vs-jira-for-ai-pm</link>
     <guid>https://content.internode.ai/internode-vs-jira-for-ai-pm</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Jira compared on the axes that matter for an AI PM agent: capture from conversations, decision-to-task provenance, compound proposals, and two-way sync back into Jira.</description>
+    <description>Internode vs Jira on an AI PM agent: capture from conversations, decision-to-task provenance, compound proposals, and two-way sync back into Jira.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>jira</category>
     <category>ai pm agent</category>
@@ -339,7 +339,7 @@
     <link>https://content.internode.ai/internode-vs-letta-for-agent-memory</link>
     <guid>https://content.internode.ai/internode-vs-letta-for-agent-memory</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Letta compared on the axes that matter for AI agent memory: team-scoped structured memory, a decision-to-source trail, ingestion from real conversations, and two-way sync to operational tools.</description>
+    <description>Internode vs Letta on AI agent memory: team-scoped structured memory, a decision-to-source trail, real conversation ingestion, and two-way tool sync.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>letta</category>
     <category>ai agent memory</category>
@@ -351,7 +351,7 @@
     <link>https://content.internode.ai/internode-vs-linear-for-ai-pm</link>
     <guid>https://content.internode.ai/internode-vs-linear-for-ai-pm</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Linear compared on the axes that matter for an AI PM agent: capture from conversations, decision-to-task provenance, bulk mutations, and two-way sync.</description>
+    <description>Internode vs Linear on an AI PM agent: capture from conversations, decision-to-task provenance, bulk mutations, and two-way sync.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>linear</category>
     <category>ai pm agent</category>
@@ -363,7 +363,7 @@
     <link>https://content.internode.ai/internode-vs-mem0-for-agent-memory</link>
     <guid>https://content.internode.ai/internode-vs-mem0-for-agent-memory</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Mem0 compared on the axes that matter for AI agent memory: team-scoped structured memory, a decision-to-source trail, ingestion from real conversations, and two-way sync to operational tools.</description>
+    <description>Internode vs Mem0 on AI agent memory: team-scoped structured memory, a decision-to-source trail, real conversation ingestion, and two-way tool sync.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>mem0</category>
     <category>ai agent memory</category>
@@ -371,22 +371,22 @@
     <category>comparison</category>
   </item>
   <item>
-    <title>Internode vs Microsoft Copilot for documents: which AI drafts from your team&apos;s actual decisions?</title>
+    <title>Internode vs Microsoft Copilot: drafts from your team&apos;s decisions</title>
     <link>https://content.internode.ai/internode-vs-microsoft-copilot-for-documents</link>
     <guid>https://content.internode.ai/internode-vs-microsoft-copilot-for-documents</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Microsoft Copilot for documents compared on the axes that matter: drafting from the team&apos;s decision history, section-level citations to source conversations, and a research loop across the team&apos;s own memory before writing.</description>
+    <description>Internode vs Microsoft Copilot for documents: drafting from your team&apos;s decision history, section-level citations, and a research loop over your memory.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>microsoft copilot</category>
     <category>ai documents</category>
     <category>memory-aware drafting</category>
   </item>
   <item>
-    <title>Internode vs Microsoft Syntex for policy-grounded documents: which AI grounds drafts in both your policies AND your team&apos;s decisions?</title>
+    <title>Internode vs Microsoft Syntex: AI drafts grounded in your policies</title>
     <link>https://content.internode.ai/internode-vs-sharepoint-syntex-for-policy-grounded-documents</link>
     <guid>https://content.internode.ai/internode-vs-sharepoint-syntex-for-policy-grounded-documents</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Microsoft Syntex compared on the axes that matter for policy-grounded documents: grounding drafts in both company policy and the team&apos;s live decisions, updating when either source changes, and citing policy sections alongside the source decision per paragraph.</description>
+    <description>Internode vs Microsoft Syntex: grounding policy documents in both company policy and your team&apos;s live decisions, with per-paragraph citations.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>sharepoint syntex</category>
     <category>policy documents</category>
@@ -394,11 +394,11 @@
     <category>comparison</category>
   </item>
   <item>
-    <title>Internode vs Notion AI for documents: which AI drafts from your team&apos;s memory?</title>
+    <title>Internode vs Notion AI: drafts from your team&apos;s memory</title>
     <link>https://content.internode.ai/internode-vs-notion-ai-for-documents</link>
     <guid>https://content.internode.ai/internode-vs-notion-ai-for-documents</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Notion AI for documents compared on the axes that matter: drafting from the team&apos;s decision history, section-level citations, and auto-updating when decisions change.</description>
+    <description>Internode vs Notion AI for documents: drafting from the team&apos;s decision history, section-level citations, and auto-updating when decisions change.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>notion ai</category>
     <category>ai documents</category>
@@ -410,7 +410,7 @@
     <link>https://content.internode.ai/internode-vs-notion-ai</link>
     <guid>https://content.internode.ai/internode-vs-notion-ai</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Notion AI compared on the axes that matter for AI knowledge management: conversations as input, structured records, decision-to-source trail, cross-meeting matching, memory-aware drafting, and organizational search with sources attached.</description>
+    <description>Internode vs Notion AI on AI knowledge management: conversations as input, structured records, decision-to-source trail, and memory-aware drafting.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>notion ai</category>
     <category>ai knowledge base</category>
@@ -421,7 +421,7 @@
     <link>https://content.internode.ai/internode-vs-notion-as-a-wiki</link>
     <guid>https://content.internode.ai/internode-vs-notion-as-a-wiki</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Notion as a wiki compared on the axes that matter for an AI knowledge base: conversations as input, structured records, the decision-to-source trail, and zero page-writing.</description>
+    <description>Internode vs Notion as a wiki on an AI knowledge base: conversations as input, structured records, a decision-to-source trail, and zero page-writing.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>notion</category>
     <category>ai knowledge base</category>
@@ -429,11 +429,11 @@
     <category>comparison</category>
   </item>
   <item>
-    <title>Internode vs Otter: which AI drafts a meeting brief from your team&apos;s knowledge?</title>
+    <title>Internode vs Otter: meeting briefs from your team&apos;s knowledge</title>
     <link>https://content.internode.ai/internode-vs-otter-for-meeting-prep-drafts</link>
     <guid>https://content.internode.ai/internode-vs-otter-for-meeting-prep-drafts</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Otter compared on the drafting axis: grounding in the team&apos;s decision history, cross-meeting context, per-section citations, and the research loop that composes a real pre-meeting brief.</description>
+    <description>Internode vs Otter on meeting prep drafting: grounding in decision history, cross-meeting context, per-section citations, and a real research loop.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>otter</category>
     <category>meeting prep</category>
@@ -445,7 +445,7 @@
     <link>https://content.internode.ai/internode-vs-otter</link>
     <guid>https://content.internode.ai/internode-vs-otter</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Otter compared on the axes that matter for AI meeting intelligence: phone call capture, email threads, structured tasks, decision rationale, two-way Linear and Jira sync, and organizational search.</description>
+    <description>Internode vs Otter on AI meeting intelligence: phone calls, email threads, structured tasks, decision rationale, and two-way Linear and Jira sync.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>otter</category>
     <category>ai meeting notes</category>
@@ -453,11 +453,11 @@
     <category>transcription</category>
   </item>
   <item>
-    <title>Internode vs Read AI: which AI meeting intelligence tool should you use?</title>
+    <title>Internode vs Read AI: which meeting intelligence tool wins?</title>
     <link>https://content.internode.ai/internode-vs-read-ai</link>
     <guid>https://content.internode.ai/internode-vs-read-ai</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Read AI compared on the axes that matter for AI meeting intelligence: phone call capture, email threads, structured tasks, decision rationale, two-way Linear and Jira sync, and organizational search.</description>
+    <description>Internode vs Read AI on AI meeting intelligence: phone calls, email threads, structured tasks, decision rationale, and two-way Linear and Jira sync.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>read ai</category>
     <category>ai meeting notes</category>
@@ -469,7 +469,7 @@
     <link>https://content.internode.ai/internode-vs-slab</link>
     <guid>https://content.internode.ai/internode-vs-slab</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Slab compared on the axes that matter for an AI knowledge base: conversations as input, structured records, the decision-to-source trail, and memory-aware drafting.</description>
+    <description>Internode vs Slab on an AI knowledge base: conversations as input, structured records, the decision-to-source trail, and memory-aware drafting.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>slab</category>
     <category>ai knowledge base</category>
@@ -477,11 +477,11 @@
     <category>comparison</category>
   </item>
   <item>
-    <title>Internode vs tldv: which AI drafts the meeting brief your team will actually use?</title>
+    <title>Internode vs tldv: the meeting brief your team will actually use</title>
     <link>https://content.internode.ai/internode-vs-tldv-for-meeting-prep-drafts</link>
     <guid>https://content.internode.ai/internode-vs-tldv-for-meeting-prep-drafts</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs tldv compared on the drafting axis: grounding in the team&apos;s decision history, cross-meeting context, per-section citations, and the research loop behind a pre-meeting brief teams actually read.</description>
+    <description>Internode vs tldv on meeting prep drafting: grounding in decision history, cross-meeting context, per-section citations, and a real research loop.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>tldv</category>
     <category>meeting prep</category>
@@ -493,7 +493,7 @@
     <link>https://content.internode.ai/internode-vs-zep-for-agent-memory</link>
     <guid>https://content.internode.ai/internode-vs-zep-for-agent-memory</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Internode vs Zep compared on the axes that matter for AI agent memory: team-scoped structured memory, a decision-to-source trail, ingestion from real conversations, and two-way sync to operational tools.</description>
+    <description>Internode vs Zep on AI agent memory: team-scoped structured memory, a decision-to-source trail, real conversation ingestion, and two-way tool sync.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>zep</category>
     <category>ai agent memory</category>
@@ -501,11 +501,11 @@
     <category>comparison</category>
   </item>
   <item>
-    <title>Memory-aware drafting: documents that know what your team already decided</title>
+    <title>Memory-aware drafting: docs that know what your team decided</title>
     <link>https://content.internode.ai/memory-aware-drafting</link>
     <guid>https://content.internode.ai/memory-aware-drafting</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Memory-aware drafting is document generation grounded in your team&apos;s organizational memory: every paragraph traces back to a decision, a meeting, or a policy your team already produced.</description>
+    <description>Memory-aware drafting is document generation grounded in organizational memory: every paragraph traces to a decision, meeting, or policy you produced.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>memory-aware drafting</category>
     <category>ai documents</category>
@@ -517,7 +517,7 @@
     <link>https://content.internode.ai/ai-knowledge-base-that-builds-itself</link>
     <guid>https://content.internode.ai/ai-knowledge-base-that-builds-itself</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Most AI knowledge bases are wikis with a chat box. A knowledge base that builds itself is one your team never has to update because it learns from the conversations that already happen.</description>
+    <description>Most AI knowledge bases are wikis with a chat box. One that builds itself never needs updating because it learns from the conversations already happening.</description>
     <dc:creator>Istvan Lorincz</dc:creator>
     <category>ai knowledge base</category>
     <category>knowledge management</category>
@@ -525,11 +525,11 @@
     <category>zero maintenance</category>
   </item>
   <item>
-    <title>The AI-native alternative to Notion: a knowledge system that writes itself</title>
+    <title>The AI-native alternative to Notion: a self-writing knowledge system</title>
     <link>https://content.internode.ai/ai-native-alternative-to-notion</link>
     <guid>https://content.internode.ai/ai-native-alternative-to-notion</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Notion is a workspace-as-database that requires you to build the system. An AI-native alternative starts from conversations and produces structured knowledge without you typing pages.</description>
+    <description>Notion is a workspace-as-database that you build. An AI-native alternative starts from conversations and produces structured knowledge without typing pages.</description>
     <dc:creator>Istvan Lorincz</dc:creator>
     <category>notion alternative</category>
     <category>ai-native</category>
@@ -537,11 +537,11 @@
     <category>ai-first</category>
   </item>
   <item>
-    <title>The alternative to a CRM for consulting knowledge: organize what you learn, not just who you spoke to</title>
+    <title>The alternative to a CRM for consulting knowledge</title>
     <link>https://content.internode.ai/alternative-to-crm-for-consulting-knowledge</link>
     <guid>https://content.internode.ai/alternative-to-crm-for-consulting-knowledge</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>CRMs track contacts and deals. Consultants need a system that tracks what they learned from conversations, the decisions clients are weighing, and patterns across engagements. This is the alternative.</description>
+    <description>CRMs track contacts and deals. Consultants need a system for what they learned from conversations and patterns across engagements. Here is that system.</description>
     <dc:creator>Sean Shadmand</dc:creator>
     <category>crm alternative</category>
     <category>consultants</category>
@@ -565,7 +565,7 @@
     <link>https://content.internode.ai/best-ai-task-manager-2026</link>
     <guid>https://content.internode.ai/best-ai-task-manager-2026</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>A ranked comparison of the best AI task managers in 2026 on the axes that decide whether your plan stays current: capture from conversations, decision-to-task provenance, bulk mutations, and two-way sync.</description>
+    <description>A ranked comparison of the best AI task managers in 2026 on what keeps a plan current: conversation capture, provenance, bulk edits, and two-way sync.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>ai task manager</category>
     <category>ai pm agent</category>
@@ -573,11 +573,11 @@
     <category>comparison</category>
   </item>
   <item>
-    <title>The best second brain app 2026: an honest ranking for people who have tried them all</title>
+    <title>The best second brain app 2026: an honest ranking</title>
     <link>https://content.internode.ai/best-second-brain-app-2026</link>
     <guid>https://content.internode.ai/best-second-brain-app-2026</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>An honest 2026 ranking of second brain apps for people who have already tried Notion, Obsidian, Roam, and Logseq. Internode ranks first because it is the only one that builds itself.</description>
+    <description>An honest 2026 ranking of second brain apps for people who tried Notion, Obsidian, Roam, and Logseq. Internode ranks first because it builds itself.</description>
     <dc:creator>Istvan Lorincz</dc:creator>
     <category>second brain</category>
     <category>pkm</category>
@@ -589,7 +589,7 @@
     <link>https://content.internode.ai/cost-of-lost-team-knowledge-per-employee</link>
     <guid>https://content.internode.ai/cost-of-lost-team-knowledge-per-employee</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>A per-employee dollar figure for lost team knowledge, built from research by IDC, McKinsey, Panopto, and Gartner on time lost searching, rework, duplicated decisions, and onboarding drag.</description>
+    <description>A per-employee dollar figure for lost team knowledge, built from IDC, McKinsey, Panopto, and Gartner research on search time, rework, and onboarding.</description>
     <dc:creator>Sean Shadmand</dc:creator>
     <category>knowledge loss</category>
     <category>cost</category>
@@ -602,7 +602,7 @@
     <link>https://content.internode.ai/what-is-decision-memory</link>
     <guid>https://content.internode.ai/what-is-decision-memory</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Decision memory is the slice of your team&apos;s knowledge that holds final decisions, their rationale, and how they have changed over time. Here is what it is and where it fits inside organizational memory.</description>
+    <description>Decision memory is the slice of team knowledge that holds final decisions, their rationale, and how they change over time. Here is where it fits.</description>
     <dc:creator>Istvan Lorincz</dc:creator>
     <category>decision memory</category>
     <category>organizational memory</category>
@@ -614,7 +614,7 @@
     <link>https://content.internode.ai/what-is-organizational-memory</link>
     <guid>https://content.internode.ai/what-is-organizational-memory</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Organizational memory is the structured, searchable record of what your team has decided, agreed, and committed to across meetings, calls, and chat. Here is what it contains and why it matters.</description>
+    <description>Organizational memory is the structured, searchable record of what your team has decided, agreed, and committed to across meetings, calls, and chat.</description>
     <dc:creator>Sean Shadmand</dc:creator>
     <category>organizational memory</category>
     <category>institutional knowledge</category>
@@ -622,19 +622,7 @@
     <category>knowledge management</category>
   </item>
   <item>
-    <title>AI meeting notes versus organizational memory</title>
-    <link>https://content.internode.ai/ai-meeting-notes-vs-organizational-memory</link>
-    <guid>https://content.internode.ai/ai-meeting-notes-vs-organizational-memory</guid>
-    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
-    <description>A clear comparison of AI meeting note tools and organizational memory systems, explaining what each does well and where the gap lies for engineering and product teams.</description>
-    <dc:creator>Balazs Ketyi</dc:creator>
-    <category>meeting notes</category>
-    <category>organizational memory</category>
-    <category>comparison</category>
-    <category>ai</category>
-  </item>
-  <item>
-    <title>AI tools for knowledge management in government and public organizations</title>
+    <title>AI knowledge management tools for government and public orgs</title>
     <link>https://content.internode.ai/ai-tools-for-government-and-public-organizations</link>
     <guid>https://content.internode.ai/ai-tools-for-government-and-public-organizations</guid>
     <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
@@ -646,11 +634,23 @@
     <category>healthcare</category>
   </item>
   <item>
+    <title>AI meeting notes versus organizational memory</title>
+    <link>https://content.internode.ai/ai-meeting-notes-vs-organizational-memory</link>
+    <guid>https://content.internode.ai/ai-meeting-notes-vs-organizational-memory</guid>
+    <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+    <description>A clear comparison of AI meeting note tools and organizational memory systems, what each does well, and where the gap lies for engineering teams.</description>
+    <dc:creator>Balazs Ketyi</dc:creator>
+    <category>meeting notes</category>
+    <category>organizational memory</category>
+    <category>comparison</category>
+    <category>ai</category>
+  </item>
+  <item>
     <title>AI-first vs AI-added: why bolting AI onto Notion is not enough</title>
     <link>https://content.internode.ai/ai-first-vs-ai-added-why-bolting-ai-onto-notion-is-not-enough</link>
     <guid>https://content.internode.ai/ai-first-vs-ai-added-why-bolting-ai-onto-notion-is-not-enough</guid>
     <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
-    <description>AI-added tools bolt intelligence onto manual workflows. AI-first tools eliminate the manual layer entirely. The difference determines whether your knowledge system survives or decays.</description>
+    <description>AI-added tools bolt intelligence onto manual workflows. AI-first tools remove the manual layer. That difference determines whether your system decays.</description>
     <dc:creator>Istvan Lorincz</dc:creator>
     <category>AI-first</category>
     <category>AI-added</category>
@@ -675,7 +675,7 @@
     <link>https://content.internode.ai/from-conversations-to-knowledge-what-professionals-actually-need</link>
     <guid>https://content.internode.ai/from-conversations-to-knowledge-what-professionals-actually-need</guid>
     <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Professionals who work across meetings, client calls, and research need a system that turns conversational knowledge into searchable, connected intelligence without manual organization.</description>
+    <description>Professionals across meetings, client calls, and research need a system that turns conversational knowledge into searchable intelligence, automatically.</description>
     <dc:creator>Sean Shadmand</dc:creator>
     <category>conversations</category>
     <category>meetings</category>
@@ -683,11 +683,11 @@
     <category>synthesis</category>
   </item>
   <item>
-    <title>How executive assistants stop being the only person who remembers what was decided</title>
+    <title>How executive assistants stop being the only one who remembers</title>
     <link>https://content.internode.ai/how-executive-assistants-stop-being-the-only-person-who-remembers</link>
     <guid>https://content.internode.ai/how-executive-assistants-stop-being-the-only-person-who-remembers</guid>
     <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Executive assistants carry the organizational memory for their executives. Here is how to move that knowledge out of your head and into a system that survives your next vacation.</description>
+    <description>Executive assistants carry the memory for their executives. Here is how to move that knowledge into a system that survives your next vacation.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>executive assistant</category>
     <category>decisions</category>
@@ -699,7 +699,7 @@
     <link>https://content.internode.ai/how-healthcare-teams-keep-coordination-decisions-organized</link>
     <guid>https://content.internode.ai/how-healthcare-teams-keep-coordination-decisions-organized</guid>
     <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
-    <description>How healthcare organizations track care coordination decisions across shifts, staff changes, and department meetings to maintain continuity and reduce repeated work.</description>
+    <description>How healthcare organizations track care coordination decisions across shifts, staff changes, and department meetings to maintain continuity.</description>
     <dc:creator>Sean Shadmand</dc:creator>
     <category>healthcare</category>
     <category>care coordination</category>
@@ -735,7 +735,7 @@
     <link>https://content.internode.ai/how-solving-your-teams-knowledge-problem-advances-your-career</link>
     <guid>https://content.internode.ai/how-solving-your-teams-knowledge-problem-advances-your-career</guid>
     <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Being the person who identifies and fixes a systemic knowledge problem at work is a career-defining contribution. Here is why it matters and how to make it visible.</description>
+    <description>Being the person who fixes a systemic knowledge problem at work is a career-defining contribution. Here is why it matters and how to make it visible.</description>
     <dc:creator>Sean Shadmand</dc:creator>
     <category>career advancement</category>
     <category>internal champion</category>
@@ -747,7 +747,7 @@
     <link>https://content.internode.ai/how-to-build-a-briefing-system-that-does-not-depend-on-memory</link>
     <guid>https://content.internode.ai/how-to-build-a-briefing-system-that-does-not-depend-on-memory</guid>
     <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Most EA briefing systems rely on personal memory and manual research. Here is how to build one that generates context automatically from past meetings and conversations.</description>
+    <description>Most EA briefing systems rely on personal memory. Here is how to build one that generates context automatically from past meetings and conversations.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>executive assistant</category>
     <category>briefing</category>
@@ -845,7 +845,7 @@
     <link>https://content.internode.ai/knowledge-management-for-people-who-gave-up-on-knowledge-management</link>
     <guid>https://content.internode.ai/knowledge-management-for-people-who-gave-up-on-knowledge-management</guid>
     <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
-    <description>If you have tried and abandoned Notion, Obsidian, Roam, or any other knowledge system, the problem was not you. Here is what a zero-maintenance alternative looks like.</description>
+    <description>If you have tried and abandoned Notion, Obsidian, or Roam, the problem was not you. Here is what a zero-maintenance alternative looks like.</description>
     <dc:creator>Sean Shadmand</dc:creator>
     <category>knowledge management</category>
     <category>maintenance</category>
@@ -881,7 +881,7 @@
     <link>https://content.internode.ai/what-changes-when-your-team-actually-remembers-what-was-decided</link>
     <guid>https://content.internode.ai/what-changes-when-your-team-actually-remembers-what-was-decided</guid>
     <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
-    <description>When what your team discussed and agreed on is preserved and searchable, meetings get shorter, onboarding gets faster, and follow-through improves. Here is what the shift looks like.</description>
+    <description>When what your team discussed and agreed on is preserved and searchable, meetings get shorter, onboarding gets faster, and follow-through improves.</description>
     <dc:creator>Sean Shadmand</dc:creator>
     <category>decision memory</category>
     <category>team productivity</category>
@@ -915,7 +915,7 @@
     <link>https://content.internode.ai/what-is-organizational-memory-for-ai-agents</link>
     <guid>https://content.internode.ai/what-is-organizational-memory-for-ai-agents</guid>
     <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
-    <description>A practical definition of organizational memory for AI agents, explaining what it contains, how it differs from raw search, and why it changes retrieval quality.</description>
+    <description>A practical definition of organizational memory for AI agents: what it contains, how it differs from raw search, and why it improves retrieval.</description>
     <dc:creator>Istvan Lorincz</dc:creator>
     <category>organizational memory</category>
     <category>ai agents</category>
@@ -949,7 +949,7 @@
     <link>https://content.internode.ai/why-note-taking-apps-fail-knowledge-workers</link>
     <guid>https://content.internode.ai/why-note-taking-apps-fail-knowledge-workers</guid>
     <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
-    <description>Note-taking apps assume your knowledge comes from reading and typing. For professionals whose knowledge comes from conversations, meetings, and synthesis across sources, the model is wrong.</description>
+    <description>Note-taking apps assume your knowledge comes from reading and typing. For professionals whose knowledge comes from conversations, the model is wrong.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>note-taking</category>
     <category>knowledge workers</category>
@@ -973,7 +973,7 @@
     <link>https://content.internode.ai/why-your-best-work-knowledge-comes-from-conversations-not-documents</link>
     <guid>https://content.internode.ai/why-your-best-work-knowledge-comes-from-conversations-not-documents</guid>
     <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
-    <description>The most valuable professional knowledge originates in conversations, not documents. Documents capture conclusions. Conversations capture the reasoning, context, and relationships that matter when you face a similar situation later.</description>
+    <description>The most valuable professional knowledge lives in conversations, not documents. Conversations capture the reasoning and context that matter later.</description>
     <dc:creator>Sean Shadmand</dc:creator>
     <category>conversations</category>
     <category>documents</category>
@@ -1019,7 +1019,7 @@
     <category>team productivity</category>
   </item>
   <item>
-    <title>Executive assistant tracking decisions and follow-ups across 50 meetings a week</title>
+    <title>Executive assistants tracking decisions across 50 meetings a week</title>
     <link>https://content.internode.ai/use-case-executive-assistant-tracking-decisions-across-meetings</link>
     <guid>https://content.internode.ai/use-case-executive-assistant-tracking-decisions-across-meetings</guid>
     <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
@@ -1106,11 +1106,11 @@
     <category>alignment</category>
   </item>
   <item>
-    <title>How Internode works with phone transcripts, meeting recordings, and notes</title>
+    <title>How Internode works with phone calls and meeting recordings</title>
     <link>https://content.internode.ai/how-internode-works-with-phone-transcripts-and-meeting-recordings</link>
     <guid>https://content.internode.ai/how-internode-works-with-phone-transcripts-and-meeting-recordings</guid>
     <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
-    <description>A transparent explanation of how Internode processes phone transcripts, meeting recordings from Zoom and Google Meet, Slack conversations, and typed notes into structured knowledge.</description>
+    <description>How Internode processes phone transcripts, meeting recordings from Zoom and Google Meet, Slack, and typed notes into structured team knowledge.</description>
     <dc:creator>Balazs Ketyi</dc:creator>
     <category>transcripts</category>
     <category>phone calls</category>

@@ -1,7 +1,7 @@
 ---
 title: "What changes when your team actually remembers what was decided"
 slug: what-changes-when-your-team-actually-remembers-what-was-decided
-description: "When what your team discussed and agreed on is preserved and searchable, meetings get shorter, onboarding gets faster, and follow-through improves. Here is what the shift looks like."
+description: "When what your team discussed and agreed on is preserved and searchable, meetings get shorter, onboarding gets faster, and follow-through improves."
 excerpt: "When everything your team discusses and agrees on is captured, organized, and searchable by anyone, the way the team works changes in ways that go beyond saving meeting time."
 type: answer
 publishedAt: "2026-04-15"

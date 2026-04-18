@@ -1,7 +1,7 @@
 ---
 title: "How to stop typing tasks from meetings"
 slug: how-to-stop-typing-tasks-from-meetings
-description: "A practical guide to ending the habit of retyping meeting action items into Linear, Jira, or Asana after every call. Four changes, one outcome: the plan stays current without a human scribe."
+description: "A practical guide to ending retyping meeting action items into Linear, Jira, or Asana: four changes that keep the plan current without a scribe."
 excerpt: "You finish the meeting. The action items are clear. Then somebody, usually you, has to type them into Linear, Jira, or Asana so they actually exist in the team's plan. Here is how to stop doing that: capture from meetings, structured extraction, agent-proposed mutations, and two-way sync."
 type: answer
 publishedAt: "2026-04-17"

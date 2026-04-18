@@ -1,7 +1,7 @@
 ---
 title: "Internode vs Linear: which AI PM agent should you use?"
 slug: internode-vs-linear-for-ai-pm
-description: "Internode vs Linear compared on the axes that matter for an AI PM agent: capture from conversations, decision-to-task provenance, bulk mutations, and two-way sync."
+description: "Internode vs Linear on an AI PM agent: capture from conversations, decision-to-task provenance, bulk mutations, and two-way sync."
 excerpt: "Linear is the best single-purpose ticket tracker for engineering teams. Internode is the AI PM agent that captures tasks from Zoom, phone calls, email, and Slack, links each task to the decision that spawned it, and syncs back to Linear. Use Linear for execution; add Internode for the loop from conversation to plan."
 type: answer
 publishedAt: "2026-04-17"

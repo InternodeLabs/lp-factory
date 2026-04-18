@@ -1,7 +1,7 @@
 ---
 title: "Knowledge management for people who gave up on knowledge management"
 slug: knowledge-management-for-people-who-gave-up-on-knowledge-management
-description: "If you have tried and abandoned Notion, Obsidian, Roam, or any other knowledge system, the problem was not you. Here is what a zero-maintenance alternative looks like."
+description: "If you have tried and abandoned Notion, Obsidian, or Roam, the problem was not you. Here is what a zero-maintenance alternative looks like."
 excerpt: "You tried Notion. You tried Obsidian. Maybe you tried Roam, Logseq, or three others before giving up entirely. Each time the pattern was the same: initial excitement, elaborate setup, gradual decay, quiet abandonment. The problem was never your discipline. It was the model."
 type: answer
 publishedAt: "2026-04-15"

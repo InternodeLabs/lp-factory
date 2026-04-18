@@ -1,7 +1,7 @@
 ---
 title: AI meeting notes versus organizational memory
 slug: ai-meeting-notes-vs-organizational-memory
-description: A clear comparison of AI meeting note tools and organizational memory systems, explaining what each does well and where the gap lies for engineering and product teams.
+description: "A clear comparison of AI meeting note tools and organizational memory systems, what each does well, and where the gap lies for engineering teams."
 excerpt: AI meeting notes transcribe and summarize individual meetings. Organizational memory extracts decisions, topics, action items, and ownership across every conversation, then links them into a knowledge graph your team can query like a system, not a stack of files.
 type: answer
 publishedAt: 2026-04-15

@@ -1,7 +1,7 @@
 ---
-title: "AI meeting prep for executive assistants: draft the brief your executive will actually read"
+title: "AI meeting prep for executive assistants: the brief they'll read"
 slug: ai-meeting-prep-for-executive-assistants
-description: "How executive assistants use AI meeting prep to draft briefs their executives will actually read, grounded in every past conversation, email, and commitment with each stakeholder."
+description: "How executive assistants use AI meeting prep to draft briefs executives will actually read, grounded in past conversations and commitments."
 excerpt: "AI meeting prep for executive assistants is not another note-taking app. It is a drafting tool that reads your exec's history with a stakeholder and writes a short, accurate brief citing every past conversation, commitment, and open item. You stop scrambling through emails and your EA Bible for 25 minutes before every meeting."
 type: answer
 publishedAt: "2026-04-17"

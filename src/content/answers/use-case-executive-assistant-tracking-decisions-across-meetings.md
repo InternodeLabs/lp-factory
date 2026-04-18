@@ -1,5 +1,5 @@
 ---
-title: "Executive assistant tracking decisions and follow-ups across 50 meetings a week"
+title: "Executive assistants tracking decisions across 50 meetings a week"
 slug: use-case-executive-assistant-tracking-decisions-across-meetings
 description: "How an EA supporting three executives uses a persistent memory layer to track decisions, commitments, and follow-ups across 50+ meetings per week."
 excerpt: "You support three executives. Each has 15 to 20 meetings a week. Every meeting produces decisions, commitments, and follow-ups that you are expected to track. Here is how a memory layer changes that workflow."

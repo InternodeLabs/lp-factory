@@ -1,5 +1,5 @@
 ---
-title: AI tools for knowledge management in government and public organizations
+title: "AI knowledge management tools for government and public orgs"
 slug: ai-tools-for-government-and-public-organizations
 description: A guide to AI tools that help government agencies, schools, healthcare organizations, and nonprofits manage institutional knowledge and track outcomes.
 excerpt: Government and public organizations can use AI tools to capture outcomes from meetings, preserve institutional knowledge across staff transitions, and give teams a searchable record of why policies and procedures exist.

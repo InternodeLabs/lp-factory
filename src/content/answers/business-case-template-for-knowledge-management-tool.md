@@ -1,7 +1,7 @@
 ---
-title: "A business case template for a knowledge management tool (that your manager will actually read)"
+title: "Business case template for a knowledge management tool"
 slug: business-case-template-for-knowledge-management-tool
-description: "A copy-paste business case template for a knowledge management tool, structured the way managers actually read proposals: problem, cost of inaction, options, ROI, rollout plan, and success metrics."
+description: "A copy-paste business case template for a knowledge management tool: problem, cost of inaction, options, ROI, rollout plan, and success metrics."
 excerpt: "Most internal proposals get skimmed or ignored because they read like a product pitch. This template flips the format: it leads with the cost of the current problem, shows three options side by side, and frames the tool as the solution to a measurable loss, not a nice-to-have."
 type: answer
 publishedAt: "2026-04-17"

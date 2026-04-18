@@ -40,8 +40,8 @@ const latestUpdated = topic.entries.reduce<string | null>((acc, entry) => {
   return acc;
 }, null);
 
-const title = `${topic.label} · Topic · Internode`;
-const description = `Every answer, use case, and update in the Internode content hub tagged ${topic.label}. ${topic.entries.length} ${topic.entries.length === 1 ? "page" : "pages"}, newest first.`;
+const title = `${topic.label} topic`;
+const description = `Canonical pages tagged ${topic.label} in the Internode content hub: ${topic.entries.length} ${topic.entries.length === 1 ? "page" : "pages"}, newest first.`;
 
 const jsonLd = wrapGraph(
   buildWebSiteSchema(),

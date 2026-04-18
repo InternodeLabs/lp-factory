@@ -1,7 +1,7 @@
 ---
-title: "Internode vs Microsoft Copilot for documents: which AI drafts from your team's actual decisions?"
+title: "Internode vs Microsoft Copilot: drafts from your team's decisions"
 slug: internode-vs-microsoft-copilot-for-documents
-description: "Internode vs Microsoft Copilot for documents compared on the axes that matter: drafting from the team's decision history, section-level citations to source conversations, and a research loop across the team's own memory before writing."
+description: "Internode vs Microsoft Copilot for documents: drafting from your team's decision history, section-level citations, and a research loop over your memory."
 excerpt: "Microsoft Copilot is the best in-surface drafting assistant for teams deeply committed to Word and Outlook in Microsoft 365. Internode is the memory-aware drafting system for teams whose real decisions live in meetings, phone calls, email, and chat, and who want every section of a draft grounded in a specific source. Pick Copilot for inline rewriting inside M365. Use Internode when the draft has to answer 'where does that come from?'"
 type: answer
 publishedAt: "2026-04-17"

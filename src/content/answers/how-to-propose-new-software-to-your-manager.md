@@ -1,7 +1,7 @@
 ---
-title: "How to propose new software to your manager (without getting shut down)"
+title: "How to propose new software to your manager"
 slug: how-to-propose-new-software-to-your-manager
-description: "A practical playbook for proposing new software internally: how to frame the problem, pre-empt procurement and security objections, use a pilot, quantify the pain, and name the tool at the right moment."
+description: "A playbook for proposing new software internally: framing the problem, pre-empting procurement objections, piloting, quantifying pain, and timing."
 excerpt: "Most software proposals die in the first 60 seconds because the employee leads with the tool, not the pain. This playbook flips the order. You build the problem first, pre-empt the three objections your manager always raises, and only name the tool after they are already leaning in."
 type: answer
 publishedAt: "2026-04-17"

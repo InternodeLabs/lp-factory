@@ -6,7 +6,8 @@
       "properties": {
         "title": {
           "type": "string",
-          "minLength": 1
+          "minLength": 1,
+          "maxLength": 70
         },
         "slug": {
           "type": "string",
@@ -14,7 +15,8 @@
         },
         "description": {
           "type": "string",
-          "minLength": 1
+          "minLength": 25,
+          "maxLength": 160
         },
         "excerpt": {
           "type": "string",

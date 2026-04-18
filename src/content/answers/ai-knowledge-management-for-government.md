@@ -1,7 +1,7 @@
 ---
-title: "AI knowledge management for government: preserve institutional knowledge through elections, turnover, and FOIA"
+title: "AI knowledge management for government: memory that survives turnover"
 slug: ai-knowledge-management-for-government
-description: "How public agencies use AI knowledge management to preserve institutional memory across elected official turnover, FOIA requests, and multi-year programs, with records retention handled honestly."
+description: "How public agencies use AI knowledge management to preserve institutional memory across elected turnover, FOIA requests, and multi-year programs."
 excerpt: "AI knowledge management for government is a structured record of what was decided, what was rejected, and why, built from the meetings and committee sessions your agency already holds. The test is whether a new program manager, appointee, or elected official can reconstruct the reasoning behind a multi-year program without calling a retiree."
 type: answer
 publishedAt: "2026-04-17"

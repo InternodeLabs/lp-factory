@@ -1,7 +1,7 @@
 ---
-title: "AI knowledge management for consultants: stop losing what you learn across client engagements"
+title: "AI knowledge management for consultants: keep what you learn"
 slug: ai-knowledge-management-for-consultants
-description: "A practical look at AI knowledge management for consultants: how to capture, connect, and retrieve what you learn across many client engagements without building a database by hand."
+description: "A practical guide to AI knowledge management for consultants: how to capture and retrieve what you learn across client engagements without a database."
 excerpt: "Consultants learn more in a single week than most people capture in a year. The problem is that the learning lives in conversation, not in documents. AI knowledge management is the layer that connects what clients tell you across every meeting, proposal, and brief you work on."
 type: answer
 publishedAt: "2026-04-17"

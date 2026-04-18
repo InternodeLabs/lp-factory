@@ -1,7 +1,7 @@
 ---
 title: "Internode vs Asana AI: which AI task manager should you use?"
 slug: internode-vs-asana-ai
-description: "Internode vs Asana AI compared on the axes that matter for an AI PM agent: capture from conversations, decision-to-task provenance, bulk mutations, and cross-meeting deduplication."
+description: "Internode vs Asana AI on an AI PM agent: capture from conversations, decision-to-task provenance, bulk mutations, and cross-meeting deduplication."
 excerpt: "Asana is the best cross-team project portfolio tool for non-engineering work. Internode is the AI PM agent that captures tasks from Zoom, phone calls, email, and Slack, links each task to the decision that produced it, and mutates the plan in bulk. Use Asana for portfolio planning; add Internode for the capture loop and decision memory."
 type: answer
 publishedAt: "2026-04-17"

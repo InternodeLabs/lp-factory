@@ -1,7 +1,7 @@
 ---
 title: "The AI knowledge base that builds itself"
 slug: ai-knowledge-base-that-builds-itself
-description: "Most AI knowledge bases are wikis with a chat box. A knowledge base that builds itself is one your team never has to update because it learns from the conversations that already happen."
+description: "Most AI knowledge bases are wikis with a chat box. One that builds itself never needs updating because it learns from the conversations already happening."
 excerpt: "A knowledge base that builds itself takes meetings, calls, email, and chat as input and produces structured, citable knowledge as output. Nobody has to write pages, tag topics, or maintain folders. The system gets richer the more your team works."
 type: answer
 publishedAt: "2026-04-17"

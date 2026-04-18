@@ -1,7 +1,7 @@
 ---
-title: "Internode vs Asana AI Studio for work plans: which AI plan reflects what your team actually decided?"
+title: "Internode vs Asana AI Studio: plans from what your team decided"
 slug: internode-vs-asana-ai-studio-for-work-plans
-description: "Internode vs Asana AI Studio compared on the axes that matter for AI work plans: building a plan from decisions made in meetings, cross-source grounding across meetings, email, and chat, and two-way sync with Linear or Jira."
+description: "Internode vs Asana AI Studio on AI work plans: plans built from meeting decisions, cross-source grounding, and two-way sync with Linear or Jira."
 excerpt: "Asana AI Studio is the best plan and workflow generator for teams who already run portfolios, goals, and OKRs inside Asana. Internode is the work-plan agent for teams whose decisions happen in Zoom, calls, email, and Slack, and who want every section of the plan to cite the conversation that produced it. Pick Asana AI Studio for portfolio management; add Internode for decision-grounded plans."
 type: answer
 publishedAt: "2026-04-17"

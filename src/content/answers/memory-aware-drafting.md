@@ -1,7 +1,7 @@
 ---
-title: "Memory-aware drafting: documents that know what your team already decided"
+title: "Memory-aware drafting: docs that know what your team decided"
 slug: memory-aware-drafting
-description: "Memory-aware drafting is document generation grounded in your team's organizational memory: every paragraph traces back to a decision, a meeting, or a policy your team already produced."
+description: "Memory-aware drafting is document generation grounded in organizational memory: every paragraph traces to a decision, meeting, or policy you produced."
 excerpt: "Memory-aware drafting is the difference between an AI that writes plausible-sounding paragraphs and one that drafts a meeting prep brief, a project plan, or a policy-grounded document where every line cites a real decision your team has already made. It only works when the underlying knowledge base is structured around decisions, not pages."
 type: answer
 publishedAt: "2026-04-17"

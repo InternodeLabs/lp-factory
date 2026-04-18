@@ -1,5 +1,5 @@
 ---
-title: "AI phone call transcription for small business: turn every supplier, customer, and staff call into usable knowledge"
+title: "AI phone call transcription for small business: calls to knowledge"
 slug: ai-phone-call-transcription-for-small-business
 description: "How small businesses use AI phone call transcription to capture pricing, orders, commitments, and follow-ups from calls without typing notes or keeping a CRM."
 excerpt: "AI phone call transcription for small business turns every call with a customer, supplier, or crew into a written record your whole team can search. The right tool pulls out the price, the order, the date, and the follow-up, so a detail from a Tuesday call does not get lost by Friday."

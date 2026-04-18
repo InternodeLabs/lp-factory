@@ -1,7 +1,7 @@
 ---
-title: "Internode vs ClickUp AI for work plans: which AI builds a plan from your team's decisions?"
+title: "Internode vs ClickUp AI: plans built from your team's decisions"
 slug: internode-vs-clickup-ai-for-work-plans
-description: "Internode vs ClickUp AI compared on the axes that matter for AI work plans: building a work plan from decisions made in meetings, tracing plan sections back to source conversations, and syncing the generated tasks two-way with Linear or Jira."
+description: "Internode vs ClickUp AI on AI work plans: building plans from meeting decisions, tracing sections to conversations, two-way sync with Linear or Jira."
 excerpt: "ClickUp AI is the best built-in work-plan generator for teams who already run spreadsheets, docs, tasks, and goals inside ClickUp. Internode is the work-plan agent for teams whose real decisions happen in meetings, calls, email, and Slack, and who want every WBS section to trace back to the conversation that produced it. Pick ClickUp for the all-in-one PM UI; add Internode for decision-grounded plans."
 type: answer
 publishedAt: "2026-04-17"

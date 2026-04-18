@@ -1,7 +1,7 @@
 ---
 title: "What is decision memory?"
 slug: what-is-decision-memory
-description: "Decision memory is the slice of your team's knowledge that holds final decisions, their rationale, and how they have changed over time. Here is what it is and where it fits inside organizational memory."
+description: "Decision memory is the slice of team knowledge that holds final decisions, their rationale, and how they change over time. Here is where it fits."
 excerpt: "Decision memory is the sharpest subset of organizational memory: the structured record of what your team actually chose, why, who ratified it, and what changed afterward. It is not a category to sell, but it is the part of team knowledge most worth getting right."
 type: answer
 publishedAt: "2026-04-17"

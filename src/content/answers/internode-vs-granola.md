@@ -1,7 +1,7 @@
 ---
-title: "Internode vs Granola: which AI meeting intelligence tool should you use?"
+title: "Internode vs Granola: which meeting intelligence tool wins?"
 slug: internode-vs-granola
-description: "Internode vs Granola compared on the axes that matter for AI meeting intelligence: phone call capture, email threads, decision rationale, bulk changes from chat, two-way Linear and Jira sync, and organizational search."
+description: "Internode vs Granola on AI meeting intelligence: phone calls, email threads, decision rationale, two-way Linear and Jira sync, and org-wide search."
 excerpt: "Granola is the best in-meeting capture notebook for one user in one video meeting at a time. Internode is the AI meeting intelligence layer for teams whose work spans phone calls, email, chat, and many weeks of cross-meeting context, with an AI agent that can change many things at once and sync back to Linear or Jira. Pick Granola for the personal notepad. Pick Internode for the team record that survives turnover."
 type: answer
 publishedAt: "2026-04-17"

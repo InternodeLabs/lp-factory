@@ -1,7 +1,7 @@
 ---
-title: "Internode vs Otter: which AI drafts a meeting brief from your team's knowledge?"
+title: "Internode vs Otter: meeting briefs from your team's knowledge"
 slug: internode-vs-otter-for-meeting-prep-drafts
-description: "Internode vs Otter compared on the drafting axis: grounding in the team's decision history, cross-meeting context, per-section citations, and the research loop that composes a real pre-meeting brief."
+description: "Internode vs Otter on meeting prep drafting: grounding in decision history, cross-meeting context, per-section citations, and a real research loop."
 excerpt: "Otter is the best transcript recall tool when you need to verify a direct quote from an earlier Otter meeting. Internode is the drafter that composes the pre-meeting brief from your team's decision history across weeks of calls, email, and chat. Use Otter for quote lookups; use Internode when the brief has to ground in everything your team has already decided."
 type: answer
 publishedAt: "2026-04-17"

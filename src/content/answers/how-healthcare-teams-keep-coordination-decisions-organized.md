@@ -1,7 +1,7 @@
 ---
 title: How healthcare teams keep care coordination decisions organized
 slug: how-healthcare-teams-keep-coordination-decisions-organized
-description: How healthcare organizations track care coordination decisions across shifts, staff changes, and department meetings to maintain continuity and reduce repeated work.
+description: "How healthcare organizations track care coordination decisions across shifts, staff changes, and department meetings to maintain continuity."
 excerpt: Healthcare teams keep coordination decisions organized by capturing them from meetings and handoffs in a structured system that links each outcome to the patient context, the responsible staff, and the follow-up actions, so the next shift can find what was decided and why.
 type: answer
 publishedAt: 2026-04-15

@@ -1,7 +1,7 @@
 ---
-title: "Internode vs Glean: which AI drafts from your organization's real decisions?"
+title: "Internode vs Glean: drafts from your real decisions"
 slug: internode-vs-glean-for-documents
-description: "Internode vs Glean compared on the axes that matter for AI document drafting: the team's decision history, section-level citations, a research loop across your own memory, and auto-updating when decisions change."
+description: "Internode vs Glean on AI document drafting: the team's decision history, section-level citations, a research loop, and auto-updating drafts."
 excerpt: "Glean is the best enterprise search and assistant for organizations with dozens of SaaS apps that need a unified answer layer. Internode is the memory-aware drafting system for teams whose real decisions live in meetings, phone calls, email, and chat, and who want each section of a draft tied to a specific decision. Pick Glean for wide connector search. Use Internode for drafts your team can actually cite."
 type: answer
 publishedAt: "2026-04-17"

@@ -1,7 +1,7 @@
 ---
-title: "How executive assistants stop being the only person who remembers what was decided"
+title: "How executive assistants stop being the only one who remembers"
 slug: how-executive-assistants-stop-being-the-only-person-who-remembers
-description: "Executive assistants carry the organizational memory for their executives. Here is how to move that knowledge out of your head and into a system that survives your next vacation."
+description: "Executive assistants carry the memory for their executives. Here is how to move that knowledge into a system that survives your next vacation."
 excerpt: "You are the person who remembers what was decided, who promised what, and what the follow-ups are. That is not a job description. It is a single point of failure. Here is how to fix it."
 type: answer
 publishedAt: "2026-04-15"

@@ -1,7 +1,7 @@
 ---
-title: "The AI-native alternative to Notion: a knowledge system that writes itself"
+title: "The AI-native alternative to Notion: a self-writing knowledge system"
 slug: ai-native-alternative-to-notion
-description: "Notion is a workspace-as-database that requires you to build the system. An AI-native alternative starts from conversations and produces structured knowledge without you typing pages."
+description: "Notion is a workspace-as-database that you build. An AI-native alternative starts from conversations and produces structured knowledge without typing pages."
 excerpt: "Notion is a database you have to set up, maintain, and populate. An AI-native alternative takes your meetings and calls as input and produces structured records of decisions, tasks, and topics as output. You never design a database. You never choose a folder."
 type: answer
 publishedAt: "2026-04-17"

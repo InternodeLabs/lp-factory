@@ -1,7 +1,7 @@
 ---
-title: "Internode vs Fathom: which AI drafts the meeting brief before you walk in?"
+title: "Internode vs Fathom: the meeting brief before you walk in"
 slug: internode-vs-fathom-for-meeting-prep-drafts
-description: "Internode vs Fathom compared on the drafting axis: grounding in the team's decision history, cross-meeting context, per-section citations, and the research loop that composes a pre-meeting brief."
+description: "Internode vs Fathom on meeting prep drafting: grounding in decision history, cross-meeting context, per-section citations, and a real research loop."
 excerpt: "Fathom is the best zero-setup in-meeting capture tool for a single Zoom call and a short AI summary afterward. Internode is the drafter that composes the pre-meeting brief from the team's decision history across weeks of calls, email, and chat. Use Fathom for fast post-call summaries; use Internode when the brief you bring to the meeting has to ground in real team memory."
 type: answer
 publishedAt: "2026-04-17"

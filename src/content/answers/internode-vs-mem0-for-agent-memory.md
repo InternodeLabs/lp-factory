@@ -1,7 +1,7 @@
 ---
 title: "Internode vs Mem0: which memory layer should your AI agent use?"
 slug: internode-vs-mem0-for-agent-memory
-description: "Internode vs Mem0 compared on the axes that matter for AI agent memory: team-scoped structured memory, a decision-to-source trail, ingestion from real conversations, and two-way sync to operational tools."
+description: "Internode vs Mem0 on AI agent memory: team-scoped structured memory, a decision-to-source trail, real conversation ingestion, and two-way tool sync."
 excerpt: "Mem0 is the best drop-in memory SDK for a single agent prototype that needs per-user key-value recall in one app. Internode is the team-scoped memory layer for agents that need structured records, decision provenance, and ingestion from real meetings, calls, and chat. Pick Mem0 for a single-agent SDK; pick Internode for a team-scoped memory record with two-way sync."
 type: answer
 publishedAt: "2026-04-17"

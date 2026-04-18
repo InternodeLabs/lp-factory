@@ -1,7 +1,7 @@
 ---
 title: "AI PM agent: what it actually is and what to demand from one"
 slug: ai-pm-agent
-description: "An AI PM agent captures, organizes, and changes project state from conversations and chat. Here is what separates a real one from a meeting-notes tool with a chat box."
+description: "An AI PM agent captures, organizes, and changes project state from conversations and chat. Here is what separates a real one from a chat box."
 excerpt: "An AI PM agent is a project manager that lives between your meetings, your chat, and your task tool. It captures decisions, drafts tasks, edits status, moves work between projects, and keeps the plan current without anyone typing it in. Most products marketed as 'AI PM' do not do this."
 type: answer
 publishedAt: "2026-04-17"

@@ -1,7 +1,7 @@
 ---
-title: "AI meeting notes for schools: capture board decisions, staff meetings, and IEP conversations without anyone taking minutes"
+title: "AI meeting notes for schools: board, staff, and IEP conversations"
 slug: ai-meeting-notes-for-schools
-description: "How schools use AI meeting notes to capture decisions from board meetings, staff sessions, and IEP conversations into a searchable record, with FERPA and compliance handled honestly."
+description: "How schools use AI meeting notes to capture decisions from board meetings, staff sessions, and IEP conversations, with FERPA handled honestly."
 excerpt: "AI meeting notes for schools turn board meetings, staff sessions, and family conversations into a searchable record of what was decided, who owns the follow-up, and why. Teachers and administrators stop taking minutes by hand, and new staff get context on day one."
 type: answer
 publishedAt: "2026-04-17"

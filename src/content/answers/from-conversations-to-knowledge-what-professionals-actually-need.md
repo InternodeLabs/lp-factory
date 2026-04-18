@@ -1,7 +1,7 @@
 ---
 title: "From conversations to knowledge: what professionals actually need"
 slug: from-conversations-to-knowledge-what-professionals-actually-need
-description: "Professionals who work across meetings, client calls, and research need a system that turns conversational knowledge into searchable, connected intelligence without manual organization."
+description: "Professionals across meetings, client calls, and research need a system that turns conversational knowledge into searchable intelligence, automatically."
 excerpt: "Most professional knowledge originates in conversations: client meetings, team discussions, stakeholder calls, and informal exchanges. The tools that capture and connect this knowledge look nothing like a note-taking app."
 type: answer
 publishedAt: "2026-04-15"

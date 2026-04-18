@@ -18,10 +18,10 @@ Internal reference for all content on content.internode.ai. Not published on the
 
 ### Frontmatter
 
-- [ ] `title` is clear and specific (not clever or abstract)
+- [ ] `title` is clear and specific (not clever or abstract), **≤ 70 characters** (Bing truncates beyond this; the Zod schema and `scripts/check-meta-lengths.mjs` both enforce it)
 - [ ] `slug` matches the filename exactly
-- [ ] `description` is one sentence for search engines and link previews
-- [ ] `excerpt` is one to two sentences summarizing the page in plain language
+- [ ] `description` is one sentence for search engines and link previews, **25 to 160 characters** (meta-only, not rendered on the page, so trim aggressively)
+- [ ] `excerpt` is one to two sentences summarizing the page in plain language (shown on the hub pages — no length cap)
 - [ ] `type` is one of: `answer`, `use-case`, `update`
 - [ ] `publishedAt` and `updatedAt` are set to the correct ISO date
 - [ ] `author` has `name`, `role`, and `url`

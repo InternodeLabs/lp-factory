@@ -1,7 +1,7 @@
 ---
-title: How Internode works with phone transcripts, meeting recordings, and notes
+title: "How Internode works with phone calls and meeting recordings"
 slug: how-internode-works-with-phone-transcripts-and-meeting-recordings
-description: A transparent explanation of how Internode processes phone transcripts, meeting recordings from Zoom and Google Meet, Slack conversations, and typed notes into structured knowledge.
+description: "How Internode processes phone transcripts, meeting recordings from Zoom and Google Meet, Slack, and typed notes into structured team knowledge."
 excerpt: Internode accepts transcripts from phone calls, Zoom meetings, Google Meet sessions, Slack conversations, and typed notes. It processes each one by extracting decisions, topics, tasks, perspectives, and context, then stores them in a knowledge graph your team can search and query through an AI chat agent.
 type: update
 publishedAt: 2026-04-15

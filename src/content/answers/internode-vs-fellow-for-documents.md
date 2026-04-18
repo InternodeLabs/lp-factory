@@ -1,7 +1,7 @@
 ---
-title: "Internode vs Fellow: which AI drafts from your team's decision history?"
+title: "Internode vs Fellow: drafts from your team's decision history"
 slug: internode-vs-fellow-for-documents
-description: "Internode vs Fellow compared on the axes that matter for AI document drafting: team-wide decision history, section-level citations, and auto-updating when decisions change."
+description: "Internode vs Fellow on AI document drafting: team-wide decision history, section-level citations, and auto-updating when decisions change."
 excerpt: "Fellow is the best in-meeting agenda and private meeting notes tool for the meeting owner who wants a clean artifact per meeting. Internode is the memory-aware drafting system for teams whose real knowledge spans dozens of meetings, calls, and email threads. Pick Fellow for the single-meeting agenda and summary. Use Internode when the draft has to pull from the whole history."
 type: answer
 publishedAt: "2026-04-17"

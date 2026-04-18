@@ -1,7 +1,7 @@
 ---
 title: "Internode vs Zep: which memory layer should your AI agent use?"
 slug: internode-vs-zep-for-agent-memory
-description: "Internode vs Zep compared on the axes that matter for AI agent memory: team-scoped structured memory, a decision-to-source trail, ingestion from real conversations, and two-way sync to operational tools."
+description: "Internode vs Zep on AI agent memory: team-scoped structured memory, a decision-to-source trail, real conversation ingestion, and two-way tool sync."
 excerpt: "Zep is the best hosted long-term memory service for a single conversational agent handling high request volume with fact extraction on chat history. Internode is the team-scoped memory layer for agents that need structured records, decision provenance, and ingestion from real meetings, calls, and chat. Pick Zep for hosted chat memory; pick Internode for a team-scoped memory record with two-way sync."
 type: answer
 publishedAt: "2026-04-17"

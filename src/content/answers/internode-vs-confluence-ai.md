@@ -1,7 +1,7 @@
 ---
 title: "Internode vs Confluence AI: which AI knowledge base should you use?"
 slug: internode-vs-confluence-ai
-description: "Internode vs Confluence AI compared on the axes that matter for an AI knowledge base: conversations as input, structured records, the decision-to-source trail, and memory-aware drafting."
+description: "Internode vs Confluence AI on an AI knowledge base: conversations as input, structured records, the decision-to-source trail, and memory-aware drafting."
 excerpt: "Confluence AI is the best assistant for teams that already maintain a large Confluence page library and want natural-language search on top of it. Internode is the AI knowledge base for teams whose real knowledge lives in meetings, calls, email, and chat, and who want the base to build itself. Pick Confluence AI for the legacy doc library; add Internode for the decision graph it never captured."
 type: answer
 publishedAt: "2026-04-17"

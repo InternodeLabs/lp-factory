@@ -1,7 +1,7 @@
 ---
-title: "Internode vs Notion AI for documents: which AI drafts from your team's memory?"
+title: "Internode vs Notion AI: drafts from your team's memory"
 slug: internode-vs-notion-ai-for-documents
-description: "Internode vs Notion AI for documents compared on the axes that matter: drafting from the team's decision history, section-level citations, and auto-updating when decisions change."
+description: "Internode vs Notion AI for documents: drafting from the team's decision history, section-level citations, and auto-updating when decisions change."
 excerpt: "Notion AI is the best in-workspace drafting assistant for teams already living in Notion pages. Internode is the memory-aware drafting system for teams whose real decisions live in meetings, calls, email, and chat. Pick Notion AI to rewrite and extend pages you already typed. Use Internode to draft documents grounded in decisions your team never wrote down."
 type: answer
 publishedAt: "2026-04-17"

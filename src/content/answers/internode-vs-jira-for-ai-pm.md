@@ -1,7 +1,7 @@
 ---
 title: "Internode vs Jira: which AI PM agent should you use?"
 slug: internode-vs-jira-for-ai-pm
-description: "Internode vs Jira compared on the axes that matter for an AI PM agent: capture from conversations, decision-to-task provenance, compound proposals, and two-way sync back into Jira."
+description: "Internode vs Jira on an AI PM agent: capture from conversations, decision-to-task provenance, compound proposals, and two-way sync back into Jira."
 excerpt: "Jira is the deepest enterprise workflow engine on the market. Internode is the AI PM agent that captures tasks from meetings and chat, links each one to the decision that produced it, and syncs two-way into Jira. Use Jira for enterprise workflow and permissioning; add Internode for conversation capture and decision memory."
 type: answer
 publishedAt: "2026-04-17"

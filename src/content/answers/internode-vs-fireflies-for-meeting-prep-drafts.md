@@ -1,7 +1,7 @@
 ---
-title: "Internode vs Fireflies AI: which AI drafts the meeting brief from your team's memory?"
+title: "Internode vs Fireflies AI: meeting briefs from your team's memory"
 slug: internode-vs-fireflies-for-meeting-prep-drafts
-description: "Internode vs Fireflies AI compared on the drafting axis: grounding in the team's decision history, cross-meeting context, per-section citations, and the research loop behind a real pre-meeting brief."
+description: "Internode vs Fireflies AI on meeting prep drafting: decision history grounding, cross-meeting context, per-section citations, and a research loop."
 excerpt: "Fireflies AI is the best post-meeting summarizer when the goal is a quick recap inside the Fireflies recording view. Internode is the drafter that composes the pre-meeting brief from your team's decision history across weeks of calls, email, and chat. Pick Fireflies for post-call summaries; use Internode when the brief you walk in with has to ground in real team memory."
 type: answer
 publishedAt: "2026-04-17"

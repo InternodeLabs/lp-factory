@@ -3,10 +3,10 @@ export const MAIN_SITE_URL = "https://internode.ai";
 export const APP_SITE_URL = "https://app.internode.ai";
 
 export const SITE_TITLE =
-  "Organizational memory and decision memory for teams and AI agents — Internode";
+  "Organizational memory and decision memory for teams and AI agents";
 export const SITE_BRAND = "Internode Content";
 export const SITE_DESCRIPTION =
-  "Plain-language answers, use cases, and updates about organizational memory, decision memory, meeting intelligence, and memory-aware AI agents. Written for people, search engines, and AI systems.";
+  "Plain-language answers, use cases, and updates on organizational memory, decision memory, and memory-aware AI agents, written for humans and LLMs.";
 export const SITE_HEADLINE =
   "Organizational memory and decision memory, explained for teams and AI agents.";
 

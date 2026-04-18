@@ -1,7 +1,7 @@
 ---
 title: "Internode vs Otter: which AI meeting intelligence tool should you use?"
 slug: internode-vs-otter
-description: "Internode vs Otter compared on the axes that matter for AI meeting intelligence: phone call capture, email threads, structured tasks, decision rationale, two-way Linear and Jira sync, and organizational search."
+description: "Internode vs Otter on AI meeting intelligence: phone calls, email threads, structured tasks, decision rationale, and two-way Linear and Jira sync."
 excerpt: "Otter is the best per-meeting transcription product for one session at a time, with a fast search bar and speaker tagging inside the transcript. Internode is the AI meeting intelligence layer for teams whose work spans phone calls, email, chat, and weeks of cross-meeting context, with tasks and decisions that sync back to Linear or Jira. Pick Otter for the transcript you want to scrub. Pick Internode for the team record that outlives the meeting."
 type: answer
 publishedAt: "2026-04-17"

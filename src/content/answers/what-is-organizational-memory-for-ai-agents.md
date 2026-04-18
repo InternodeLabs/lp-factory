@@ -1,7 +1,7 @@
 ---
 title: What is organizational memory for AI agents?
 slug: what-is-organizational-memory-for-ai-agents
-description: A practical definition of organizational memory for AI agents, explaining what it contains, how it differs from raw search, and why it changes retrieval quality.
+description: "A practical definition of organizational memory for AI agents: what it contains, how it differs from raw search, and why it improves retrieval."
 excerpt: Organizational memory gives AI agents persistent, structured knowledge about a team's decisions, reasoning, context, and commitments instead of forcing them to reconstruct everything from raw documents on every query.
 type: answer
 publishedAt: 2026-04-15

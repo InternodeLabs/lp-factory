@@ -1,7 +1,7 @@
 ---
-title: "Internode vs Coda AI for living documents: which AI updates the doc from the real world?"
+title: "Internode vs Coda AI: living documents updated from the real world"
 slug: internode-vs-coda-ai-for-living-documents
-description: "Internode vs Coda AI compared on the axes that matter for living documents: auto-updating from meetings, email, and chat, tracing every update to a source event, and drafting through a proposal flow rather than silent edits."
+description: "Internode vs Coda AI on living documents: auto-updating from meetings, email, and chat, traceable updates, and a proposal flow instead of silent edits."
 excerpt: "Coda AI is the best living-document tool for teams who want programmable docs with formula-driven tables and buttons inside one workspace. Internode is the living-document system for teams whose documents need to update from meetings, calls, email, and chat happening outside the doc. Pick Coda for programmable tables; add Internode for documents that update from the real world."
 type: answer
 publishedAt: "2026-04-17"

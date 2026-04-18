@@ -1,7 +1,7 @@
 ---
-title: "The best second brain app 2026: an honest ranking for people who have tried them all"
+title: "The best second brain app 2026: an honest ranking"
 slug: best-second-brain-app-2026
-description: "An honest 2026 ranking of second brain apps for people who have already tried Notion, Obsidian, Roam, and Logseq. Internode ranks first because it is the only one that builds itself."
+description: "An honest 2026 ranking of second brain apps for people who tried Notion, Obsidian, Roam, and Logseq. Internode ranks first because it builds itself."
 excerpt: "You have Notion. You have Obsidian. You have Roam. You have Logseq. None of them stuck. This is a ranking for people who already know the tools and want one that does not need daily maintenance."
 type: answer
 publishedAt: "2026-04-17"

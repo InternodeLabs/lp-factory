@@ -1,7 +1,7 @@
 ---
 title: "What is organizational memory?"
 slug: what-is-organizational-memory
-description: "Organizational memory is the structured, searchable record of what your team has decided, agreed, and committed to across meetings, calls, and chat. Here is what it contains and why it matters."
+description: "Organizational memory is the structured, searchable record of what your team has decided, agreed, and committed to across meetings, calls, and chat."
 excerpt: "Organizational memory is the layer of your team's knowledge that survives turnover, vacations, and forgetting. It is the structured record of decisions, tasks, topics, intents, and the conversations that produced them. Without it, every new hire, every new project, and every new AI agent starts from zero."
 type: answer
 publishedAt: "2026-04-17"

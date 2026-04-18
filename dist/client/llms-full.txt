@@ -4,7 +4,7 @@
 
 Primary index: https://content.internode.ai/llms.txt
 Main product site: https://internode.ai
-Last generated: 2026-04-17T22:58:22.496Z
+Last generated: 2026-04-17T23:56:33.260Z
 
 ## About Internode
 
@@ -38,113 +38,18 @@ Each page is delimited by a header block (between the triple dashes) that contai
 The page body immediately follows, in plain markdown.
 
 ---
-CanonicalURL: https://content.internode.ai/business-case-template-for-knowledge-management-tool
-Title: A business case template for a knowledge management tool (that your manager will actually read)
-Slug: business-case-template-for-knowledge-management-tool
-Type: Answer
-Author: Sean Shadmand (Co-founder and President)
-PublishedAt: 2026-04-17
-UpdatedAt: 2026-04-17
-Tags: business case, knowledge management, template, champion
-Description: A copy-paste business case template for a knowledge management tool, structured the way managers actually read proposals: problem, cost of inaction, options, ROI, rollout plan, and success metrics.
----
-
-# A business case template for a knowledge management tool (that your manager will actually read)
-
-A business case for a knowledge management tool should open with the cost of the current problem, not the features of the proposed tool. Managers approve work that stops a bleed. This template gives you seven sections your manager will read: problem statement, cost of doing nothing, proposed solution, options considered, cost and benefit analysis, rollout plan, and success metrics. Copy it, fill in your team's numbers, and put the tool name in the last third of the page.
-
-The structure assumes a manager with 15 minutes and no patience for vendor language.
-
-## Section 1: Problem statement (3 to 5 sentences)
-
-State the problem in your team's words, not in knowledge management vocabulary. Name two or three specific symptoms the manager has already seen.
-
-Example: "Our team makes decisions in Zoom and Slack, then relitigates them six weeks later because no one can find the original thread. Our last three onboarding cycles took more than eight weeks. Two senior people carry most of the context in their heads."
-
-End with a one-line thesis: "We do not have a structured record of what we have decided, who owns what, or why. Every person we hire or lose makes this worse."
-
-## Section 2: Cost of doing nothing
-
-This is the section that gets the proposal approved. Put a number on the problem. Use the [ROI calculator for AI knowledge tools](/roi-calculator-for-ai-knowledge-tools) to compute team-level losses.
-
-Show at least three costs:
-
-- **Search time.** McKinsey has estimated knowledge workers spend around 1.8 hours a day gathering information. IDC has put the figure closer to 2.5 hours. Even at a conservative 30 minutes a day for a 20-person team, that is over 1,700 hours a year.
-- **Repeated decisions.** Estimate how many times per quarter your team relitigates a prior decision. A 90-minute meeting with six people is roughly nine person-hours. Multiply.
-- **Onboarding delay.** If a new hire reaches full productivity four weeks later than they could, that is roughly $5,000 to $15,000 per hire at typical knowledge-work salaries. The [cost of lost team knowledge per employee](/cost-of-lost-team-knowledge-per-employee) page breaks this down by role.
-
-Total the annual cost. Put the number in bold. Every later section is compared against this figure.
-
-## Section 3: Proposed solution
-
-Describe the solution in one paragraph, in plain terms. Do not name the tool yet.
-
-Example: "We need a system that captures decisions, tasks, and context from the meetings, calls, and documents our team already produces, organizes them into a searchable team memory, and keeps it current without anyone writing pages. It must connect to the tools we already use (Zoom, Google Meet, Slack, Linear or Jira) so no one has to change their workflow."
-
-This framing describes outcomes, not features. If the manager pushes back later, you can point to each outcome and ask which one is not worth solving.
-
-## Section 4: Options considered
-
-Present three options side by side. Three signals you did the work without drowning the reader.
-
-- **Option A: Do nothing.** Cost per year: the number from Section 2.
-- **Option B: Expand an existing tool** (a better wiki, tighter meeting notes, a shared doc template). Cost: staff time to maintain it, plus the cost of doing nothing because wikis decay. Cite your team's own history with internal wikis.
-- **Option C: Adopt a self-building knowledge tool such as Internode, which pulls decisions and tasks out of your team's conversations into a structured knowledge base.** Cost: the license fee, plus roughly 4 to 6 hours of setup, plus pilot review time. See [what an AI knowledge base that builds itself is](/ai-knowledge-base-that-builds-itself) for the architectural difference.
-
-Keep each row to three or four sentences.
-
-## Section 5: Cost and benefit analysis
-
-Show the math. A small, boring table beats a polished narrative here.
-
-| Item | Year 1 |
-|---|---|
-| License (example) | $X |
-| Setup and internal training | $Y |
-| Time saved (from Section 2) | $Z |
-| Net benefit | $Z minus (X plus Y) |
-
-If the net benefit is positive in year one, you have a case. If it is only positive starting in year two, say so directly and include the two-year picture.
-
-## Section 6: Rollout plan (4 to 6 weeks, one team)
-
-Propose a pilot, not a rollout. Managers approve pilots more easily than deployments.
-
-- Week 1: Connect Zoom, Google Meet, and Slack for one team. Define three questions the system should answer by week four.
-- Weeks 2 to 3: The team uses the tool normally. The chat agent answers questions from real meetings. Tasks get created and decisions get updated only after a human approves the change.
-- Week 4: Review. Can we find past decisions faster? Did we repeat any discussions? Did the drafter produce a usable project brief?
-- Weeks 5 to 6: Decide to continue, expand, or stop.
-
-## Section 7: Success metrics
-
-Pick three metrics you can measure before and after the pilot.
-
-- Average time to find a past decision (before: usually 10 to 30 minutes; target: under 2 minutes).
-- Number of meetings per month that revisit a prior decision.
-- Time to first useful contribution from new hires.
-
-State clearly what "success" looks like at week four. If none of these move, the pilot did not work, and you end it cleanly. That pre-commitment to a fail condition is what makes managers trust the proposal.
-
-## Where Internode fits in the template
-
-Internode is named in Section 4 as one option. It matches the outcomes in Section 3: it reads transcripts from Zoom, Google Meet, and Slack, builds a structured record of decisions, tasks, topics, and goals, and keeps Linear or Jira in sync through a two-way integration. The chat agent proposes changes that a human approves before anything is written. You never maintain pages.
-
-For the numbers to plug in, start with the [ROI calculator for AI knowledge tools](/roi-calculator-for-ai-knowledge-tools). For the pitch framing, read [how to propose new software to your manager](/how-to-propose-new-software-to-your-manager).
-
-
----
 CanonicalURL: https://content.internode.ai/ai-knowledge-management-for-consultants
-Title: AI knowledge management for consultants: stop losing what you learn across client engagements
+Title: AI knowledge management for consultants: keep what you learn
 Slug: ai-knowledge-management-for-consultants
 Type: Answer
 Author: Sean Shadmand (Co-founder and President)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: consultants, ai knowledge management, synthesis, cross-engagement
-Description: A practical look at AI knowledge management for consultants: how to capture, connect, and retrieve what you learn across many client engagements without building a database by hand.
+Description: A practical guide to AI knowledge management for consultants: how to capture and retrieve what you learn across client engagements without a database.
 ---
 
-# AI knowledge management for consultants: stop losing what you learn across client engagements
+# AI knowledge management for consultants: keep what you learn
 
 AI knowledge management for consultants is a system that ingests your client meetings, calls, and documents and returns a connected knowledge base you can query across every engagement. It is not a CRM and it is not a note-taking app. It is the layer that remembers what clients told you, organizes it by topic, and connects patterns across the different engagements you work on at the same time.
 
@@ -200,17 +105,17 @@ Start a free account at [app.internode.ai](https://app.internode.ai) and ask thr
 
 ---
 CanonicalURL: https://content.internode.ai/ai-knowledge-management-for-government
-Title: AI knowledge management for government: preserve institutional knowledge through elections, turnover, and FOIA
+Title: AI knowledge management for government: memory that survives turnover
 Slug: ai-knowledge-management-for-government
 Type: Answer
 Author: Istvan Lorincz (Co-founder and CEO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: government, public sector, ai knowledge management, institutional memory
-Description: How public agencies use AI knowledge management to preserve institutional memory across elected official turnover, FOIA requests, and multi-year programs, with records retention handled honestly.
+Description: How public agencies use AI knowledge management to preserve institutional memory across elected turnover, FOIA requests, and multi-year programs.
 ---
 
-# AI knowledge management for government: preserve institutional knowledge through elections, turnover, and FOIA
+# AI knowledge management for government: memory that survives turnover
 
 AI knowledge management for government agencies preserves the reasoning behind policy and program decisions, not just the public record of what passed. It captures what a committee considered, which alternatives were rejected and why, who signed off, and what compliance concerns shaped the final choice. The record survives elected official turnover, appointee changes, and long gaps between program reviews. The right tool fits into public-sector workflows: formal meetings, email, phone calls, and structured approvals.
 
@@ -259,17 +164,17 @@ The test is plain. A new official should be able to ask "why did we choose this 
 
 ---
 CanonicalURL: https://content.internode.ai/ai-meeting-notes-for-schools
-Title: AI meeting notes for schools: capture board decisions, staff meetings, and IEP conversations without anyone taking minutes
+Title: AI meeting notes for schools: board, staff, and IEP conversations
 Slug: ai-meeting-notes-for-schools
 Type: Answer
 Author: Istvan Lorincz (Co-founder and CEO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: schools, ai meeting notes, education, board meetings
-Description: How schools use AI meeting notes to capture decisions from board meetings, staff sessions, and IEP conversations into a searchable record, with FERPA and compliance handled honestly.
+Description: How schools use AI meeting notes to capture decisions from board meetings, staff sessions, and IEP conversations, with FERPA handled honestly.
 ---
 
-# AI meeting notes for schools: capture board decisions, staff meetings, and IEP conversations without anyone taking minutes
+# AI meeting notes for schools: board, staff, and IEP conversations
 
 AI meeting notes for schools do three things that standard minutes do not. They capture what was decided, not only what was said. They link that decision to the program, policy, or student services it affects. And they keep the record searchable after the principal, coordinator, or board member who made the call moves on. The right tool pulls this from the meetings you already hold on Google Meet, Zoom, or a phone, without asking anyone to take minutes.
 
@@ -322,17 +227,17 @@ The test is simple. After a full board cycle, a new principal should be able to 
 
 ---
 CanonicalURL: https://content.internode.ai/ai-meeting-prep-for-executive-assistants
-Title: AI meeting prep for executive assistants: draft the brief your executive will actually read
+Title: AI meeting prep for executive assistants: the brief they'll read
 Slug: ai-meeting-prep-for-executive-assistants
 Type: Answer
 Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: executive assistant, meeting prep, memory-aware drafting, ai brief
-Description: How executive assistants use AI meeting prep to draft briefs their executives will actually read, grounded in every past conversation, email, and commitment with each stakeholder.
+Description: How executive assistants use AI meeting prep to draft briefs executives will actually read, grounded in past conversations and commitments.
 ---
 
-# AI meeting prep for executive assistants: draft the brief your executive will actually read
+# AI meeting prep for executive assistants: the brief they'll read
 
 AI meeting prep for an executive assistant is not a summary of the calendar invite or a chatbot reply. It is a drafted brief grounded in everything your exec has already discussed with the stakeholder: every past meeting, every commitment, every decision, every email thread of substance. The draft is short, accurate, and citable, so your exec can read it in two minutes on the way to the room. The work that used to take you 25 minutes per meeting becomes a review instead of a rebuild.
 
@@ -385,7 +290,7 @@ The briefs do not replace what you know. They give your exec something worth rea
 
 ---
 CanonicalURL: https://content.internode.ai/ai-phone-call-transcription-for-small-business
-Title: AI phone call transcription for small business: turn every supplier, customer, and staff call into usable knowledge
+Title: AI phone call transcription for small business: calls to knowledge
 Slug: ai-phone-call-transcription-for-small-business
 Type: Answer
 Author: Sean Shadmand (Co-founder and President)
@@ -395,7 +300,7 @@ Tags: phone call transcription, small business, ai meeting notes, call tracking
 Description: How small businesses use AI phone call transcription to capture pricing, orders, commitments, and follow-ups from calls without typing notes or keeping a CRM.
 ---
 
-# AI phone call transcription for small business: turn every supplier, customer, and staff call into usable knowledge
+# AI phone call transcription for small business: calls to knowledge
 
 AI phone call transcription for a small business is not about recording every word. It is about turning the calls you already take into a written record you can search. The customer who changed the delivery address. The supplier who agreed on a price. The crew lead who promised a job site time. Right now that information lives in somebody's head. With a transcription tool that understands your work, the same information lives in one place your whole team can use.
 
@@ -457,7 +362,7 @@ Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: ai pm agent, ai project manager, ai task manager, organizational memory
-Description: An AI PM agent captures, organizes, and changes project state from conversations and chat. Here is what separates a real one from a meeting-notes tool with a chat box.
+Description: An AI PM agent captures, organizes, and changes project state from conversations and chat. Here is what separates a real one from a chat box.
 ---
 
 # AI PM agent: what it actually is and what to demand from one
@@ -544,7 +449,7 @@ Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: ai pm agent, meetings, tasks, automation
-Description: An AI PM that captures tasks from meetings should produce real tasks linked to the moment in the meeting they came from, not bullet lists inside a transcript. Here is what that looks like in practice.
+Description: An AI PM that captures tasks from meetings should produce real tasks linked to the moment they were decided, not bullet lists inside a transcript.
 ---
 
 # An AI PM that captures tasks from meetings
@@ -590,18 +495,113 @@ Internode is an AI PM agent built for this exact flow. The [AI PM agent explaine
 
 
 ---
+CanonicalURL: https://content.internode.ai/business-case-template-for-knowledge-management-tool
+Title: Business case template for a knowledge management tool
+Slug: business-case-template-for-knowledge-management-tool
+Type: Answer
+Author: Sean Shadmand (Co-founder and President)
+PublishedAt: 2026-04-17
+UpdatedAt: 2026-04-17
+Tags: business case, knowledge management, template, champion
+Description: A copy-paste business case template for a knowledge management tool: problem, cost of inaction, options, ROI, rollout plan, and success metrics.
+---
+
+# Business case template for a knowledge management tool
+
+A business case for a knowledge management tool should open with the cost of the current problem, not the features of the proposed tool. Managers approve work that stops a bleed. This template gives you seven sections your manager will read: problem statement, cost of doing nothing, proposed solution, options considered, cost and benefit analysis, rollout plan, and success metrics. Copy it, fill in your team's numbers, and put the tool name in the last third of the page.
+
+The structure assumes a manager with 15 minutes and no patience for vendor language.
+
+## Section 1: Problem statement (3 to 5 sentences)
+
+State the problem in your team's words, not in knowledge management vocabulary. Name two or three specific symptoms the manager has already seen.
+
+Example: "Our team makes decisions in Zoom and Slack, then relitigates them six weeks later because no one can find the original thread. Our last three onboarding cycles took more than eight weeks. Two senior people carry most of the context in their heads."
+
+End with a one-line thesis: "We do not have a structured record of what we have decided, who owns what, or why. Every person we hire or lose makes this worse."
+
+## Section 2: Cost of doing nothing
+
+This is the section that gets the proposal approved. Put a number on the problem. Use the [ROI calculator for AI knowledge tools](/roi-calculator-for-ai-knowledge-tools) to compute team-level losses.
+
+Show at least three costs:
+
+- **Search time.** McKinsey has estimated knowledge workers spend around 1.8 hours a day gathering information. IDC has put the figure closer to 2.5 hours. Even at a conservative 30 minutes a day for a 20-person team, that is over 1,700 hours a year.
+- **Repeated decisions.** Estimate how many times per quarter your team relitigates a prior decision. A 90-minute meeting with six people is roughly nine person-hours. Multiply.
+- **Onboarding delay.** If a new hire reaches full productivity four weeks later than they could, that is roughly $5,000 to $15,000 per hire at typical knowledge-work salaries. The [cost of lost team knowledge per employee](/cost-of-lost-team-knowledge-per-employee) page breaks this down by role.
+
+Total the annual cost. Put the number in bold. Every later section is compared against this figure.
+
+## Section 3: Proposed solution
+
+Describe the solution in one paragraph, in plain terms. Do not name the tool yet.
+
+Example: "We need a system that captures decisions, tasks, and context from the meetings, calls, and documents our team already produces, organizes them into a searchable team memory, and keeps it current without anyone writing pages. It must connect to the tools we already use (Zoom, Google Meet, Slack, Linear or Jira) so no one has to change their workflow."
+
+This framing describes outcomes, not features. If the manager pushes back later, you can point to each outcome and ask which one is not worth solving.
+
+## Section 4: Options considered
+
+Present three options side by side. Three signals you did the work without drowning the reader.
+
+- **Option A: Do nothing.** Cost per year: the number from Section 2.
+- **Option B: Expand an existing tool** (a better wiki, tighter meeting notes, a shared doc template). Cost: staff time to maintain it, plus the cost of doing nothing because wikis decay. Cite your team's own history with internal wikis.
+- **Option C: Adopt a self-building knowledge tool such as Internode, which pulls decisions and tasks out of your team's conversations into a structured knowledge base.** Cost: the license fee, plus roughly 4 to 6 hours of setup, plus pilot review time. See [what an AI knowledge base that builds itself is](/ai-knowledge-base-that-builds-itself) for the architectural difference.
+
+Keep each row to three or four sentences.
+
+## Section 5: Cost and benefit analysis
+
+Show the math. A small, boring table beats a polished narrative here.
+
+| Item | Year 1 |
+|---|---|
+| License (example) | $X |
+| Setup and internal training | $Y |
+| Time saved (from Section 2) | $Z |
+| Net benefit | $Z minus (X plus Y) |
+
+If the net benefit is positive in year one, you have a case. If it is only positive starting in year two, say so directly and include the two-year picture.
+
+## Section 6: Rollout plan (4 to 6 weeks, one team)
+
+Propose a pilot, not a rollout. Managers approve pilots more easily than deployments.
+
+- Week 1: Connect Zoom, Google Meet, and Slack for one team. Define three questions the system should answer by week four.
+- Weeks 2 to 3: The team uses the tool normally. The chat agent answers questions from real meetings. Tasks get created and decisions get updated only after a human approves the change.
+- Week 4: Review. Can we find past decisions faster? Did we repeat any discussions? Did the drafter produce a usable project brief?
+- Weeks 5 to 6: Decide to continue, expand, or stop.
+
+## Section 7: Success metrics
+
+Pick three metrics you can measure before and after the pilot.
+
+- Average time to find a past decision (before: usually 10 to 30 minutes; target: under 2 minutes).
+- Number of meetings per month that revisit a prior decision.
+- Time to first useful contribution from new hires.
+
+State clearly what "success" looks like at week four. If none of these move, the pilot did not work, and you end it cleanly. That pre-commitment to a fail condition is what makes managers trust the proposal.
+
+## Where Internode fits in the template
+
+Internode is named in Section 4 as one option. It matches the outcomes in Section 3: it reads transcripts from Zoom, Google Meet, and Slack, builds a structured record of decisions, tasks, topics, and goals, and keeps Linear or Jira in sync through a two-way integration. The chat agent proposes changes that a human approves before anything is written. You never maintain pages.
+
+For the numbers to plug in, start with the [ROI calculator for AI knowledge tools](/roi-calculator-for-ai-knowledge-tools). For the pitch framing, read [how to propose new software to your manager](/how-to-propose-new-software-to-your-manager).
+
+
+---
 CanonicalURL: https://content.internode.ai/roi-calculator-for-ai-knowledge-tools
-Title: How to calculate the ROI of an AI knowledge tool (for the manager you're trying to convince)
+Title: How to calculate the ROI of an AI knowledge tool
 Slug: roi-calculator-for-ai-knowledge-tools
 Type: Answer
 Author: Sean Shadmand (Co-founder and President)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: roi, ai knowledge tools, champion, business case
-Description: A step-by-step ROI calculator for an AI knowledge tool, with worked examples for a 20-person team, so you can show your manager a real number instead of a vague productivity claim.
+Description: A step-by-step ROI calculator for an AI knowledge tool, with worked examples for a 20-person team, so you can show a manager a real number.
 ---
 
-# How to calculate the ROI of an AI knowledge tool (for the manager you're trying to convince)
+# How to calculate the ROI of an AI knowledge tool
 
 The ROI of an AI knowledge tool comes from four places: hours your team loses each week searching for answers, the cost of decisions you make twice, the cost of onboarding a hire with no institutional memory to draw on, and the cost of senior people leaving and taking context with them. Quantify those four and you get a defensible annual loss number. The cost of the tool is compared against that. This page walks through each input with a worked example for a 20-person team, and shows where AI knowledge features actually produce the savings.
 
@@ -695,17 +695,17 @@ Keep your real numbers conservative. A defensible $100,000 savings claim beats a
 
 ---
 CanonicalURL: https://content.internode.ai/how-to-propose-new-software-to-your-manager
-Title: How to propose new software to your manager (without getting shut down)
+Title: How to propose new software to your manager
 Slug: how-to-propose-new-software-to-your-manager
 Type: Answer
 Author: Sean Shadmand (Co-founder and President)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: proposing software, champion, internal advocacy, software procurement
-Description: A practical playbook for proposing new software internally: how to frame the problem, pre-empt procurement and security objections, use a pilot, quantify the pain, and name the tool at the right moment.
+Description: A playbook for proposing new software internally: framing the problem, pre-empting procurement objections, piloting, quantifying pain, and timing.
 ---
 
-# How to propose new software to your manager (without getting shut down)
+# How to propose new software to your manager
 
 The fastest way to get a software proposal shut down is to open with the tool. Managers react to tool pitches the way they react to unsolicited sales calls: politely, briefly, then no. The way to get a real conversation is to lead with a problem your manager already agrees is expensive, show you have thought through procurement and security, frame the ask as a low-risk pilot, and name the tool only after they are already asking what to try.
 
@@ -813,7 +813,7 @@ Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: meetings, tasks, automation, productivity
-Description: A practical guide to ending the habit of retyping meeting action items into Linear, Jira, or Asana after every call. Four changes, one outcome: the plan stays current without a human scribe.
+Description: A practical guide to ending retyping meeting action items into Linear, Jira, or Asana: four changes that keep the plan current without a scribe.
 ---
 
 # How to stop typing tasks from meetings
@@ -865,17 +865,17 @@ For the direct ICP-search version of this argument, see [an AI PM that captures 
 
 ---
 CanonicalURL: https://content.internode.ai/how-to-synthesize-knowledge-across-client-meetings
-Title: How to synthesize knowledge across client meetings (without relying on memory)
+Title: How to synthesize knowledge across client meetings
 Slug: how-to-synthesize-knowledge-across-client-meetings
 Type: Answer
 Author: Sean Shadmand (Co-founder and President)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: synthesis, client meetings, knowledge management, consultants
-Description: A step-by-step guide to synthesizing knowledge across many client meetings using structured capture, records for decisions and tasks, and cross-meeting topic clustering instead of memory or manual notes.
+Description: A step-by-step guide to synthesizing knowledge across many client meetings using structured capture and cross-meeting topic clustering, not memory.
 ---
 
-# How to synthesize knowledge across client meetings (without relying on memory)
+# How to synthesize knowledge across client meetings
 
 To synthesize knowledge across client meetings without relying on memory, you need three things: every conversation captured as text, pulled into structured records like decisions and tasks, and clustered by topic across engagements. Memory is a bad substitute for any of those steps, and manual notes are a slow substitute for the extraction. The work below walks through a system that does each step on its own.
 
@@ -944,17 +944,17 @@ Start at [app.internode.ai](https://app.internode.ai). The synthesis improves th
 
 ---
 CanonicalURL: https://content.internode.ai/internode-vs-asana-ai-studio-for-work-plans
-Title: Internode vs Asana AI Studio for work plans: which AI plan reflects what your team actually decided?
+Title: Internode vs Asana AI Studio: plans from what your team decided
 Slug: internode-vs-asana-ai-studio-for-work-plans
 Type: Answer
 Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: asana ai studio, work plans, ai project manager, comparison
-Description: Internode vs Asana AI Studio compared on the axes that matter for AI work plans: building a plan from decisions made in meetings, cross-source grounding across meetings, email, and chat, and two-way sync with Linear or Jira.
+Description: Internode vs Asana AI Studio on AI work plans: plans built from meeting decisions, cross-source grounding, and two-way sync with Linear or Jira.
 ---
 
-# Internode vs Asana AI Studio for work plans: which AI plan reflects what your team actually decided?
+# Internode vs Asana AI Studio: plans from what your team decided
 
 # Internode vs Asana AI Studio for work plans: which AI plan reflects what your team actually decided?
 
@@ -998,7 +998,7 @@ Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: asana, ai pm agent, ai task manager, comparison
-Description: Internode vs Asana AI compared on the axes that matter for an AI PM agent: capture from conversations, decision-to-task provenance, bulk mutations, and cross-meeting deduplication.
+Description: Internode vs Asana AI on an AI PM agent: capture from conversations, decision-to-task provenance, bulk mutations, and cross-meeting deduplication.
 ---
 
 # Internode vs Asana AI: which AI task manager should you use?
@@ -1038,17 +1038,17 @@ Pick Asana for portfolio planning and non-engineering workflows. Add Internode f
 
 ---
 CanonicalURL: https://content.internode.ai/internode-vs-chatgpt-for-documents
-Title: Internode vs ChatGPT for documents: which AI drafts from your team's memory, not just the prompt?
+Title: Internode vs ChatGPT for documents: drafts from your team's memory
 Slug: internode-vs-chatgpt-for-documents
 Type: Answer
 Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: chatgpt, ai documents, memory-aware drafting, comparison
-Description: Internode vs ChatGPT for documents compared on the axes that matter: drafting from the team's decision history, section-level citations, a research loop across your own memory, and auto-updating when decisions change.
+Description: Internode vs ChatGPT for documents: drafting from your team's decision history, section-level citations, and auto-updating when decisions change.
 ---
 
-# Internode vs ChatGPT for documents: which AI drafts from your team's memory, not just the prompt?
+# Internode vs ChatGPT for documents: drafts from your team's memory
 
 # Internode vs ChatGPT for documents: which AI drafts from your team's memory, not just the prompt?
 
@@ -1085,17 +1085,17 @@ Use ChatGPT for cold-start drafts that do not need to be grounded in your team's
 
 ---
 CanonicalURL: https://content.internode.ai/internode-vs-clickup-ai-for-work-plans
-Title: Internode vs ClickUp AI for work plans: which AI builds a plan from your team's decisions?
+Title: Internode vs ClickUp AI: plans built from your team's decisions
 Slug: internode-vs-clickup-ai-for-work-plans
 Type: Answer
 Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: clickup ai, work plans, ai project manager, comparison
-Description: Internode vs ClickUp AI compared on the axes that matter for AI work plans: building a work plan from decisions made in meetings, tracing plan sections back to source conversations, and syncing the generated tasks two-way with Linear or Jira.
+Description: Internode vs ClickUp AI on AI work plans: building plans from meeting decisions, tracing sections to conversations, two-way sync with Linear or Jira.
 ---
 
-# Internode vs ClickUp AI for work plans: which AI builds a plan from your team's decisions?
+# Internode vs ClickUp AI: plans built from your team's decisions
 
 # Internode vs ClickUp AI for work plans: which AI builds a plan from your team's decisions?
 
@@ -1132,17 +1132,17 @@ Pick ClickUp AI for the all-in-one PM UI and the internal document-plus-task sur
 
 ---
 CanonicalURL: https://content.internode.ai/internode-vs-coda-ai-for-living-documents
-Title: Internode vs Coda AI for living documents: which AI updates the doc from the real world?
+Title: Internode vs Coda AI: living documents updated from the real world
 Slug: internode-vs-coda-ai-for-living-documents
 Type: Answer
 Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: coda ai, living documents, memory-aware drafting, comparison
-Description: Internode vs Coda AI compared on the axes that matter for living documents: auto-updating from meetings, email, and chat, tracing every update to a source event, and drafting through a proposal flow rather than silent edits.
+Description: Internode vs Coda AI on living documents: auto-updating from meetings, email, and chat, traceable updates, and a proposal flow instead of silent edits.
 ---
 
-# Internode vs Coda AI for living documents: which AI updates the doc from the real world?
+# Internode vs Coda AI: living documents updated from the real world
 
 # Internode vs Coda AI for living documents: which AI updates the doc from the real world?
 
@@ -1186,7 +1186,7 @@ Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: confluence, ai knowledge base, comparison, wiki
-Description: Internode vs Confluence AI compared on the axes that matter for an AI knowledge base: conversations as input, structured records, the decision-to-source trail, and memory-aware drafting.
+Description: Internode vs Confluence AI on an AI knowledge base: conversations as input, structured records, the decision-to-source trail, and memory-aware drafting.
 ---
 
 # Internode vs Confluence AI: which AI knowledge base should you use?
@@ -1226,17 +1226,17 @@ Keep Confluence for the legacy page library and the permissioning depth your IT 
 
 ---
 CanonicalURL: https://content.internode.ai/internode-vs-fathom-for-meeting-prep-drafts
-Title: Internode vs Fathom: which AI drafts the meeting brief before you walk in?
+Title: Internode vs Fathom: the meeting brief before you walk in
 Slug: internode-vs-fathom-for-meeting-prep-drafts
 Type: Answer
 Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: fathom, meeting prep, memory-aware drafting, ai brief
-Description: Internode vs Fathom compared on the drafting axis: grounding in the team's decision history, cross-meeting context, per-section citations, and the research loop that composes a pre-meeting brief.
+Description: Internode vs Fathom on meeting prep drafting: grounding in decision history, cross-meeting context, per-section citations, and a real research loop.
 ---
 
-# Internode vs Fathom: which AI drafts the meeting brief before you walk in?
+# Internode vs Fathom: the meeting brief before you walk in
 
 # Internode vs Fathom: which AI drafts the meeting brief before you walk in?
 
@@ -1274,17 +1274,17 @@ Use Fathom for the quick post-call summary after a single Zoom meeting. Use Inte
 
 ---
 CanonicalURL: https://content.internode.ai/internode-vs-fellow-for-documents
-Title: Internode vs Fellow: which AI drafts from your team's decision history?
+Title: Internode vs Fellow: drafts from your team's decision history
 Slug: internode-vs-fellow-for-documents
 Type: Answer
 Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: fellow, ai documents, meeting docs, memory-aware drafting
-Description: Internode vs Fellow compared on the axes that matter for AI document drafting: team-wide decision history, section-level citations, and auto-updating when decisions change.
+Description: Internode vs Fellow on AI document drafting: team-wide decision history, section-level citations, and auto-updating when decisions change.
 ---
 
-# Internode vs Fellow: which AI drafts from your team's decision history?
+# Internode vs Fellow: drafts from your team's decision history
 
 # Internode vs Fellow: which AI drafts from your team's decision history?
 
@@ -1321,17 +1321,17 @@ Use Fellow for the agenda and the meeting summary for a single meeting you own. 
 
 ---
 CanonicalURL: https://content.internode.ai/internode-vs-fireflies-for-meeting-prep-drafts
-Title: Internode vs Fireflies AI: which AI drafts the meeting brief from your team's memory?
+Title: Internode vs Fireflies AI: meeting briefs from your team's memory
 Slug: internode-vs-fireflies-for-meeting-prep-drafts
 Type: Answer
 Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: fireflies, meeting prep, memory-aware drafting, ai brief
-Description: Internode vs Fireflies AI compared on the drafting axis: grounding in the team's decision history, cross-meeting context, per-section citations, and the research loop behind a real pre-meeting brief.
+Description: Internode vs Fireflies AI on meeting prep drafting: decision history grounding, cross-meeting context, per-section citations, and a research loop.
 ---
 
-# Internode vs Fireflies AI: which AI drafts the meeting brief from your team's memory?
+# Internode vs Fireflies AI: meeting briefs from your team's memory
 
 # Internode vs Fireflies AI: which AI drafts the meeting brief from your team's memory?
 
@@ -1369,17 +1369,17 @@ Use Fireflies AI for post-call summaries that live beside the recording. Use Int
 
 ---
 CanonicalURL: https://content.internode.ai/internode-vs-gemini-for-documents
-Title: Internode vs Gemini for documents: which AI drafts grounded in your team's memory?
+Title: Internode vs Gemini for documents: grounded in your team's memory
 Slug: internode-vs-gemini-for-documents
 Type: Answer
 Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: gemini, google workspace, ai documents, memory-aware drafting
-Description: Internode vs Gemini for documents compared on the axes that matter: drafting from the team's decision history, section-level citations, and auto-updating when decisions change.
+Description: Internode vs Gemini for documents: drafting from the team's decision history, section-level citations, and auto-updating when decisions change.
 ---
 
-# Internode vs Gemini for documents: which AI drafts grounded in your team's memory?
+# Internode vs Gemini for documents: grounded in your team's memory
 
 # Internode vs Gemini for documents: which AI drafts grounded in your team's memory?
 
@@ -1416,17 +1416,17 @@ Use Gemini for inline drafting inside Google Docs and Workspace where the source
 
 ---
 CanonicalURL: https://content.internode.ai/internode-vs-glean-for-documents
-Title: Internode vs Glean: which AI drafts from your organization's real decisions?
+Title: Internode vs Glean: drafts from your real decisions
 Slug: internode-vs-glean-for-documents
 Type: Answer
 Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: glean, enterprise search, ai documents, memory-aware drafting
-Description: Internode vs Glean compared on the axes that matter for AI document drafting: the team's decision history, section-level citations, a research loop across your own memory, and auto-updating when decisions change.
+Description: Internode vs Glean on AI document drafting: the team's decision history, section-level citations, a research loop, and auto-updating drafts.
 ---
 
-# Internode vs Glean: which AI drafts from your organization's real decisions?
+# Internode vs Glean: drafts from your real decisions
 
 # Internode vs Glean: which AI drafts from your organization's real decisions?
 
@@ -1463,17 +1463,17 @@ Use Glean for cross-connector search across a large SaaS estate where the core n
 
 ---
 CanonicalURL: https://content.internode.ai/internode-vs-granola-for-meeting-prep-drafts
-Title: Internode vs Granola Prep: which AI drafts the meeting brief you'll actually read?
+Title: Internode vs Granola Prep: the meeting brief you'll actually read
 Slug: internode-vs-granola-for-meeting-prep-drafts
 Type: Answer
 Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: granola prep, meeting prep, memory-aware drafting, pre-meeting brief
-Description: Internode vs Granola Prep compared on the drafting axis: grounding in the team's decision history, cross-meeting context, per-section citations, and a research loop behind the pre-meeting brief.
+Description: Internode vs Granola Prep on meeting prep drafting: decision history grounding, cross-meeting context, per-section citations, and a research loop.
 ---
 
-# Internode vs Granola Prep: which AI drafts the meeting brief you'll actually read?
+# Internode vs Granola Prep: the meeting brief you'll actually read
 
 # Internode vs Granola Prep: which AI drafts the meeting brief you'll actually read?
 
@@ -1511,17 +1511,17 @@ Pick Granola Prep for the fast personal calendar summary. Use Internode when the
 
 ---
 CanonicalURL: https://content.internode.ai/internode-vs-granola
-Title: Internode vs Granola: which AI meeting intelligence tool should you use?
+Title: Internode vs Granola: which meeting intelligence tool wins?
 Slug: internode-vs-granola
 Type: Answer
 Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: granola, ai meeting notes, comparison, meeting intelligence
-Description: Internode vs Granola compared on the axes that matter for AI meeting intelligence: phone call capture, email threads, decision rationale, bulk changes from chat, two-way Linear and Jira sync, and organizational search.
+Description: Internode vs Granola on AI meeting intelligence: phone calls, email threads, decision rationale, two-way Linear and Jira sync, and org-wide search.
 ---
 
-# Internode vs Granola: which AI meeting intelligence tool should you use?
+# Internode vs Granola: which meeting intelligence tool wins?
 
 # Internode vs Granola: which AI meeting intelligence tool should you use?
 
@@ -1567,7 +1567,7 @@ Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: guru, ai knowledge base, comparison, cards
-Description: Internode vs Guru compared on the axes that matter for an AI knowledge base: conversations as input, structured records, the decision-to-source trail, and organizational memory.
+Description: Internode vs Guru on an AI knowledge base: conversations as input, structured records, the decision-to-source trail, and organizational memory.
 ---
 
 # Internode vs Guru: which AI knowledge base should you use?
@@ -1614,7 +1614,7 @@ Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: jira, ai pm agent, ai task manager, comparison
-Description: Internode vs Jira compared on the axes that matter for an AI PM agent: capture from conversations, decision-to-task provenance, compound proposals, and two-way sync back into Jira.
+Description: Internode vs Jira on an AI PM agent: capture from conversations, decision-to-task provenance, compound proposals, and two-way sync back into Jira.
 ---
 
 # Internode vs Jira: which AI PM agent should you use?
@@ -1661,7 +1661,7 @@ Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: letta, ai agent memory, llm memory, comparison
-Description: Internode vs Letta compared on the axes that matter for AI agent memory: team-scoped structured memory, a decision-to-source trail, ingestion from real conversations, and two-way sync to operational tools.
+Description: Internode vs Letta on AI agent memory: team-scoped structured memory, a decision-to-source trail, real conversation ingestion, and two-way tool sync.
 ---
 
 # Internode vs Letta: which memory layer should your AI agent use?
@@ -1708,7 +1708,7 @@ Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: linear, ai pm agent, ai task manager, comparison
-Description: Internode vs Linear compared on the axes that matter for an AI PM agent: capture from conversations, decision-to-task provenance, bulk mutations, and two-way sync.
+Description: Internode vs Linear on an AI PM agent: capture from conversations, decision-to-task provenance, bulk mutations, and two-way sync.
 ---
 
 # Internode vs Linear: which AI PM agent should you use?
@@ -1755,7 +1755,7 @@ Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: mem0, ai agent memory, llm memory, comparison
-Description: Internode vs Mem0 compared on the axes that matter for AI agent memory: team-scoped structured memory, a decision-to-source trail, ingestion from real conversations, and two-way sync to operational tools.
+Description: Internode vs Mem0 on AI agent memory: team-scoped structured memory, a decision-to-source trail, real conversation ingestion, and two-way tool sync.
 ---
 
 # Internode vs Mem0: which memory layer should your AI agent use?
@@ -1795,17 +1795,17 @@ Pick Mem0 for a single-agent prototype that needs per-user key-value recall in o
 
 ---
 CanonicalURL: https://content.internode.ai/internode-vs-microsoft-copilot-for-documents
-Title: Internode vs Microsoft Copilot for documents: which AI drafts from your team's actual decisions?
+Title: Internode vs Microsoft Copilot: drafts from your team's decisions
 Slug: internode-vs-microsoft-copilot-for-documents
 Type: Answer
 Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: microsoft copilot, ai documents, memory-aware drafting
-Description: Internode vs Microsoft Copilot for documents compared on the axes that matter: drafting from the team's decision history, section-level citations to source conversations, and a research loop across the team's own memory before writing.
+Description: Internode vs Microsoft Copilot for documents: drafting from your team's decision history, section-level citations, and a research loop over your memory.
 ---
 
-# Internode vs Microsoft Copilot for documents: which AI drafts from your team's actual decisions?
+# Internode vs Microsoft Copilot: drafts from your team's decisions
 
 # Internode vs Microsoft Copilot for documents: which AI drafts from your team's actual decisions?
 
@@ -1842,17 +1842,17 @@ Use Microsoft Copilot for inline drafting inside Word and Outlook where the sour
 
 ---
 CanonicalURL: https://content.internode.ai/internode-vs-sharepoint-syntex-for-policy-grounded-documents
-Title: Internode vs Microsoft Syntex for policy-grounded documents: which AI grounds drafts in both your policies AND your team's decisions?
+Title: Internode vs Microsoft Syntex: AI drafts grounded in your policies
 Slug: internode-vs-sharepoint-syntex-for-policy-grounded-documents
 Type: Answer
 Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: sharepoint syntex, policy documents, memory-aware drafting, comparison
-Description: Internode vs Microsoft Syntex compared on the axes that matter for policy-grounded documents: grounding drafts in both company policy and the team's live decisions, updating when either source changes, and citing policy sections alongside the source decision per paragraph.
+Description: Internode vs Microsoft Syntex: grounding policy documents in both company policy and your team's live decisions, with per-paragraph citations.
 ---
 
-# Internode vs Microsoft Syntex for policy-grounded documents: which AI grounds drafts in both your policies AND your team's decisions?
+# Internode vs Microsoft Syntex: AI drafts grounded in your policies
 
 # Internode vs Microsoft Syntex for policy-grounded documents: which AI grounds drafts in both your policies AND your team's decisions?
 
@@ -1889,17 +1889,17 @@ Pick Syntex for the content-type classification and metadata enrichment that a S
 
 ---
 CanonicalURL: https://content.internode.ai/internode-vs-notion-ai-for-documents
-Title: Internode vs Notion AI for documents: which AI drafts from your team's memory?
+Title: Internode vs Notion AI: drafts from your team's memory
 Slug: internode-vs-notion-ai-for-documents
 Type: Answer
 Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: notion ai, ai documents, memory-aware drafting, comparison
-Description: Internode vs Notion AI for documents compared on the axes that matter: drafting from the team's decision history, section-level citations, and auto-updating when decisions change.
+Description: Internode vs Notion AI for documents: drafting from the team's decision history, section-level citations, and auto-updating when decisions change.
 ---
 
-# Internode vs Notion AI for documents: which AI drafts from your team's memory?
+# Internode vs Notion AI: drafts from your team's memory
 
 # Internode vs Notion AI for documents: which AI drafts from your team's memory?
 
@@ -1943,7 +1943,7 @@ Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: notion ai, ai knowledge base, comparison
-Description: Internode vs Notion AI compared on the axes that matter for AI knowledge management: conversations as input, structured records, decision-to-source trail, cross-meeting matching, memory-aware drafting, and organizational search with sources attached.
+Description: Internode vs Notion AI on AI knowledge management: conversations as input, structured records, decision-to-source trail, and memory-aware drafting.
 ---
 
 # Internode vs Notion AI: which AI should manage your team's knowledge?
@@ -1992,7 +1992,7 @@ Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: notion, ai knowledge base, wiki, comparison
-Description: Internode vs Notion as a wiki compared on the axes that matter for an AI knowledge base: conversations as input, structured records, the decision-to-source trail, and zero page-writing.
+Description: Internode vs Notion as a wiki on an AI knowledge base: conversations as input, structured records, a decision-to-source trail, and zero page-writing.
 ---
 
 # Internode vs Notion as a wiki: which AI knowledge base should you use?
@@ -2032,17 +2032,17 @@ Use Notion for the content you actually want to sit down and author. Use Interno
 
 ---
 CanonicalURL: https://content.internode.ai/internode-vs-otter-for-meeting-prep-drafts
-Title: Internode vs Otter: which AI drafts a meeting brief from your team's knowledge?
+Title: Internode vs Otter: meeting briefs from your team's knowledge
 Slug: internode-vs-otter-for-meeting-prep-drafts
 Type: Answer
 Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: otter, meeting prep, memory-aware drafting, pre-meeting brief
-Description: Internode vs Otter compared on the drafting axis: grounding in the team's decision history, cross-meeting context, per-section citations, and the research loop that composes a real pre-meeting brief.
+Description: Internode vs Otter on meeting prep drafting: grounding in decision history, cross-meeting context, per-section citations, and a real research loop.
 ---
 
-# Internode vs Otter: which AI drafts a meeting brief from your team's knowledge?
+# Internode vs Otter: meeting briefs from your team's knowledge
 
 # Internode vs Otter: which AI drafts a meeting brief from your team's knowledge?
 
@@ -2087,7 +2087,7 @@ Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: otter, ai meeting notes, comparison, transcription
-Description: Internode vs Otter compared on the axes that matter for AI meeting intelligence: phone call capture, email threads, structured tasks, decision rationale, two-way Linear and Jira sync, and organizational search.
+Description: Internode vs Otter on AI meeting intelligence: phone calls, email threads, structured tasks, decision rationale, and two-way Linear and Jira sync.
 ---
 
 # Internode vs Otter: which AI meeting intelligence tool should you use?
@@ -2129,17 +2129,17 @@ Keep Otter if the deliverable is a transcript you will review inside a single me
 
 ---
 CanonicalURL: https://content.internode.ai/internode-vs-read-ai
-Title: Internode vs Read AI: which AI meeting intelligence tool should you use?
+Title: Internode vs Read AI: which meeting intelligence tool wins?
 Slug: internode-vs-read-ai
 Type: Answer
 Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: read ai, ai meeting notes, comparison, meeting intelligence
-Description: Internode vs Read AI compared on the axes that matter for AI meeting intelligence: phone call capture, email threads, structured tasks, decision rationale, two-way Linear and Jira sync, and organizational search.
+Description: Internode vs Read AI on AI meeting intelligence: phone calls, email threads, structured tasks, decision rationale, and two-way Linear and Jira sync.
 ---
 
-# Internode vs Read AI: which AI meeting intelligence tool should you use?
+# Internode vs Read AI: which meeting intelligence tool wins?
 
 # Internode vs Read AI: which AI meeting intelligence tool should you use?
 
@@ -2185,7 +2185,7 @@ Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: slab, ai knowledge base, wiki, comparison
-Description: Internode vs Slab compared on the axes that matter for an AI knowledge base: conversations as input, structured records, the decision-to-source trail, and memory-aware drafting.
+Description: Internode vs Slab on an AI knowledge base: conversations as input, structured records, the decision-to-source trail, and memory-aware drafting.
 ---
 
 # Internode vs Slab: which AI knowledge base should you use?
@@ -2225,17 +2225,17 @@ Keep Slab for the handbook pages you want a human to author next to your Slack c
 
 ---
 CanonicalURL: https://content.internode.ai/internode-vs-tldv-for-meeting-prep-drafts
-Title: Internode vs tldv: which AI drafts the meeting brief your team will actually use?
+Title: Internode vs tldv: the meeting brief your team will actually use
 Slug: internode-vs-tldv-for-meeting-prep-drafts
 Type: Answer
 Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: tldv, meeting prep, memory-aware drafting, pre-meeting brief
-Description: Internode vs tldv compared on the drafting axis: grounding in the team's decision history, cross-meeting context, per-section citations, and the research loop behind a pre-meeting brief teams actually read.
+Description: Internode vs tldv on meeting prep drafting: grounding in decision history, cross-meeting context, per-section citations, and a real research loop.
 ---
 
-# Internode vs tldv: which AI drafts the meeting brief your team will actually use?
+# Internode vs tldv: the meeting brief your team will actually use
 
 # Internode vs tldv: which AI drafts the meeting brief your team will actually use?
 
@@ -2280,7 +2280,7 @@ Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: zep, ai agent memory, llm memory, comparison
-Description: Internode vs Zep compared on the axes that matter for AI agent memory: team-scoped structured memory, a decision-to-source trail, ingestion from real conversations, and two-way sync to operational tools.
+Description: Internode vs Zep on AI agent memory: team-scoped structured memory, a decision-to-source trail, real conversation ingestion, and two-way tool sync.
 ---
 
 # Internode vs Zep: which memory layer should your AI agent use?
@@ -2320,17 +2320,17 @@ Pick Zep for a hosted long-term memory service behind a single conversational ag
 
 ---
 CanonicalURL: https://content.internode.ai/memory-aware-drafting
-Title: Memory-aware drafting: documents that know what your team already decided
+Title: Memory-aware drafting: docs that know what your team decided
 Slug: memory-aware-drafting
 Type: Answer
 Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: memory-aware drafting, ai documents, organizational memory, meeting prep
-Description: Memory-aware drafting is document generation grounded in your team's organizational memory: every paragraph traces back to a decision, a meeting, or a policy your team already produced.
+Description: Memory-aware drafting is document generation grounded in organizational memory: every paragraph traces to a decision, meeting, or policy you produced.
 ---
 
-# Memory-aware drafting: documents that know what your team already decided
+# Memory-aware drafting: docs that know what your team decided
 
 Memory-aware drafting is document generation that draws on a team's organizational memory instead of a generic prompt. The AI does not invent the content of the meeting brief, the project work plan, or the policy summary. It composes the document from the team's actual decisions, prior meetings, current tasks, and the company policies it already has access to. Every paragraph can cite the underlying source.
 
@@ -2390,7 +2390,7 @@ Author: Istvan Lorincz (Co-founder and CEO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: ai knowledge base, knowledge management, organizational memory, zero maintenance
-Description: Most AI knowledge bases are wikis with a chat box. A knowledge base that builds itself is one your team never has to update because it learns from the conversations that already happen.
+Description: Most AI knowledge bases are wikis with a chat box. One that builds itself never needs updating because it learns from the conversations already happening.
 ---
 
 # The AI knowledge base that builds itself
@@ -2460,17 +2460,17 @@ The fastest way to feel the difference: connect a week of meetings and ask the a
 
 ---
 CanonicalURL: https://content.internode.ai/ai-native-alternative-to-notion
-Title: The AI-native alternative to Notion: a knowledge system that writes itself
+Title: The AI-native alternative to Notion: a self-writing knowledge system
 Slug: ai-native-alternative-to-notion
 Type: Answer
 Author: Istvan Lorincz (Co-founder and CEO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: notion alternative, ai-native, knowledge base, ai-first
-Description: Notion is a workspace-as-database that requires you to build the system. An AI-native alternative starts from conversations and produces structured knowledge without you typing pages.
+Description: Notion is a workspace-as-database that you build. An AI-native alternative starts from conversations and produces structured knowledge without typing pages.
 ---
 
-# The AI-native alternative to Notion: a knowledge system that writes itself
+# The AI-native alternative to Notion: a self-writing knowledge system
 
 An AI-native alternative to Notion is a knowledge system where you do not build the database, design the schema, or write the pages. You connect the conversations and documents you already produce, and the system extracts decisions, tasks, and topics on its own. Notion is a workspace-as-database. The AI-native version is a knowledge base that writes itself from your work.
 
@@ -2521,17 +2521,17 @@ Start at [app.internode.ai](https://app.internode.ai), connect one week of meeti
 
 ---
 CanonicalURL: https://content.internode.ai/alternative-to-crm-for-consulting-knowledge
-Title: The alternative to a CRM for consulting knowledge: organize what you learn, not just who you spoke to
+Title: The alternative to a CRM for consulting knowledge
 Slug: alternative-to-crm-for-consulting-knowledge
 Type: Answer
 Author: Sean Shadmand (Co-founder and President)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: crm alternative, consultants, knowledge management, client intelligence
-Description: CRMs track contacts and deals. Consultants need a system that tracks what they learned from conversations, the decisions clients are weighing, and patterns across engagements. This is the alternative.
+Description: CRMs track contacts and deals. Consultants need a system for what they learned from conversations and patterns across engagements. Here is that system.
 ---
 
-# The alternative to a CRM for consulting knowledge: organize what you learn, not just who you spoke to
+# The alternative to a CRM for consulting knowledge
 
 The alternative to a CRM for consulting knowledge is a system that captures conversations instead of contacts and extracts the decisions, commitments, and topics inside them. A CRM knows which people you have met and which deals are in which stage. It does not know what those people told you, what they are weighing, or how one client's situation resembles another's. Consultants need the second system, not the first.
 
@@ -2669,7 +2669,7 @@ Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: ai task manager, ai pm agent, project management, comparison
-Description: A ranked comparison of the best AI task managers in 2026 on the axes that decide whether your plan stays current: capture from conversations, decision-to-task provenance, bulk mutations, and two-way sync.
+Description: A ranked comparison of the best AI task managers in 2026 on what keeps a plan current: conversation capture, provenance, bulk edits, and two-way sync.
 ---
 
 # The best AI task manager in 2026
@@ -2720,17 +2720,17 @@ Try it on one team for a week at [app.internode.ai](https://app.internode.ai) an
 
 ---
 CanonicalURL: https://content.internode.ai/best-second-brain-app-2026
-Title: The best second brain app 2026: an honest ranking for people who have tried them all
+Title: The best second brain app 2026: an honest ranking
 Slug: best-second-brain-app-2026
 Type: Answer
 Author: Istvan Lorincz (Co-founder and CEO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: second brain, pkm, personal knowledge management, tools
-Description: An honest 2026 ranking of second brain apps for people who have already tried Notion, Obsidian, Roam, and Logseq. Internode ranks first because it is the only one that builds itself.
+Description: An honest 2026 ranking of second brain apps for people who tried Notion, Obsidian, Roam, and Logseq. Internode ranks first because it builds itself.
 ---
 
-# The best second brain app 2026: an honest ranking for people who have tried them all
+# The best second brain app 2026: an honest ranking
 
 You have Notion. You have Obsidian. You have Roam. You have Logseq. None of them stuck for more than a year. Every ranking written in 2026 still compares these tools on the same five features, as if plugin depth or graph view were the reason your vault decayed. This ranking is different. It puts the tools in the order that actually matches how much of your time they demand to stay useful.
 
@@ -2792,7 +2792,7 @@ Author: Sean Shadmand (Co-founder and President)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: knowledge loss, cost, statistics, champion, roi
-Description: A per-employee dollar figure for lost team knowledge, built from research by IDC, McKinsey, Panopto, and Gartner on time lost searching, rework, duplicated decisions, and onboarding drag.
+Description: A per-employee dollar figure for lost team knowledge, built from IDC, McKinsey, Panopto, and Gartner research on search time, rework, and onboarding.
 ---
 
 # The cost of lost team knowledge, per employee, per year
@@ -2889,7 +2889,7 @@ Author: Istvan Lorincz (Co-founder and CEO)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: decision memory, organizational memory, decision tracking, knowledge management
-Description: Decision memory is the slice of your team's knowledge that holds final decisions, their rationale, and how they have changed over time. Here is what it is and where it fits inside organizational memory.
+Description: Decision memory is the slice of team knowledge that holds final decisions, their rationale, and how they change over time. Here is where it fits.
 ---
 
 # What is decision memory?
@@ -2959,7 +2959,7 @@ Author: Sean Shadmand (Co-founder and President)
 PublishedAt: 2026-04-17
 UpdatedAt: 2026-04-17
 Tags: organizational memory, institutional knowledge, decision memory, knowledge management
-Description: Organizational memory is the structured, searchable record of what your team has decided, agreed, and committed to across meetings, calls, and chat. Here is what it contains and why it matters.
+Description: Organizational memory is the structured, searchable record of what your team has decided, agreed, and committed to across meetings, calls, and chat.
 ---
 
 # What is organizational memory?
@@ -3022,6 +3022,55 @@ If your team's institutional knowledge currently lives in two or three people's 
 
 
 ---
+CanonicalURL: https://content.internode.ai/ai-tools-for-government-and-public-organizations
+Title: AI knowledge management tools for government and public orgs
+Slug: ai-tools-for-government-and-public-organizations
+Type: Answer
+Author: Istvan Lorincz (Co-founder and CEO)
+PublishedAt: 2026-04-15
+UpdatedAt: 2026-04-15
+Tags: government, public sector, ai tools, healthcare
+Description: A guide to AI tools that help government agencies, schools, healthcare organizations, and nonprofits manage institutional knowledge and track outcomes.
+---
+
+# AI knowledge management tools for government and public orgs
+
+We sit on years of outcomes buried in email threads, call notes, and meeting recordings. AI tools can help us turn that scattered information into a searchable record so new employees do not reinvent old answers. The right tools connect to how we already work: email, video meetings, and formal approvals. They do not force us into software workflows built for fast-moving tech companies.
+
+## Why most AI tools miss the mark for public organizations
+
+We see more public money moving toward AI. The Department of Veterans Affairs alone listed about $130 million for AI in benefits processing and about $47.8 million for automation in its fiscal year 2027 plans. That pressure is real, but many products still assume daily life runs through constant team chat, engineering ticket queues, and informal task lists.
+
+Our work runs through public meetings, formal packets, phone trees, shared inboxes, and multi-step approvals. When a tool expects everyone to live inside one vendor's workspace, adoption stalls. The gap is not laziness. It is a mismatch between how the software imagines a day and how a school district, a county office, or a nonprofit board actually governs work.
+
+## What public organizations actually need
+
+We need tools that meet people where they already are: email, phone calls, Google Meet or Zoom, and paper-adjacent processes that still matter. We need clear capture of what was decided, who owns the follow-up, what compliance requirements apply, and why the policy exists. We need that without asking every clerk to become a power user.
+
+We also need continuity when people retire, win an election, or take a new job. If the only "memory" lived in one person's inbox, we lose the thread. A practical system should produce records a new manager can trust on day one. For formal bodies, we can align habits with plain guidance like [how to track decisions from board meetings and committee sessions](/how-to-track-decisions-from-board-meetings-and-committee-sessions). For care settings, similar discipline shows up in [how healthcare teams keep coordination decisions organized](/how-healthcare-teams-keep-coordination-decisions-organized).
+
+## Types of AI tools available
+
+Meeting transcription tools such as Otter and Fireflies turn spoken meetings into text. That helps us search a session later and share quotes with counsel or labor partners. They do not, by themselves, tell us which lines were binding outcomes versus general discussion. We still need a layer that marks results, owners, and dates.
+
+Knowledge bases with AI helpers, such as Notion AI or Guru, speed up drafting and summarizing pages. They work well when someone already maintains a clean structure and updates pages after changes. They do not replace governance if nobody owns the library or if sensitive records need stricter controls than a general workspace allows.
+
+Board-focused products such as BoardBreeze or MeetingCulture.ai center on packets, motions, and board workflows. They can improve how we prepare for votes and publish minutes-style material. They may still leave gaps for day-to-day staff questions that never reach the board packet but still shape service delivery.
+
+## What to look for in a tool
+
+We look for privacy controls that match our rules, clear data retention settings, and an honest statement of where content is stored and processed. We look for exports we can place in our own records program, not a system that vanishes if a subscription ends.
+
+We look for accuracy checks on names, dollar amounts, dates, and legal terms. We look for human review steps before anything becomes an official record. We keep a short checklist mindset, detailed in [what to look for in an AI knowledge management tool](/what-to-look-for-in-an-ai-knowledge-management-tool), and reuse that list whenever we pilot a vendor.
+
+## What we can try right now
+
+Internode focuses on turning conversations and meeting recordings into structured, searchable records with ownership and reasoning. Our committee session gets transcribed. Internode picks out the three motions that passed, links each one to the program it affects, flags that the transportation budget item contradicts what was approved in November, and assigns follow-up to the staff members the board named. That is different from a summary that reads well once and then ages poorly.
+
+But the bigger question for any public organization is not which tool to pick first. It is whether our current system would survive two retirements in the same quarter. If the answer depends on a handful of long-tenured staff who carry the institutional story in their heads, the risk is already here. The tool decision matters less than the commitment to stop treating people's memories as our filing system.
+
+
+---
 CanonicalURL: https://content.internode.ai/ai-meeting-notes-vs-organizational-memory
 Title: AI meeting notes versus organizational memory
 Slug: ai-meeting-notes-vs-organizational-memory
@@ -3030,7 +3079,7 @@ Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-15
 UpdatedAt: 2026-04-15
 Tags: meeting notes, organizational memory, comparison, ai
-Description: A clear comparison of AI meeting note tools and organizational memory systems, explaining what each does well and where the gap lies for engineering and product teams.
+Description: A clear comparison of AI meeting note tools and organizational memory systems, what each does well, and where the gap lies for engineering teams.
 ---
 
 # AI meeting notes versus organizational memory
@@ -3079,55 +3128,6 @@ If you are evaluating tools, [what to look for in an AI knowledge management too
 
 
 ---
-CanonicalURL: https://content.internode.ai/ai-tools-for-government-and-public-organizations
-Title: AI tools for knowledge management in government and public organizations
-Slug: ai-tools-for-government-and-public-organizations
-Type: Answer
-Author: Istvan Lorincz (Co-founder and CEO)
-PublishedAt: 2026-04-15
-UpdatedAt: 2026-04-15
-Tags: government, public sector, ai tools, healthcare
-Description: A guide to AI tools that help government agencies, schools, healthcare organizations, and nonprofits manage institutional knowledge and track outcomes.
----
-
-# AI tools for knowledge management in government and public organizations
-
-We sit on years of outcomes buried in email threads, call notes, and meeting recordings. AI tools can help us turn that scattered information into a searchable record so new employees do not reinvent old answers. The right tools connect to how we already work: email, video meetings, and formal approvals. They do not force us into software workflows built for fast-moving tech companies.
-
-## Why most AI tools miss the mark for public organizations
-
-We see more public money moving toward AI. The Department of Veterans Affairs alone listed about $130 million for AI in benefits processing and about $47.8 million for automation in its fiscal year 2027 plans. That pressure is real, but many products still assume daily life runs through constant team chat, engineering ticket queues, and informal task lists.
-
-Our work runs through public meetings, formal packets, phone trees, shared inboxes, and multi-step approvals. When a tool expects everyone to live inside one vendor's workspace, adoption stalls. The gap is not laziness. It is a mismatch between how the software imagines a day and how a school district, a county office, or a nonprofit board actually governs work.
-
-## What public organizations actually need
-
-We need tools that meet people where they already are: email, phone calls, Google Meet or Zoom, and paper-adjacent processes that still matter. We need clear capture of what was decided, who owns the follow-up, what compliance requirements apply, and why the policy exists. We need that without asking every clerk to become a power user.
-
-We also need continuity when people retire, win an election, or take a new job. If the only "memory" lived in one person's inbox, we lose the thread. A practical system should produce records a new manager can trust on day one. For formal bodies, we can align habits with plain guidance like [how to track decisions from board meetings and committee sessions](/how-to-track-decisions-from-board-meetings-and-committee-sessions). For care settings, similar discipline shows up in [how healthcare teams keep coordination decisions organized](/how-healthcare-teams-keep-coordination-decisions-organized).
-
-## Types of AI tools available
-
-Meeting transcription tools such as Otter and Fireflies turn spoken meetings into text. That helps us search a session later and share quotes with counsel or labor partners. They do not, by themselves, tell us which lines were binding outcomes versus general discussion. We still need a layer that marks results, owners, and dates.
-
-Knowledge bases with AI helpers, such as Notion AI or Guru, speed up drafting and summarizing pages. They work well when someone already maintains a clean structure and updates pages after changes. They do not replace governance if nobody owns the library or if sensitive records need stricter controls than a general workspace allows.
-
-Board-focused products such as BoardBreeze or MeetingCulture.ai center on packets, motions, and board workflows. They can improve how we prepare for votes and publish minutes-style material. They may still leave gaps for day-to-day staff questions that never reach the board packet but still shape service delivery.
-
-## What to look for in a tool
-
-We look for privacy controls that match our rules, clear data retention settings, and an honest statement of where content is stored and processed. We look for exports we can place in our own records program, not a system that vanishes if a subscription ends.
-
-We look for accuracy checks on names, dollar amounts, dates, and legal terms. We look for human review steps before anything becomes an official record. We keep a short checklist mindset, detailed in [what to look for in an AI knowledge management tool](/what-to-look-for-in-an-ai-knowledge-management-tool), and reuse that list whenever we pilot a vendor.
-
-## What we can try right now
-
-Internode focuses on turning conversations and meeting recordings into structured, searchable records with ownership and reasoning. Our committee session gets transcribed. Internode picks out the three motions that passed, links each one to the program it affects, flags that the transportation budget item contradicts what was approved in November, and assigns follow-up to the staff members the board named. That is different from a summary that reads well once and then ages poorly.
-
-But the bigger question for any public organization is not which tool to pick first. It is whether our current system would survive two retirements in the same quarter. If the answer depends on a handful of long-tenured staff who carry the institutional story in their heads, the risk is already here. The tool decision matters less than the commitment to stop treating people's memories as our filing system.
-
-
----
 CanonicalURL: https://content.internode.ai/ai-first-vs-ai-added-why-bolting-ai-onto-notion-is-not-enough
 Title: AI-first vs AI-added: why bolting AI onto Notion is not enough
 Slug: ai-first-vs-ai-added-why-bolting-ai-onto-notion-is-not-enough
@@ -3136,7 +3136,7 @@ Author: Istvan Lorincz (Co-founder and CEO)
 PublishedAt: 2026-04-15
 UpdatedAt: 2026-04-15
 Tags: AI-first, AI-added, Notion AI, Obsidian, comparison
-Description: AI-added tools bolt intelligence onto manual workflows. AI-first tools eliminate the manual layer entirely. The difference determines whether your knowledge system survives or decays.
+Description: AI-added tools bolt intelligence onto manual workflows. AI-first tools remove the manual layer. That difference determines whether your system decays.
 ---
 
 # AI-first vs AI-added: why bolting AI onto Notion is not enough
@@ -3300,7 +3300,7 @@ Author: Sean Shadmand (Co-founder and President)
 PublishedAt: 2026-04-15
 UpdatedAt: 2026-04-15
 Tags: conversations, meetings, professional knowledge, synthesis
-Description: Professionals who work across meetings, client calls, and research need a system that turns conversational knowledge into searchable, connected intelligence without manual organization.
+Description: Professionals across meetings, client calls, and research need a system that turns conversational knowledge into searchable intelligence, automatically.
 ---
 
 # From conversations to knowledge: what professionals actually need
@@ -3364,17 +3364,17 @@ If your work matches any of these patterns, [note-taking apps are the wrong tool
 
 ---
 CanonicalURL: https://content.internode.ai/how-executive-assistants-stop-being-the-only-person-who-remembers
-Title: How executive assistants stop being the only person who remembers what was decided
+Title: How executive assistants stop being the only one who remembers
 Slug: how-executive-assistants-stop-being-the-only-person-who-remembers
 Type: Answer
 Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-15
 UpdatedAt: 2026-04-15
 Tags: executive assistant, decisions, follow-ups, action items
-Description: Executive assistants carry the organizational memory for their executives. Here is how to move that knowledge out of your head and into a system that survives your next vacation.
+Description: Executive assistants carry the memory for their executives. Here is how to move that knowledge into a system that survives your next vacation.
 ---
 
-# How executive assistants stop being the only person who remembers what was decided
+# How executive assistants stop being the only one who remembers
 
 You track every decision your exec makes, every commitment from every meeting, and every follow-up that needs to happen this week. That knowledge lives in your head, your notebook, and maybe a Word document pinned to your taskbar. If you are out sick tomorrow, most of it vanishes. The problem is not your memory. The problem is that you are the system.
 
@@ -3428,7 +3428,7 @@ Author: Sean Shadmand (Co-founder and President)
 PublishedAt: 2026-04-15
 UpdatedAt: 2026-04-15
 Tags: healthcare, care coordination, decisions, shift handoff
-Description: How healthcare organizations track care coordination decisions across shifts, staff changes, and department meetings to maintain continuity and reduce repeated work.
+Description: How healthcare organizations track care coordination decisions across shifts, staff changes, and department meetings to maintain continuity.
 ---
 
 # How healthcare teams keep care coordination decisions organized
@@ -3579,7 +3579,7 @@ Author: Sean Shadmand (Co-founder and President)
 PublishedAt: 2026-04-15
 UpdatedAt: 2026-04-15
 Tags: career advancement, internal champion, recognition, leadership
-Description: Being the person who identifies and fixes a systemic knowledge problem at work is a career-defining contribution. Here is why it matters and how to make it visible.
+Description: Being the person who fixes a systemic knowledge problem at work is a career-defining contribution. Here is why it matters and how to make it visible.
 ---
 
 # How solving your team's knowledge problem advances your career
@@ -3640,7 +3640,7 @@ Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-15
 UpdatedAt: 2026-04-15
 Tags: executive assistant, briefing, meeting prep, knowledge system
-Description: Most EA briefing systems rely on personal memory and manual research. Here is how to build one that generates context automatically from past meetings and conversations.
+Description: Most EA briefing systems rely on personal memory. Here is how to build one that generates context automatically from past meetings and conversations.
 ---
 
 # How to build a briefing system that does not depend on your memory
@@ -4101,7 +4101,7 @@ Author: Sean Shadmand (Co-founder and President)
 PublishedAt: 2026-04-15
 UpdatedAt: 2026-04-15
 Tags: knowledge management, maintenance, burnout, fresh start
-Description: If you have tried and abandoned Notion, Obsidian, Roam, or any other knowledge system, the problem was not you. Here is what a zero-maintenance alternative looks like.
+Description: If you have tried and abandoned Notion, Obsidian, or Roam, the problem was not you. Here is what a zero-maintenance alternative looks like.
 ---
 
 # Knowledge management for people who gave up on knowledge management
@@ -4321,7 +4321,7 @@ Author: Sean Shadmand (Co-founder and President)
 PublishedAt: 2026-04-15
 UpdatedAt: 2026-04-15
 Tags: decision memory, team productivity, organizational change
-Description: When what your team discussed and agreed on is preserved and searchable, meetings get shorter, onboarding gets faster, and follow-through improves. Here is what the shift looks like.
+Description: When what your team discussed and agreed on is preserved and searchable, meetings get shorter, onboarding gets faster, and follow-through improves.
 ---
 
 # What changes when your team actually remembers what was decided
@@ -4494,7 +4494,7 @@ Author: Istvan Lorincz (Co-founder and CEO)
 PublishedAt: 2026-04-15
 UpdatedAt: 2026-04-15
 Tags: organizational memory, ai agents, decision history
-Description: A practical definition of organizational memory for AI agents, explaining what it contains, how it differs from raw search, and why it changes retrieval quality.
+Description: A practical definition of organizational memory for AI agents: what it contains, how it differs from raw search, and why it improves retrieval.
 ---
 
 # What is organizational memory for AI agents?
@@ -4699,7 +4699,7 @@ Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-15
 UpdatedAt: 2026-04-15
 Tags: note-taking, knowledge workers, professional, information management
-Description: Note-taking apps assume your knowledge comes from reading and typing. For professionals whose knowledge comes from conversations, meetings, and synthesis across sources, the model is wrong.
+Description: Note-taking apps assume your knowledge comes from reading and typing. For professionals whose knowledge comes from conversations, the model is wrong.
 ---
 
 # Why note-taking apps fail knowledge workers
@@ -4814,7 +4814,7 @@ Author: Sean Shadmand (Co-founder and President)
 PublishedAt: 2026-04-15
 UpdatedAt: 2026-04-15
 Tags: conversations, documents, knowledge, meetings, transcription
-Description: The most valuable professional knowledge originates in conversations, not documents. Documents capture conclusions. Conversations capture the reasoning, context, and relationships that matter when you face a similar situation later.
+Description: The most valuable professional knowledge lives in conversations, not documents. Conversations capture the reasoning and context that matter later.
 ---
 
 # Why your best work knowledge comes from conversations, not documents
@@ -5038,7 +5038,7 @@ So here is the question worth sitting with: how many hours did your team spend t
 
 ---
 CanonicalURL: https://content.internode.ai/use-case-executive-assistant-tracking-decisions-across-meetings
-Title: Executive assistant tracking decisions and follow-ups across 50 meetings a week
+Title: Executive assistants tracking decisions across 50 meetings a week
 Slug: use-case-executive-assistant-tracking-decisions-across-meetings
 Type: Use case
 Author: Balazs Ketyi (Co-founder and CPO)
@@ -5048,7 +5048,7 @@ Tags: use case, executive assistant, decisions, follow-ups, multiple executives
 Description: How an EA supporting three executives uses a persistent memory layer to track decisions, commitments, and follow-ups across 50+ meetings per week.
 ---
 
-# Executive assistant tracking decisions and follow-ups across 50 meetings a week
+# Executive assistants tracking decisions across 50 meetings a week
 
 You support three executives: a CEO, a CRO, and a VP of Engineering. Together, they have roughly 50 meetings per week. Each meeting generates decisions, commitments, and follow-ups. You are the person expected to track all of it across three different calendars, three different communication styles, and three different sets of stakeholders.
 
@@ -5388,17 +5388,17 @@ The team that [captures decisions from meetings without manual write-ups](/how-t
 
 ---
 CanonicalURL: https://content.internode.ai/how-internode-works-with-phone-transcripts-and-meeting-recordings
-Title: How Internode works with phone transcripts, meeting recordings, and notes
+Title: How Internode works with phone calls and meeting recordings
 Slug: how-internode-works-with-phone-transcripts-and-meeting-recordings
 Type: Update
 Author: Balazs Ketyi (Co-founder and CPO)
 PublishedAt: 2026-04-15
 UpdatedAt: 2026-04-15
 Tags: transcripts, phone calls, pipeline, integrations, transparency
-Description: A transparent explanation of how Internode processes phone transcripts, meeting recordings from Zoom and Google Meet, Slack conversations, and typed notes into structured knowledge.
+Description: How Internode processes phone transcripts, meeting recordings from Zoom and Google Meet, Slack, and typed notes into structured team knowledge.
 ---
 
-# How Internode works with phone transcripts, meeting recordings, and notes
+# How Internode works with phone calls and meeting recordings
 
 Internode turns conversations and notes into knowledge your team can find later. This page describes what you can send in, what happens to it, and what comes out the other side.
 

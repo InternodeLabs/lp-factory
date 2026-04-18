@@ -1,7 +1,7 @@
 ---
-title: "How to synthesize knowledge across client meetings (without relying on memory)"
+title: "How to synthesize knowledge across client meetings"
 slug: how-to-synthesize-knowledge-across-client-meetings
-description: "A step-by-step guide to synthesizing knowledge across many client meetings using structured capture, records for decisions and tasks, and cross-meeting topic clustering instead of memory or manual notes."
+description: "A step-by-step guide to synthesizing knowledge across many client meetings using structured capture and cross-meeting topic clustering, not memory."
 excerpt: "Synthesizing knowledge across client meetings fails when the work depends on your memory. The fix is a system that captures every conversation as structured records and clusters them by topic automatically, so the pattern across engagements is visible without you rebuilding it each time."
 type: answer
 publishedAt: "2026-04-17"

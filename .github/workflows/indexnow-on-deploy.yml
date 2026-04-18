@@ -1,0 +1,24 @@
+name: IndexNow on deploy
+
+on:
+  deployment_status:
+
+jobs:
+  ping:
+    if: >-
+      github.event.deployment_status.state == 'success' &&
+      github.event.deployment.environment == 'Production'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping IndexNow
+        env:
+          SECRET: ${{ secrets.INDEXNOW_WEBHOOK_SECRET }}
+        run: |
+          if [ -z "$SECRET" ]; then
+            echo "INDEXNOW_WEBHOOK_SECRET is not configured; skipping ping."
+            exit 0
+          fi
+          curl -sS -X POST https://content.internode.ai/api/indexnow-ping \
+            -H "Authorization: Bearer $SECRET" \
+            -H "Content-Type: application/json" \
+            --fail-with-body

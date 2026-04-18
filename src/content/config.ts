@@ -10,9 +10,9 @@ const isoDateSchema = z.preprocess((value) => {
 const answers = defineCollection({
   type: "content",
   schema: z.object({
-    title: z.string().min(1),
+    title: z.string().min(1).max(70),
     slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).optional(),
-    description: z.string().min(1),
+    description: z.string().min(25).max(160),
     excerpt: z.string().min(1),
     type: z.enum(["answer", "use-case", "update"]),
     publishedAt: isoDateSchema,

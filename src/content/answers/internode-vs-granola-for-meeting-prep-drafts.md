@@ -1,7 +1,7 @@
 ---
-title: "Internode vs Granola Prep: which AI drafts the meeting brief you'll actually read?"
+title: "Internode vs Granola Prep: the meeting brief you'll actually read"
 slug: internode-vs-granola-for-meeting-prep-drafts
-description: "Internode vs Granola Prep compared on the drafting axis: grounding in the team's decision history, cross-meeting context, per-section citations, and a research loop behind the pre-meeting brief."
+description: "Internode vs Granola Prep on meeting prep drafting: decision history grounding, cross-meeting context, per-section citations, and a research loop."
 excerpt: "Granola Prep is the best one-click calendar refresher for remembering who you last met. Internode is the drafter that composes the brief from your team's full decision history across weeks of meetings, email, and chat. Pick Granola Prep for a personal skim before a Zoom; use Internode when the brief has to carry decisions the calendar never saw."
 type: answer
 publishedAt: "2026-04-17"

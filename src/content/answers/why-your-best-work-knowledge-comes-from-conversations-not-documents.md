@@ -1,7 +1,7 @@
 ---
 title: "Why your best work knowledge comes from conversations, not documents"
 slug: why-your-best-work-knowledge-comes-from-conversations-not-documents
-description: "The most valuable professional knowledge originates in conversations, not documents. Documents capture conclusions. Conversations capture the reasoning, context, and relationships that matter when you face a similar situation later."
+description: "The most valuable professional knowledge lives in conversations, not documents. Conversations capture the reasoning and context that matter later."
 excerpt: "The most important things your organization knows were never written down in a document. They were said in a meeting, agreed on during a phone call, or clarified in a conversation between two people. Documents capture conclusions. Conversations capture reasoning."
 type: answer
 publishedAt: "2026-04-15"

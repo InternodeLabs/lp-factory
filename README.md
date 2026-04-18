@@ -118,8 +118,46 @@ Filter by `campaign_slug`, `campaign_id`, `content_slug`, or `page_type` to comp
 
 - **`.github/workflows/preview.yml`** — on push to any branch **except** `main`: `pnpm install`, `pnpm lint`, `pnpm build`.  
 - **`.github/workflows/production.yml`** — on push to **`main`**: same steps.  
+- **`.github/workflows/indexnow-on-deploy.yml`** — fires whenever Vercel marks a Production deployment as `success`; POSTs the live sitemap to `api.indexnow.org` via our signed endpoint.
 
 Deploys are still performed by Vercel; these workflows catch broken builds before or alongside preview/production deploys.
+
+## IndexNow
+
+The site auto-pings IndexNow (Bing, Yandex, and partner search engines) on every successful production deploy so freshly published or updated pages are re-crawled quickly.
+
+### How it works
+
+1. Vercel finishes a Production deploy and GitHub's Vercel integration marks the `deployment_status` as `success` with environment `Production`.
+2. `.github/workflows/indexnow-on-deploy.yml` reacts to that event and `curl`s `POST https://content.internode.ai/api/indexnow-ping` with a Bearer token.
+3. [`src/pages/api/indexnow-ping.ts`](src/pages/api/indexnow-ping.ts) authenticates the call, fetches `/sitemap-index.xml`, collects every `<loc>`, and submits the batch to `https://api.indexnow.org/indexnow` using our key. The existing sitemap integration in [`astro.config.mjs`](astro.config.mjs) filters `/lp/*` out, so only indexable URLs are pushed.
+
+### Required configuration
+
+Two values must match between Vercel (runtime) and GitHub (the workflow).
+
+| Name | Where | Value | Purpose |
+|------|-------|-------|---------|
+| `INDEXNOW_KEY` | Vercel → Project → Environment Variables (Production) | `001c1634ad984cb1852ab12b1fe36b74` | Key IndexNow uses to authenticate submissions; must match `public/001c1634ad984cb1852ab12b1fe36b74.txt` so the `keyLocation` check passes. |
+| `INDEXNOW_WEBHOOK_SECRET` | Vercel → Environment Variables (Production) **and** GitHub → Repo Settings → Secrets and variables → Actions | any long random string (e.g. `openssl rand -hex 32`) | Shared secret the workflow sends as `Authorization: Bearer …` and the API route verifies. |
+
+### Verifying the setup
+
+- Key file must be reachable: <https://content.internode.ai/001c1634ad984cb1852ab12b1fe36b74.txt> should return exactly `001c1634ad984cb1852ab12b1fe36b74`.
+- Manual ping (smoke test):
+
+  ```bash
+  curl -sS -X POST https://content.internode.ai/api/indexnow-ping \
+    -H "Authorization: Bearer $INDEXNOW_WEBHOOK_SECRET" \
+    -H "Content-Type: application/json"
+  ```
+
+  A healthy response is `{"submitted":<n>,"status":"ok","indexNowStatus":200}`.
+- Workflow runs are visible under the repo's Actions tab as **IndexNow on deploy**; they are skipped for preview deploys by design.
+
+### Rotating the key
+
+If `INDEXNOW_KEY` ever needs to change, generate a new 32-char hex string, rename `public/<newkey>.txt` to match (with the new key as its only content), update the Vercel env var, and redeploy. IndexNow's own host-level "ownership" is proven by the file being reachable — no Bing Webmaster Tools reconfiguration is needed.
 
 ## Scripts
 

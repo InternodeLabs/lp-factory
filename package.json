@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "lint": "astro check",
+    "lint": "astro check && node scripts/check-meta-lengths.mjs",
     "optimize:marketing-images": "node scripts/optimize-internode-marketing-images.mjs"
   },
   "dependencies": {

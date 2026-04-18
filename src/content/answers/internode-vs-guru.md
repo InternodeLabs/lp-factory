@@ -1,7 +1,7 @@
 ---
 title: "Internode vs Guru: which AI knowledge base should you use?"
 slug: internode-vs-guru
-description: "Internode vs Guru compared on the axes that matter for an AI knowledge base: conversations as input, structured records, the decision-to-source trail, and organizational memory."
+description: "Internode vs Guru on an AI knowledge base: conversations as input, structured records, the decision-to-source trail, and organizational memory."
 excerpt: "Guru is the best card-based answer tool for reps who need a verified snippet inside Gmail, Zendesk, or Salesforce. Internode is the AI knowledge base for teams whose real knowledge lives in meetings, calls, email, and chat, and who want the base to build itself. Pick Guru for one-off lookups; add Internode for the decision graph and the organizational memory a card catalog cannot model."
 type: answer
 publishedAt: "2026-04-17"

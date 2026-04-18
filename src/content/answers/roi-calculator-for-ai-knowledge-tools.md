@@ -1,7 +1,7 @@
 ---
-title: "How to calculate the ROI of an AI knowledge tool (for the manager you're trying to convince)"
+title: "How to calculate the ROI of an AI knowledge tool"
 slug: roi-calculator-for-ai-knowledge-tools
-description: "A step-by-step ROI calculator for an AI knowledge tool, with worked examples for a 20-person team, so you can show your manager a real number instead of a vague productivity claim."
+description: "A step-by-step ROI calculator for an AI knowledge tool, with worked examples for a 20-person team, so you can show a manager a real number."
 excerpt: "Most ROI pitches for knowledge tools sound like vendor math. This one uses four concrete inputs your manager can push back on: hours lost to searching, cost of duplicated decisions, cost of slow onboarding, and cost of turnover wiping team knowledge. You get one defensible number to put on page one of your proposal."
 type: answer
 publishedAt: "2026-04-17"

@@ -1,7 +1,7 @@
 ---
 title: "An AI PM that captures tasks from meetings"
 slug: ai-pm-that-captures-tasks-from-meetings
-description: "An AI PM that captures tasks from meetings should produce real tasks linked to the moment in the meeting they came from, not bullet lists inside a transcript. Here is what that looks like in practice."
+description: "An AI PM that captures tasks from meetings should produce real tasks linked to the moment they were decided, not bullet lists inside a transcript."
 excerpt: "An AI PM that captures tasks from meetings should produce real tasks linked to the moment in the meeting they came from, not bullet lists inside a transcript. Each task carries the decision that created it, the person who owns it, and the source conversation. Internode does this automatically and syncs the result into Linear or Jira."
 type: answer
 publishedAt: "2026-04-17"

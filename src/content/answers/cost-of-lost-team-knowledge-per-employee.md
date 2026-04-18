@@ -1,7 +1,7 @@
 ---
 title: "The cost of lost team knowledge, per employee, per year"
 slug: cost-of-lost-team-knowledge-per-employee
-description: "A per-employee dollar figure for lost team knowledge, built from research by IDC, McKinsey, Panopto, and Gartner on time lost searching, rework, duplicated decisions, and onboarding drag."
+description: "A per-employee dollar figure for lost team knowledge, built from IDC, McKinsey, Panopto, and Gartner research on search time, rework, and onboarding."
 excerpt: "Lost team knowledge is not a soft cost. Research from IDC, McKinsey, Panopto, and Gartner puts the per-employee annual loss somewhere between $10,000 and $20,000. This page shows how that figure is constructed, which sources to trust, and which assumptions you can adjust for your own team."
 type: answer
 publishedAt: "2026-04-17"
