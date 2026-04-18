@@ -43,8 +43,10 @@ async function collectUrlsFromSitemap(): Promise<string[]> {
 }
 
 export const POST: APIRoute = async ({ request }) => {
-  const secret = import.meta.env.INDEXNOW_WEBHOOK_SECRET;
-  const key = import.meta.env.INDEXNOW_KEY;
+  // Read at runtime via process.env so rotations don't require a rebuild and
+  // accidental whitespace from the Vercel dashboard is stripped, not inlined.
+  const secret = (process.env.INDEXNOW_WEBHOOK_SECRET ?? "").trim();
+  const key = (process.env.INDEXNOW_KEY ?? "").trim();
 
   if (!secret || !key) {
     return new Response(
@@ -106,11 +108,20 @@ export const POST: APIRoute = async ({ request }) => {
     }),
   });
 
+  const indexNowBody = await indexNowResponse.text();
+
   return new Response(
     JSON.stringify({
       submitted: urlList.length,
       status: indexNowResponse.ok ? "ok" : "indexnow-error",
       indexNowStatus: indexNowResponse.status,
+      // Safe to echo: host + keyLocation are public; key is the same public
+      // string published at keyLocation. Helps debug key-mismatch or bad-host
+      // failures from the workflow log without redeploying.
+      host,
+      keyLocation,
+      keyPreview: `${key.slice(0, 6)}…${key.slice(-4)}`,
+      indexNowBody: indexNowBody.slice(0, 500),
     }),
     {
       status: indexNowResponse.ok ? 200 : 502,
