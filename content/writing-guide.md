@@ -24,15 +24,15 @@ Internal reference for all content on content.internode.ai. Not published on the
 - [ ] `excerpt` is one to two sentences summarizing the page in plain language (shown on the hub pages — no length cap)
 - [ ] `type` is one of: `answer`, `use-case`, `update`
 - [ ] `publishedAt` is set to the correct ISO date and **never changed after publication**
-- [ ] `updatedAt` is bumped to today's ISO date on every content edit, no matter how small (this feeds `<lastmod>` in the sitemap and `dateModified` in the article schema; stale values tell search engines the page is dead)
-- [ ] `lastReviewedAt` is bumped to today's ISO date whenever the page is reviewed and confirmed still accurate, even when no words changed (this is what signals freshness to Bing / Google without faking edits). Leave it equal to `publishedAt` until the first real review.
+- [ ] `updatedAt` is bumped to today's ISO date on every content edit, no matter how small (this feeds `<lastmod>` in the sitemap and `dateModified` in the article schema; stale values tell search engines the page is dead). `scripts/check-meta-lengths.mjs` hard-fails the build if `updatedAt` is earlier than `publishedAt`.
+- [ ] `lastReviewedAt` is bumped to today's ISO date whenever the page is reviewed and confirmed still accurate, even when no words changed (this is what signals freshness to Bing / Google without faking edits). Leave it equal to `publishedAt` until the first real review. `scripts/check-meta-lengths.mjs` hard-fails the build if `lastReviewedAt` is earlier than `publishedAt`.
 - [ ] `author` has `name`, `role`, and `url`
 - [ ] `tags` include 2 to 4 relevant terms (use ICP vocabulary, not internal jargon)
 - [ ] `question` is set for answer pages (exact question the page answers)
 - [ ] `ctaHref` and `ctaLabel` are set
 - [ ] `relatedSlugs` includes 2 to 3 slugs that actually exist in `src/content/answers/` (the content map check fails the build on broken references)
 - [ ] `featured` is true only for the most important pages (max 3 to 5 featured at any time)
-- [ ] After adding or renaming a page, run `pnpm content:map` to regenerate `content/content-map.md`, commit the result, and fix any orphan pages or broken references the generator flags
+- [ ] After adding or renaming a page, run `pnpm content:map` to regenerate `content/content-map.md`, commit the result, and fix any orphan pages or broken references the generator flags. The lint pipeline runs the same generator in `--check` mode and fails CI if the committed map is stale. If you are starting a page on a new topic that does not match any existing cluster, `scripts/generate-content-map.mjs` aborts with `UNCLUSTERED PAGES (add a rule)`: add a new cluster entry to the `CLUSTERS` array in that script (id, label, primary ICP, and a `match` function) before the map will regenerate.
 
 ### First paragraph (the snippet target)
 

@@ -43,7 +43,13 @@ export default defineConfig({
   integrations: [
     react(),
     sitemap({
-      filter: (page) => !page.includes("/lp/"),
+      // Exclude paid landing pages (`/lp/*`) and per-tag topic pages
+      // (`/topics/<tag>`). Per-tag pages are thin listing pages — 71% of ours
+      // have a single entry — and submitting 170+ of them as a majority of
+      // the sitemap dilutes the quality signal and wastes crawl budget.
+      // The `/topics` hub itself is still included as a navigable index.
+      filter: (page) =>
+        !page.includes("/lp/") && !/\/topics\/[^/]+\/?$/.test(page),
       changefreq: "weekly",
       priority: 0.7,
       serialize: async (item) => {

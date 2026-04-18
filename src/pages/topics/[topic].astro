@@ -43,6 +43,15 @@ const latestUpdated = topic.entries.reduce<string | null>((acc, entry) => {
 const title = `${topic.label} topic`;
 const description = `Canonical pages tagged ${topic.label} in the Internode content hub: ${topic.entries.length} ${topic.entries.length === 1 ? "page" : "pages"}, newest first.`;
 
+// Thin tag pages (fewer than 3 entries) are a classic soft-404 / thin-content
+// trigger. Keep them crawlable so internal link equity flows to the answers
+// they list, but exclude them from search indexes. The sitemap also omits
+// every per-tag page (see astro.config.mjs sitemap filter); this meta tag
+// handles crawlers that reach the page via internal links instead.
+const THIN_TAG_THRESHOLD = 3;
+const robots =
+  topic.entries.length < THIN_TAG_THRESHOLD ? "noindex, follow" : undefined;
+
 const jsonLd = wrapGraph(
   buildWebSiteSchema(),
   buildOrganizationSchema(),
@@ -76,6 +85,7 @@ const jsonLd = wrapGraph(
   ogImage={DEFAULT_OG_IMAGE}
   ogImageAlt={DEFAULT_OG_IMAGE_ALT}
   modifiedTime={latestUpdated ? new Date(`${latestUpdated}T00:00:00Z`).toISOString() : undefined}
+  robots={robots}
   jsonLd={jsonLd}
 >
   <main id="main-content" class="mx-auto max-w-4xl px-4 py-12 md:py-16">

@@ -20,6 +20,7 @@ interface Props {
   author?: string;
   tags?: string[];
   noindex?: boolean;
+  robots?: string;
   jsonLd?: string;
 }
 
@@ -35,12 +36,15 @@ const {
   author,
   tags,
   noindex = false,
+  robots,
   jsonLd,
 } = Astro.props;
 
-const robotsContent = noindex
-  ? "noindex, nofollow"
-  : "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1";
+const robotsContent =
+  robots ??
+  (noindex
+    ? "noindex, nofollow"
+    : "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1");
 
 const resolvedOg = ogImage ? absoluteUrl(ogImage) : absoluteUrl(DEFAULT_OG_IMAGE);
 const resolvedOgAlt = ogImageAlt ?? DEFAULT_OG_IMAGE_ALT;
