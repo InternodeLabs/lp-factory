@@ -5,8 +5,8 @@ description: A guide to AI tools that help government agencies, schools, healthc
 excerpt: Government and public organizations can use AI tools to capture outcomes from meetings, preserve institutional knowledge across staff transitions, and give teams a searchable record of why policies and procedures exist.
 type: answer
 publishedAt: 2026-04-15
-updatedAt: 2026-04-15
-lastReviewedAt: "2026-04-15"
+updatedAt: 2026-04-18
+lastReviewedAt: "2026-04-18"
 author:
   name: "Istvan Lorincz"
   role: "Co-founder and CEO"
@@ -33,7 +33,7 @@ We sit on years of outcomes buried in email threads, call notes, and meeting rec
 
 We see more public money moving toward AI. The Department of Veterans Affairs alone listed about $130 million for AI in benefits processing and about $47.8 million for automation in its fiscal year 2027 plans. That pressure is real, but many products still assume daily life runs through constant team chat, engineering ticket queues, and informal task lists.
 
-Our work runs through public meetings, formal packets, phone trees, shared inboxes, and multi-step approvals. When a tool expects everyone to live inside one vendor's workspace, adoption stalls. The gap is not laziness. It is a mismatch between how the software imagines a day and how a school district, a county office, or a nonprofit board actually governs work.
+Our work runs through public meetings, formal packets, phone trees, shared inboxes, and multi-step approvals. When a tool expects everyone to live inside one vendor's workspace, adoption stalls. The gap is rarely laziness; it is a mismatch between how the software imagines a day and how a school district, a county office, or a nonprofit board actually governs work.
 
 ## What public organizations actually need
 
@@ -59,4 +59,4 @@ We look for accuracy checks on names, dollar amounts, dates, and legal terms. We
 
 Internode focuses on turning conversations and meeting recordings into structured, searchable records with ownership and reasoning. Our committee session gets transcribed. Internode picks out the three motions that passed, links each one to the program it affects, flags that the transportation budget item contradicts what was approved in November, and assigns follow-up to the staff members the board named. That is different from a summary that reads well once and then ages poorly.
 
-But the bigger question for any public organization is not which tool to pick first. It is whether our current system would survive two retirements in the same quarter. If the answer depends on a handful of long-tenured staff who carry the institutional story in their heads, the risk is already here. The tool decision matters less than the commitment to stop treating people's memories as our filing system.
+But the bigger question for any public organization comes before the tool choice. It is whether our current system would survive two retirements in the same quarter. If the answer depends on a handful of long-tenured staff who carry the institutional story in their heads, the risk is already here. The tool decision matters less than the commitment to stop treating people's memories as our filing system.

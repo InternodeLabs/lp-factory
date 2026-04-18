@@ -5,8 +5,8 @@ description: "How small businesses use AI phone call transcription to capture pr
 excerpt: "AI phone call transcription for small business turns every call with a customer, supplier, or crew into a written record your whole team can search. The right tool pulls out the price, the order, the date, and the follow-up, so a detail from a Tuesday call does not get lost by Friday."
 type: answer
 publishedAt: "2026-04-17"
-updatedAt: "2026-04-17"
-lastReviewedAt: "2026-04-17"
+updatedAt: "2026-04-18"
+lastReviewedAt: "2026-04-18"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"
@@ -29,7 +29,7 @@ relatedSlugs:
   - how-to-turn-phone-calls-into-searchable-business-knowledge
 ---
 
-AI phone call transcription for a small business is not about recording every word. It is about turning the calls you already take into a written record you can search. The customer who changed the delivery address. The supplier who agreed on a price. The crew lead who promised a job site time. Right now that information lives in somebody's head. With a transcription tool that understands your work, the same information lives in one place your whole team can use.
+AI phone call transcription for a small business is about turning the calls you already take into a written record you can search, not about recording every word. The customer who changed the delivery address. The supplier who agreed on a price. The crew lead who promised a job site time. Right now that information lives in somebody's head. With a transcription tool that understands your work, the same information lives in one place your whole team can use.
 
 ## Why phone calls are your biggest leak
 
@@ -53,7 +53,7 @@ Internode was built to ingest phone calls directly. You can upload a recording f
 
 For every call, you get a short structured record: the people on the call, the decisions made, any tasks created, the prices and dates mentioned, and a link back to the original transcript so you can always see the exact words. If the customer agreed to a new delivery date, that becomes a task with a due date. If the supplier quoted a price, that becomes a decision you can find later by searching the supplier's name or the product. If your staff agreed on a refund, the agreement is recorded next to the reason.
 
-This is not a generic transcription service. It is closer to a small-business brain that listens to the calls and remembers on everyone's behalf.
+What you end up with is not a generic transcription service. Think of it as a small-business brain that listens to the calls and remembers on everyone's behalf.
 
 ## What you can search after one week
 

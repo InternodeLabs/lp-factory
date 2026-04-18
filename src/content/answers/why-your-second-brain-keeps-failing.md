@@ -5,8 +5,8 @@ description: "Second brain systems fail because they turn you into a librarian o
 excerpt: "You built the system. Twelve databases in Notion, or 2,000 notes in Obsidian, or maybe both at different points. Six months later, you spend more time maintaining it than using it. The problem is not your discipline. The problem is the paradigm."
 type: answer
 publishedAt: "2026-04-15"
-updatedAt: "2026-04-15"
-lastReviewedAt: "2026-04-15"
+updatedAt: "2026-04-18"
+lastReviewedAt: "2026-04-18"
 author:
   name: "Balazs Ketyi"
   role: "Co-founder and CPO"
@@ -72,6 +72,6 @@ Your workspace grows with every conversation and document. The more you add, the
 
 ## The guilt you should let go of
 
-If your Notion workspace is a graveyard of abandoned databases, or your Obsidian vault is full of notes you will never revisit, that is not a personal failing. It is the predictable outcome of a system that demands continuous effort from you to stay functional.
+If your Notion workspace is a graveyard of abandoned databases, or your Obsidian vault is full of notes you will never revisit, stop reading that as a personal failing. It is the predictable outcome of a system that demands continuous effort from you to stay functional.
 
-The right response is not to try harder with the same approach. It is to recognize that the maintenance model is broken and look for something [built on a different paradigm entirely](/ai-first-vs-ai-added-why-bolting-ai-onto-notion-is-not-enough). What if the next system you try does not need you to organize anything at all?
+Trying harder with the same approach will not change the outcome. The maintenance model is broken. Look instead for something [built on a different paradigm entirely](/ai-first-vs-ai-added-why-bolting-ai-onto-notion-is-not-enough). What if the next system you try does not need you to organize anything at all?

@@ -5,8 +5,8 @@ description: Why small businesses lose track of their own agreements and practic
 excerpt: Small businesses forget what was agreed because most agreements happen in phone calls and conversations that nobody records. The fix is simple. Transcribe those conversations and use a tool that pulls out the commitments, assigns owners, and makes everything searchable.
 type: answer
 publishedAt: 2026-04-15
-updatedAt: 2026-04-15
-lastReviewedAt: "2026-04-15"
+updatedAt: 2026-04-18
+lastReviewedAt: "2026-04-18"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"
@@ -27,7 +27,7 @@ relatedSlugs:
   - use-case-small-business-capturing-phone-call-decisions
 ---
 
-You agree on a price over the phone. You tell your team to change a delivery date in a morning huddle. You try a new supplier after a short chat. None of it goes on paper because you are busy running the business. Later, nobody agrees on who said what. That is not a character flaw. It is how small teams work when speed matters more than process.
+You agree on a price over the phone. You tell your team to change a delivery date in a morning huddle. You try a new supplier after a short chat. None of it goes on paper because you are busy running the business. Later, nobody agrees on who said what. This is not a character flaw, it is just how small teams work when speed matters more than process.
 
 ## Why agreements disappear
 
@@ -41,13 +41,13 @@ When nothing is written down, the business runs on memory. Memory is fine until 
 
 Forgetting what was agreed costs real money and real time. You call customers back to confirm details you should already know. Orders get duplicated because two people acted on partial information. Deadlines get missed because the date change lived only in one person's head.
 
-Revenue walks out the door when you quote the wrong price or promise something your team cannot deliver. Customers notice when your story does not line up from one call to the next. That is not carelessness. It is a gap in how information moves through your business.
+Revenue walks out the door when you quote the wrong price or promise something your team cannot deliver. Customers notice when your story does not line up from one call to the next. The problem is rarely carelessness. It is a gap in how information moves through your business.
 
 ## The bus test
 
 Ask yourself a blunt question. If you, the owner, got sick for a week, would your team know what was promised to which customer? Would they know the supplier's current price, the delivery window, or the terms you agreed on last Tuesday?
 
-Most owners answer honestly: no, or not without a scramble. That is the bus test. It is not about doom. It is a simple check on whether the details live in the business or only in your head.
+Most owners answer honestly: no, or not without a scramble. That is the bus test. Do not read it as doom; read it as a simple check on whether the details live in the business or only in your head.
 
 ## A fix that does not add paperwork
 

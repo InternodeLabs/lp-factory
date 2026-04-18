@@ -5,8 +5,8 @@ description: How a small reselling business captures customer and supplier detai
 excerpt: A small doors and windows reseller stops losing customer measurements, supplier quotes, and delivery commitments by recording phone calls on a smartphone, transcribing them, and feeding the transcripts into a tool that pulls out the details automatically.
 type: use-case
 publishedAt: 2026-04-15
-updatedAt: 2026-04-15
-lastReviewedAt: "2026-04-15"
+updatedAt: 2026-04-18
+lastReviewedAt: "2026-04-18"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"
@@ -26,7 +26,7 @@ relatedSlugs:
   - why-small-businesses-forget-what-was-decided-and-how-to-fix-it
 ---
 
-Picture a small car parts reseller with about eight people on the payroll. Your team sells what the factory makes, but the sale is never just a box on the shelf. Customers call with rough openings, trim colors, hardware finishes, lead times, and a price they heard from someone last month. Suppliers call with updated costs, ship dates, and substitutions when a line runs short.
+Picture a small doors and windows reseller with about eight people on the payroll. Your team sells what the factory makes, but the sale is never just a box on the shelf. Customers call with rough openings, trim colors, hardware finishes, lead times, and a price they heard from someone last month. Suppliers call with updated costs, ship dates, and substitutions when a line runs short.
 
 Most of the real work still happens on the phone. Someone at the counter picks up. Someone in the truck picks up. The owner picks up after hours. Each call carries numbers your business has to honor later.
 

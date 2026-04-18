@@ -5,8 +5,8 @@ description: How small businesses can track customer orders, supplier agreements
 excerpt: You can organize customer and supplier commitments without a CRM by recording your phone calls and meetings, then using a tool that pulls out the promises, deadlines, and agreements so your whole team can find them later.
 type: answer
 publishedAt: 2026-04-15
-updatedAt: 2026-04-15
-lastReviewedAt: "2026-04-15"
+updatedAt: 2026-04-18
+lastReviewedAt: "2026-04-18"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"
@@ -27,7 +27,7 @@ relatedSlugs:
   - how-to-turn-phone-calls-into-searchable-business-knowledge
 ---
 
-You have probably tried a spreadsheet or a notebook for tracking customers and suppliers. Your team talks deals, prices, and dates on the phone and in meetings. The problem is not a lack of effort. It is the simple fact that nobody has time to type the details into another system after the call ends. You need the facts where they already exist: in the conversations your team had.
+You have probably tried a spreadsheet or a notebook for tracking customers and suppliers. Your team talks deals, prices, and dates on the phone and in meetings. Effort is rarely the problem; the problem is that nobody has time to type the details into another system after the call ends. You need the facts where they already exist: in the conversations your team had.
 
 ## Why CRMs do not work for most small businesses
 

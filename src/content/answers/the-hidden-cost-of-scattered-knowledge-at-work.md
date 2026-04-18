@@ -2,11 +2,11 @@
 title: "The hidden cost of scattered knowledge at work"
 slug: the-hidden-cost-of-scattered-knowledge-at-work
 description: "Scattered knowledge costs teams thousands of hours per year in repeated work, slow onboarding, and forgotten follow-ups. Here is how to quantify the problem."
-excerpt: "Knowledge workers spend roughly 20% of their work week searching for internal information. When what your team discussed and agreed on lives in email threads, meeting notes, and people's heads, the cost is not just frustration. It is measurable lost productivity."
+excerpt: "Knowledge workers spend roughly 20% of their work week searching for internal information. When what your team discussed and agreed on lives in email threads, meeting notes, and people's heads, the frustration is the part you notice. The part you can put on a spreadsheet is the measurable lost productivity behind it."
 type: answer
 publishedAt: "2026-04-15"
-updatedAt: "2026-04-15"
-lastReviewedAt: "2026-04-15"
+updatedAt: "2026-04-18"
+lastReviewedAt: "2026-04-18"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"
@@ -37,7 +37,7 @@ Not all of that search time is avoidable. Some research is genuinely new. But a 
 
 ## The discussions you repeat
 
-When a team [keeps re-discussing the same topics](/why-your-team-keeps-rediscussing-the-same-decisions), the cost is not just the meeting time. It is the cascade that follows: delayed projects, contradictory directions, and the frustration of team members who feel like their previous input was ignored.
+When a team [keeps re-discussing the same topics](/why-your-team-keeps-rediscussing-the-same-decisions), the meeting time is only the first bill. The larger one is the cascade that follows: delayed projects, contradictory directions, and the frustration of team members who feel like their previous input was ignored.
 
 A study of meeting productivity found that 60% of meeting time produces no concrete output. Every topic that gets relitigated generates at least one additional follow-up meeting. For a team that meets frequently, the compounding effect is significant. One forgotten discussion can consume hours of collective time over the following weeks as people try to reconstruct what was said, what was agreed, and what still needs to happen.
 
@@ -53,7 +53,7 @@ When that institutional knowledge is [preserved and searchable](/what-is-institu
 
 When someone leaves an organization, they take their knowledge with them. The impact varies depending on the person's role and tenure, but it is always larger than organizations expect.
 
-This is not just about losing what that person knew. It is the cost of everyone else working around the gap: the questions that go unanswered, the topics that get revisited, the follow-ups that slip because nobody remembers who owned them, and the processes that break because nobody remembers why they were set up that way.
+The loss includes what that person knew, plus everything the rest of the team has to do to work around the gap: the questions that go unanswered, the topics that get revisited, the follow-ups that slip because nobody remembers who owned them, and the processes that break because nobody remembers why they were set up that way.
 
 In small businesses where the owner or a key employee holds most of the operational knowledge, a single absence can disrupt the entire operation. In larger teams with regular turnover, the departure cost is chronic and cumulative.
 
@@ -74,4 +74,4 @@ If you are an employee who sees these costs but does not control the budget, the
 
 If you can trial tools on your own, start small. Record your next team meeting. Run the transcript through [Internode](https://app.internode.ai). Look at what it pulls out: the things your team agreed on, the action items with owners, the problems that were raised, the ideas worth revisiting. Then compare that to whatever notes someone took by hand. The difference makes the cost visible in a way that spreadsheets cannot.
 
-The goal is not a perfect calculation. It is making the invisible cost visible. Most organizations accept scattered knowledge as a fact of life because nobody has shown them the alternative.
+You do not need a perfect number here. You need enough of one to make an invisible cost visible on paper. Most organizations accept scattered knowledge as a fact of life because nobody has shown them the alternative.

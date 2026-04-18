@@ -5,8 +5,8 @@ description: How to close the gap between what your team agrees to in meetings a
 excerpt: "You connect meeting decisions to project tasks by extracting structured decisions from transcripts and linking them to issues in your tracker. The result is bidirectional traceability: from any ticket you can reach the decision, and from any decision you can see the work it spawned."
 type: answer
 publishedAt: 2026-04-15
-updatedAt: 2026-04-15
-lastReviewedAt: "2026-04-15"
+updatedAt: 2026-04-18
+lastReviewedAt: "2026-04-18"
 author:
   name: "Balazs Ketyi"
   role: "Co-founder and CPO"
@@ -62,6 +62,6 @@ Once a week, spot-check traceability. Pick a few random tickets and try to reach
 
 ## The deeper question
 
-Most teams accept that meeting outcomes and task trackers live in separate worlds. They cope with Slack searches, tribal memory, and "I think we discussed this." The real cost is not the minutes spent searching. It is the slow erosion of trust in your own systems.
+Most teams accept that meeting outcomes and task trackers live in separate worlds. They cope with Slack searches, tribal memory, and "I think we discussed this." Counting the minutes lost to search understates the damage. What erodes, over months, is trust in your own systems.
 
-When an engineer cannot verify why a task exists, they treat every ticket as potentially arbitrary. When a PM cannot trace a decision to its rationale, they re-litigate scope instead of defending it. Traceability is not overhead. It is the thing that lets your team move faster without losing confidence in what they are building.
+When an engineer cannot verify why a task exists, they treat every ticket as potentially arbitrary. When a PM cannot trace a decision to its rationale, they re-litigate scope instead of defending it. Traceability looks like overhead until you see what it buys: teams move faster because nobody has to stop and defend work whose reasoning is already on the record.

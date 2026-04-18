@@ -5,8 +5,8 @@ description: "Teams re-discuss the same decisions because what was agreed, and w
 excerpt: "Your team is not forgetful. The problem is structural: what gets agreed in meetings is not captured in a way anyone can find later. When the reasoning behind a decision disappears, people rationally reopen the discussion."
 type: answer
 publishedAt: "2026-04-15"
-updatedAt: "2026-04-15"
-lastReviewedAt: "2026-04-15"
+updatedAt: "2026-04-18"
+lastReviewedAt: "2026-04-18"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"
@@ -27,7 +27,7 @@ relatedSlugs:
   - how-to-tell-if-your-team-has-a-knowledge-management-problem
 ---
 
-Your team is not forgetful. The same discussions keep coming up because what was agreed in previous meetings is not recorded anywhere anyone can find it. When the reasoning behind a decision vanishes, people reopen the debate. This is not a people problem. It is a systems problem.
+Your team is not forgetful. The same discussions keep coming up because what was agreed in previous meetings is not recorded anywhere anyone can find it. When the reasoning behind a decision vanishes, people reopen the debate. The failure is in the system, not the people.
 
 ## The decision was made, but nobody can prove it
 

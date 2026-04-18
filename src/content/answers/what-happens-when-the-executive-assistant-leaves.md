@@ -5,8 +5,8 @@ description: "When an executive assistant leaves, the organizational knowledge t
 excerpt: "More than half of executive assistants leave within two years. When they go, they take with them the relationship context, decision history, and operational knowledge that kept the office running. Most organizations have no plan for this."
 type: answer
 publishedAt: "2026-04-15"
-updatedAt: "2026-04-15"
-lastReviewedAt: "2026-04-15"
+updatedAt: "2026-04-18"
+lastReviewedAt: "2026-04-18"
 author:
   name: "Balazs Ketyi"
   role: "Co-founder and CPO"
@@ -31,11 +31,11 @@ More than half of executive assistants leave their role within two years. When t
 
 ## The invisible knowledge an EA carries
 
-An executive assistant is, as one former EA to a Fortune 500 CEO described it, "the central hub of information." They know who gets along with whom, which board member cares about which initiative, what the exec decided about the budget three months ago, why a certain vendor was dropped, and what the CEO's spouse's name is. This is not trivial. It is the connective tissue of executive effectiveness.
+An executive assistant is, as one former EA to a Fortune 500 CEO described it, "the central hub of information." They know who gets along with whom, which board member cares about which initiative, what the exec decided about the budget three months ago, why a certain vendor was dropped, and what the CEO's spouse's name is. None of that is trivial; taken together, it is the connective tissue of executive effectiveness.
 
 One executive who went two months without his EA described the impact bluntly: "Scheduling, content distribution, EA onboarding, communication follow-ups, things I did not even think about before became daily frustrations." He returned from a trip to 700+ unread emails and a backlog of decisions that had stalled because nobody knew the context needed to move them forward.
 
-Another executive noted: "Even with full handovers, detailed briefings, and every possible contingency planned, it still does not run the same when she is not here." Research suggests executives working with highly effective assistants see productivity increases of up to 40%. Losing that support is not a minor disruption. It is a structural loss.
+Another executive noted: "Even with full handovers, detailed briefings, and every possible contingency planned, it still does not run the same when she is not here." Research suggests executives working with highly effective assistants see productivity increases of up to 40%. Losing that support is more than a minor disruption; it is a structural loss.
 
 ## Why handovers rarely work
 

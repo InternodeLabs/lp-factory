@@ -291,6 +291,51 @@ All `/internode-vs-*` pages must also follow `content/comparison-page-spec.md`. 
 
 ---
 
+## Recurring pitfalls
+
+These are the patterns that looked fine in isolation but showed up as tics or weak spots once the catalog crossed ~90 pages. The checks in `scripts/check-meta-lengths.mjs` enforce the hard limits; the guidance below covers the judgment calls.
+
+### Named bylines only
+
+Every page must be authored by one of the three co-founders: **Istvan Lorincz**, **Balazs Ketyi**, or **Sean Shadmand**. The string `Internode Team` and any `CHOOSE-*` sentinel left over from the templates are never valid bylines and will fail the build.
+
+Default voice-fit assignment when you have no strong reason to pick otherwise:
+
+- **Istvan** for conceptual and foundational pieces (what is decision memory, what is organizational memory, AI agent memory, category-defining explainers).
+- **Balazs** for product-mechanic pieces (how the drafter works, capture flows, AI PM agent behavior, integrations).
+- **Sean** for business-case and small-business pieces (ROI, cost-of-inaction, phone-call workflows, champion enablement).
+
+`/internode-vs-*` pages are Balazs Ketyi by construction per `content/comparison-page-spec.md` line 32. Do not override that without updating the spec.
+
+### Avoid the "is not X. It is Y." cadence
+
+The shape `<subject> is not <A>. It is <B>.` is sharp once per page and reads as a tic from the second instance onward. When the same page uses it in two adjacent paragraphs, the page starts to sound like content-farm output.
+
+Before submitting a new page, search the body for the regex `is not .*\. It is ` and rephrase if it hits more than once on the same page. The tonal-tic counter in `scripts/check-meta-lengths.mjs` prints the catalog-wide total on every build and fails the build when the total exceeds the ratcheted cap. After the 2026-04-18 cleanup pass the cap sits at 10, so any new page adding an instance without rephrasing an older one trips the gate. When a rephrasing pass removes instances, lower the cap in the same commit to lock in the gain.
+
+Safer alternatives when you reach for this shape:
+
+- Keep the negation as a clause inside the same sentence: "Traceability looks like overhead until you see what it buys: teams move faster when...".
+- Front-load the positive: "What actually slows the brief down is the gathering, not the writing."
+- Break the pair across a longer bridge so the second sentence does not mirror the first.
+
+### Break the skeleton on at least one section per page
+
+The default skeleton across the catalog is problem → why it happens → what it costs → how we solve it → what changes. Each page is fine alone. Read five in a row and the bone structure shows.
+
+On every answer and use-case page, force at least one section to break that skeleton. Options that work well:
+
+- A single-question section with a direct answer.
+- A short numbered sequence (a protocol, a checklist, a decision tree).
+- A scene with a named role doing a specific thing.
+- A short FAQ block tied to the exact question the page answers.
+- A side-by-side that is not a comparison table (two approaches in prose).
+- A "how to recognize this on your team" diagnostic list.
+
+`/internode-vs-*` pages are exempt from this rule. Their section order (intro, comparison table, When to choose Internode, Where the competitor wins, Bottom line) is mandatory under `content/comparison-page-spec.md` and must not be broken for variety.
+
+---
+
 ## Formatting Rules
 
 ### Paragraphs

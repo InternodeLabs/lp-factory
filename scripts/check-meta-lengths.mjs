@@ -18,6 +18,17 @@ const TITLE_MAX = 70;
 const DESC_MIN = 25;
 const DESC_MAX = 160;
 
+// Hard-fail threshold for the "is not X. It is Y." cadence across the whole
+// answers catalog. This is a ratchet: set to the current catalog count after
+// the 2026-04-18 cleanup pass, so today's catalog sits right at the cap and
+// any regression (a new page adding one more instance) immediately fails.
+// When a rephrasing pass removes instances, lower this constant in the same
+// commit to lock in the gain. See content/writing-guide.md "Recurring pitfalls".
+const TONAL_TIC_HARD_CAP = 10;
+const TONAL_TIC_PATTERN = /\bis not\b[^.\n]{0,80}\. It is\b/gi;
+const BYLINE_BANNED_EXACT = /^internode team$/i;
+const BYLINE_BANNED_SENTINEL = /^CHOOSE[-:]/;
+
 const repoRoot = new URL("..", import.meta.url);
 const rel = (p) => new URL(p, repoRoot);
 
@@ -31,6 +42,9 @@ const updatedAtCounts = new Map();
 const lastReviewedAtCounts = new Map();
 let answersTotal = 0;
 let answersMissingReview = 0;
+let tonalTicPages = 0;
+let tonalTicTotal = 0;
+const tonalTicPerFile = [];
 
 function bump(map, key) {
   map.set(key, (map.get(key) ?? 0) + 1);
@@ -78,6 +92,50 @@ async function checkContentCollection() {
     const description = body.match(/^description:\s*(.+)$/m);
     if (title) checkTitle(`src/content/answers/${name}`, unquote(title[1]));
     if (description) checkDescription(`src/content/answers/${name}`, unquote(description[1]));
+
+    // Byline guard. Bylines are mandatory in content/writing-guide.md:
+    // every page must be authored by a named co-founder. "Internode Team"
+    // and any CHOOSE-* sentinel left in from the templates are hard fails.
+    // `author:` is a YAML block, so `name:` lives on the next indented line.
+    const authorBlock = body.match(/^author:\s*\n((?:[ \t]+[^\n]*\n?)+)/m);
+    if (authorBlock) {
+      const authorName = authorBlock[1].match(/^[ \t]+name:\s*(.+)$/m);
+      if (authorName) {
+        const value = unquote(authorName[1]);
+        if (BYLINE_BANNED_EXACT.test(value)) {
+          violations.push({
+            file: `src/content/answers/${name}`,
+            field: "author.name",
+            length: value.length,
+            reason: 'byline is "Internode Team"; every page must be authored by Istvan Lorincz, Balazs Ketyi, or Sean Shadmand (see content/writing-guide.md)',
+            value,
+          });
+        } else if (BYLINE_BANNED_SENTINEL.test(value)) {
+          violations.push({
+            file: `src/content/answers/${name}`,
+            field: "author.name",
+            length: value.length,
+            reason: "byline is a CHOOSE-* template placeholder; pick a named co-founder before publishing",
+            value,
+          });
+        }
+      }
+    }
+
+    // Tonal-tic counter. The "<subject> is not <A>. It is <B>." construction
+    // is sharp once per page and reads as a mannerism from the second instance
+    // onward. We count matches per file and globally; the global total has
+    // a hard cap (see TONAL_TIC_HARD_CAP). This is a mannerism counter, not
+    // a style nitpick: staying under the cap means the pattern still carries
+    // punch when a writer reaches for it.
+    const markdownForTic = raw.slice(fm[0].length);
+    const ticMatches = markdownForTic.match(TONAL_TIC_PATTERN);
+    const ticCount = ticMatches ? ticMatches.length : 0;
+    if (ticCount > 0) {
+      tonalTicPages += 1;
+      tonalTicTotal += ticCount;
+      tonalTicPerFile.push({ file: `src/content/answers/${name}`, count: ticCount });
+    }
 
     // The page layout (src/pages/[slug].astro) already renders the frontmatter
     // `title` as <h1>, so any top-level `# ` heading in the markdown body
@@ -177,12 +235,33 @@ function reportDateStats() {
   }
 }
 
+function reportTonalTic() {
+  const label = 'tonal-tic ("is not X. It is Y." cadence)';
+  if (tonalTicTotal === 0) {
+    console.log(`${label}: 0 occurrences (hard cap ${TONAL_TIC_HARD_CAP})`);
+    return;
+  }
+  const status = tonalTicTotal > TONAL_TIC_HARD_CAP ? "OVER CAP" : "within cap";
+  console.log(
+    `${label}: ${tonalTicTotal} occurrence${tonalTicTotal === 1 ? "" : "s"} ` +
+      `across ${tonalTicPages} page${tonalTicPages === 1 ? "" : "s"} ` +
+      `(hard cap ${TONAL_TIC_HARD_CAP}, ${status})`,
+  );
+  const rows = [...tonalTicPerFile].sort((a, b) => b.count - a.count || a.file.localeCompare(b.file));
+  for (const { file, count } of rows) {
+    console.log(`  ${file}  ${count}`);
+  }
+}
+
 async function main() {
   await Promise.all([checkContentCollection(), checkSiteConstants(), checkTopicsIndex()]);
 
-  if (violations.length === 0) {
+  const tonalTicOverCap = tonalTicTotal > TONAL_TIC_HARD_CAP;
+
+  if (violations.length === 0 && !tonalTicOverCap) {
     console.log("meta-lengths: OK");
     reportDateStats();
+    reportTonalTic();
     return;
   }
 
@@ -191,7 +270,15 @@ async function main() {
     console.error(`  ${v.file} [${v.field}] len=${v.length} ${v.reason}`);
     if (v.value) console.error(`    "${v.value}"`);
   }
+  if (tonalTicOverCap) {
+    console.error(
+      `  tonal-tic: ${tonalTicTotal} occurrences of "is not X. It is Y." across ` +
+        `${tonalTicPages} pages, over hard cap of ${TONAL_TIC_HARD_CAP}. ` +
+        "See content/writing-guide.md 'Recurring pitfalls' for alternatives.",
+    );
+  }
   reportDateStats();
+  reportTonalTic();
   process.exitCode = 1;
 }
 

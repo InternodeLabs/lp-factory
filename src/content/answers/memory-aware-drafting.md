@@ -5,8 +5,8 @@ description: "Memory-aware drafting is document generation grounded in organizat
 excerpt: "Memory-aware drafting is the difference between an AI that writes plausible-sounding paragraphs and one that drafts a meeting prep brief, a project plan, or a policy-grounded document where every line cites a real decision your team has already made. It only works when the underlying knowledge base is structured around decisions, not pages."
 type: answer
 publishedAt: "2026-04-17"
-updatedAt: "2026-04-17"
-lastReviewedAt: "2026-04-17"
+updatedAt: "2026-04-18"
+lastReviewedAt: "2026-04-18"
 author:
   name: "Balazs Ketyi"
   role: "Co-founder and CPO"
@@ -37,7 +37,7 @@ This is a different category from "AI writes a doc from a prompt". A prompt-driv
 
 Most AI writing tools assume the input is a prompt. The user types "draft a project plan for the new onboarding flow" and the model generates something coherent. The output reads professionally. It has nothing to do with what the team has actually decided about the new onboarding flow.
 
-This is the wrong shape of help for the work professionals actually do. The slow part of writing a meeting brief is not the writing. It is gathering the context: what did we discuss with this stakeholder last time, what did we promise, what did we decide, what changed since. The slow part of writing a work plan is not the bullet list of tasks. It is reconciling the new plan against decisions the team already made and tasks that already exist.
+This is the wrong shape of help for the work professionals actually do. Writing a meeting brief is rarely slow because of the words. The slow part happens before the first sentence: figuring out what you discussed with this stakeholder last time, what you promised, what you decided, what changed since. Work plans follow the same pattern. The bullet list is fast; the hard part is reconciling the new plan against decisions the team already made and tasks that already exist.
 
 A memory-aware drafting system does the gathering and reconciling for you, then drafts. The drafting is the easy part. The grounding is the work.
 

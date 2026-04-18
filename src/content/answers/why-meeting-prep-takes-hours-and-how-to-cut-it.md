@@ -5,8 +5,8 @@ description: "Executive assistants spend 10 to 12 hours a week on meeting prep a
 excerpt: "Meeting prep is the single biggest time sink for executive assistants. Most of the time goes to gathering context that should already be organized. Here is how to fix the workflow."
 type: answer
 publishedAt: "2026-04-15"
-updatedAt: "2026-04-15"
-lastReviewedAt: "2026-04-15"
+updatedAt: "2026-04-18"
+lastReviewedAt: "2026-04-18"
 author:
   name: "Balazs Ketyi"
   role: "Co-founder and CPO"
@@ -35,7 +35,7 @@ Your exec has a meeting at 2 PM with a board member they last spoke to three mon
 
 The answers to those questions live in at least four places: an email thread, a calendar note from the previous meeting, a paragraph in your EA Bible, and your own memory. Gathering that context into a clean briefing takes 20 to 30 minutes per meeting. Your exec has 15 to 25 meetings per week. The math does not work in your favor.
 
-This is not a failure of discipline or organization. It is a structural problem. The information your exec needs before every meeting is scattered across tools that were not designed to connect to each other. Your email does not talk to your calendar notes. Your calendar notes do not reference what was decided in the previous meeting. Your EA Bible contains preferences and logistics but not the conversation history.
+Discipline and organization are not the missing piece. The missing piece is structural. The information your exec needs before every meeting is scattered across tools that were never designed to connect to each other. Your email does not talk to your calendar notes. Your calendar notes do not reference what was decided in the previous meeting. Your EA Bible contains preferences and logistics but not the conversation history.
 
 ## Why generic tools do not solve this
 
@@ -59,4 +59,4 @@ This is not about replacing your judgment. You still decide what matters and wha
 
 Internode captures decisions, commitments, and context from meetings automatically and connects them across time and stakeholders. For an EA, this means [building a briefing system that does not depend on memory](/how-to-build-a-briefing-system-that-does-not-depend-on-memory). Before any meeting, you can pull up the full history: what was discussed, what was promised, and what is still open. The system builds this from meeting transcripts and conversations, not from you typing notes after every call.
 
-The result is not just time saved. It is the difference between your exec walking in prepared and your exec walking in hoping you remembered to brief them.
+Time saved is the surface result. The deeper one is the difference between your exec walking in prepared and your exec walking in hoping you remembered to brief them.

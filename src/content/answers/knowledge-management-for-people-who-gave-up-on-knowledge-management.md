@@ -5,8 +5,8 @@ description: "If you have tried and abandoned Notion, Obsidian, or Roam, the pro
 excerpt: "You tried Notion. You tried Obsidian. Maybe you tried Roam, Logseq, or three others before giving up entirely. Each time the pattern was the same: initial excitement, elaborate setup, gradual decay, quiet abandonment. The problem was never your discipline. It was the model."
 type: answer
 publishedAt: "2026-04-15"
-updatedAt: "2026-04-15"
-lastReviewedAt: "2026-04-15"
+updatedAt: "2026-04-18"
+lastReviewedAt: "2026-04-18"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"
@@ -37,7 +37,7 @@ Every tool you tried asked the same thing of you: organize your knowledge manual
 
 The maintenance was invisible at first because the system was small. When you have 50 notes, organizing them is quick. When you have 500, it becomes a chore. When you have 2,000, it becomes a second job. At some point, the cost of maintaining the system exceeds the benefit of using it, and you stop.
 
-This is not a failure of willpower. It is a predictable outcome of a design that scales in the wrong direction. For a deeper analysis of why this cycle repeats, see [why your second brain keeps failing](/why-your-second-brain-keeps-failing).
+Willpower was never the point of failure. The design itself scales in the wrong direction, and the outcome is predictable. For a deeper analysis of why this cycle repeats, see [why your second brain keeps failing](/why-your-second-brain-keeps-failing).
 
 ## What "giving up" actually looks like
 

@@ -5,8 +5,8 @@ description: "How public agencies use AI knowledge management to preserve instit
 excerpt: "AI knowledge management for government is a structured record of what was decided, what was rejected, and why, built from the meetings and committee sessions your agency already holds. The test is whether a new program manager, appointee, or elected official can reconstruct the reasoning behind a multi-year program without calling a retiree."
 type: answer
 publishedAt: "2026-04-17"
-updatedAt: "2026-04-17"
-lastReviewedAt: "2026-04-17"
+updatedAt: "2026-04-18"
+lastReviewedAt: "2026-04-18"
 author:
   name: "Istvan Lorincz"
   role: "Co-founder and CEO"
@@ -37,7 +37,7 @@ Every election cycle and every appointment cycle, a new official walks into a pr
 
 The gap shows up in the first six months. A new council member asks why the county chose one vendor over another and gets a partial answer. A new program director asks why a policy exception was granted in 2023 and gets a shrug. A new department head asks which commitments the prior administration made to a state agency and discovers the answer lives in the inbox of someone who retired.
 
-This is not a staff failure. It is a structural gap. Our meeting minutes record votes and motions. They do not record the rationale, the alternatives considered, or the compliance constraints that shaped the outcome. For a broader view of this pattern, see [what is institutional knowledge and why teams lose it](/what-is-institutional-knowledge-and-why-teams-lose-it).
+The cause is structural, not a staff failure. Our meeting minutes record votes and motions. They do not record the rationale, the alternatives considered, or the compliance constraints that shaped the outcome. For a broader view of this pattern, see [what is institutional knowledge and why teams lose it](/what-is-institutional-knowledge-and-why-teams-lose-it).
 
 ## Why minutes and staff reports are not enough
 

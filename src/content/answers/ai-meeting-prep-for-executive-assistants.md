@@ -2,11 +2,11 @@
 title: "AI meeting prep for executive assistants: the brief they'll read"
 slug: ai-meeting-prep-for-executive-assistants
 description: "How executive assistants use AI meeting prep to draft briefs executives will actually read, grounded in past conversations and commitments."
-excerpt: "AI meeting prep for executive assistants is not another note-taking app. It is a drafting tool that reads your exec's history with a stakeholder and writes a short, accurate brief citing every past conversation, commitment, and open item. You stop scrambling through emails and your EA Bible for 25 minutes before every meeting."
+excerpt: "AI meeting prep for executive assistants is a drafting tool, not another note-taking app. It reads your exec's history with a stakeholder and writes a short, accurate brief citing every past conversation, commitment, and open item. You stop scrambling through emails and your EA Bible for 25 minutes before every meeting."
 type: answer
 publishedAt: "2026-04-17"
-updatedAt: "2026-04-17"
-lastReviewedAt: "2026-04-17"
+updatedAt: "2026-04-18"
+lastReviewedAt: "2026-04-18"
 author:
   name: "Balazs Ketyi"
   role: "Co-founder and CPO"
@@ -29,7 +29,7 @@ relatedSlugs:
   - why-meeting-prep-takes-hours-and-how-to-cut-it
 ---
 
-AI meeting prep for an executive assistant is not a summary of the calendar invite or a chatbot reply. It is a drafted brief grounded in everything your exec has already discussed with the stakeholder: every past meeting, every commitment, every decision, every email thread of substance. The draft is short, accurate, and citable, so your exec can read it in two minutes on the way to the room. The work that used to take you 25 minutes per meeting becomes a review instead of a rebuild.
+AI meeting prep for an executive assistant does not mean a summary of the calendar invite or a chatbot reply. It means a drafted brief grounded in everything your exec has already discussed with the stakeholder: every past meeting, every commitment, every decision, every email thread of substance. The draft is short, accurate, and citable, so your exec can read it in two minutes on the way to the room. The work that used to take you 25 minutes per meeting becomes a review instead of a rebuild.
 
 ## What a brief your exec will actually read looks like
 
@@ -41,7 +41,7 @@ Anything longer gets skimmed. Anything shorter feels unprepared. The brief you a
 
 ## Why the 30-minute scramble happens
 
-The hard part of a brief is not writing it. It is pulling the context together before you can write anything.
+Writing the brief is not the hard part. The hard part is pulling the context together before you can write anything.
 
 You dig through a calendar invite. You search your inbox for the last thread with this stakeholder. You scroll through your EA Bible for the right paragraph. You check whether a promise from last quarter ever got closed. You remember a commitment that never made it into a tracker. You end with eight tabs open and four minutes left.
 

@@ -5,8 +5,8 @@ description: "A practical definition of organizational memory for AI agents: wha
 excerpt: Organizational memory gives AI agents persistent, structured knowledge about a team's decisions, reasoning, context, and commitments instead of forcing them to reconstruct everything from raw documents on every query.
 type: answer
 publishedAt: 2026-04-15
-updatedAt: 2026-04-15
-lastReviewedAt: "2026-04-15"
+updatedAt: 2026-04-18
+lastReviewedAt: "2026-04-18"
 author:
   name: "Istvan Lorincz"
   role: "Co-founder and CEO"
@@ -81,4 +81,4 @@ Internode is built around this model. It captures decisions, topics, tasks, goal
 
 The AI chat agent answers questions grounded in that memory, citing specific decisions and conversations rather than guessing from fragments. For a concrete example, read the [product and engineering alignment use case](/internode-use-case-product-and-engineering-alignment).
 
-The longer question is not whether AI agents need memory. It is whether organizations will build that memory deliberately or leave agents to guess from whatever text happens to be nearby. [Why AI agents need decision memory](/why-ai-agents-need-decision-memory) explores that question from the retrieval side.
+Whether AI agents need memory stopped being the interesting question a while ago. The real one is whether organizations will build that memory deliberately, or leave agents to guess from whatever text happens to be nearby. [Why AI agents need decision memory](/why-ai-agents-need-decision-memory) explores that question from the retrieval side.

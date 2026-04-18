@@ -5,8 +5,8 @@ description: "Seven warning signs that your team is losing knowledge from meetin
 excerpt: "Knowledge management problems rarely announce themselves. They show up as repeated meetings, slow onboarding, and that one person everyone asks because they remember everything. Here are the signs to watch for."
 type: answer
 publishedAt: "2026-04-15"
-updatedAt: "2026-04-15"
-lastReviewedAt: "2026-04-15"
+updatedAt: "2026-04-18"
+lastReviewedAt: "2026-04-18"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"
@@ -35,7 +35,7 @@ Here are seven signs your team has a knowledge management problem.
 
 If your team regularly discusses issues that were already resolved, this is the most visible symptom. It does not mean people are not paying attention. It means what was agreed in the previous discussion is not accessible to anyone who was not in the room. When the [reasoning behind a decision disappears](/why-your-team-keeps-rediscussing-the-same-decisions), reopening the discussion is the rational response.
 
-Pay attention to phrases like "did we not already talk about this?" and "I thought we decided that last month." If you hear them regularly, the problem is not memory. It is documentation.
+Pay attention to phrases like "did we not already talk about this?" and "I thought we decided that last month." When you hear them often, the failure is upstream of memory. What the team needs is a record it can return to.
 
 ## 2. One person is the answer to every question
 
