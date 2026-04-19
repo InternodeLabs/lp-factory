@@ -8,7 +8,7 @@ import {
   SITE_TITLE,
   absoluteUrl,
 } from "./site";
-import { FOUNDERS, type AuthorProfile } from "./authors";
+import { FOUNDERS, authorSameAs, type AuthorProfile } from "./authors";
 
 export interface JsonLdGraph {
   "@context": "https://schema.org";
@@ -46,7 +46,7 @@ function personSchema(author: AuthorProfile): Record<string, unknown> {
     name: author.name,
     jobTitle: author.role,
     url: author.url,
-    sameAs: [author.linkedin],
+    sameAs: authorSameAs(author),
     worksFor: { "@id": ORGANIZATION_ID },
     description: author.bio,
   };
@@ -70,9 +70,9 @@ export function buildOrganizationSchema(): Record<string, unknown> {
     image: absoluteUrl(DEFAULT_OG_IMAGE),
     sameAs: [
       "https://www.linkedin.com/company/internode-ai",
-      "https://twitter.com/internode_ai",
+      "https://x.com/internode_ai",
       "https://www.producthunt.com/products/internode",
-      "https://www.crunchbase.com/organization/internode-ai",
+      "https://www.crunchbase.com/organization/internode-6739",
       "https://github.com/internode-ai",
     ],
     founder: FOUNDERS.map(personSchema),
@@ -192,7 +192,7 @@ export function buildArticleSchema(opts: {
         name: opts.author.name,
         jobTitle: opts.author.role,
         url: opts.author.url,
-        sameAs: [opts.author.linkedin],
+        sameAs: authorSameAs(opts.author),
         worksFor: { "@id": ORGANIZATION_ID },
       }
     : {

@@ -5,8 +5,8 @@ description: "Internode vs Granola on AI meeting intelligence: phone calls, emai
 excerpt: "Granola is the best in-meeting capture notebook for one user in one video meeting at a time. Internode is the AI meeting intelligence layer for teams whose work spans phone calls, email, chat, and many weeks of cross-meeting context, with an AI agent that can change many things at once and sync back to Linear or Jira. Pick Granola for the personal notepad. Pick Internode for the team record that survives turnover."
 type: answer
 publishedAt: "2026-04-17"
-updatedAt: "2026-04-17"
-lastReviewedAt: "2026-04-17"
+updatedAt: "2026-04-19"
+lastReviewedAt: "2026-04-19"
 author:
   name: "Balazs Ketyi"
   role: "Co-founder and CPO"
@@ -56,6 +56,20 @@ Granola is the best in-meeting capture notebook for one user in one video meetin
 ## Where Granola wins
 
 Granola's strength is the in-meeting capture experience for one user. The app runs quietly on the laptop, captures the meeting audio locally, and produces a readable personal notebook with speaker-level attribution the moment the call ends. For a product manager or founder who wants a clean personal record of a single meeting, Granola is simpler and feels good to use every day. The trade-off is that Granola treats a meeting as a self-contained artifact for one person. It does not span the phone calls and email threads that preceded the meeting, the decisions that survive across six related conversations, or the bulk changes the team needs when priorities shift. Internode treats a meeting as one event in a record that spans the organization's full history.
+
+## Common questions
+
+## Does Internode replace Granola entirely?
+
+It does not have to. Teams often run both for the first month: Granola for the personal in-meeting notebook on a laptop, Internode for the team record that spans phone calls, email, and cross-meeting context. After the trial most teams consolidate on Internode because the personal notebook is a subset of what the organizational record already captures, but the choice is yours and switching is non-destructive.
+
+## What happens to my existing Granola notes when I start Internode?
+
+Nothing. Granola notes stay in Granola. Internode reads new meetings from your Zoom or Google Meet bot, your phone call transcripts, and your email and Slack. If you want to bring historical Granola notes into the Internode record, you can paste the notebook content into a topic and Internode will parse out the decisions and tasks it contains.
+
+## Is Internode's chat agent safe to let loose on Linear or Jira?
+
+Every change is a proposal the human approves before it runs. The chat agent cannot move, reassign, archive, or update tickets without you clicking approve on the card, and every approved change is logged against the decision that triggered it. That is the core difference from auto-apply workflow tools: the approval step is structural, not a setting you can turn off.
 
 ## Bottom line
 

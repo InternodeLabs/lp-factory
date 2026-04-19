@@ -31,8 +31,6 @@ relatedSlugs:
 
 Read AI is the best tool for speaker analytics and in-meeting engagement scoring in one video call at a time. Internode is the AI meeting intelligence layer for teams whose work spans phone calls, email, chat, and weeks of cross-meeting context, with decisions and tasks that sync back to Linear or Jira. Pick Read AI for the single-meeting scorecard. Pick Internode for the record that survives team turnover.
 
-> Looking for the meeting-prep drafting comparison? See [/internode-vs-read-ai-for-meeting-prep-drafts](/internode-vs-read-ai-for-meeting-prep-drafts).
-
 ## Side-by-side on the axes that decide your workweek
 
 | Axis | Internode | Read AI |

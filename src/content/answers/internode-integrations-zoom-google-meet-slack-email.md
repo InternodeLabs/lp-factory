@@ -25,6 +25,7 @@ relatedSlugs:
   - how-internode-works-with-phone-transcripts-and-meeting-recordings
   - how-to-capture-decisions-from-meetings-without-writing-everything-down
   - how-to-connect-meeting-decisions-to-project-tasks
+  - content-hub-launch
 ---
 
 Internode pulls information from the tools your team already uses so that meeting outcomes, chat context, and follow-up work stay in one place instead of scattered across apps. You can mix sources in a single week: a vendor call on Zoom, a quick alignment in Slack, and a follow-up email thread.

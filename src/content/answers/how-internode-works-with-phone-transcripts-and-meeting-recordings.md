@@ -25,6 +25,7 @@ relatedSlugs:
   - how-to-turn-phone-calls-into-searchable-business-knowledge
   - internode-integrations-zoom-google-meet-slack-email
   - use-case-turning-calls-and-meetings-into-structured-knowledge
+  - content-hub-launch
 ---
 
 Internode turns conversations and notes into knowledge your team can find later. This page describes what you can send in, what happens to it, and what comes out the other side.

@@ -26,7 +26,8 @@ ctaLabel: "Generate your first memory-aware document with Internode"
 relatedSlugs:
   - ai-knowledge-base-that-builds-itself
   - what-is-organizational-memory
-  - meeting-prep-reports-that-write-themselves-from-your-org-memory
+  - why-meeting-prep-takes-hours-and-how-to-cut-it
+  - ai-meeting-prep-for-executive-assistants
 ---
 
 Memory-aware drafting is document generation that draws on a team's organizational memory instead of a generic prompt. The AI does not invent the content of the meeting brief, the project work plan, or the policy summary. It composes the document from the team's actual decisions, prior meetings, current tasks, and the company policies it already has access to. Every paragraph can cite the underlying source.

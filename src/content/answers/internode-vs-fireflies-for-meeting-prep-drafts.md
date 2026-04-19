@@ -31,8 +31,6 @@ relatedSlugs:
 
 Fireflies AI is the best post-meeting summarizer when you want a fast recap inside the Fireflies recording view. Internode is the drafter that composes the pre-meeting brief from your team's decision history across weeks of calls, email, and chat. Pick Fireflies for summaries after the fact. Use Internode when the brief you walk in with has to ground in real team memory.
 
-Looking for the general capture-side comparison? See [/internode-vs-fireflies](/internode-vs-fireflies).
-
 ## Side-by-side on the drafting axes that decide the brief
 
 | Axis | Internode | Fireflies AI |

@@ -27,9 +27,12 @@ relatedSlugs:
   - ai-pm-agent
   - memory-aware-drafting
   - internode-vs-clickup-ai-for-work-plans
+  - internode-vs-asana-ai
 ---
 
 Asana AI Studio is the best plan and workflow builder for teams who already run portfolios, goals, and OKRs inside Asana. Internode is the work-plan agent for teams whose real decisions happen in meetings, calls, email, and Slack, and who want every section of the plan to cite the conversation that produced it. Pick Asana AI Studio for the portfolio surface. Add Internode when the plan needs to reflect what the team actually decided.
+
+Looking for the general task-management comparison? See [/internode-vs-asana-ai](/internode-vs-asana-ai).
 
 ## Side-by-side on the axes that decide your next work plan
 

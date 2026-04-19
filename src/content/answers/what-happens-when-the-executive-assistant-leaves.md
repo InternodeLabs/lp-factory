@@ -25,6 +25,7 @@ relatedSlugs:
   - how-executive-assistants-stop-being-the-only-person-who-remembers
   - what-is-institutional-knowledge-and-why-teams-lose-it
   - use-case-new-ea-onboarding-without-predecessor-documentation
+  - use-case-executive-assistant-tracking-decisions-across-meetings
 ---
 
 More than half of executive assistants leave their role within two years. When they go, the organization loses something it cannot easily replace: the operational knowledge that made everything work. Travel preferences, stakeholder relationship context, decision history, vendor contacts, the reasoning behind recurring processes, and the thousand small details that an EA accumulates over months and years of proximity to leadership. Most of this knowledge was never documented in a transferable form. It lived in the EA's head and in personal notes that leave when they do.

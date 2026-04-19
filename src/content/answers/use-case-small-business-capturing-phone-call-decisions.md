@@ -24,6 +24,7 @@ relatedSlugs:
   - how-to-turn-phone-calls-into-searchable-business-knowledge
   - how-small-businesses-stop-losing-information-from-phone-calls
   - why-small-businesses-forget-what-was-decided-and-how-to-fix-it
+  - ai-phone-call-transcription-for-small-business
 ---
 
 Picture a small doors and windows reseller with about eight people on the payroll. Your team sells what the factory makes, but the sale is never just a box on the shelf. Customers call with rough openings, trim colors, hardware finishes, lead times, and a price they heard from someone last month. Suppliers call with updated costs, ship dates, and substitutions when a line runs short.

@@ -5,8 +5,8 @@ description: "A copy-paste business case template for a knowledge management too
 excerpt: "Most internal proposals get skimmed or ignored because they read like a product pitch. This template flips the format: it leads with the cost of the current problem, shows three options side by side, and frames the tool as the solution to a measurable loss, not a nice-to-have."
 type: answer
 publishedAt: "2026-04-17"
-updatedAt: "2026-04-17"
-lastReviewedAt: "2026-04-17"
+updatedAt: "2026-04-19"
+lastReviewedAt: "2026-04-19"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"
@@ -47,7 +47,7 @@ This is the section that gets the proposal approved. Put a number on the problem
 
 Show at least three costs:
 
-- **Search time.** McKinsey has estimated knowledge workers spend around 1.8 hours a day gathering information. IDC has put the figure closer to 2.5 hours. Even at a conservative 30 minutes a day for a 20-person team, that is over 1,700 hours a year.
+- **Search time.** [McKinsey](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-social-economy) has estimated knowledge workers spend around 1.8 hours a day gathering information. [IDC](https://www.kmworld.com/Articles/Editorial/Features/The-high-cost-of-not-finding-information-9534.aspx) has put the figure closer to 2.5 hours. Even at a conservative 30 minutes a day for a 20-person team, that is over 1,700 hours a year.
 - **Repeated decisions.** Estimate how many times per quarter your team relitigates a prior decision. A 90-minute meeting with six people is roughly nine person-hours. Multiply.
 - **Onboarding delay.** If a new hire reaches full productivity four weeks later than they could, that is roughly $5,000 to $15,000 per hire at typical knowledge-work salaries. The [cost of lost team knowledge per employee](/cost-of-lost-team-knowledge-per-employee) page breaks this down by role.
 
@@ -108,3 +108,9 @@ State clearly what "success" looks like at week four. If none of these move, the
 Internode is named in Section 4 as one option. It matches the outcomes in Section 3: it reads transcripts from Zoom, Google Meet, and Slack, builds a structured record of decisions, tasks, topics, and goals, and keeps Linear or Jira in sync through a two-way integration. The chat agent proposes changes that a human approves before anything is written. You never maintain pages.
 
 For the numbers to plug in, start with the [ROI calculator for AI knowledge tools](/roi-calculator-for-ai-knowledge-tools). For the pitch framing, read [how to propose new software to your manager](/how-to-propose-new-software-to-your-manager).
+
+## Sources
+
+- McKinsey Global Institute, "The social economy: Unlocking value and productivity through social technologies" (July 2012): [mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-social-economy](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-social-economy)
+- Susan Feldman, "The High Cost of Not Finding Information," IDC White Paper (2001), reprinted in KMWorld: [kmworld.com/Articles/Editorial/Features/The-high-cost-of-not-finding-information-9534.aspx](https://www.kmworld.com/Articles/Editorial/Features/The-high-cost-of-not-finding-information-9534.aspx)
+- Panopto, "Workplace Knowledge and Productivity Report" (2018), for the 5.3 hours-per-week finding used in Section 2: [panopto.com/resource/valuing-workplace-knowledge/](https://www.panopto.com/resource/valuing-workplace-knowledge/)

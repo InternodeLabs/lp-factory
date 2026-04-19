@@ -24,9 +24,11 @@ ogImageAlt: "Internode super-human memory for team alignment, surfacing daily sy
 ctaHref: "https://app.internode.ai"
 ctaLabel: "Try Internode as your agent memory layer"
 relatedSlugs:
-  - building-memory-for-ai-agents
+  - why-ai-agents-need-decision-memory
   - what-is-organizational-memory
-  - when-rag-is-not-enough
+  - what-is-organizational-memory-for-ai-agents
+  - internode-vs-letta-for-agent-memory
+  - internode-vs-zep-for-agent-memory
 ---
 
 Mem0 is the best drop-in memory SDK for a single-agent prototype that needs per-user key-value recall in one app. Internode is the team-scoped memory layer for agents that need structured records, a clear trail from every memory back to the conversation that produced it, and ingestion from real meetings, calls, email, and chat. Pick Mem0 for a single-agent SDK. Pick Internode when the agent needs to reason over what a team has decided together.

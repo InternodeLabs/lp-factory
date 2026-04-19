@@ -5,8 +5,8 @@ description: "A playbook for proposing new software internally: framing the prob
 excerpt: "Most software proposals die in the first 60 seconds because the employee leads with the tool, not the pain. This playbook flips the order. You build the problem first, pre-empt the three objections your manager always raises, and only name the tool after they are already leaning in."
 type: answer
 publishedAt: "2026-04-17"
-updatedAt: "2026-04-17"
-lastReviewedAt: "2026-04-17"
+updatedAt: "2026-04-19"
+lastReviewedAt: "2026-04-19"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"
@@ -50,7 +50,7 @@ Once the problem is visible, put a number on it. Your manager does not need a pr
 
 Pick one cost and one source:
 
-- "Employees lose 5.3 hours a week looking for information or recreating it." (Panopto, Workplace Knowledge and Productivity Report, 2018)
+- "Employees lose 5.3 hours a week looking for information or recreating it." ([Panopto, Workplace Knowledge and Productivity Report, 2018](https://www.panopto.com/resource/valuing-workplace-knowledge/))
 - Multiply by your team size, hours worked per year, and a conservative fully-loaded cost.
 
 Put one sentence in bold: "At our current team size, this is roughly $X per year." That is the sentence your manager will repeat to their own boss.
@@ -124,3 +124,8 @@ Two things limit the downside:
 - The proposal itself, done well, is a piece of work your manager will remember. A thoughtful proposal with clear math, a pilot scope, and pre-empted objections is a promotion-level artifact even if the tool is rejected.
 
 If you are unsure whether your team has the kind of problem that warrants this, start with [how to tell if your team has a knowledge management problem](/how-to-tell-if-your-team-has-a-knowledge-management-problem).
+
+## Sources
+
+- Panopto, "Workplace Knowledge and Productivity Report" (2018), source of the 5.3-hours-a-week figure used in Step 2: [panopto.com/resource/valuing-workplace-knowledge/](https://www.panopto.com/resource/valuing-workplace-knowledge/)
+- McKinsey Global Institute, "The social economy: Unlocking value and productivity through social technologies" (July 2012), for the complementary 1.8-hours-a-day estimate: [mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-social-economy](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-social-economy)

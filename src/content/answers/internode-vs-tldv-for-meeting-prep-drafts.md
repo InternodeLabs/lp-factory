@@ -31,8 +31,6 @@ relatedSlugs:
 
 tldv is the best searchable video clip library when you want to rewatch moments from past recorded meetings. Internode is the drafter that composes the pre-meeting brief from the team's decision history across weeks of calls, email, and chat. Use tldv when you want to rewatch a clip. Use Internode when the brief has to ground in decisions and tasks the team already agreed on.
 
-Looking for the general capture-side comparison? See [/internode-vs-tldv](/internode-vs-tldv).
-
 ## Side-by-side on the drafting axes that decide the brief
 
 | Axis | Internode | tldv |

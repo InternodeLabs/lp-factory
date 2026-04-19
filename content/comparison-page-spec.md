@@ -74,6 +74,10 @@ This section is required on every `/internode-vs-*` page. A page without it read
 
 One paragraph that restates the recommended split: "<Competitor> for <narrow use>; Internode for <broader use>." Add the Internode CTA at the end of the paragraph naturally.
 
+### Mandatory skeleton-breaker (at least one per page)
+
+Keep the five-section order above intact. Within it, each comparison page must also include one structural variation chosen from the set defined in `content/writing-guide.md` (short FAQ block, one-paragraph named scenario, or numbered sequence of three to five steps). Do not add a sixth section; the breaker is placed inside "When to choose Internode", at the end of "Where <Competitor> wins", or just before "Bottom line". Two adjacent pages in the same cluster must not use the same breaker shape.
+
 ### Schema (handled automatically by [slug].astro)
 
 - The page emits `WebSite` + `Organization` + `WebPage` + `TechArticle` + `BreadcrumbList` + `FAQPage` (when H2s look like questions).

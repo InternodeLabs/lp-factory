@@ -31,8 +31,6 @@ relatedSlugs:
 
 Fathom is the best zero-setup in-meeting capture tool for a single Zoom call and a short AI summary afterward. Internode is the drafter that composes the pre-meeting brief from the team's decision history across weeks of calls, email, and chat. Use Fathom for a quick post-call summary. Use Internode when the brief you bring to the meeting has to ground in real team memory.
 
-Looking for the general capture-side comparison? See [/internode-vs-fathom](/internode-vs-fathom).
-
 ## Side-by-side on the drafting axes that decide the brief
 
 | Axis | Internode | Fathom |

@@ -25,6 +25,8 @@ relatedSlugs:
   - why-meeting-prep-takes-hours-and-how-to-cut-it
   - what-happens-when-the-executive-assistant-leaves
   - how-to-capture-decisions-from-meetings-without-writing-everything-down
+  - ai-meeting-prep-for-executive-assistants
+  - use-case-executive-assistant-tracking-decisions-across-meetings
 ---
 
 You track every decision your exec makes, every commitment from every meeting, and every follow-up that needs to happen this week. That knowledge lives in your head, your notebook, and maybe a Word document pinned to your taskbar. If you are out sick tomorrow, most of it vanishes. The problem is not your memory. The problem is that you are the system.

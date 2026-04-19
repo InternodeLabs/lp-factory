@@ -5,8 +5,8 @@ description: "A per-employee dollar figure for lost team knowledge, built from I
 excerpt: "Lost team knowledge is not a soft cost. Research from IDC, McKinsey, Panopto, and Gartner puts the per-employee annual loss somewhere between $10,000 and $20,000. This page shows how that figure is constructed, which sources to trust, and which assumptions you can adjust for your own team."
 type: answer
 publishedAt: "2026-04-17"
-updatedAt: "2026-04-17"
-lastReviewedAt: "2026-04-17"
+updatedAt: "2026-04-19"
+lastReviewedAt: "2026-04-19"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"
@@ -50,9 +50,9 @@ Most of the per-employee loss in the research comes from hours per week spent on
 
 This is the largest, most-cited component.
 
-- **IDC** has reported knowledge workers spend 25 to 30 percent of their workday searching for and gathering information. That is roughly 2 to 2.5 hours a day.
-- **McKinsey** (The Social Economy, 2012) estimated 1.8 hours a day, or about 9.3 hours a week.
-- **Gartner** has published similar figures, often in the 20 to 30 percent range.
+- [IDC](https://www.kmworld.com/Articles/Editorial/Features/The-high-cost-of-not-finding-information-9534.aspx), in Susan Feldman's "The High Cost of Not Finding Information" (2001, reprinted in KMWorld), reported knowledge workers spend 25 to 30 percent of their workday searching for and gathering information. That is roughly 2 to 2.5 hours a day.
+- [McKinsey Global Institute](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-social-economy) (The Social Economy, 2012) estimated 1.8 hours a day, or about 9.3 hours a week.
+- Gartner's research on knowledge-worker productivity has published similar figures, often in the 20 to 30 percent range.
 
 Not all of that search time is a problem a knowledge tool can solve. The slice a knowledge tool actually recovers is the portion spent looking for things your own team already knows. Industry estimates put that recoverable slice at 5 to 10 hours per week per employee for teams without organizational memory.
 
@@ -60,7 +60,7 @@ Not all of that search time is a problem a knowledge tool can solve. The slice a
 
 ## Input 2: Time lost recreating knowledge
 
-**Panopto** (Workplace Knowledge and Productivity Report, 2018) reported that employees spend 5.3 hours a week on average either waiting for information from colleagues or recreating knowledge that already existed. Panopto also estimated that knowledge inefficiencies cost large US companies (1,000-plus employees) about $47 million a year, which works out to a few thousand dollars per employee per year just from this one slice.
+[Panopto](https://www.panopto.com/resource/valuing-workplace-knowledge/) (Workplace Knowledge and Productivity Report, 2018) reported that employees spend 5.3 hours a week on average either waiting for information from colleagues or recreating knowledge that already existed. [Panopto also estimated](https://www.panopto.com/about/news/inefficient-knowledge-sharing-costs-large-businesses-47-million-per-year) that knowledge inefficiencies cost large US companies (1,000-plus employees) about $47 million a year, which works out to a few thousand dollars per employee per year just from this one slice.
 
 This is distinct from Input 1. Search time is "I cannot find it." Rework time is "I gave up and did it again."
 
@@ -76,7 +76,7 @@ The cost grows fast for senior teams. A strategy meeting with eight vice preside
 
 ## Input 4: Onboarding drag
 
-New hires who cannot access the team's prior decisions, rationale, and context take longer to reach full productivity. Gartner and industry sources commonly cite the cost of ramp-up as 30 to 50 percent of first-year salary. Conservatively, three extra weeks of ramp-up costs roughly $7,000 to $10,000 for a $120,000 hire.
+New hires who cannot access the team's prior decisions, rationale, and context take longer to reach full productivity. [SHRM's retention research](https://www.shrm.org/about/press-room/shrm-reports-offer-key-retention-data-ways-to-improve-turnover-without-breaking-bank) puts the total replacement cost of a departing employee at six to nine months of their salary, and industry HR sources commonly put the ramp-up portion alone at 30 to 50 percent of first-year salary. Conservatively, three extra weeks of ramp-up costs roughly $7,000 to $10,000 for a $120,000 hire.
 
 Applied across annual hiring: a team that hires one person per four employees per year (a 25 percent growth or replacement rate) absorbs about $2,000 per employee per year in avoidable ramp-up cost.
 
@@ -105,6 +105,14 @@ Do not use the default if your team is different. Adjust these three inputs firs
 - **Decision density.** Strategy and operations teams make more expensive decisions than execution teams.
 
 The output of this exercise is a single, cited per-employee number you put on page one of your proposal.
+
+## Sources
+
+- Susan Feldman, "The High Cost of Not Finding Information," IDC White Paper (2001), reprinted in KMWorld: [kmworld.com/Articles/Editorial/Features/The-high-cost-of-not-finding-information-9534.aspx](https://www.kmworld.com/Articles/Editorial/Features/The-high-cost-of-not-finding-information-9534.aspx)
+- McKinsey Global Institute, "The social economy: Unlocking value and productivity through social technologies" (July 2012): [mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-social-economy](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-social-economy)
+- Panopto, "Workplace Knowledge and Productivity Report" (2018): [panopto.com/resource/valuing-workplace-knowledge/](https://www.panopto.com/resource/valuing-workplace-knowledge/)
+- Panopto press release, "Inefficient Knowledge Sharing Costs Large Businesses $47 Million Per Year" (July 2018): [panopto.com/about/news/inefficient-knowledge-sharing-costs-large-businesses-47-million-per-year](https://www.panopto.com/about/news/inefficient-knowledge-sharing-costs-large-businesses-47-million-per-year)
+- SHRM, "SHRM Reports Offer Key Retention Data; Ways to Improve Turnover Without Breaking the Bank" (retention and turnover-cost summary): [shrm.org/about/press-room/shrm-reports-offer-key-retention-data-ways-to-improve-turnover-without-breaking-bank](https://www.shrm.org/about/press-room/shrm-reports-offer-key-retention-data-ways-to-improve-turnover-without-breaking-bank)
 
 ## Where Internode fits
 

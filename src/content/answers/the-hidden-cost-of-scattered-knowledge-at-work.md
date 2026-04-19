@@ -5,8 +5,8 @@ description: "Scattered knowledge costs teams thousands of hours per year in rep
 excerpt: "Knowledge workers spend roughly 20% of their work week searching for internal information. When what your team discussed and agreed on lives in email threads, meeting notes, and people's heads, the frustration is the part you notice. The part you can put on a spreadsheet is the measurable lost productivity behind it."
 type: answer
 publishedAt: "2026-04-15"
-updatedAt: "2026-04-18"
-lastReviewedAt: "2026-04-18"
+updatedAt: "2026-04-19"
+lastReviewedAt: "2026-04-19"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"
@@ -31,7 +31,7 @@ Knowledge workers spend roughly 20% of their work week searching for internal in
 
 ## The time cost you can measure
 
-Research from McKinsey estimates that the average knowledge worker spends 1.8 hours per day searching for and gathering information. For a team of 20 people, that is 36 hours of collective search time every single day. Over a year, it amounts to more than 9,000 hours spent looking for things that should already be accessible.
+Research from the [McKinsey Global Institute](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-social-economy) (The Social Economy, 2012) estimates that the average knowledge worker spends 1.8 hours per day searching for and gathering information. For a team of 20 people, that is 36 hours of collective search time every single day. Over a year, it amounts to more than 9,000 hours spent looking for things that should already be accessible.
 
 Not all of that search time is avoidable. Some research is genuinely new. But a significant portion is people looking for things that already exist inside the organization: what was agreed in a meeting last month, who owns the follow-up on a client request, the context behind why the team chose one vendor over another, or the action items from a project kickoff that nobody wrote down.
 
@@ -75,3 +75,9 @@ If you are an employee who sees these costs but does not control the budget, the
 If you can trial tools on your own, start small. Record your next team meeting. Run the transcript through [Internode](https://app.internode.ai). Look at what it pulls out: the things your team agreed on, the action items with owners, the problems that were raised, the ideas worth revisiting. Then compare that to whatever notes someone took by hand. The difference makes the cost visible in a way that spreadsheets cannot.
 
 You do not need a perfect number here. You need enough of one to make an invisible cost visible on paper. Most organizations accept scattered knowledge as a fact of life because nobody has shown them the alternative.
+
+## Sources
+
+- McKinsey Global Institute, "The social economy: Unlocking value and productivity through social technologies" (July 2012): [mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-social-economy](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-social-economy)
+- Panopto, "Workplace Knowledge and Productivity Report" (2018), on the 5.3 hours per week lost to waiting for information and recreating knowledge: [panopto.com/resource/valuing-workplace-knowledge/](https://www.panopto.com/resource/valuing-workplace-knowledge/)
+- Susan Feldman, "The High Cost of Not Finding Information," IDC White Paper (2001), reprinted in KMWorld: [kmworld.com/Articles/Editorial/Features/The-high-cost-of-not-finding-information-9534.aspx](https://www.kmworld.com/Articles/Editorial/Features/The-high-cost-of-not-finding-information-9534.aspx)

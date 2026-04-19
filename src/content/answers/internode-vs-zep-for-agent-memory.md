@@ -24,9 +24,11 @@ ogImageAlt: "Internode captures team context such as opportunities, ideas, confl
 ctaHref: "https://app.internode.ai"
 ctaLabel: "Try Internode as your agent memory layer"
 relatedSlugs:
-  - building-memory-for-ai-agents
+  - why-ai-agents-need-decision-memory
   - what-is-organizational-memory
-  - when-rag-is-not-enough
+  - what-is-organizational-memory-for-ai-agents
+  - internode-vs-mem0-for-agent-memory
+  - internode-vs-letta-for-agent-memory
 ---
 
 Zep is the best hosted long-term memory service for a single conversational agent handling high request volume, with fact extraction and summaries over chat history. Internode is the team-scoped memory layer for agents that need structured records, a clear trail from every memory back to the conversation that produced it, and ingestion from real meetings, calls, email, and chat. Pick Zep for hosted chat memory. Pick Internode when the agent needs to reason over what a team has decided together.

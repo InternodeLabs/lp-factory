@@ -25,6 +25,7 @@ relatedSlugs:
   - how-to-turn-phone-calls-into-searchable-business-knowledge
   - why-small-businesses-forget-what-was-decided-and-how-to-fix-it
   - how-to-organize-customer-and-supplier-commitments-without-a-crm
+  - ai-phone-call-transcription-for-small-business
 ---
 
 Phone calls carry the details that keep your business running: exact measurements for an order, a supplier's price, a shifted delivery date, or a job site change your crew needs tomorrow. When those details live only in memory, a sticky note, or a chat that scrolls away, your team loses time and trust.

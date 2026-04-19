@@ -332,7 +332,15 @@ On every answer and use-case page, force at least one section to break that skel
 - A side-by-side that is not a comparison table (two approaches in prose).
 - A "how to recognize this on your team" diagnostic list.
 
-`/internode-vs-*` pages are exempt from this rule. Their section order (intro, comparison table, When to choose Internode, Where the competitor wins, Bottom line) is mandatory under `content/comparison-page-spec.md` and must not be broken for variety.
+`/internode-vs-*` pages must keep the mandated section order (intro, comparison table, When to choose Internode, Where the competitor wins, Bottom line) from `content/comparison-page-spec.md`. That section order is not optional and reordering it is not the skeleton-breaker.
+
+Within that order, every comparison page must still include at least one skeleton-breaker chosen from a limited set, so the cluster does not read as 29 identical templates:
+
+- A short FAQ block of two or three question-and-answer pairs tied to the specific buying question this pair surfaces. The site auto-emits FAQ schema from question-shaped H2s, so this option adds structured data for free.
+- A one-paragraph named scenario placed after the "Where the competitor wins" section. Format: "A head of product running a renewal call walks in with..." followed by four or five sentences that walk the scenario to its outcome. No heading; it reads as a short bridge before the Bottom line.
+- A numbered sequence of three to five steps placed inside "When to choose Internode". Format: "If you are picking today: (1) check your capture surface, (2) check your sync, (3) check your turnover story." The numbered list replaces one of the bullet blocks in that section, it does not add a new section.
+
+Pick one per page. Do not use the same skeleton-breaker shape on two adjacent comparison pages in the same cluster (granola, otter, read-ai share a cluster; use a different breaker on each). The goal is that the first screen of the page is distinguishable between any two vs-pages even with the competitor name covered.
 
 ---
 

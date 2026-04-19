@@ -24,9 +24,11 @@ ogImageAlt: "Internode AI dashboard surfacing today's priority ideas, tasks and 
 ctaHref: "https://app.internode.ai"
 ctaLabel: "Try Internode as your agent memory layer"
 relatedSlugs:
-  - building-memory-for-ai-agents
+  - why-ai-agents-need-decision-memory
   - what-is-organizational-memory
-  - when-rag-is-not-enough
+  - what-is-organizational-memory-for-ai-agents
+  - internode-vs-mem0-for-agent-memory
+  - internode-vs-zep-for-agent-memory
 ---
 
 Letta is the best stateful agent runtime for teams building a custom single-agent system from scratch with clean memory-management APIs and editable memory blocks. Internode is the team-scoped memory layer for agents that need structured records, a clear trail from every memory back to the conversation that produced it, and ingestion from real meetings, calls, email, and chat. Pick Letta for the agent runtime. Pick Internode when the agent needs to reason over what a team has decided together.

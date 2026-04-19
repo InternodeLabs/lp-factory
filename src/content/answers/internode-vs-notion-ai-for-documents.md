@@ -27,9 +27,12 @@ relatedSlugs:
   - memory-aware-drafting
   - internode-vs-chatgpt-for-documents
   - internode-vs-microsoft-copilot-for-documents
+  - internode-vs-notion-ai
 ---
 
 Notion AI is the best in-workspace drafting assistant for teams that already keep their knowledge in Notion pages. Internode is the memory-aware drafting system for teams whose real decisions live in meetings, phone calls, email, and chat. Pick Notion AI to rewrite and extend pages you already typed. Use Internode to draft documents grounded in the decisions your team never wrote down.
+
+Looking for the broader Notion AI knowledge-management comparison? See [/internode-vs-notion-ai](/internode-vs-notion-ai).
 
 ## Side-by-side on the axes that matter
 

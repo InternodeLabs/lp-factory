@@ -5,8 +5,8 @@ description: "Internode vs Otter on meeting prep drafting: grounding in decision
 excerpt: "Otter is the best transcript recall tool when you need to verify a direct quote from an earlier Otter meeting. Internode is the drafter that composes the pre-meeting brief from your team's decision history across weeks of calls, email, and chat. Use Otter for quote lookups; use Internode when the brief has to ground in everything your team has already decided."
 type: answer
 publishedAt: "2026-04-17"
-updatedAt: "2026-04-17"
-lastReviewedAt: "2026-04-17"
+updatedAt: "2026-04-19"
+lastReviewedAt: "2026-04-19"
 author:
   name: "Balazs Ketyi"
   role: "Co-founder and CPO"
@@ -55,6 +55,8 @@ Looking for the general capture-side comparison? See [/internode-vs-otter](/inte
 ## Where Otter wins
 
 Otter has the best transcript search bar for verifying a direct quote from one of its own recordings. If your workflow is "someone said something specific in that call last Tuesday and I need the exact words", Otter's recall on its own transcripts is strong and familiar to readers who already use it. The trade-off is that Otter draws its drafts from the recordings it made, not from the team's broader memory. A brief grounded in one Otter call cannot include a decision made in a meeting Otter did not record, a Slack thread that moved the decision forward, or an email that revised the plan yesterday. Internode drafts from the record the team builds from all those sources.
+
+A head of customer success opens her calendar on Tuesday morning and sees a renewal call at 11 with a strategic account. In Otter, she would queue the last recorded call with that customer and skim the auto-summary while her coffee cools. In Internode, she opens the brief the agent drafted overnight: it names the two pricing decisions the team made across three calls, the open question from yesterday's email thread with the champion, the blocker raised in Slack on Friday, and the commitment she made on the phone last week that the CFO needs to hear about. Same calendar, same eleven o'clock, different level of ready.
 
 ## Bottom line
 

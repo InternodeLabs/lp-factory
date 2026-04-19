@@ -5,8 +5,8 @@ description: "Internode vs Asana AI on an AI PM agent: capture from conversation
 excerpt: "Asana is the best cross-team project portfolio tool for non-engineering work. Internode is the AI PM agent that captures tasks from Zoom, phone calls, email, and Slack, links each task to the decision that produced it, and mutates the plan in bulk. Use Asana for portfolio planning; add Internode for the capture loop and decision memory."
 type: answer
 publishedAt: "2026-04-17"
-updatedAt: "2026-04-17"
-lastReviewedAt: "2026-04-17"
+updatedAt: "2026-04-19"
+lastReviewedAt: "2026-04-19"
 author:
   name: "Balazs Ketyi"
   role: "Co-founder and CPO"
@@ -31,6 +31,8 @@ relatedSlugs:
 
 Asana is the best cross-team project portfolio tool for marketing, operations, and non-engineering work. Internode is the AI PM agent that captures tasks from Zoom, phone calls, email, and Slack, links each task to the decision that produced it, and changes many tasks at once on your approval. Choose Asana for portfolio planning across business functions. Add Internode for the capture loop and the decision memory that Asana AI Studio does not produce.
 
+> Looking for the work-plan drafting angle? See [/internode-vs-asana-ai-studio-for-work-plans](/internode-vs-asana-ai-studio-for-work-plans).
+
 ## Side-by-side on the axes that decide your day
 
 | Axis | Internode | Asana AI |
@@ -50,6 +52,14 @@ Asana is the best cross-team project portfolio tool for marketing, operations, a
 - Sales and ops share a board and the sales follow-ups bury the ops work. Internode separates customer commitments from internal action items so each team sees its own slice.
 - An executive asks "why are we shipping the partner microsite in two waves?" and the answer is in a Zoom call from three weeks ago. Internode surfaces the decision with its reasoning in one query.
 - The VP wants to rebalance a portfolio: move thirty tasks into a new project, set the new priority, and reassign them. Internode proposes all of that as one approval card.
+
+If you are picking today, walk the decision in five steps:
+
+1. Check your capture surface. If more than a third of your commitments come out of phone calls or email threads, Asana AI alone will miss them.
+2. Check your sync story. If Linear or Jira is your source of truth for engineering, Asana owns a portfolio view that sits outside that loop.
+3. Check whether you need a decision-to-task trail. If an executive will ask "why" six weeks after the fact, the answer needs to live with the task.
+4. Check whether you need bulk moves from a chat prompt. If portfolio-scale shuffles happen every cycle, clicking through the Asana UI is the cost.
+5. Check the turnover story. If the team will be different in two quarters, the record needs to survive the people.
 
 ## Where Asana wins
 

@@ -5,8 +5,8 @@ description: "A step-by-step ROI calculator for an AI knowledge tool, with worke
 excerpt: "Most ROI pitches for knowledge tools sound like vendor math. This one uses four concrete inputs your manager can push back on: hours lost to searching, cost of duplicated decisions, cost of slow onboarding, and cost of turnover wiping team knowledge. You get one defensible number to put on page one of your proposal."
 type: answer
 publishedAt: "2026-04-17"
-updatedAt: "2026-04-17"
-lastReviewedAt: "2026-04-17"
+updatedAt: "2026-04-19"
+lastReviewedAt: "2026-04-19"
 author:
   name: "Sean Shadmand"
   role: "Co-founder and President"
@@ -37,9 +37,9 @@ You do not need perfect numbers. You need ranges your manager can challenge with
 
 Start here. The research varies by methodology.
 
-- **McKinsey** (The Social Economy, 2012) put the figure at roughly 1.8 hours a day, or 9 hours a week.
-- **IDC** has reported knowledge workers spending around 2.5 hours a day on information-seeking tasks.
-- **Panopto** (Workplace Knowledge and Productivity Report, 2018) found employees spent 5.3 hours a week waiting on colleagues for information or recreating knowledge that already existed.
+- [McKinsey Global Institute](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-social-economy) (The Social Economy, 2012) put the figure at roughly 1.8 hours a day, or 9 hours a week.
+- [IDC](https://www.kmworld.com/Articles/Editorial/Features/The-high-cost-of-not-finding-information-9534.aspx) (Susan Feldman, "The High Cost of Not Finding Information", 2001) has reported knowledge workers spending around 2.5 hours a day on information-seeking tasks.
+- [Panopto](https://www.panopto.com/resource/valuing-workplace-knowledge/) (Workplace Knowledge and Productivity Report, 2018) found employees spent 5.3 hours a week waiting on colleagues for information or recreating knowledge that already existed.
 
 For the calculator, pick a conservative middle figure: 5 hours per person per week. If challenged, cite Panopto; it is the most recent and most employee-reported of the three.
 
@@ -67,7 +67,7 @@ This is smaller than search time, but managers feel it personally. Most have sat
 
 ## Input 3: Onboarding cost without institutional memory
 
-A new knowledge worker typically reaches full productivity in 8 to 12 weeks. Gartner and others put the ramp-up cost of a new hire at 30 to 50 percent of first-year salary.
+A new knowledge worker typically reaches full productivity in 8 to 12 weeks. [SHRM's retention research](https://www.shrm.org/about/press-room/shrm-reports-offer-key-retention-data-ways-to-improve-turnover-without-breaking-bank) puts the full replacement cost at six to nine months of salary, and the ramp-up portion alone typically lands at 30 to 50 percent of first-year salary.
 
 Without organizational memory, ramp-up is slower because the new hire shadows people, asks questions new hires always ask, and reconstructs context that is nowhere written down. Teams with searchable decision history typically cut that ramp time by two to four weeks.
 
@@ -81,7 +81,7 @@ This input scales directly with hiring velocity. If you are growing, this number
 
 ## Input 4: Cost of turnover wiping team knowledge
 
-When a long-tenured teammate leaves, institutional knowledge goes with them. The full cost of losing a knowledge worker is commonly estimated at 50 to 200 percent of annual salary (SHRM and others have published in this range), but not all of that is knowledge loss. A conservative slice specific to knowledge loss (retraining, rediscovery, slower decisions in their absence) is about 15 percent of annual salary.
+When a long-tenured teammate leaves, institutional knowledge goes with them. The full cost of losing a knowledge worker is commonly estimated at 50 to 200 percent of annual salary ([SHRM](https://www.shrm.org/about/press-room/shrm-reports-offer-key-retention-data-ways-to-improve-turnover-without-breaking-bank) and others have published in this range), but not all of that is knowledge loss. A conservative slice specific to knowledge loss (retraining, rediscovery, slower decisions in their absence) is about 15 percent of annual salary.
 
 **Formula:**
 `Annual knowledge-loss cost from attrition = expected departures x knowledge-loss slice of their cost`
@@ -117,3 +117,10 @@ Any AI knowledge tool can claim recovery. What matters is the mechanism.
 ## Next step
 
 Keep your real numbers conservative. A defensible $100,000 savings claim beats an aggressive $500,000 claim your manager can pick apart. For the stats page you can cite alongside this, read [the cost of lost team knowledge per employee](/cost-of-lost-team-knowledge-per-employee).
+
+## Sources
+
+- McKinsey Global Institute, "The social economy: Unlocking value and productivity through social technologies" (July 2012): [mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-social-economy](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-social-economy)
+- Susan Feldman, "The High Cost of Not Finding Information," IDC White Paper (2001), reprinted in KMWorld: [kmworld.com/Articles/Editorial/Features/The-high-cost-of-not-finding-information-9534.aspx](https://www.kmworld.com/Articles/Editorial/Features/The-high-cost-of-not-finding-information-9534.aspx)
+- Panopto, "Workplace Knowledge and Productivity Report" (2018): [panopto.com/resource/valuing-workplace-knowledge/](https://www.panopto.com/resource/valuing-workplace-knowledge/)
+- SHRM, "SHRM Reports Offer Key Retention Data; Ways to Improve Turnover Without Breaking the Bank" (turnover-cost and retention research summary): [shrm.org/about/press-room/shrm-reports-offer-key-retention-data-ways-to-improve-turnover-without-breaking-bank](https://www.shrm.org/about/press-room/shrm-reports-offer-key-retention-data-ways-to-improve-turnover-without-breaking-bank)
