@@ -1,28 +1,29 @@
 ---
 name: add-landing-page
-description: Add a new landing page campaign to the LP factory. Use when the user wants to create a new landing page, add a campaign, or set up a new LP for an ad campaign.
+description: Add or update an Astro landing page campaign in the LP factory. Use when the user wants to create a new landing page, add an ad campaign, or change LP config, sections, assets, tracking, or deployment checks.
 ---
 
 # Add a Landing Page
 
 ## Architecture overview
 
-- One file to edit: `src/config/campaigns.ts` — add an entry to the `campaigns` Map.
-- Types live in `src/config/types.ts` (read-only reference; don't edit unless adding a new section type).
-- Routing is automatic: `src/app/lp/[slug]/page.tsx` uses `generateStaticParams` from the map. New slug → new page at `/lp/<slug>`.
-- Sections render in array order via `LpSectionBody.tsx`.
+- Add the campaign entry in `src/config/campaigns.ts`. That map is the source of truth.
+- Types live in `src/config/types.ts`. Use it as the section schema reference.
+- Routing is Astro-based: `src/pages/lp/[slug].astro` uses `getStaticPaths()` from the campaign map. New slug -> new page at `/lp/<slug>`.
+- Sections render in array order directly inside `src/pages/lp/[slug].astro`.
+- Landing page components live in `src/components/lp/`. Some are `.astro`, some are React islands.
 
 ## Step-by-step
 
 ### 1. Choose a slug
 
-- Lowercase, kebab-case, descriptive of the campaign angle (e.g. `founders-decision-memory`).
-- The slug becomes both the Map key **and** the `slug` field in the config.
-- It appears in the URL: `/lp/<slug>`.
+- Use lowercase kebab-case, descriptive of the campaign angle, for example `founders-decision-memory`.
+- The slug must be both the map key and the `slug` field in the config.
+- The page URL will be `/lp/<slug>`.
 
 ### 2. Add the config entry
 
-Open `src/config/campaigns.ts` and add a new entry to the `campaigns` Map:
+Open `src/config/campaigns.ts` and add a new entry to the `campaigns` map:
 
 ```typescript
 [
@@ -31,26 +32,26 @@ Open `src/config/campaigns.ts` and add a new entry to the `campaigns` Map:
     slug: "<slug>",
     meta: {
       title: "Page <title> tag",
-      description: "Meta description for SEO / social sharing",
-      // ogImage: "https://..." — optional Open Graph image URL
+      description: "Meta description for SEO and sharing",
+      // ogImage: "https://..." // optional
     },
     theme: {
-      primaryColor: "#hex",   // brand / CTA colour
-      accentColor: "#hex",    // gradient accent
-      darkMode: true,         // true = dark background, false = light
+      primaryColor: "#hex",
+      accentColor: "#hex",
+      darkMode: true,
     },
     sections: [
-      // see section reference below — order here = order on page
+      // section order here is the page order
     ],
     cta: {
-      text: "CTA label (used as fallback)",
+      text: "CTA label used as fallback",
       href: "https://target-url",
-      style: "primary",       // "primary" | "outline" | "ghost"
+      style: "primary", // "primary" | "outline" | "ghost"
     },
     tracking: {
-      campaignId: "unique-id-for-posthog",  // appears in PostHog group
-      source: "linkedin",                    // traffic source tag
-      conversionEvent: "signup_click",       // event name on CTA click
+      campaignId: "unique-id-for-posthog",
+      source: "linkedin",
+      conversionEvent: "signup_click",
     },
   } satisfies CampaignConfig,
 ],
@@ -58,88 +59,144 @@ Open `src/config/campaigns.ts` and add a new entry to the `campaigns` Map:
 
 ### 3. Images
 
-Campaign-specific images go in `public/images/<slug>/` (e.g. `public/images/decision-facepalm/hero-product.png`).
-
-Images shared across all landing pages go in `public/images/shared/` (e.g. `public/images/shared/logo-dark.svg`). Reference them in config as `/images/shared/<filename>`.
+- Store campaign-specific assets in `public/images/<slug>/`.
+- Store shared landing page assets in `public/images/shared/`.
+- Reference assets from config with site-root paths such as `/images/<slug>/hero-product.png`.
 
 ### 4. Build the sections array
 
-Include sections in this recommended order. All are optional except `hero`.
+All campaigns need at least a `hero`. Common order:
 
-| type | required fields | notes |
-|------|----------------|-------|
-| `hero` | `headline`, `subheadline`, `ctaText` | Optional `backgroundImage` (URL). CTA links to `cta.href`. |
-| `pain-points` | `title`, `points[]` (`icon`, `title`, `description`) | `icon`: emoji or Lucide icon name. |
-| `features` | `title`, `features[]` (`title`, `description`, `icon`) | Same icon rules. |
-| `social-proof` | `title`, `testimonials[]` (`quote`, `name`, `role`, `company`) | Optional `logoUrl` per testimonial. |
-| `faq` | `title`, `items[]` (`question`, `answer`) | First item opens by default. |
-| `final-cta` | `headline`, `subheadline`, `ctaText` | Button links to `cta.href`. |
+1. `hero`
+2. `pain-points`
+3. `how-it-works`
+4. `features`
+5. `social-proof`
+6. `live-demo` or `tab-showcase`
+7. `faq`
+8. `final-cta`
 
-**Icons** — Use emoji (e.g. `"⚡"`) or a Lucide icon name in PascalCase or kebab-case (e.g. `"Zap"` or `"zap"`). Unknown names render as text fallback.
+Current section types:
+
+- `hero`
+  - Required: `headline`, `subheadline`, `ctaText`
+  - Optional: `subheadlineEmphasis`, `ctaSubtext`, `backgroundImage`, `heroImage`, `heroVideo`
+  - If `heroVideo` is set, also provide `heroImage` for the click-to-play poster.
+
+- `pain-points`
+  - Required: `title`, `points[]`
+  - Each point: `icon`, `title`, `description`
+
+- `how-it-works`
+  - Required: `title`, `steps[]`
+  - Each step: `step`, `title`, `description`
+  - Optional per step: `image`
+
+- `features`
+  - Required: `title`, `features[]`
+  - Each feature: `title`, `description`, `icon`
+
+- `social-proof`
+  - Required: `title`, `testimonials[]`
+  - Each testimonial: `quote`, `name`, `role`, `company`
+  - Optional per testimonial: `logoUrl`
+
+- `live-demo`
+  - Required: `demoUrl`
+  - Optional: `title`, `subtitle`, `posterImage`, `ctaText`
+
+- `tab-showcase`
+  - Required: `tabs[]`
+  - Optional: `title`, `subtitle`
+  - Each tab: `icon`, `label`, `image`
+  - Optional per tab: `alt`
+
+- `faq`
+  - Required: `title`, `items[]`
+  - Each item: `question`, `answer`
+
+- `final-cta`
+  - Required: `headline`, `subheadline`, `ctaText`
+  - Optional: `ctaSubtext`
+
+Icons may be emoji such as `"⚡"` or a Lucide icon name such as `"Zap"` or `"zap"`.
 
 ### 5. Tracking setup
 
-- `tracking.campaignId` — unique per campaign; used as PostHog group key.
-- `tracking.source` — matches the ad platform (`linkedin`, `google`, `twitter`, etc.).
-- `tracking.conversionEvent` — the PostHog event name fired on CTA clicks.
-- UTM params from the ad URL are captured automatically on pageview.
+- `tracking.campaignId` must be unique per campaign.
+- `tracking.source` should match the traffic source, for example `linkedin` or `google`.
+- `tracking.conversionEvent` is the PostHog event name used on CTA clicks.
+- UTM params from the landing page URL are captured automatically.
 
-Events fired automatically per LP:
-- `$pageview` with campaign group + UTMs
-- `section_viewed` per section (IntersectionObserver)
-- `section_time` with `visible_ms` on page leave
-- `scroll_depth` at 25/50/75/90/100%
-- `lp_click` on CTA clicks
+Events fired automatically on landing pages:
+
+- `$pageview`
+- `section_viewed`
+- `section_time`
+- `scroll_depth`
+- `lp_click`
+
+Some interactive sections also emit their own events.
 
 ### 6. Validate
+
+Run:
 
 ```bash
 pnpm build
 ```
 
-Build fails if the config doesn't satisfy `CampaignConfig`. `dynamicParams = false` means only slugs in the Map are valid routes.
+Recommended extra check:
 
-### 7. Verify locally in browser
+```bash
+pnpm lint
+```
 
-Run `pnpm dev`, visit `/lp/<slug>` and confirm:
-- All sections render in order
+`pnpm build` runs `astro build`. If the config does not satisfy `CampaignConfig` or the page cannot render, the build should fail.
+
+### 7. Verify locally
+
+Run `pnpm dev`, visit `/lp/<slug>`, and confirm:
+
+- The page loads with no Astro or hydration errors
+- All sections render in the expected order
 - CTA buttons link to `cta.href`
-- Dark/light mode matches `theme.darkMode`
-- No console errors
-- PostHog events appear (network tab → `/ingest/`)
+- Dark/light presentation matches `theme.darkMode`
+- Hero media, demo embeds, and tab showcases work if present
+- PostHog requests appear in the network tab under `/ingest/`
 
 ### 8. Deploy
 
 Commit and push to `main`. Vercel deploys automatically on push.
 
 ```bash
-git add src/config/campaigns.ts
+git add src/config/campaigns.ts public/images/<slug>
 git commit -m "add <slug> landing page for <source> ad campaign"
 git push origin main
 ```
 
-Wait ~60 s for Vercel to finish, then run the post-deploy browser review (see `.cursor/rules/post-deploy-browser-review.mdc`) to verify the live page at `https://www.internode-ai.com/lp/<slug>`.
+After deploy, follow `.cursor/rules/post-deploy-browser-review.mdc` and verify the live page at `https://www.internode-ai.com/lp/<slug>`.
 
 ## Adding a new section type
 
-If a campaign needs a section type that doesn't exist yet:
+If the campaign needs a section type that does not exist yet:
 
-1. Add the new variant to the `SectionConfig` union in `src/config/types.ts`.
-2. Create the component in `src/components/lp/`.
-3. Add a `case` to the switch in `src/components/lp/LpSectionBody.tsx`.
-4. Use the section in the campaign config.
+1. Add the new variant to `SectionConfig` in `src/config/types.ts`.
+2. Create the section component in `src/components/lp/`.
+3. Wire the new section into `src/pages/lp/[slug].astro`.
+4. Use the new section type in the campaign config.
 
 ## Checklist
 
-```
-- [ ] Slug is kebab-case, unique, and matches Map key
+```text
+- [ ] Slug is kebab-case, unique, and matches the map key
 - [ ] meta.title and meta.description are set
-- [ ] theme colours are valid hex
-- [ ] sections array has at least a hero
+- [ ] theme colors are valid hex values
+- [ ] sections include at least a hero
 - [ ] cta.href points to the correct destination
-- [ ] tracking.campaignId is unique across all campaigns
+- [ ] tracking.campaignId is unique across campaigns
 - [ ] pnpm build passes
 - [ ] Page renders correctly at /lp/<slug>
 - [ ] Committed and pushed to main
-- [ ] Post-deploy browser review passes on live site
+- [ ] Post-deploy browser review passes on the live site
 ```

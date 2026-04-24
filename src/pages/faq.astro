@@ -1,0 +1,107 @@
+---
+import ContentLayout from "@/layouts/ContentLayout.astro";
+import { FAQ_GROUPS, ALL_FAQ_ENTRIES } from "@/lib/faq";
+import {
+  CONTENT_SITE_URL,
+  DEFAULT_OG_IMAGE,
+  DEFAULT_OG_IMAGE_ALT,
+  absoluteUrl,
+} from "@/lib/site";
+import {
+  buildBreadcrumbSchema,
+  buildFaqSchema,
+  buildOrganizationSchema,
+  buildWebPageSchema,
+  buildWebSiteSchema,
+  wrapGraph,
+} from "@/lib/seo";
+
+const pageUrl = `${CONTENT_SITE_URL}/faq`;
+
+const title = "Frequently asked questions about organizational memory";
+const description =
+  "Common questions about organizational memory, decision memory, and memory-aware AI — with short answers and links to the full write-ups in the Internode content hub.";
+
+const jsonLd = wrapGraph(
+  buildWebSiteSchema(),
+  buildOrganizationSchema(),
+  buildWebPageSchema({
+    url: pageUrl,
+    name: title,
+    description,
+  }),
+  buildFaqSchema(
+    ALL_FAQ_ENTRIES.map((e) => ({
+      question: e.question,
+      answer: e.answer,
+    })),
+  ),
+  buildBreadcrumbSchema([
+    { name: "Home", url: absoluteUrl("/") },
+    { name: "FAQ", url: pageUrl },
+  ]),
+);
+---
+
+<ContentLayout
+  title={title}
+  description={description}
+  canonical={pageUrl}
+  ogImage={DEFAULT_OG_IMAGE}
+  ogImageAlt={DEFAULT_OG_IMAGE_ALT}
+  jsonLd={jsonLd}
+>
+  <main id="main-content" class="mx-auto max-w-4xl px-4 py-12 md:py-16">
+    <nav aria-label="Breadcrumb" class="mb-6 text-sm text-zinc-500">
+      <a href="/" class="hover:text-zinc-700">Home</a>
+      <span class="mx-1">/</span>
+      <span aria-current="page">FAQ</span>
+    </nav>
+
+    <header class="max-w-3xl space-y-4">
+      <h1 class="text-3xl font-semibold tracking-tight text-zinc-950 md:text-4xl">
+        Frequently asked questions
+      </h1>
+      <p class="text-lg leading-8 text-zinc-700">
+        Short answers to the questions teams most often ask us about
+        organizational memory, decision memory, and memory-aware AI. Each
+        answer links to the full canonical write-up.
+      </p>
+    </header>
+
+    <section class="mt-10 max-w-3xl space-y-12">
+      {FAQ_GROUPS.map((group) => (
+        <div>
+          <h2 class="text-sm font-semibold uppercase tracking-wide text-zinc-500">
+            {group.heading}
+          </h2>
+          <dl class="mt-4 space-y-6">
+            {group.entries.map((entry) => (
+              <div>
+                <dt class="font-medium text-zinc-950">{entry.question}</dt>
+                <dd class="mt-1 text-zinc-700">
+                  {entry.answer}{" "}
+                  <a
+                    href={`/${entry.canonicalSlug}`}
+                    class="font-medium text-zinc-950 hover:underline"
+                  >
+                    Read the full page →
+                  </a>
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      ))}
+    </section>
+
+    <section class="mt-14 max-w-3xl border-t border-zinc-200 pt-8 text-sm text-zinc-600">
+      <p>
+        Looking for something else? Browse the
+        <a href="/topics" class="font-medium text-zinc-950 hover:underline">topic index</a>,
+        return to the <a href="/" class="font-medium text-zinc-950 hover:underline">home page</a>,
+        or learn more on the <a href="/about" class="font-medium text-zinc-950 hover:underline">about page</a>.
+      </p>
+    </section>
+  </main>
+</ContentLayout>
