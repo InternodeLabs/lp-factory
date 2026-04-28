@@ -29,6 +29,27 @@ export type SectionConfig =
       headline: string;
       /** Small kicker label rendered above the H1 (e.g. "Prepared for Daniel @ Pario") */
       kicker?: string;
+      /** Optional URL — when set, the kicker renders as an external link */
+      kickerHref?: string;
+      /**
+       * Co-branded partner header rendered at the top of the hero (MOU style).
+       * When set, the Internode + partner logos are centered side-by-side with
+       * a soft divider. When unset, the default left-aligned Internode logo block is shown.
+       */
+      coBrand?: {
+        /** Partner display name (alt text + label) */
+        name: string;
+        /** Partner logo for light backgrounds */
+        logo: string;
+        /** Partner logo for dark backgrounds (falls back to `logo` if omitted) */
+        logoDark?: string;
+        /** Logo intrinsic width in pixels */
+        logoWidth?: number;
+        /** Logo intrinsic height in pixels */
+        logoHeight?: number;
+        /** Optional URL — when set, the partner logo links here */
+        href?: string;
+      };
       subheadline: string;
       /** Italic emphasis line rendered below the subheadline */
       subheadlineEmphasis?: string;

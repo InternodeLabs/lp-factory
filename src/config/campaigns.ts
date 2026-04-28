@@ -273,7 +273,16 @@ export const campaigns = new Map<string, CampaignConfig>([
       sections: [
         {
           type: "hero",
+          coBrand: {
+            name: "Pario.ai",
+            logo: "/images/ai-first-km/pario/pario-logo.png",
+            logoDark: "/images/ai-first-km/pario/pario-logo-white.png",
+            logoWidth: 440,
+            logoHeight: 260,
+            href: "https://pario.ai",
+          },
           kicker: "Prepared for Daniel @ Pario.ai",
+          kickerHref: "https://pario.ai",
           headline:
             "Your Wiki Is Going Stale Because of How You Write, Not Who Writes.",
           subheadline:
