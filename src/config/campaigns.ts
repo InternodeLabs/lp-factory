@@ -261,9 +261,9 @@ export const campaigns = new Map<string, CampaignConfig>([
     {
       slug: "ai-first-km",
       meta: {
-        title: "Why Your Knowledge Base Goes Stale | Internode",
+        title: "Why Your Wiki Goes Stale, for Daniel @ Pario | Internode",
         description:
-          "Wikis go stale because writing and working are separate workflows. AI-first knowledge management makes work the input. 3 months free.",
+          "For Daniel at Pario: how to fix a stale knowledge base without anyone typing more. Four moves, a 30-minute test, 3 months Pro free.",
       },
       theme: {
         primaryColor: "#3B82F6",
@@ -273,13 +273,26 @@ export const campaigns = new Map<string, CampaignConfig>([
       sections: [
         {
           type: "hero",
-          headline: "Prepared for Daniel @ pario.ai: Your Wiki Is Going Stale Because of How You Write, Not Who Writes.",
+          kicker: "Prepared for Daniel @ Pario.ai",
+          headline:
+            "Your Wiki Is Going Stale Because of How You Write, Not Who Writes.",
           subheadline:
             "Pages are an output of writing. Decisions are an output of working. When those are two separate workflows, the wiki always loses. The fix is not more discipline. The fix is a knowledge model where work is the input and structured records are the output.",
           subheadlineEmphasis:
             "It is a workflow problem, not a people problem.",
           ctaText: "Try AI-first knowledge management",
           ctaSubtext: "3 months Pro for free. No credit card.",
+        },
+        {
+          type: "personal-note",
+          kicker: "From Istvan",
+          from: "Istvan Lorincz",
+          role: "Co-founder, Internode",
+          initials: "IL",
+          body:
+            "<p>Hi Daniel, this is the visual version of the playbook I mentioned. Same four moves, same 30-minute test, just easier to scan than a long doc.</p>" +
+            "<p>The reason this page exists at all is the Pario-sized variant from section 5 of the writeup: two co-founders carry the decision graph in their heads, the Notion workspace exists but neither of you opens it, and the cost lands the week your first non-founder engineer asks 'why did we ship that behind a flag?'</p>" +
+            "<p>If anything here resonates, just reply to my email and we will do a 15-minute walkthrough on Pario's own data. Or skip me entirely and run the test below on your next product call.</p>",
         },
         {
           type: "infographic",
@@ -329,19 +342,24 @@ export const campaigns = new Map<string, CampaignConfig>([
           title: "Yeah but...",
           items: [
             {
+              question: "We are only two co-founders. Do we even need this yet?",
+              answer:
+                "Today, no. You both remember every product call. The catch is the week your first non-founder engineer asks 'why did we ship that behind a flag?' and the honest answer is 'we talked about it on a Tuesday call, the reasoning is in our heads, the Slack thread is buried, and the Notion page is from before that call.' That is the moment the cost lands. Five recorded product calls a week build a usable decision graph by the end of month one, so the new hire can self-serve context in week two instead of pulling a co-founder out of a build session.",
+            },
+            {
+              question: "How is this different from Notion AI?",
+              answer:
+                "Architectural. Notion AI sits on top of pages humans wrote. It can summarize a page, answer a question about your workspace, draft text inside a block. It cannot write the page about a call it was not in, because no part of Notion is designed to ingest a meeting as a first-class input. Adding AI to Notion is like adding power steering to a horse-drawn carriage. Internode inverts the assumption: capture, structure, and maintenance are the AI's job by design. More: <a href=\"https://content.internode.ai/internode-vs-notion-ai\">Internode vs Notion AI</a>.",
+            },
+            {
               question: "Is this just an AI meeting bot?",
               answer:
                 "Meeting bots give you a transcript and a summary. Internode gives you a connected decision graph: decisions, owners, tasks, and prior reasoning, linked to every source moment. The transcript is a byproduct, not the output. More on the difference: <a href=\"https://content.internode.ai/ai-meeting-notes-vs-organizational-memory\">AI meeting notes vs organizational memory</a>.",
             },
             {
-              question: "What happens to our existing wiki?",
+              question: "What happens to our existing Notion?",
               answer:
-                "Internode does not replace your wiki. It changes the source of truth. The working layer (conversations, calls, chats) becomes the input, structured records become the source, and Internode proposes updates to your wiki when reality drifts. Humans still approve. See <a href=\"https://content.internode.ai/internode-vs-notion-as-a-wiki\">Internode vs Notion as a wiki</a> and <a href=\"https://content.internode.ai/ai-native-alternative-to-notion\">an AI-native alternative to Notion</a>.",
-            },
-            {
-              question: "Will my team actually use it?",
-              answer:
-                "That is the point: there is nothing for them to use. Internode plugs into the meetings, calls, and tools your team already uses. The behavior change is 'do nothing.' Knowledge accumulates as a side effect of working. Read more on <a href=\"https://content.internode.ai/the-knowledge-system-that-builds-itself\">the knowledge system that builds itself</a>.",
+                "Internode does not replace it. It changes the source of truth. The working layer (Zoom calls, Slack DMs, customer conversations) becomes the input, structured records become the source, and Internode proposes updates to your Notion pages when reality drifts. Humans still approve. See <a href=\"https://content.internode.ai/internode-vs-notion-as-a-wiki\">Internode vs Notion as a wiki</a> and <a href=\"https://content.internode.ai/ai-native-alternative-to-notion\">an AI-native alternative to Notion</a>.",
             },
             {
               question: "Why is the old wiki model broken?",
@@ -349,19 +367,19 @@ export const campaigns = new Map<string, CampaignConfig>([
                 "Pages are an output of writing. Decisions are an output of working. When you ask one workflow (working) to feed a different workflow (writing), the wiki loses every time the team is busy. AI-first means those workflows are the same workflow. Background reading: <a href=\"https://content.internode.ai/what-is-institutional-knowledge-and-why-teams-lose-it\">what institutional knowledge is and why teams lose it</a> and <a href=\"https://content.internode.ai/ai-knowledge-base-that-builds-itself\">an AI knowledge base that builds itself</a>.",
             },
             {
-              question: "What is the catch with three months free?",
+              question: "What is the catch with three months Pro free?",
               answer:
-                "No catch. No credit card. We are confident: once your team has connected, structured knowledge that updates itself, going back to a snapshot wiki feels like a downgrade you cannot unsee.",
+                "No catch. No credit card. We are confident: once Pario has connected, structured knowledge that updates itself, going back to a snapshot wiki feels like a downgrade you cannot unsee.",
             },
           ],
         },
         {
           type: "final-cta",
-          headline: "Run the 30-minute test.",
+          headline: "Run the 30-minute test, Daniel.",
           subheadline:
-            "Pick your next real product call. Record it. Run it through Internode. Compare the output to your hand notes, or to your stale wiki page. If the output is better than the page nobody wrote, the model works.",
+            "Pick your next real Pario product call. Record it. Run it through Internode. Compare the output to your hand notes, or to the Notion page that was never written. If the output is better than the page nobody wrote, the model works. Or just reply to my email and we will do a 15-minute walkthrough on your own data.",
           ctaText: "Start the 30-minute test",
-          ctaSubtext: "3 months Pro for free. No credit card.",
+          ctaSubtext: "3 months Pro free. No credit card. Or reply to Istvan's email.",
         },
       ],
       cta: {
@@ -370,8 +388,8 @@ export const campaigns = new Map<string, CampaignConfig>([
         style: "primary",
       },
       tracking: {
-        campaignId: "ai-first-km-q2-2026",
-        source: "linkedin",
+        campaignId: "ai-first-km-pario-daniel-q2-2026",
+        source: "outreach-email",
         conversionEvent: "signup_click",
       },
     } satisfies CampaignConfig,

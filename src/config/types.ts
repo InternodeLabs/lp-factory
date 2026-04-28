@@ -27,6 +27,8 @@ export type SectionConfig =
   | {
       type: "hero";
       headline: string;
+      /** Small kicker label rendered above the H1 (e.g. "Prepared for Daniel @ Pario") */
+      kicker?: string;
       subheadline: string;
       /** Italic emphasis line rendered below the subheadline */
       subheadlineEmphasis?: string;
@@ -118,6 +120,21 @@ export type SectionConfig =
       imageHeight?: number;
       /** Container max width: "narrow" = 2xl, "default" = 3xl, "wide" = 4xl */
       maxWidth?: "narrow" | "default" | "wide";
+    }
+  | {
+      type: "personal-note";
+      /** Author display name, e.g. "Istvan Lorincz" */
+      from: string;
+      /** Short role line, e.g. "Co-founder, Internode" */
+      role?: string;
+      /** Optional avatar image src */
+      avatar?: string;
+      /** Initials shown when no avatar (e.g. "IL"); falls back to first char of `from` */
+      initials?: string;
+      /** Small label above the author line, e.g. "From Istvan" */
+      kicker?: string;
+      /** Body content as HTML; rendered with set:html so links work */
+      body: string;
     }
   | {
       type: "final-cta";

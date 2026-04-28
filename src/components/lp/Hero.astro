@@ -55,6 +55,11 @@ const { theme, cta, tracking } = config;
     </div>
 
     <div class="mx-auto flex w-full max-w-5xl flex-1 flex-col justify-center text-center">
+      {section.kicker && (
+        <p class="mx-auto inline-flex items-center gap-2 rounded-full border border-[var(--lp-primary)]/30 bg-[var(--lp-primary)]/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-[var(--lp-primary)] md:text-sm">
+          {section.kicker}
+        </p>
+      )}
       <h1
         class={cn(
           "text-balance bg-gradient-to-br from-[var(--lp-primary)] via-[var(--lp-primary)] to-[var(--lp-accent)] bg-clip-text py-[30px] text-4xl font-bold tracking-tight text-transparent md:text-5xl lg:text-6xl",

@@ -1,0 +1,69 @@
+---
+import { cn } from "@/lib/utils";
+import type { SectionConfig } from "@/config/types";
+
+type PersonalNoteSection = Extract<SectionConfig, { type: "personal-note" }>;
+
+interface Props {
+  section: PersonalNoteSection;
+  darkMode: boolean;
+}
+
+const { section, darkMode } = Astro.props;
+const initials = section.initials ?? section.from.slice(0, 1).toUpperCase();
+---
+
+<section class={cn("py-12 px-4 md:py-16 md:px-8", darkMode && "dark")}>
+  <div class="mx-auto max-w-3xl">
+    <aside
+      class={cn(
+        "relative rounded-2xl border p-6 shadow-md backdrop-blur md:p-8",
+        "border-gray-200 bg-white/95 dark:border-gray-800 dark:bg-gray-900/60",
+        "ring-1 ring-[var(--lp-primary)]/10",
+      )}
+    >
+      <header class="flex items-center gap-3">
+        {section.avatar ? (
+          <img
+            src={section.avatar}
+            alt={section.from}
+            width="48"
+            height="48"
+            class="h-12 w-12 shrink-0 rounded-full object-cover"
+            loading="lazy"
+          />
+        ) : (
+          <div
+            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--lp-primary)] text-base font-semibold text-white"
+            aria-hidden="true"
+          >
+            {initials}
+          </div>
+        )}
+        <div class="min-w-0 leading-tight">
+          {section.kicker && (
+            <p class="text-xs font-semibold uppercase tracking-wide text-[var(--lp-primary)]">
+              {section.kicker}
+            </p>
+          )}
+          <p class="text-base font-semibold text-gray-900 dark:text-white">
+            {section.from}
+          </p>
+          {section.role && (
+            <p class="text-sm text-gray-500 dark:text-gray-400">
+              {section.role}
+            </p>
+          )}
+        </div>
+      </header>
+      <div
+        class={cn(
+          "mt-5 space-y-3 text-base leading-relaxed text-gray-700 dark:text-gray-300 md:text-lg",
+          "[&_a]:font-medium [&_a]:text-[var(--lp-primary)] [&_a]:underline [&_a]:underline-offset-4 [&_a]:decoration-[var(--lp-primary)]/40 hover:[&_a]:decoration-[var(--lp-primary)]",
+          "[&_p]:m-0 [&_p+p]:mt-3",
+        )}
+        set:html={section.body}
+      />
+    </aside>
+  </div>
+</section>
