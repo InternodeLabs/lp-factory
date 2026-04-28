@@ -9,6 +9,7 @@ import { Features } from "@/components/lp/Features";
 import { SocialProof } from "@/components/lp/SocialProof";
 import { LiveDemo } from "@/components/lp/LiveDemo";
 import { TabShowcase } from "@/components/lp/TabShowcase";
+import Infographic from "@/components/lp/Infographic.astro";
 import { TrackSection } from "@/components/tracking/TrackSection";
 import { ScrollDepth } from "@/components/tracking/ScrollDepth";
 import { getAllCampaignSlugs, getCampaign } from "@/config/campaigns";
@@ -125,6 +126,9 @@ const jsonLd = wrapGraph(...graphItems);
       )}
       {section.type === "tab-showcase" && (
         <TabShowcase client:visible section={section} darkMode={theme.darkMode} campaign={slug!} campaignId={tracking.campaignId} />
+      )}
+      {section.type === "infographic" && (
+        <Infographic section={section} darkMode={theme.darkMode} />
       )}
       {section.type === "faq" && (
         <FAQ section={section} darkMode={theme.darkMode} />

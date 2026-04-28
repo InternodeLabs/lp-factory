@@ -256,6 +256,126 @@ export const campaigns = new Map<string, CampaignConfig>([
       },
     } satisfies CampaignConfig,
   ],
+  [
+    "ai-first-km",
+    {
+      slug: "ai-first-km",
+      meta: {
+        title: "Why Your Knowledge Base Goes Stale | Internode",
+        description:
+          "Wikis go stale because writing and working are separate workflows. AI-first knowledge management makes work the input. 3 months free.",
+      },
+      theme: {
+        primaryColor: "#3B82F6",
+        accentColor: "#10B981",
+        darkMode: false,
+      },
+      sections: [
+        {
+          type: "hero",
+          headline: "Prepared for Daniel @ pario.ai: Your Wiki Is Going Stale Because of How You Write, Not Who Writes.",
+          subheadline:
+            "Pages are an output of writing. Decisions are an output of working. When those are two separate workflows, the wiki always loses. The fix is not more discipline. The fix is a knowledge model where work is the input and structured records are the output.",
+          subheadlineEmphasis:
+            "It is a workflow problem, not a people problem.",
+          ctaText: "Try AI-first knowledge management",
+          ctaSubtext: "3 months Pro for free. No credit card.",
+        },
+        {
+          type: "infographic",
+          title: "The full picture",
+          subtitle:
+            "How an AI-first knowledge model breaks the decay chain in one image.",
+          image: "/images/ai-first-km/why-wikis-go-stale.png",
+          alt: "Infographic comparing the old wiki model to an AI-first knowledge model: conversations become input, structured outcomes become records, every record links to its source moment, and updates are proposed automatically.",
+          caption:
+            "Old wiki model vs AI-first knowledge model. Same team. Two completely different outcomes.",
+          imageWidth: 941,
+          imageHeight: 1410,
+          maxWidth: "default",
+        },
+        {
+          type: "how-it-works",
+          title: "The four moves Internode does for you",
+          steps: [
+            {
+              step: 1,
+              title: "Make conversations the input",
+              description:
+                "Record Zoom, Meet, calls, or ad hoc discussions. Internode plugs into the tools your team already uses.",
+            },
+            {
+              step: 2,
+              title: "Extract structured outcomes",
+              description:
+                "Decisions, tasks, topics, goals, owners, even rejected options. The outcome lives somewhere other than a transcript.",
+            },
+            {
+              step: 3,
+              title: "Link every record to its source",
+              description:
+                "Each decision points back to the meeting, person, task, and prior decision. The trail is always there.",
+            },
+            {
+              step: 4,
+              title: "Propose updates automatically",
+              description:
+                "When reality drifts, the system flags the change. Humans approve instead of rewriting pages.",
+            },
+          ],
+        },
+        {
+          type: "faq",
+          title: "Yeah but...",
+          items: [
+            {
+              question: "Is this just an AI meeting bot?",
+              answer:
+                "Meeting bots give you a transcript and a summary. Internode gives you a connected decision graph: decisions, owners, tasks, and prior reasoning, linked to every source moment. The transcript is a byproduct, not the output. More on the difference: <a href=\"https://content.internode.ai/ai-meeting-notes-vs-organizational-memory\">AI meeting notes vs organizational memory</a>.",
+            },
+            {
+              question: "What happens to our existing wiki?",
+              answer:
+                "Internode does not replace your wiki. It changes the source of truth. The working layer (conversations, calls, chats) becomes the input, structured records become the source, and Internode proposes updates to your wiki when reality drifts. Humans still approve. See <a href=\"https://content.internode.ai/internode-vs-notion-as-a-wiki\">Internode vs Notion as a wiki</a> and <a href=\"https://content.internode.ai/ai-native-alternative-to-notion\">an AI-native alternative to Notion</a>.",
+            },
+            {
+              question: "Will my team actually use it?",
+              answer:
+                "That is the point: there is nothing for them to use. Internode plugs into the meetings, calls, and tools your team already uses. The behavior change is 'do nothing.' Knowledge accumulates as a side effect of working. Read more on <a href=\"https://content.internode.ai/the-knowledge-system-that-builds-itself\">the knowledge system that builds itself</a>.",
+            },
+            {
+              question: "Why is the old wiki model broken?",
+              answer:
+                "Pages are an output of writing. Decisions are an output of working. When you ask one workflow (working) to feed a different workflow (writing), the wiki loses every time the team is busy. AI-first means those workflows are the same workflow. Background reading: <a href=\"https://content.internode.ai/what-is-institutional-knowledge-and-why-teams-lose-it\">what institutional knowledge is and why teams lose it</a> and <a href=\"https://content.internode.ai/ai-knowledge-base-that-builds-itself\">an AI knowledge base that builds itself</a>.",
+            },
+            {
+              question: "What is the catch with three months free?",
+              answer:
+                "No catch. No credit card. We are confident: once your team has connected, structured knowledge that updates itself, going back to a snapshot wiki feels like a downgrade you cannot unsee.",
+            },
+          ],
+        },
+        {
+          type: "final-cta",
+          headline: "Run the 30-minute test.",
+          subheadline:
+            "Pick your next real product call. Record it. Run it through Internode. Compare the output to your hand notes, or to your stale wiki page. If the output is better than the page nobody wrote, the model works.",
+          ctaText: "Start the 30-minute test",
+          ctaSubtext: "3 months Pro for free. No credit card.",
+        },
+      ],
+      cta: {
+        text: "Try AI-first knowledge management",
+        href: "https://app.internode.ai",
+        style: "primary",
+      },
+      tracking: {
+        campaignId: "ai-first-km-q2-2026",
+        source: "linkedin",
+        conversionEvent: "signup_click",
+      },
+    } satisfies CampaignConfig,
+  ],
 ]);
 
 export function getCampaign(slug: string): CampaignConfig | undefined {

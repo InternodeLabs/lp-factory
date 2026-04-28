@@ -101,6 +101,25 @@ export type SectionConfig =
       }[];
     }
   | {
+      type: "infographic";
+      /** Optional section heading rendered above the image */
+      title?: string;
+      /** Optional supporting line under the title */
+      subtitle?: string;
+      /** Path to the infographic image (PNG, SVG, etc.) */
+      image: string;
+      /** Alt text for the image (required for accessibility + SEO) */
+      alt: string;
+      /** Optional caption rendered below the image */
+      caption?: string;
+      /** Image intrinsic width in pixels (used for layout / CLS) */
+      imageWidth?: number;
+      /** Image intrinsic height in pixels (used for layout / CLS) */
+      imageHeight?: number;
+      /** Container max width: "narrow" = 2xl, "default" = 3xl, "wide" = 4xl */
+      maxWidth?: "narrow" | "default" | "wide";
+    }
+  | {
       type: "final-cta";
       headline: string;
       subheadline: string;

@@ -1,0 +1,75 @@
+---
+import { cn } from "@/lib/utils";
+import type { SectionConfig } from "@/config/types";
+
+type InfographicSection = Extract<SectionConfig, { type: "infographic" }>;
+
+interface Props {
+  section: InfographicSection;
+  darkMode: boolean;
+}
+
+const { section, darkMode } = Astro.props;
+
+const maxWidthClass = (() => {
+  switch (section.maxWidth) {
+    case "narrow":
+      return "max-w-2xl";
+    case "wide":
+      return "max-w-4xl";
+    case "default":
+    default:
+      return "max-w-3xl";
+  }
+})();
+---
+
+<section class={cn("py-16 px-4 md:py-24 md:px-8", darkMode && "dark")}>
+  <div class="mx-auto max-w-5xl">
+    {(section.title || section.subtitle) && (
+      <div class="text-center">
+        {section.title && (
+          <h2 class="text-balance text-4xl font-bold tracking-tight text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+            {section.title}
+          </h2>
+        )}
+        {section.subtitle && (
+          <p class="mx-auto mt-4 max-w-3xl text-pretty text-lg text-gray-600 dark:text-gray-300 md:mt-6 md:text-xl">
+            {section.subtitle}
+          </p>
+        )}
+      </div>
+    )}
+
+    <figure
+      class={cn(
+        "mx-auto mt-10 w-full md:mt-14",
+        maxWidthClass,
+      )}
+    >
+      <div
+        class={cn(
+          "relative overflow-hidden rounded-2xl border shadow-2xl",
+          "border-gray-200 bg-white dark:border-gray-800 dark:bg-white",
+          "ring-1 ring-black/5 dark:ring-white/10",
+          "shadow-[var(--lp-primary)]/10",
+        )}
+      >
+        <img
+          src={section.image}
+          alt={section.alt}
+          width={section.imageWidth ?? 941}
+          height={section.imageHeight ?? 1672}
+          loading="lazy"
+          decoding="async"
+          class="block h-auto w-full"
+        />
+      </div>
+      {section.caption && (
+        <figcaption class="mx-auto mt-4 max-w-2xl text-center text-sm text-gray-500 dark:text-gray-400 md:mt-6 md:text-base">
+          {section.caption}
+        </figcaption>
+      )}
+    </figure>
+  </div>
+</section>

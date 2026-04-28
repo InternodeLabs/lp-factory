@@ -10,6 +10,13 @@ interface Props {
 }
 
 const { section, darkMode } = Astro.props;
+
+const stepCount = section.steps.length;
+const gridColsClass = (() => {
+  if (stepCount === 4) return "md:grid-cols-2 lg:grid-cols-4";
+  if (stepCount === 2) return "md:grid-cols-2";
+  return "md:grid-cols-3";
+})();
 ---
 
 <section class={cn("py-16 px-4 md:py-24 md:px-8", darkMode && "dark")}>
@@ -17,7 +24,7 @@ const { section, darkMode } = Astro.props;
     <h2 class="text-center text-4xl font-bold tracking-tight text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
       {section.title}
     </h2>
-    <ol class="mt-12 grid gap-8 md:mt-16 md:grid-cols-3">
+    <ol class={cn("mt-12 grid gap-8 md:mt-16", gridColsClass)}>
       {section.steps.map((step) => (
         <li
           class={cn(
